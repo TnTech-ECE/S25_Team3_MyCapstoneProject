@@ -8,15 +8,15 @@ Established regular meeting time -> Mondays at 1430 to 1600
 Meetings can be added in based on deadlines potentially not being met.
 
 ### Team Assignments:
-* Brett:  
-* Elle:
-* Tyler:
-* Erich:
-* Mandy:
+* Brett: Help others complete their assignments.
+* Elle : Talk to Bruce about how useful he thinks he might be as an advisor. 
+* Tyler: Locating old robot, and getting team lab access. 
+* Erich: Get in contact with potential advisors (elfouly & vanest) to set up meetings
+* Mandy: Set up meeting with team, Rentschler, & Campus Polezi
 
 ### Roles Assigned:
 * Brett: Speaker
-* Elle:
+* Elle : 
 * Tyler: Timekeeper
 * Erich:
 * Mandy:
