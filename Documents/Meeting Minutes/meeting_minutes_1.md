@@ -1,5 +1,5 @@
 # Meeting Minutes 1
-## 03FEB2025 1430-1600
+## 03FEB2025 1430-1600 & 1630-1700
 Attendance: Brett Ballew, Tyler Bare, Mandy Bacon, Gabrielle Renfroe, & Erich Krepps
 
 Talked about previous work done on the Drone Tracker project and what contacts we had with the old team.
