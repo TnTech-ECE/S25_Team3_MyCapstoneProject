@@ -11,19 +11,29 @@ Attendance: Brett Ballew, Tyler Bare, Mandy Bacon, Gabrielle Renfroe, & Erich Kr
 Spoke of project proposal goals. Assigned tasks each member needs to do in order for the proposal to gain momentum 
 much earlier before due date. Considered possible delays due to police meeting with us very close to the deadline.
 
+## 10FEB2025 1000-1020
+Attendance: Brett Ballew, Tyler Bare, Mandy Bacon, & Erich Krepps
+
+Met with Tech Police to discuss anything they wanted to change about the drone tracking project. They decided the camera function was not necessary, they want to triangulate the position of the drone operator, and they wanted to rework the website fundamentals for a more police centered task. Also inquired about ownership of the project. 
+
+## 10FEB2025 1623-
+
+Attendance: Brett Ballew, Tyler Bare, Mandy Bacon, Gabrielle Renfroe, & Erich Krepps
+
+Post customer meet up discussion. Talked about what must be changed to the old proposal to update it to the new customer standards. Assigned roles for what each individual must do to get the proposal ready for submission.
+
 ### Team Assignments:
-* Brett: Materials 
-* Elle : Safety
-* Tyler: Power
-* Erich: Previous
-* Mandy: Camera
+* Brett: 
+* Elle : 
+* Tyler: 
+* Erich: 
+* Mandy: 
 
 ### Things to be done by all:
-Look at old proposal. 
+Look at and adjust old proposal. 
 
 ### Important Notes
-Need to research drone tracking standards that will need to be put into the proposal. Ahead of the meeting with polezi
-Probably safety, privacy, material usage, operating frequency, previous patents. 
+
 
 ### Next Meeting:
-As it stands: 10FEB2025 1430 to 1600
+As it stands: 17FEB2025 1430 to 1600
