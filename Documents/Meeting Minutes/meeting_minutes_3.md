@@ -1,13 +1,13 @@
 # Meeting Minutes 3
-## 12FEB2025 1430-XXXX
+## 12FEB2025 1430-1450
+Attendance: Tarek Elfouly, Brett Ballew, Tyler Bare, Mandy Bacon, Gabrielle Renfroe, & Erich Krepps
+
+Advisor meeting. Spoke with Dr. Enfouly about meeting with the old team. Spoke about making presentation on findings of Drone RID tracking. 
+
+## 12FEB2025 1450-XXXX
 Attendance: Brett Ballew, Tyler Bare, Mandy Bacon, Gabrielle Renfroe, & Erich Krepps
 
-Advisor meeting
-
-## ddmon2025 XXXX-XXXX
-Attendance: Brett Ballew, Tyler Bare, Mandy Bacon, Gabrielle Renfroe, & Erich Krepps
-
-meeting overview
+1st round project proposal wrap up. 
 
 ### Team Assignments:
 * Brett: 
@@ -18,7 +18,7 @@ meeting overview
 
 ### Things to be done by all:
 
-Talk to old team about reciever. What was the portion they stopped at? Ask Micah if he knows anything about the issues the last team faced. Research indentifying drones using RF. Create some slides of findings.
+Talk to old team about receiver. What was the portion they stopped at? Ask Micah if he knows anything about the issues the last team faced. Research indentifying drones using RF. Create some slides of findings.
 Studying networks (network stack).
 
 ### Important Notes
