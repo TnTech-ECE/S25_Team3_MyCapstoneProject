@@ -71,10 +71,10 @@ Depending on time restraints and the preferences of the campus police, this proj
 3. The system may be extended to track drones over the Golden Eagle Golf Club and the Hyder-Burks Agriculture Pavilion.  
  
 
-Elaboration on the specifications and constraints of the stakeholders is provided: 
+	Elaboration on the specifications and constraints of the stakeholders is provided: 
 - The campus police have specified that the database be accessed through a website, as opposed to an app, due to the security and privacy concerns that would be introduced were the officers to use their personal device on the job. The website will be accessible to the officers on scene and at the office.   
 - The campus police have requested the ability to authorize specific drones for specific time periods via the website. If a drone user has permission to be operating the drone, such as a student filming a sporting event for the university’s social media page, the police will be able to easily confirm this on the website. The authorization of the drone will expire after a certain length of time, which can be edited by the campus police, if needed. The website will keep track of which drones are authorized and which are not. 
-<br> The project is constrained by the legal standards of the United States of America, the State of Tennessee, and Tennessee Tech. These are the guidelines with which this team will adhere to remain in compliance with the law.  
+<br><br> The project is constrained by the legal standards of the United States of America, the State of Tennessee, and Tennessee Tech. These are the guidelines with which this team will adhere to remain in compliance with the law.  
 <br> Standards regarding Unmanned Aerial Systems: 
 
 - FAA 14 CFR Part 107 - This standard regulates the operation of Drones in U.S Airspace, ensuring that pilots operate their drones in a safe manner. Safety standards include limiting maximum altitude to 400 feet (122 meters), prohibiting drones from flying directly over a non-participating human being, and limiting accessible airspace for pilots to fly in without express permission [3]. This standard also addresses recreational flying rules which are detailed in the background section. 
