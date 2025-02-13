@@ -205,9 +205,9 @@ Brett Ballew: MATLAB, C/C++, Microcontrollers, Telecommunications
 
 This team does not currently have expertise in telecommunications networking. Additional guidance or collaboration for networking-related aspects of the project may be needed. 
 #### Supervisor
-Dr. Tarek Elfouly: 
+Dr. Tarek Elfouly: The team elected to have Dr. Tarek Elfouly as a supervisor for this project, due to his extensive past experience and knowledge in the areas of wireless networking and drone tracking. 
 #### Instructor
-Micah Rentschler 
+Micah Rentschler: The team expects Micah Rentschler to provide guidance and constructive criticism as the project develops. 
 
 ### Timeline
 
