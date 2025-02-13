@@ -1,7 +1,7 @@
 # <div align="center"> Drone Tracker Project Proposal
 #### <div align="center"> Amanda Bacon, Brett Ballew, Tyler Bare, Erich Krepps, Gabrielle Renfroe
-<div align="center"> Tennessee Technological University, Department of Electrical and Computer Engineering
-
+<div align="center"> Department of Electrical and Computer Engineering <br>
+Tennessee Technological University
 <div align="left">
 	
 ## Introduction 
@@ -208,3 +208,47 @@ This team does not currently have expertise in telecommunications networking. Ad
 Dr. Tarek Elfouly: 
 #### Instructor
 Micah Rentschler 
+
+### Timeline
+
+## Specific Implications
+The implications of solving the problem for the campus police (Our customer) would be allowing the police to more easily ensure that drones do not fly in restricted areas on campus such as the football field. This would also allow them to quickly update the device to allow specified drones into the air space.  If drones do fly into restricted areas, it will allow them to track both the drone and drone operator allowing them to enforce the put into place laws. 
+
+## Broader Implications, Ethics, and Responsibilities as Engineers
+Consider the project’s broader impacts in global, economic, environmental, and societal contexts. Identify potential negative impacts and propose mitigation strategies. Detail the ethical considerations and responsibilities each team member bears as an engineer. 
+
+The ethics involved in our project are on the simpler side of it due to the nature of the project. If the project is successful there is a possibility of a rise in unregulated drone flights to figure out a way around the system. If the project is unsuccessful there is the probability of incorrect information being given to the police leading to either a waste of police time or worst-case innocent people getting wrongfully arrested. 
+
+## References
+[1] “C-sUAS - Edgesource,” Edgesource, Mar. 07, 2024. https://www.edgesource.com/c-suas/?gad_source=1&gclid=CjwKCAiA5Ka9BhB5EiwA1ZVtvIU81T-Bijn2FebQkpRLQ9babd4jQCjz57KS0FSbXfN7X3ajevz0rxoCGE0QAvD_BwE (accessed Feb. 12, 2025). 
+
+‌[2] 911 security, “Drone Detection | Everything you need to know| Can drones be detected?,” Airsight.com, 2024. https://www.airsight.com/en-us/knowledg-hub/drone-detection (accessed Feb. 12, 2025). 
+
+‌[3] “Introduction | Dronetag Help,” Dronetag.com, 2023. https://help.dronetag.com/drone-scanner/ (accessed Feb. 12, 2025). 
+
+‌[4] “New Drone Laws by State in the USA (2022),” Drone UTM, Jan. 17, 2024. https://www.thedroneu.com/blog/usa-drone-laws-regulations-by-state/ (accessed Feb. 12, 2025). 
+
+[5] “Drone Laws in Tennessee (2024) - UAV Coach,” UAV Coach, Dec. 21, 2023. https://uavcoach.com/drone-laws-tennessee/ (accessed Feb. 12, 2025). 
+
+‌[6] “190 Unmanned Aircraft Systems v.1,” Navexone.com, 2018. https://tntech.navexone.com/content/dotNet/documents/?docid=483&public=true (accessed Feb. 12, 2025). 
+
+‌[7] FAA, “UAS remote identification | federal aviation administration,” Faa.gov, 2019. https://www.faa.gov/uas/getting_started/remote_id (accessed Feb. 12, 2025). 
+
+‌[8] Skybrary, “Federal aviation administration (FAA),” SKYbrary Aviation Safety, Dec. 30, 2020. https://skybrary.aero/articles/federal-aviation-administration-faa (accessed Feb. 12, 2025). 
+
+[9] A. Schirn, “IEEE 802.11-2020: Collision Avoidance in Wireless Networks - ANSI Blog,” The ANSI Blog, Feb. 01, 2023. https://blog.ansi.org/ieee-802-11-collision-avoidance-wireless-networks/ (accessed Feb. 12, 2025). 
+
+‌[10] “UAS Sightings Report | Federal Aviation Administration,” Faa.gov, 2022. https://www.faa.gov/uas/resources/public_records/uas_sightings_report (accessed Feb. 12, 2025). 
+
+[11] “S24_Team1_DroneTracker,” Github.com, 2025. https://github.com/mrnye42/S24_Team1_DroneTracker/tree/main (accessed Feb. 12, 2025). 
+
+## Statement of Contributions
+Elle Renfroe: Introduction, Background, Skills, References 
+
+Mandy Bacon: Formulating the Problem, Specifications and Constraints, Skills, References 
+
+Erich Krepps: Survey of Existing Solutions, Specific Implications, Broader Implications, Skills, References 
+
+Tyler Bare: Measures of Success, Timeline, Skills, References 
+
+Brett Ballew: Resources, Budget, Skills, References 
