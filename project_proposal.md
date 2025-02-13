@@ -1,4 +1,10 @@
-# Introduction 
+# <div align="center"> Drone Tracker Project Proposal
+#### <div align="center"> Amanda Bacon, Brett Ballew, Tyler Bare, Erich Krepps, Gabrielle Renfroe
+<div align="center"> Tennessee Technological University, Department of Electrical and Computer Engineering
+
+<div align="left">
+	
+## Introduction 
 
 Unmanned Aircraft Systems (UAS), commonly referred to as drones, have gained significant popularity in recent years due to their innovative features and wide-ranging capabilities. However, not all drone operators prioritize safety or respect for others' privacy, leading to an increase in unsafe drone activities. In response, the Federal Aviation Administration (FAA) implemented a regulation in 2023 that mandates drones to transmit a remote identification (RID) signal. Based on this RID, our team proposes a drone tracking device that will alert the Tennessee Technological University (TTU) Police when an unauthorized drone emitting an RID signal enters the campus grounds. 
 
@@ -6,13 +12,13 @@ The purpose of this tracking device is to assist the TTU Police in addressing ca
 
 To achieve these goals, the drone tracking device will capture and store data from RID signals, find the location of the operator, and report this information to TTU Police via a secure website. The website will display details such as the drone's RID (serial number), location, altitude, velocity, control station location and elevation, time stamps, emergency status, and flight path. TTU Police will also have the ability to grant or deny access to specific RID-emitting drones for defined periods. If the device detects an unapproved serial number, a warning will be sent to the TTU Police, and real-time flight information will be accessible on the website. 
 
-# Formulating the Problem 
+## Formulating the Problem 
 
 The usage of unmanned aircraft systems on the Tennessee Technological University contiguous campus is not permitted according to university policies, except in a few special cases. However, the campus police still receive complaints of drones causing security, safety, and privacy issues. For example, unauthorized drones are often reported over university athletic events. This is a safety issue for the student-athletes, and campus police are often notified to resolve the issue. But without a system to track the drone and its operator, the officers face a great challenge in actually locating the drone and user. With the implementation of a drone tracking system, dispatchers would be able to notify the officers of the unauthorized drone and easily relay the necessary information, such as the position of the operator, for the issue to be resolved. Illegal drone usage also poses serious risks to privacy on campus. Drones can be used in stalking or harassment cases; one such situation would be a drone filming into a window in on-campus housing. Currently, if such a situation were to be reported, it would be very difficult for the pilot to be located. A drone tracking system would make it much easier to disrupt and stop this sort of illegal activity. 
 
 As noted in the Existing Solutions section, a drone tracking system that meets the desired specifications is not currently in production without a paid subscription or a very large setup fee. The objective of this project is to design such a system and grant access to the TTU campus police. The team will need to create multiple systems consisting of hardware and software working in harmony with one another to achieve this objective. 
 
-# Background 
+### Background 
 
 Each month, the FAA receives numerous reports from various sources, including pilots and law enforcement, highlighting unauthorized flights of unmanned aircraft systems (UAS). These reports detail specific cases where drone operators’ incompetence has potentially endangered lives. To understand how the team's drone tracking project seeks to protect civilian lives, maintain privacy, and ensure security, it’s essential to examine the origins of UAS regulations and the constraints placed on drones at TTU campuses. 
 
@@ -49,7 +55,7 @@ State laws in Tennessee, as established by the Tennessee General Assembly, provi
  
 Below the state regulations, there are no specific Putnam County UAS ordinances. However, TTU Police, who will use and enforce the drone tracking system, must consider safety regulations. Ultimately, it is up to TTU Police to understand the regulations, determine what is permissible on campus, and handle any violations accordingly. 
 
-# Specifications and Constraints 
+### Specifications and Constraints 
 
 The specifications of this project, which were primarily determined by the Tennessee Technological University campus police, are as follows.  
  
@@ -91,7 +97,7 @@ periods and incident reporting procedures [12].
 - TTU Policy 856 - Defines standards and requirements for data security and handling. This policy defines four levels of data security, their encryption requirements, and 
 disposal procedures of the data [13].
 
-Survey of Existing Solutions 
+## Survey of Existing Solutions 
 
 There are many solutions to each sub section of the project, but in doing research there is but one solution that covers every sub section of the project. The WINDTALKER by Edgesource is this solution, but currently, that solution is only available and being used by the government and is not available to the public [1]. There are other solutions, but these fall short of what is needed and will be listed below. 
 
@@ -99,7 +105,7 @@ There are many solutions to each sub section of the project, but in doing resear
 2. There have been multiple apps developed to track drones. Drone scanner is an app developed to do exactly that but is limited to only using Bluetooth and Wi-Fi to detect drones [3].   
 3. Visual tracking of drones with AI image detection has been developed to track drones. This method is not the most reliable due to the possibilities of visual obstruction of the camera. Visual tracking does not allow for backtracking the drone to the user of it [2].
 
-# Measures of Success 
+## Measures of Success 
 
 The success of this project will be determined by verifying that the system accurately detects, locates, and reports Remote ID (RID) signals while maintaining reliable performance. Testing will be conducted in both controlled and real-world environments to evaluate detection accuracy, system reliability, and data reporting effectiveness. To assess detection and geolocation accuracy, an RID transmitter will be placed at known locations, and the system must consistently detect it. The reported location will be compared to the actual placement to ensure minimal error, even in the presence of obstacles like buildings [11]. 
 
@@ -107,7 +113,7 @@ System reliability will be evaluated by monitoring continuous signal detection o
 
 The testing methodology will begin with controlled experiments to validate core functionality before expanding to various locations to assess performance under different conditions. Data collected from these tests will be analyzed to determine accuracy, reliability, and areas for improvement. If all project requirements (shall statements) are met, the team may incorporate user tracking to estimate the drone operator’s location based on multiple RID signal detections. Successfully integrating this capability would enhance the system’s ability to track not only drones but also their operators, improving security and situational awareness. 
 
-# Resources 
+## Resources 
 
 The drone tracking device relies on several key components to receive, transmit, and process data, including a power supply, an antenna, an RF transceiver, some microcontrollers, and a memory module. Additionally, specialized software is required for modeling, construction, operation, and communication. This section will provide a detailed breakdown of each component and explain how they will be utilized in the project to achieve the intended objectives. 
 
@@ -188,16 +194,17 @@ Total: $490 with solar
 
 The first unit is estimated to cost approximately $100, utilizing the equipment already provided, along with necessary modifications and supplemental components.
 
-# Personel
+### Personel
 
-## Engineering Team
-Elle Renfroe: LTSpice, AutoCAD, Soldering 
-Mandy Bacon: LTSpice, C/C++, Python, Digital Logic, Digital Signal Processing 
-Erich Krepps: LTSpice, KiCAD, C++, Soldering, Wiring, Digital Logic 
-Tyler Bare: LTSpice, KiCAD, Arduino/C++, Soldering 
-Brett Ballew: MATLAB, C/C++, Microcontrollers, Telecommunications 
-## Supervisor
-Dr. Tarek Elfouly: 
-## Instructor
-Micah Rentschler 
+#### Engineering Team
+Elle Renfroe: LTSpice, AutoCAD, Soldering <br>
+Mandy Bacon: LTSpice, C/C++, Python, Digital Logic, Digital Signal Processing <br>
+Erich Krepps: LTSpice, KiCAD, C++, Soldering, Wiring, Digital Logic <br>
+Tyler Bare: LTSpice, KiCAD, Arduino/C++, Soldering <br>
+Brett Ballew: MATLAB, C/C++, Microcontrollers, Telecommunications
+
 This team does not currently have expertise in telecommunications networking. Additional guidance or collaboration for networking-related aspects of the project may be needed. 
+#### Supervisor
+Dr. Tarek Elfouly: 
+#### Instructor
+Micah Rentschler 
