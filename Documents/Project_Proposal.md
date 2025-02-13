@@ -101,7 +101,7 @@ There are many solutions for each part of the project, but only one–Edgesource
 
 1. Radar can be used to track drones, but it is only effective in tracking large scale drones. The smaller drones that the team aims to track in this project are small enough to be mistaken for other objects or animals, such as birds [2]. 
 2. Several apps have been developed to track drones, such as Drone Scanner. However, these apps rely on the use of mobile devices [3].   
-3. Visual tracking of drones with AI image detection has been developed to track drones. This method is not the most reliable due to the possibilities of visual obstruction of the camera. Visual tracking does not allow for backtracking the drone to the user of it [2].
+3. AI-powered visual tracking systems have been developed to detect drones using image recognition. However, this method faces reliability issues, as camera visibility can be obstructed. Additionally, visual tracking cannot trace the drone back to its operator [2].
 
 ## Measures of Success 
 
