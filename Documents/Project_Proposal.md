@@ -91,11 +91,9 @@ Standards regarding circuit design:
 
 Standards regarding data retention at TTU: 
 
-- TTU Policy 403 - Defines procedures and standards for 
-the usage of cameras on campus, along with surveillance 
-periods and incident reporting procedures [12]. 
-- TTU Policy 856 - Defines standards and requirements for data security and handling. This policy defines four levels of data security, their encryption requirements, and 
-disposal procedures of the data [13].
+- TTU Policy 403 - This policy defines procedures and standards for 
+the usage of cameras on campus, along with surveillance periods and incident reporting procedures. 
+- TTU Policy 856 - This policy defines standards and requirements for data security and handling. This policy defines four levels of data security, their encryption requirements, and disposal procedures of the data.
 
 ## Survey of Existing Solutions 
 
