@@ -148,8 +148,8 @@ PCB Design Tools
 
 Programming Languages  
 * Languages such as Python, C, and C++ can be utilized to develop the software that manages data transmission, encodes/decodes network signals, and determines data storage locations.  
-Python: Ideal for high-level tasks like data processing and web integration.  
-C/C++: Essential for low-level programming, such as firmware development and real-time processing. 
+	- Python: Ideal for high-level tasks like data processing and web integration.  
+	- C/C++: Essential for low-level programming, such as firmware development and real-time processing. 
 
 Embedded Operating Systems  
 * Systems like FreeRTOS or Zephyr can be implemented to provide the framework for managing hardware resources, multitasking, and real-time data processing. 
