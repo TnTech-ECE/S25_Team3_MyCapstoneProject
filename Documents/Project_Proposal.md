@@ -246,12 +246,12 @@ The ethics involved in our project are on the simpler side of it due to the natu
 [11] “S24_Team1_DroneTracker,” Github.com, 2025. https://github.com/mrnye42/S24_Team1_DroneTracker/tree/main (accessed Feb. 12, 2025). 
 
 ## Statement of Contributions
-Elle Renfroe: Introduction, Background, Skills, References 
+Amanda Bacon: Formulating the Problem, Specifications and Constraints, Skills, References 
 
-Mandy Bacon: Formulating the Problem, Specifications and Constraints, Skills, References 
-
-Erich Krepps: Survey of Existing Solutions, Specific Implications, Broader Implications, Skills, References 
+Brett Ballew: Resources, Budget, Skills, References 
 
 Tyler Bare: Measures of Success, Timeline, Skills, References 
 
-Brett Ballew: Resources, Budget, Skills, References 
+Erich Krepps: Survey of Existing Solutions, Specific Implications, Broader Implications, Skills, References 
+
+Elle Renfroe: Introduction, Background, Skills, References 
