@@ -100,7 +100,7 @@ the usage of cameras on campus, along with surveillance periods and incident rep
 There are many solutions for each part of the project, but only one–Edgesource’s WINDTALKER—covers everything needed. Unfortunately, it is only available to the government and not the public [1]. Other options exist, but they do not fully meet the requirements and will be discussed below.
 
 1. Radar can be used to track drones, but it is only effective in tracking large scale drones. The smaller drones that the team aims to track in this project are small enough to be mistaken for other objects or animals, such as birds [2]. 
-2. There have been multiple apps developed to track drones. Drone scanner is an app developed to do exactly that but is limited to only using Bluetooth and Wi-Fi to detect drones [3].   
+2. Several apps have been developed to track drones, such as Drone Scanner. However, its functionality is limited to detecting drones via Bluetooth and Wi-Fi [3].   
 3. Visual tracking of drones with AI image detection has been developed to track drones. This method is not the most reliable due to the possibilities of visual obstruction of the camera. Visual tracking does not allow for backtracking the drone to the user of it [2].
 
 ## Measures of Success 
