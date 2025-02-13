@@ -155,9 +155,9 @@ Embedded Operating Systems
 * Systems like FreeRTOS or Zephyr can be implemented to provide the framework for managing hardware resources, multitasking, and real-time data processing. 
 
 Networking and Communication Protocols  
-* MQTT: A lightweight messaging protocol for seamless communication between the device and external systems.  
-HTML: Used for designing user interfaces and web-based dashboards.  
-Visual Studio Code: A versatile code editor for software development and debugging. 
+* MQTT: A lightweight messaging protocol for seamless communication between the device and external systems.
+* HTML: Used for designing user interfaces and web-based dashboards.
+* Visual Studio Code: A versatile code editor for software development and debugging. 
  
 
 ### Testing and Validation  
