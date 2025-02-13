@@ -54,21 +54,21 @@ Below the state regulations, there are no specific Putnam County UAS ordinances.
 
 ### Specifications and Constraints 
 
-The specifications of this project, which were primarily determined by the Tennessee Technological University campus police, are as follows.  
+The specifications of this project, which were primarily determined by the Tennessee Technological University campus police, are as follows:  
  
 
-1. The system shall detect and track remote ID emitting drones flown over the contiguous Tennessee Technological University campus. 
-2. The system shall record and store all data recovered from the Remote ID signal.  
+1. The system shall detect and track remote ID emitting drones flown over the contiguous TTU campus. 
+2. The system shall record and store critical data recovered from the Remote ID signal, until uploaded to the website.
 3. The system shall notify campus police in real-time upon detection of a drone in flight.  
-4. The system shall increase the urgency of the alert if a drone is detected in a private geographical region.  
-5. The data shall be displayed in real-time and in a concise manner to a secure constructed website accessible to campus police dispatchers. 
-6. The system shall allow campus police to authorize drones for permitted flights in a specified time frame.  
-7. The system shall be designed to minimize further maintenance.  
+4. The data shall be displayed in a concise manner to a secure website accessible to campus police dispatchers. 
+5. The system shall allow campus police to authorize drones for permitted flights.  
+6. The system shall be designed to minimize further maintenance.  
  
 
-Depending on the time, budget, and decision of the campus police, this project may also do the following. 
-1. The system may determine the location of the drone’s user and upload this information to the website. 
-2. The scope of the system may be extended to track drones over the Golden Eagle Golf Club and the Hyder-Burks Agriculture Pavilion.  
+Depending on the time, budget, and decision of the campus police, this project may also do the following: 
+1. The system may determine the location of the drone’s user and upload this information to the website.
+2. The system may increase the urgency of the alert if a drone is detected in a specific geographical region, deemed of higher importance. 
+3. The scope of the system may be extended to track drones over the Golden Eagle Golf Club and the Hyder-Burks Agriculture Pavilion.  
  
 
 Elaboration on the specifications and constraints specified by the stakeholders: 
