@@ -97,7 +97,7 @@ the usage of cameras on campus, along with surveillance periods and incident rep
 
 ## Survey of Existing Solutions 
 
-There are many solutions to each sub section of the project, but in doing research there is but one solution that covers every sub section of the project. The WINDTALKER by Edgesource is this solution, but currently, that solution is only available and being used by the government and is not available to the public [1]. There are other solutions, but these fall short of what is needed and will be listed below. 
+There are many solutions for each part of the project, but only one—Edgesource’s WINDTALKER—covers everything needed. Unfortunately, it’s only available to the government and not the public [1]. Other options exist, but they don’t fully meet the requirements and will be discussed below.
 
 1. Radar can be used to track drones but is only effective in tracking larger scale drones. The smaller drones that we aim to track in this project are small enough to be easily mistaken for a bird [2]. 
 2. There have been multiple apps developed to track drones. Drone scanner is an app developed to do exactly that but is limited to only using Bluetooth and Wi-Fi to detect drones [3].   
