@@ -79,15 +79,15 @@ Elaboration on the specifications of the stakeholders is provided:
 
 Standards regarding Unmanned Aerial Systems: 
 
-- FAA 14 CFR Part 107 - This standard regulates the operation of Drones in U.S Airspace, ensuring that pilots operate their drones in a safe manner. Safety standards include limiting maximum altitude to 400 feet (122 meters), prohibiting drones from flying directly over a non-participating human being, and limiting accessible airspace for pilots to fly in without express permission [3]. This standard also addresses recreational flying rules which are detailed in the background section. 
-- FAA 14 CFR Part 89 - This standard pertains to the Re- mote Identification of Drones operating in U.S Airspace. In sections 89.305 and 89.315, the standard details the minimum element requirements of the Remote ID transponder’s broadcast and how often pilots are required to broadcast it. [7]. 
-- FCC 47 CFR Part 15 - This standard pertains to electrical and electronic devices that emit or absorb radio frequencies within the 9 kHz to 3,000 GHz range. This standard limits power and exposure levels to prevent interference and endangerment to living beings [9]. 
-IEEE 802.11 - Regulates implementation standards for WIFI Networks, Local Area Networks, and MAC Address protocols. Also defines frequency bands and collision-avoidance protocols for wireless transmissions [10]. 
+- FAA 14 CFR Part 107 - This standard regulates the operation of Drones in U.S Airspace, ensuring that pilots operate their drones in a safe manner. Safety standards include limiting maximum altitude to 400 feet (122 meters), prohibiting drones from flying directly over a non-participating human being, and limiting accessible airspace for pilots to fly in without express permission. This standard also addresses recreational flying rules. 
+- FAA 14 CFR Part 89 - This standard pertains to the Remote Identification of Drones operating in U.S Airspace. In sections 89.305 and 89.315, the standard details the minimum element requirements of the Remote ID transponder’s broadcast and how often pilots are required to broadcast it. 
+- FCC 47 CFR Part 15 - This standard pertains to electrical and electronic devices that emit or absorb radio frequencies within the 9 kHz to 3,000 GHz range. This standard limits power and exposure levels to prevent interference and endangerment to living beings.
+- IEEE 802.11 - This regulates implementation standards for WIFI Networks, Local Area Networks, and MAC Address protocols. It also defines frequency bands and collision-avoidance protocols for wireless transmissions. 
  
 
 Standards regarding circuit design: 
 
-- IEC 60364-1 - Specifies design, installation, and verification of electrical systems to ensure the safety of living beings and properties near it. This standard pertains to shock, over-current, fault, power interruption, and interference protections [11]. 
+- IEC 60364-1 - Specifies design, installation, and verification of electrical systems to ensure the safety of living beings and properties near it. This standard pertains to shock, over-current, fault, power interruption, and interference protections. 
 Standards regarding data retention at TTU: 
 
 - TTU Policy 403 - Defines procedures and standards for 
