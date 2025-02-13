@@ -87,7 +87,8 @@ Standards regarding Unmanned Aerial Systems:
 
 Standards regarding circuit design: 
 
-- IEC 60364-1 - Specifies design, installation, and verification of electrical systems to ensure the safety of living beings and properties near it. This standard pertains to shock, over-current, fault, power interruption, and interference protections. 
+- IEC 60364-1 - This standard specifies design, installation, and verification of electrical systems to ensure the safety of living beings and properties near it. It pertains to shock, over-current, fault, power interruption, and interference protections.
+
 Standards regarding data retention at TTU: 
 
 - TTU Policy 403 - Defines procedures and standards for 
