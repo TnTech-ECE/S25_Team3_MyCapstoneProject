@@ -48,7 +48,7 @@ State laws in Tennessee, as established by the Tennessee General Assembly, provi
 - It is permissible for a person to use UAS on behalf of either a public or private institution of higher education, rather than just public institutions. 
 - It is a crime to use a drone to capture an image over certain open-air events and fireworks displays. 
 - It is a Class C misdemeanor for any private entity to use a drone to conduct video surveillance of a person who is hunting or fishing without their consent. 
-- Law enforcement can use drones in compliance with a search warrant, to counter a high-risk terrorist attack, and if swift action is needed to prevent imminent danger to life 
+- Law enforcement can use drones in compliance with a search warrant, to counter a high-risk terrorist attack, and if swift action is needed to prevent imminent danger to life.
  
 Below the state regulations, there are no specific Putnam County UAS ordinances. However, TTU Police, who will use and enforce the drone tracking system, must consider safety regulations. Ultimately, it is up to TTU Police to understand the regulations, determine what is permissible on campus, and handle any violations accordingly. 
 
