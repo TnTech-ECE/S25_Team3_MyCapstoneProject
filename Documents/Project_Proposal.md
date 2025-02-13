@@ -65,14 +65,14 @@ The specifications of this project, which were primarily determined by the Tenne
 6. The system shall be designed to minimize further maintenance.  
  
 
-Depending on the time, budget, and decision of the campus police, this project may also do the following: 
+Depending on time restraints and the preferences of the campus police, this project may also do the following: 
 1. The system may determine the location of the drone’s user and upload this information to the website.
-2. The system may increase the urgency of the alert if a drone is detected in a specific geographical region, deemed of higher importance. 
-3. The scope of the system may be extended to track drones over the Golden Eagle Golf Club and the Hyder-Burks Agriculture Pavilion.  
+2. The system may increase the urgency of the alert if a drone is detected in a specific geographical region deemed of higher importance. 
+3. The system may be extended to track drones over the Golden Eagle Golf Club and the Hyder-Burks Agriculture Pavilion.  
  
 
-Elaboration on the specifications and constraints specified by the stakeholders: 
-- The campus police have specified that the database be accessed through a website and that the range of the system be able to reach off-campus pilots. The campus police have constrained the project to a website, as opposed to an app, due to the security and privacy concerns that would be introduced were the officers to use their personal device on the job. The website will be accessible to the officers on the scene, via their work iPads, and at the office, via their work computers.  
+Elaboration on the specifications and constraints of the stakeholders is provided: 
+- The campus police have specified that the database be accessed through a website and that the range of the system be able to reach off-campus pilots. The campus police have constrained the project to a website, as opposed to an app, due to the security and privacy concerns that would be introduced were the officers to use their personal device on the job. The website will be accessible to the officers on scene, via their work iPads, and at the office, via their work computers.  
 - The campus police have requested the ability to authorize specific drones for specific time periods via the website. If a drone user has permission to be operating the drone, such as a student filming a sporting event for the university’s social media page, the police will be able to easily confirm this on the website. The authorization of the drone will expire after a certain length of time, which can be edited by the campus police, if needed. The website will keep track of which drones are authorized and which are not. 
 The project is constrained by the legal standards of the United States of America, the State of Tennessee, and Tennessee Tech. These are the guidelines with which this team will adhere to remain in compliance with the law.  
 Standards regarding Unmanned Aerial Systems: 
