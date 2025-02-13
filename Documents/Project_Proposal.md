@@ -162,7 +162,7 @@ Networking and Communication Protocols
 
 ### Testing and Validation  
 
-A licensed drone equipped with a remote ID transmitter will be used to test the system. The drone will be flown at varying speeds and distances relative to the sensor, and the collected data will be compared to the information provided by the drone’s controller to evaluate accuracy and precision.  
+A remote ID transmitter will be used to test the system for accuracy. It will be moved at varying speeds and distances relative to the sensor, and the collected data will be compared to the known values to evaluate accuracy and precision. If the team gets access to a licensed drone, the testing may be continued in a similar manner with the drone and its controller. 
 
 ### Budget 
 
