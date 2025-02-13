@@ -118,28 +118,22 @@ The drone tracking device relies on several key components to receive, transmit,
 ### Hardware Components 
 
 Power Supply  
-
-Ensures uninterrupted operation, implemented through battery packs or direct power sources. 
+* Ensures uninterrupted operation, implemented through battery packs or direct power sources. 
 Omnidirectional Antenna  
-
-Enables 360-degree detection for accurate drone tracking. 
+*Enables 360-degree detection for accurate drone tracking. 
 RF Transceiver  
-
-A critical component responsible for capturing and transmitting RID signals. It will include the following internal elements to ensure optimal performance:  
+* A critical component responsible for capturing and transmitting RID signals. It will include the following internal elements to ensure optimal performance:  
 - Multilayer Diplexer: Separates the received signal into low and high band outputs.  
 - Bandpass Filter: Rejects frequencies outside the 2400-2483.5 MHz and 5030-5091 MHz ranges.  
 - Attenuator: Reduces noise and prevents signal distortion. 
 - Amplifier: Boosts weak signals while maintaining signal integrity.  
 - Mixer (if necessary): Used for demodulation, depending on how the remote ID data is packaged.  
 - Analog-to-Digital Converter (ADC): Converts the RF signal into a digital format for processing by the microprocessor. 
-- Microcontrollers  
-
-Manage and control the various components of the device, ensuring seamless coordination and real-time processing. 
-Memory Modules  
-
-Provide temporary storage for received data, acting as a buffer to prevent data loss during high-traffic scenarios or network delays. 
+* Microcontrollers  
+- Manage and control the various components of the device, ensuring seamless coordination and real-time processing. 
+*Memory Modules  
+- Provide temporary storage for received data, acting as a buffer to prevent data loss during high-traffic scenarios or network delays. 
  
-
 ### Software Components 
 
 PCB Design Tools  
