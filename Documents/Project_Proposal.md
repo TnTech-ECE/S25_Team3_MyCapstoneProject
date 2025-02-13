@@ -142,10 +142,9 @@ Memory Modules
 
 PCB Design Tools  
 * Tools like KiCad or Altium Designer can be used to design and layout printed circuit boards, ensuring efficient and reliable electrical connections. 
-3D Modeling Software  
 
-Software such as AutoCAD or Fusion 360 can be employed for designing the chassis and case, enabling precise modeling and testing of the physical structure. 
-* This modeling software can also be ignored if a prefabricated case is provided/selected.
+3D Modeling Software  
+* Software such as AutoCAD or Fusion 360 can be employed for designing the chassis and case, enabling precise modeling and testing of the physical structure. This modeling software can also be ignored if a prefabricated case is provided/selected.
 
 Programming Languages  
 * Languages such as Python, C, and C++ can be utilized to develop the software that manages data transmission, encodes/decodes network signals, and determines data storage locations.  
