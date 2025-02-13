@@ -224,6 +224,7 @@ Unauthorized drones on Tennessee Tech University’s campus pose significant saf
 ## Broader Implications, Ethics, and Responsibilities as Engineers
 The success and implementation of this project will impact the campus of Tennessee Technological University, in the following ways: 
 - With the additional layer of surveillance, public safety will be improved by the tracking and handling of non-authorized public drone traffic on campus. The drone tracker will also address privacy issues involving drones with cameras.
+- As engineers, the team is responsible for considering potential hazards during and after the implementation process by recommending proper installation and maintenance procedures. 
 - The implementation of this project may result in a minor increase in power allocation from the university, due to the usage of mainline power for the sensor arrays of the tracker.
 - Economic factors may involve a slight increase in financial costs to support the maintenance of a web server, website, and physical hardware required for this project.
 - The broader TTU campus community will feel safer due to an improved regulation of drone usage.
