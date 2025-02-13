@@ -57,10 +57,10 @@ Below the state regulations, there are no specific Putnam County UAS ordinances.
 The specifications of this project, which were primarily determined by the Tennessee Technological University campus police, are as follows:  
  
 
-1. The system shall detect and track remote ID emitting drones flown over the contiguous TTU campus. 
-2. The system shall record and store critical data recovered from the Remote ID signal, until uploaded to the website.
-3. The system shall notify campus police in real-time upon detection of a drone in flight.  
-4. The data shall be displayed in a concise manner to a secure website accessible to campus police dispatchers. 
+1. The system shall detect and track remote ID emitting drones flown over the contiguous TTU campus.
+2. The system shall display the data in a concise manner to a secure website accessible to campus police dispatchers. 
+3. The system shall record and store critical data recovered from the Remote ID signal, until uploaded to the website.
+4. The system shall notify campus police in real-time upon detection of a drone in flight.  
 5. The system shall allow campus police to authorize drones for permitted flights.  
 6. The system shall be designed to minimize further maintenance.  
  
