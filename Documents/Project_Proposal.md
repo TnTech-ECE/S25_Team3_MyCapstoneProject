@@ -141,23 +141,22 @@ Memory Modules
 ### Software Components 
 
 PCB Design Tools  
-
-Tools like KiCad or Altium Designer can be used to design and layout printed circuit boards, ensuring efficient and reliable electrical connections. 
+* Tools like KiCad or Altium Designer can be used to design and layout printed circuit boards, ensuring efficient and reliable electrical connections. 
 3D Modeling Software  
 
 Software such as AutoCAD or Fusion 360 can be employed for designing the chassis and case, enabling precise modeling and testing of the physical structure. 
-This modeling software can also be ignored if a prefabricated case is provided/selected.  
-Programming Languages  
+* This modeling software can also be ignored if a prefabricated case is provided/selected.
 
-Languages such as Python, C, and C++ can be utilized to develop the software that manages data transmission, encodes/decodes network signals, and determines data storage locations.  
+Programming Languages  
+* Languages such as Python, C, and C++ can be utilized to develop the software that manages data transmission, encodes/decodes network signals, and determines data storage locations.  
 Python: Ideal for high-level tasks like data processing and web integration.  
 C/C++: Essential for low-level programming, such as firmware development and real-time processing. 
+
 Embedded Operating Systems  
+* Systems like FreeRTOS or Zephyr can be implemented to provide the framework for managing hardware resources, multitasking, and real-time data processing. 
 
-Systems like FreeRTOS or Zephyr can be implemented to provide the framework for managing hardware resources, multitasking, and real-time data processing. 
 Networking and Communication Protocols  
-
-MQTT: A lightweight messaging protocol for seamless communication between the device and external systems.  
+* MQTT: A lightweight messaging protocol for seamless communication between the device and external systems.  
 HTML: Used for designing user interfaces and web-based dashboards.  
 Visual Studio Code: A versatile code editor for software development and debugging. 
  
