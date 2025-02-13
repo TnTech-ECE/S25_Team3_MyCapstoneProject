@@ -196,7 +196,7 @@ Total: $490 with solar or $450 without solar
 
 The first unit is estimated to cost approximately $100, utilizing the equipment already provided, along with necessary modifications and supplemental components.
 
-### Personel
+### Personnel
 
 #### Engineering Team
 Amanda Bacon: LTSpice, C/C++, Python, Digital Logic, Digital Signal Processing <br>
@@ -222,9 +222,11 @@ Micah Rentschler: The team expects Micah Rentschler to provide guidance and cons
 The implications of solving the problem for the campus police (Our customer) would be allowing the police to more easily ensure that drones do not fly in restricted areas on campus such as the football field. This would also allow them to quickly update the device to allow specified drones into the air space.  If drones do fly into restricted areas, it will allow them to track both the drone and drone operator allowing them to enforce the put into place laws. 
 
 ## Broader Implications, Ethics, and Responsibilities as Engineers
-Consider the project’s broader impacts in global, economic, environmental, and societal contexts. Identify potential negative impacts and propose mitigation strategies. Detail the ethical considerations and responsibilities each team member bears as an engineer. 
-
-The ethics involved in our project are on the simpler side of it due to the nature of the project. If the project is successful there is a possibility of a rise in unregulated drone flights to figure out a way around the system. If the project is unsuccessful there is the probability of incorrect information being given to the police leading to either a waste of police time or worst-case innocent people getting wrongfully arrested. 
+The success and implementation of this project will impact the campus of Tennessee Technological University, in the following ways: 
+• With the additional layer of surveillance, public safety will be improved by the tracking and handling of non-authorized public drone traffic on campus. The drone tracker will also address privacy issues involving drones with cameras. 
+• The implementation of this project may result in a minor increase in power allocation from the university, due to the usage of mainline power for the sensor arrays of the tracker.
+• Economic factors may involve a slight increase in financial costs to support the maintenance of a web server, website, and physical hardware required for this project.
+* The general public of TTU students may feel safer due to an improved regulation of drone usage.
 
 ## References
 [1] “C-sUAS - Edgesource,” Edgesource, Mar. 07, 2024. https://www.edgesource.com/c-suas/?gad_source=1&gclid=CjwKCAiA5Ka9BhB5EiwA1ZVtvIU81T-Bijn2FebQkpRLQ9babd4jQCjz57KS0FSbXfN7X3ajevz0rxoCGE0QAvD_BwE (accessed Feb. 12, 2025). 
