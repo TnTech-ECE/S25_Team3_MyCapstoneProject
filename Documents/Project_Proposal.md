@@ -200,9 +200,13 @@ The first unit is estimated to cost approximately $100, utilizing the equipment 
 
 #### Engineering Team
 Amanda Bacon: LTSpice, C/C++, Python, Digital Logic, Digital Signal Processing <br>
+
 Brett Ballew: MATLAB, C/C++, Microcontrollers, Telecommunications <br>
+
 Tyler Bare: LTSpice, KiCAD, Arduino/C++, Soldering <br>
+
 Erich Krepps: LTSpice, KiCAD, C++, Soldering, Wiring, Digital Logic <br>
+
 Gabrielle Renfroe: LTSpice, AutoCAD, Soldering <br>
 
 This team does not currently have expertise in telecommunications networking. Additional guidance or collaboration for networking-related aspects of the project may be needed. 
