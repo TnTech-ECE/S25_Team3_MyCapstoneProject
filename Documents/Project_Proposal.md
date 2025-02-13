@@ -210,7 +210,7 @@ Dr. Tarek Elfouly: The team elected to have Dr. Tarek Elfouly as a supervisor fo
 Micah Rentschler: The team expects Micah Rentschler to provide guidance and constructive criticism as the project develops. 
 
 ### Timeline
-<ing src = >
+<img src= "/Downloads/Gantt%20Chart%20for%20Project%20Proposal.pdf">
 
 ## Specific Implications
 The implications of solving the problem for the campus police (Our customer) would be allowing the police to more easily ensure that drones do not fly in restricted areas on campus such as the football field. This would also allow them to quickly update the device to allow specified drones into the air space.  If drones do fly into restricted areas, it will allow them to track both the drone and drone operator allowing them to enforce the put into place laws. 
