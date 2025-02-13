@@ -169,22 +169,30 @@ A licensed drone equipped with a remote ID transmitter will be used to test the 
 As this project builds upon the work of the previous senior design team, certain components have already been purchased and are available for a single unit. However, this budget outlines the projected costs per unit, as multiple units will likely be required to adequately serve Tennessee Tech's campus. Software costs have not been included in this estimate, as the majority of the tools to be utilized are free, and any additional software required is likely covered under the university’s existing licenses. 
 
 Power Supply ~ $60 or $20 
-- Solar Panel: $30 
-- Solar Controller: $15 
-- Battery: $15 
-- Dedicated (optional): $20 
+* Solar Panel: $30
+* Solar Controller: $15
+* Battery: $15
+* Dedicated (optional): $20
+
 Omnidirectional Antenna ~ $50 
+
 RF Transceiver ~ $20  
+
 Microcontrollers ~ $170 
-- Main microcontroller: $150 
-- Accessory microcontroller: $20 
+* Main microcontroller: $150
+* Accessory microcontroller: $20
+
 Memory module ~ $30 
+
 Wiring ~ $20 
+
 Enclosure ~ $20 
+
 Mounting Hardware ~ $20 
+
 Misc ~ $100 
-Total: $490 with solar 
-	  $450 without solar 
+
+Total: $490 with solar or $450 without solar 
 
 The first unit is estimated to cost approximately $100, utilizing the equipment already provided, along with necessary modifications and supplemental components.
 
