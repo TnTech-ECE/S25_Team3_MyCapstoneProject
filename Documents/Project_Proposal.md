@@ -54,7 +54,7 @@ Below the state regulations, there are no specific Putnam County UAS ordinances.
 
 ### Specifications and Constraints 
 
-The specifications of this project, which were primarily determined by the Tennessee Technological University campus police, are as follows:  
+#### The specifications of this project, which were primarily determined by the Tennessee Technological University campus police, are as follows:  
  
 
 1. The system shall detect and track remote ID emitting drones flown over the contiguous TTU campus.
@@ -75,7 +75,7 @@ Elaboration on the specifications and constraints of the stakeholders is provide
 - The campus police have specified that the database be accessed through a website, as opposed to an app, due to the security and privacy concerns that would be introduced were the officers to use their personal device on the job. The website will be accessible to the officers on scene and at the office.   
 - The campus police have requested the ability to authorize specific drones for specific time periods via the website. If a drone user has permission to be operating the drone, such as a student filming a sporting event for the university’s social media page, the police will be able to easily confirm this on the website. The authorization of the drone will expire after a certain length of time, which can be edited by the campus police, if needed. The website will keep track of which drones are authorized and which are not.
 
-The project is constrained by the legal standards of the United States of America, the State of Tennessee, and Tennessee Tech. These are the guidelines with which this team will adhere to remain in compliance with the law.
+#### The project is constrained by the legal standards of the United States of America, the State of Tennessee, and Tennessee Tech. These are the guidelines with which this team will adhere to remain in compliance with the law.
 
 Standards regarding Unmanned Aerial Systems: 
 
