@@ -38,4 +38,4 @@ gsm module - stream messages through wifi perchance.
 
 
 ### Next Meeting:
-As it stands: ddmon2025 XXXX to XXXX
+As it stands: 19FEB2025 1530 to 1600
