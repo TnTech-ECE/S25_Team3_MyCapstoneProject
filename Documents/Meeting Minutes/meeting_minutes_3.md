@@ -17,8 +17,8 @@ Team bonding. Hugs and kisses.
 ### Team Assignments:
 * Brett: 
 * Elle : 
-* Tyler: 
-* Erich: Email Abe from old team to get details from old project failure.
+* Tyler: Email Abe from old team to get details from old project failure.
+* Erich: 
 * Mandy: 
 
 ### Things to be done by all:
