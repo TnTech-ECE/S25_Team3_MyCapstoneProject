@@ -4,16 +4,21 @@ Attendance: Tarek Elfouly, Brett Ballew, Tyler Bare, Mandy Bacon, Gabrielle Renf
 
 Advisor meeting. Spoke with Dr. Enfouly about meeting with the old team. Spoke about making presentation on findings of Drone RID tracking. 
 
-## 12FEB2025 1450-XXXX
+## 12FEB2025 1450-2000
 Attendance: Brett Ballew, Tyler Bare, Mandy Bacon, Gabrielle Renfroe, & Erich Krepps
 
-1st round project proposal wrap up. 
+1st round project proposal wrap up. Hours and Hours
+
+## 17FEB2025 1430-1600
+Attendance: Brett Ballew, Tyler Bare, Mandy Bacon, Gabrielle Renfroe, & Erich Krepps
+
+Team bonding. Hugs and kisses.
 
 ### Team Assignments:
 * Brett: 
 * Elle : 
 * Tyler: 
-* Erich: 
+* Erich: Email Abe from old team to get details from old project failure.
 * Mandy: 
 
 ### Things to be done by all:
