@@ -113,7 +113,7 @@ The testing methodology will begin with controlled experiments to validate core 
 
 ## Resources 
 
-The drone tracking device relies on several key components to receive, transmit, and process data, including a power supply, an antenna, an RF transceiver, some microcontrollers, and a memory module. Additionally, specialized software is required for modeling, construction, operation, and communication. This section will provide a detailed breakdown of each component and explain how they will be utilized in the project to achieve the intended objectives. 
+The drone tracking device relies on several key components to receive, transmit, and process data, including a power supply, an antenna, an RF transceiver, some microcontrollers, a spectrum analyzer, a camera, some motors, and a memory module. Additionally, specialized software is required for modeling, construction, operation, and communication. This section will provide a detailed breakdown of each component and explain how they will be utilized in the project to achieve the intended objectives. 
 
 ### Hardware Components 
 
