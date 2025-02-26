@@ -144,7 +144,7 @@ Camera
 Motors
 * Can relay angle information depending on where the camera has spotted a drone.
 
-Memory Modules  
+Memory Module  
 * Provide temporary storage for received data, acting as a buffer to prevent data loss during high-traffic scenarios or network delays. 
  
 ### Software Components 
@@ -177,33 +177,21 @@ A remote ID transmitter will be used to test the system for accuracy. It will be
 
 As this project builds upon the work of the previous senior design team, certain components have already been purchased and are available for a single unit. However, this budget outlines the projected costs per unit, as multiple units will likely be required to adequately serve Tennessee Tech's campus. Software costs have not been included in this estimate, as the majority of the tools to be utilized are free, and any additional software required is likely covered under the university’s existing licenses. 
 
-Power Supply ~ $60 or $20 
-* Solar Panel: $30
-* Solar Controller: $15
-* Battery: $15
-* Dedicated (optional): $20
-
-Omnidirectional Antenna ~ $50 
-
-RF Transceiver ~ $20  
-
-Microcontrollers ~ $170 
-* Main microcontroller: $150
-* Accessory microcontroller: $20
-
-Memory module ~ $30 
-
-Wiring ~ $20 
-
-Enclosure ~ $20 
-
-Mounting Hardware ~ $20 
-
-Misc ~ $100 
-
-Total: $490 with solar or $450 without solar 
-
-The first unit is estimated to cost approximately $100, utilizing the equipment already provided, along with necessary modifications and supplemental components.
+|        Component        | Count |  Unit Cost  |    Total   |
+|        ---------        | ----- |    ------   |   -------  |
+|      Power Supply       |   1   |    $60.00   |    $60.00  |
+| Omnidirectional Antenna |   1   |    $50.00   |    $50.00  |
+|     RF Transceiver      |   1   |    $20.00   |    $20.00  |
+|     Microcontroller     |   2   |   $100.00   |   $200.00  |
+|    Spectrum Analyzer    |   1   |  $1000.00   |  $1000.00  |
+|         Camera          |   1   |   $100.00   |   $100.00  |
+|         Motors          |   2   |    $20.00   |    $40.00  |
+|      Memory Module      |   1   |    $50.00   |    $50.00  |
+|         Wiring          |  N/A  |    $50.00   |    $50.00  |
+|        Enclosure        |   1   |    $20.00   |    $20.00  |
+|     Weather Proofing    |  N/A  |    $20.00   |    $20.00  |
+|    Mounting Hardware    |  N/A  |    $20.00   |    $20.00  |
+|        Misc             |  N/A  |   $200.00   |   $200.00  |
 
 ### Personnel
 
