@@ -191,7 +191,7 @@ As this project builds upon the work of the previous senior design team, certain
 |        Enclosure        |   1   |    $20.00   |    $20.00  |	  $1590.00   |
 |     Weather Proofing    |  N/A  |    $20.00   |    $20.00  |	  $1610.00   |
 |    Mounting Hardware    |  N/A  |    $20.00   |    $20.00  |	  $1630.00   |	
-|        Misc             |  N/A  |   $200.00   |   $200.00  | ** $1830.00 ** |	
+|        Misc             |  N/A  |   $200.00   |   $200.00  | **$1830.00** |	
 
 The first unit is estimated to cost approximately $1500, utilizing the equipment already provided, along with necessary modifications and supplemental components.
 
