@@ -133,7 +133,16 @@ RF Transceiver
 	- Analog-to-Digital Converter (ADC): Converts the RF signal into a digital format for processing by the microprocessor.
 
 Microcontrollers  
-* Manage and control the various components of the device, ensuring seamless coordination and real-time processing. 
+* Manage and control the various components of the device, ensuring seamless coordination and real-time processing.
+
+Spectrum Analyzer
+* Provides the ability to determine when a drone has entered the airspace and at what distance (be able to distinguish from regular Wi-Fi traffic).
+
+Camera
+* Using machine learning, the camera will be able to spot a drone.
+
+Motors
+* Can relay angle information depending on where the camera has spotted a drone.
 
 Memory Modules  
 * Provide temporary storage for received data, acting as a buffer to prevent data loss during high-traffic scenarios or network delays. 
@@ -148,14 +157,14 @@ PCB Design Tools
 
 Programming Languages  
 * Languages such as Python, C, and C++ can be utilized to develop the software that manages data transmission, encodes/decodes network signals, and determines data storage locations.  
-	- Python: Ideal for high-level tasks like data processing and web integration.  
+	- Python: Ideal for high-level tasks like data processing and web integration. Also critital for machine learning. 
 	- C/C++: Essential for low-level programming, such as firmware development and real-time processing. 
 
 Embedded Operating Systems  
 * Systems like FreeRTOS or Zephyr can be implemented to provide the framework for managing hardware resources, multitasking, and real-time data processing. 
 
 Networking and Communication Protocols  
-* MQTT: A lightweight messaging protocol for seamless communication between the device and external systems.
+* MQTT: A lightweight messaging protocol for seamless communication between the device and external systems such as between the tracking device and an operation server.
 * HTML: Used for designing user interfaces and web-based dashboards.
 * Visual Studio Code: A versatile code editor for software development and debugging. 
  
