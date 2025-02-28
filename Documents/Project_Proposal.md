@@ -87,18 +87,18 @@ Standards regarding circuit design:
 
 - IEC 60364-1 - This standard specifies design, installation, and verification of electrical systems to ensure the safety of living beings and properties near it. It pertains to shock, over-current, fault, power interruption, and interference protections.
 
-To ensure compliance with IEC 60364-1 in circuit design, the team will incorporate protective measures against electric shock, overcurrent, faults, power interruptions, and electromagnetic interference by including select components that meet IEC safety standards, implementing proper grounding and insulation, and using circuit breakers or residual-current devices (RCDs) for fault protection. During implementation, the team will adhere to wiring regulations and use correct labeling determined by IEC (International Electrotechnical Commission) to ensure clarity and remove safety risks.
+	- To ensure compliance with IEC 60364-1 in circuit design, the team will incorporate protective measures against electric shock, overcurrent, faults, power interruptions, and electromagnetic interference by including select components that meet IEC safety standards, implementing proper grounding and insulation, and using circuit breakers or residual-current devices (RCDs) for fault protection. During implementation, the team will adhere to wiring regulations and use correct labeling determined by IEC (International Electrotechnical Commission) to ensure clarity and remove safety risks.
 
 Standards regarding data retention at TTU: 
 
 - TTU Policy 403 - This policy defines procedures and standards for 
 the usage of cameras on campus, along with surveillance periods and incident reporting procedures.
 
-To ensure compliance with TTU Policy 403, the tracker’s camera will be installed and operated following established surveillance guidelines including proper incident reporting procedures. Access to recorded footage will not be a concern as the camera will only be used for image recognition. 
+	- To ensure compliance with TTU Policy 403, the tracker’s camera will be installed and operated following established surveillance guidelines including proper incident reporting procedures. Access to recorded footage will not be a concern as the camera will only be used for image recognition. 
 
 - TTU Policy 856 - This policy defines standards and requirements for data security and handling. This policy defines four levels of data security, their encryption requirements, and disposal procedures of the data.
 
-To ensure compliance with TTU Policy 856, the drone tracking data displayed on the website will be classified according to defined security levels, with appropriate encryption measures in place to protect sensitive information. Data disposal procedures will be strictly followed to prevent unauthorized access or misuse.
+	- To ensure compliance with TTU Policy 856, the drone tracking data displayed on the website will be classified according to defined security levels, with appropriate encryption measures in place to protect sensitive information. Data disposal procedures will be strictly followed to prevent unauthorized access or misuse.
 
 ## Survey of Existing Solutions 
 
