@@ -220,7 +220,7 @@ Dr. Tarek Elfouly: The team elected to have Dr. Tarek Elfouly as a supervisor fo
 Micah Rentschler: The team expects Micah Rentschler to provide guidance and constructive criticism as the project develops. 
 
 ### Timeline
-<img src= "/Documents/Gantt Chart for Project Proposal-1.png" width="2000" height="1500">
+<img src= "/Documents/Gantt Chart for Project Proposal (1)-1-1.png" width="3200" height="900">
 
 ## Specific Implications
 Unauthorized drones on Tennessee Tech University’s campus pose significant safety risks, creating challenges for Campus Police. The proposed Drone Tracking Device would provide tangible benefits by offering a proactive solution to monitor and manage drone activity. When an unauthorized drone enters campus airspace, the system would immediately alert Campus Police, enabling them to track its location, speed, altitude, and other critical data in real time. This capability would allow authorities to respond quickly to potential threats, such as drones flying near crowded areas or restricted zones, before incidents like collisions or privacy violations occur. Additionally, the system would grant Campus Police the ability to approve specific drones for flight during special events, ensuring controlled and safe airspace usage. Managed through a secure, exclusive platform, this tool would not only enhance campus safety but also streamline enforcement of drone regulations. By implementing this system, Campus Police would gain a practical and effective way to prevent unauthorized drone operations, reducing risks and improving overall security on campus. 
