@@ -197,8 +197,7 @@ As this project builds upon the work of the previous senior design team, certain
 |    Mounting Hardware    |  N/A  |    $20.00   |    $20.00  |	  $1630.00   |	
 |        Misc             |  N/A  |   $200.00   |   $200.00  | **$1830.00** |	
 
-The first unit is estimated to cost approximately $1500, utilizing the equipment already provided, along with necessary modifications and supplemental components.
-
+The first unit is estimated to cost approximately $1500, utilizing the equipment already provided, along with necessary modifications and supplemental components. If time permits and campus police grant approval, additional units will be installed. Each of these units will function independently while maintaining a connection to the server.
 
 ### Personnel
 
