@@ -58,10 +58,12 @@ Below the state regulations, there are no specific Putnam County UAS ordinances.
  
 
 1. The system shall detect and track remote ID emitting drones flown over the contiguous TTU campus.
-2. The system shall display the data in a concise manner to a secure website accessible only to campus police dispatchers. 
+2. The system shall display the data in a concise manner to a secure website accessible only to campus police dispatchers.
+	- The campus police have specified that the database be accessed through a website, as opposed to an app, due to the security and privacy concerns that would be introduced were the officers to use their personal device on the job. The website will be accessible to the officers on scene and at the office.  
 3. The system shall record and store critical data recovered from the Remote ID signal, until the data is uploaded to the website.
 4. The system shall notify campus police in real-time upon detection of a drone in flight.  
 5. The system shall enable campus police to grant and revoke drone authorizations as needed.
+  	- The campus police have requested the ability to authorize specific drones via the website. If a drone user has permission to be operating the drone, such as a student filming a sporting event for the university’s social media page, the police will be able to easily confirm this on the website. The website will keep track of which drones are authorized and which are not.
 6. The system shall be designed to minimize further maintenance.  
  
 
@@ -71,9 +73,7 @@ Depending on time restraints and the preferences of the campus police, this proj
 3. The system may be extended to track drones over the Golden Eagle Golf Club and the Hyder-Burks Agriculture Pavilion.  
  
 
-Elaboration on the specifications of the stakeholders is provided: 
-- The campus police have specified that the database be accessed through a website, as opposed to an app, due to the security and privacy concerns that would be introduced were the officers to use their personal device on the job. The website will be accessible to the officers on scene and at the office.   
-- The campus police have requested the ability to authorize specific drones via the website. If a drone user has permission to be operating the drone, such as a student filming a sporting event for the university’s social media page, the police will be able to easily confirm this on the website. The website will keep track of which drones are authorized and which are not.
+Elaboration on the specifications of the stakeholders is provided: <---DELETE
 
 #### The project is constrained by the legal standards of the United States of America, the State of Tennessee, and Tennessee Tech. These are the guidelines with which this team will adhere to remain in compliance with the law.
 
