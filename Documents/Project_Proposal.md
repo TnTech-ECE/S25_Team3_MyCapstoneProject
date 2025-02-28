@@ -87,6 +87,8 @@ Standards regarding circuit design:
 
 - IEC 60364-1 - This standard specifies design, installation, and verification of electrical systems to ensure the safety of living beings and properties near it. It pertains to shock, over-current, fault, power interruption, and interference protections.
 
+To ensure compliance with IEC 60364-1 in circuit design, the team will incorporate protective measures against electric shock, overcurrent, faults, power interruptions, and electromagnetic interference by including select components that meet IEC safety standards, implementing proper grounding and insulation, and using circuit breakers or residual-current devices (RCDs) for fault protection. During implementation, the team will adhere to wiring regulations and use correct labeling determined by IEC (International Electrotechnical Commission) to ensure clarity and remove safety risks.
+
 Standards regarding data retention at TTU: 
 
 - TTU Policy 403 - This policy defines procedures and standards for 
