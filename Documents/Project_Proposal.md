@@ -73,8 +73,6 @@ Depending on time restraints and the preferences of the campus police, this proj
 3. The system may be extended to track drones over the Golden Eagle Golf Club and the Hyder-Burks Agriculture Pavilion.  
  
 
-Elaboration on the specifications of the stakeholders is provided: <---DELETE
-
 #### The project is constrained by the legal standards of the United States of America, the State of Tennessee, and Tennessee Tech. These are the guidelines with which this team will adhere to remain in compliance with the law.
 
 Standards regarding Unmanned Aerial Systems: 
