@@ -102,10 +102,10 @@ the usage of cameras on campus, along with surveillance periods and incident rep
 
 ## Survey of Existing Solutions 
 
-Several notable solutions have the potential to meet Campus Police's drone tracking needs. The most capable among them are DJI Aeroscope and Edgesource WindTalker, both of which utilize RF and RID tracking capabilities. However, WindTalker comes with a steep $59,000 price tag, making it financially unfeasible for the university[14]. DJI Aeroscope would face similar cost challenges if it were still in production, which it is not[12][13]. Other available solutions do not fully meet the project’s requirements as will be explained below.
+Several notable solutions have the potential to meet Campus Police's drone tracking needs. The most capable among them are DJI Aeroscope and Edgesource WindTalker, both of which utilize RF and RID tracking capabilities. However, WindTalker comes with a steep $59,000 price tag, making it financially unfeasible for the university [14]. DJI Aeroscope would face similar cost challenges if it were still in production, which it is not [12][13]. Other available solutions do not fully meet the project’s requirements as will be explained below.
 
 1. Radar can be used to track drones, but it is only effective in tracking large scale drones. The drones that the team aims to track in this project are small enough to be mistaken for other objects or animals, such as birds [2].
-2. Several apps have been developed to track drones, such as Drone Scanner. However, these apps rely on the use of mobile devices which Campus Police requested this project avoid[3].
+2. Several apps have been developed to track drones, such as Drone Scanner. However, these apps rely on the use of mobile devices which Campus Police requested this project avoid [3].
 
 ## Measures of Success 
 
