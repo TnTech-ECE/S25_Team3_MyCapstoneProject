@@ -4,13 +4,18 @@ Attendance: Brett Ballew, Tyler Bare, Mandy Bacon, Gabrielle Renfroe, & Erich Kr
 
 Team bonding. Emails sent to Abe (previous design team) and IT (for wifi router potential access). 
 
-## ddmon2025 XXXX-XXXX
-Attendance: Brett Ballew, Tyler Bare, Mandy Bacon, Gabrielle Renfroe, & Erich Krepps
+## 26FEB2025 1500-1600
+Attendance: Dr. Elfouly Brett Ballew, Tyler Bare, Mandy Bacon, Gabrielle Renfroe, & Erich Krepps
 
-meeting overview
+Met with advisor and discussed new approach to drone tracker. Usage of camera and spectrum analyzer.
+
+## 27FEB2025 1600-1900
+Attendance: Brett Ballew, Tyler Bare, Mandy Bacon, & Erich Krepps
+
+Series of project proposal corrections
 
 ### Team Assignments:
-* Brett: 
+* Brett: Machine Learning
 * Elle : 
 * Tyler: 
 * Erich: 
@@ -18,11 +23,10 @@ meeting overview
 
 ### Things to be done by all:
 
-Work on PowerPoint
-Conceptual design brainstorming
+Start work on conceptual design
 
 ### Important Notes
 
 
 ### Next Meeting:
-As it stands: ddmon2025 XXXX to XXXX
+As it stands: 03MAR2025 1430 to 1600
