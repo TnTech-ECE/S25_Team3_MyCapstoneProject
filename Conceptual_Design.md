@@ -19,7 +19,7 @@ For example, unauthorized drones are often reported over university athletic eve
 Other than in a few special cases, the usage of unmanned aircraft systems on the Tennessee Technological University campus is not permitted according to university policies. Be that as it may, the campus police continue to receive complaints of drones causing security, safety, and privacy issues. Without a system in place to locate the offending devices, the officers face a great challenge of actually tracking down the drones and their users. In response to that challenge, this team has been tasked with creating an electronic sensing system to automatically detect these drones and alert the TTU campus police of their presence. Information about the illicit drones will be relayed to the police department via a private website, so that they can assess the threat to campus security and take whatever action they deem necessary. The drone tracking system will meet the specifications defined by the police department, while adhering to all constraints placed upon it by the existing standards for operation, the ethical responsibilities of engineers, and the potential broader impact of the system. The specifications and constraints for this drone tracking system are expounded below. 
 
 ### Drone Tracking System Specifications
-In accordance with the expectations of the TTU campus police department, this project shall do the following: 
+#### In accordance with the expectations of the TTU campus police department, this project shall do the following: 
 1. The system shall detect and track remote ID emitting drones flown over the contiguous TTU campus.
 2. The system shall display the data in a concise manner to a secure website accessible only to campus police dispatchers. The campus police have specified that the database be accessed through a website, as opposed to an app, due to the security and privacy concerns that would be introduced were the officers to use their personal device on the job. The website will be accessible to the officers on scene and at the office.  
 3. The system shall record and store critical data recovered from the Remote ID signal, until the data is uploaded to the website.
@@ -27,10 +27,14 @@ In accordance with the expectations of the TTU campus police department, this pr
 5. The system shall enable campus police to grant and revoke drone authorizations as needed. The campus police have requested the ability to authorize specific drones via the website. If a drone user has permission to be operating the drone, such as a student filming a sporting event for the university’s social media page, the police will be able to easily confirm this on the website. The website will keep track of which drones are authorized and which are not.
 6. The system shall be designed to minimize further maintenance.
 
-Depending on time restraints and the preferences of the campus police, this project may also do the following: 
+#### Depending on time restraints and the preferences of the campus police, this project may also do the following: 
 1. The system may determine the location of the drone’s user and upload this information to the website.
 2. The system may increase the urgency of the alert if a drone is detected in a specific geographical region deemed of higher importance. 
 3. The system may be extended to track drones over the Golden Eagle Golf Club and the Hyder-Burks Agriculture Pavilion.
+
+### Drone Tracking System Constraints
+#### The drone tracking system will be constrained in a manner of different ways.
+blah blah blah
 ### Background 
 
 Each month, the FAA receives numerous reports from various sources, including pilots and law enforcement, highlighting unauthorized flights of unmanned aircraft systems (UAS). These reports detail specific cases where drone operators’ incompetence has potentially endangered lives. To understand how the team's drone tracking project seeks to protect civilian lives, maintain privacy, and ensure security, it’s essential to examine the origins of UAS regulations and the constraints placed on drones at TTU campuses. 
