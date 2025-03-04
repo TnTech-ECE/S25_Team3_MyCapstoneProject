@@ -35,7 +35,7 @@ The drone tracking system must comply with all pertinent federal and state laws 
 
 #### Standards regarding data retention
 
-### Ethical Responsibilities
+### Ethical and Professional Responsibilities
 The drone tracking system is intended to aid the Tennessee Tech police department in their mission to effectuate order and safety across campus. It is not intended to make students, faculty, staff, or any other person on the TTU campus feel as though their freedoms are being infringed upon. In the prevalent digital landscape of today, some people already feel as though they are under constant surveillance, and it is possible that with the implementation of this system, that feeling will be increased. However, by being enrolled at or employed by Tennessee Tech, students and employees consent to all university policies, including TTU Policy 190. This is the key university policy regarding drone usage, which says that all users "must comply with any local, state, and federal policies and standards." One such law is __________.
 
 Whether or not the use of the drone in question is reckless and meriting suppression is ultimately decided by the dispatcher on the case, who must then determine the best and most professionally correct way to proceed. With all this taken into consideration, the engineering team believes that the creation of a device to simply alert the police of a drone's presence does not in itself create any serious ethical issues. The way by which the individual dispatchers will respond to these alerts is left to the discretion and ethical convictions of the Tech police department. 
