@@ -6,14 +6,6 @@ Tennessee Technological University
 	
 ## Introduction 
 
-Unmanned Aircraft Systems (UAS), commonly referred to as drones, have gained significant popularity in recent years due to their innovative features and wide-ranging capabilities. However, not all drone operators prioritize safety or respect for others' privacy, leading to an increase in unsafe drone activities. In response, the Federal Aviation Administration (FAA) implemented a regulation in 2023 that mandates drones to transmit a remote identification (RID) signal. Based on this RID, the team proposes a drone tracking device that will alert the Tennessee Technological University (TTU) Police when an unauthorized drone emitting an RID signal enters the campus grounds. 
-
-The purpose of this tracking device is to assist the TTU Police in addressing campus safety, privacy, and security issues caused by improper drone use. The team aims to address safety concerns including drones flying too close to students and staff, creating collision hazards; drones flying near power lines or other campus infrastructure, causing damage; and drones distracting students or staff, particularly while driving or engaging in other focused activities. Privacy and security issues the team seeks to reduce include drones flying near private areas, such as dorm rooms, and invading restricted zones like construction sites. In addition to addressing these safety, privacy, and security concerns, the drone tracking device will help enforce TTU’s drone policy (Policy 190), which requires compliance with local, state, and federal regulations to operate a drone on TTU property. 
-
-To achieve these goals, the drone tracking device will collect and store data from RID signals and transmit this information to TTU Police via a secure website. The website will display details such as the drone's RID (serial number), location, altitude, velocity, control station location (depending on RID emitter), time stamps, and emergency status. TTU Police will also have the ability to grant or deny access to specific RID-emitting drones for defined periods. If the device detects an unapproved serial number, a warning will be sent to the TTU Police, and real-time flight information will be accessible on the website. 
-
-For example, unauthorized drones are often reported over university athletic events. This is a safety issue for the student-athletes, and campus police are often notified to resolve the issue. With the implementation of a drone tracking system, dispatchers would be able to notify the officers of the unauthorized drone and easily relay the necessary information for the issue to be resolved. Illegal drone usage also poses serious risks to privacy on campus. Drones can be used in stalking or harassment cases; one such situation would be a drone filming into a window in on-campus housing. Currently, if such a situation were to be reported, it would be very difficult for the operator to be located. A drone tracking system would make it much easier to stop this sort of illegal activity. 
-
 ## The Fully Formulated Problem
 
 Other than in a few special cases, the usage of unmanned aircraft systems on the Tennessee Technological University campus is not permitted according to university policies. Be that as it may, the campus police continue to receive complaints of drones causing security, safety, and privacy issues. Without a system in place to locate the offending devices, the officers face a great challenge of actually tracking down the drones and their users. In response to that challenge, this team has been tasked with creating an electronic sensing system to automatically detect these drones and alert the TTU campus police of their presence. Information about the illicit drones will be relayed to the police department via a private website, so that they can assess the threat to campus security and take whatever action they deem necessary. The drone tracking system will meet the specifications defined by the police department, while adhering to all constraints placed upon it by the existing standards for operation, the ethical responsibilities of engineers, and the potential broader impact of the system. The specifications and constraints for this drone tracking system are expounded below. 
@@ -33,13 +25,15 @@ Other than in a few special cases, the usage of unmanned aircraft systems on the
 3. The system may be extended to track drones over the Golden Eagle Golf Club and the Hyder-Burks Agriculture Pavilion.
 
 ### Drone Tracking System Constraints
-The drone tracking system is primarily contrained by the legal standards of the United States of America, the State of Tennessee, and Tennessee Tech University. It is additionally constrained by the ethical and professional duties levied on all engineers in the process of designing a new product. The legal and moral obligations by which this project is constrained are examined in closer detail in the Ethical, Professional, and Standards Consideration section immediately below. 
+The drone tracking system is primarily contrained by the legal standards of the United States of America, the State of Tennessee, and Tennessee Tech University. It is additionally constrained by the ethical and professional duties levied on all engineers in the process of designing a new product. The specific legal and moral obligations by which this project is constrained are examined in closer detail in the Ethical, Professional, and Standards Consideration section immediately below. 
 
 ## Ethical, Professional, and Standards Consideration
 ### Legal Standards
-#### Federal Level Standards
+The drone tracking system must comply with all pertinent federal and state laws and with all applicable TTU policies. The way by which this team intends to adhere to each of these laws and policies is explained categorically here.
 
-#### TTU Policies
+#### Standards regarding circuit design
+
+#### Standards regarding data retention
 
 ### Ethical Responsibilities
 
@@ -49,6 +43,36 @@ The drone tracking system is primarily contrained by the legal standards of the 
 
 
 
+
+
+
+
+
+
+Standards regarding circuit design: 
+
+- IEC 60364-1 - This standard specifies design, installation, and verification of electrical systems to ensure the safety of living beings and properties near it. It pertains to shock, over-current, fault, power interruption, and interference protections.
+
+	- To ensure compliance with IEC 60364-1 in circuit design, the team will incorporate protective measures against electric shock, overcurrent, faults, power interruptions, and electromagnetic interference by including select components that meet IEC safety standards, implementing proper grounding and insulation, and using circuit breakers or residual-current devices (RCDs) for fault protection. During implementation, the team will adhere to wiring regulations and use correct labeling determined by IEC (International Electrotechnical Commission) to ensure clarity and remove safety risks.
+
+Standards regarding data retention at TTU: 
+
+- TTU Policy 403 - This policy defines procedures and standards for 
+the usage of cameras on campus, along with surveillance periods and incident reporting procedures.
+
+	- To ensure compliance with TTU Policy 403, the tracker’s camera will be installed and operated following established surveillance guidelines including proper incident reporting procedures. Access to recorded footage will not be a concern as the camera will only be used for image recognition. 
+
+- TTU Policy 856 - This policy defines standards and requirements for data security and handling. This policy defines four levels of data security, their encryption requirements, and disposal procedures of the data.
+
+	- To ensure compliance with TTU Policy 856, the drone tracking data displayed on the website will be classified according to defined security levels, with appropriate encryption measures in place to protect sensitive information. Data disposal procedures will be strictly followed to prevent unauthorized access or misuse.
+
+
+
+
+
+
+
+for the drones and users themselves: 
 ### Background 
 
 Each month, the FAA receives numerous reports from various sources, including pilots and law enforcement, highlighting unauthorized flights of unmanned aircraft systems (UAS). These reports detail specific cases where drone operators’ incompetence has potentially endangered lives. To understand how the team's drone tracking project seeks to protect civilian lives, maintain privacy, and ensure security, it’s essential to examine the origins of UAS regulations and the constraints placed on drones at TTU campuses. 
@@ -87,7 +111,6 @@ State laws in Tennessee, as established by the Tennessee General Assembly, provi
 Below the state regulations, there are no specific Putnam County UAS ordinances. However, TTU Police, who will use and enforce the drone tracking system, must consider safety regulations. Ultimately, it is up to TTU Police to understand the regulations, determine what is permissible on campus, and handle any violations accordingly. 
 
 
-#### The project is constrained by the legal standards of the United States of America, the State of Tennessee, and Tennessee Tech. These are the guidelines with which this team will adhere to remain in compliance with the law.
 
 Standards regarding Unmanned Aerial Systems: 
 
@@ -96,23 +119,6 @@ Standards regarding Unmanned Aerial Systems:
 - FCC 47 CFR Part 15 - This standard pertains to electrical and electronic devices that emit or absorb radio frequencies within the 9 kHz to 3,000 GHz range. This standard limits power and exposure levels to prevent interference and endangerment to living beings.
 - IEEE 802.11 - This regulates implementation standards for WIFI Networks, Local Area Networks, and MAC Address protocols. It also defines frequency bands and collision-avoidance protocols for wireless transmissions. 
  
-
-Standards regarding circuit design: 
-
-- IEC 60364-1 - This standard specifies design, installation, and verification of electrical systems to ensure the safety of living beings and properties near it. It pertains to shock, over-current, fault, power interruption, and interference protections.
-
-	- To ensure compliance with IEC 60364-1 in circuit design, the team will incorporate protective measures against electric shock, overcurrent, faults, power interruptions, and electromagnetic interference by including select components that meet IEC safety standards, implementing proper grounding and insulation, and using circuit breakers or residual-current devices (RCDs) for fault protection. During implementation, the team will adhere to wiring regulations and use correct labeling determined by IEC (International Electrotechnical Commission) to ensure clarity and remove safety risks.
-
-Standards regarding data retention at TTU: 
-
-- TTU Policy 403 - This policy defines procedures and standards for 
-the usage of cameras on campus, along with surveillance periods and incident reporting procedures.
-
-	- To ensure compliance with TTU Policy 403, the tracker’s camera will be installed and operated following established surveillance guidelines including proper incident reporting procedures. Access to recorded footage will not be a concern as the camera will only be used for image recognition. 
-
-- TTU Policy 856 - This policy defines standards and requirements for data security and handling. This policy defines four levels of data security, their encryption requirements, and disposal procedures of the data.
-
-	- To ensure compliance with TTU Policy 856, the drone tracking data displayed on the website will be classified according to defined security levels, with appropriate encryption measures in place to protect sensitive information. Data disposal procedures will be strictly followed to prevent unauthorized access or misuse.
 
 
 
