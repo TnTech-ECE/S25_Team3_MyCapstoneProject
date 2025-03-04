@@ -29,12 +29,26 @@ Other than in a few special cases, the usage of unmanned aircraft systems on the
 
 #### Depending on time restraints and the preferences of the campus police, this project may also do the following: 
 1. The system may determine the location of the drone’s user and upload this information to the website.
-2. The system may increase the urgency of the alert if a drone is detected in a specific geographical region deemed of higher importance. 
+2. The system may increase the urgency of the alert if a drone is detected in a specific geographical region deemed of higher importance by the police department. 
 3. The system may be extended to track drones over the Golden Eagle Golf Club and the Hyder-Burks Agriculture Pavilion.
 
 ### Drone Tracking System Constraints
-#### The drone tracking system will be constrained in a manner of different ways.
-blah blah blah
+The drone tracking system is primarily contrained by the legal standards of the United States of America, the State of Tennessee, and Tennessee Tech University. It is additionally constrained by the ethical and professional duties levied on all engineers in the process of designing a new product. The legal and moral obligations by which this project is constrained are examined in closer detail in the Ethical, Professional, and Standards Consideration section immediately below. 
+
+## Ethical, Professional, and Standards Consideration
+### Legal Standards
+#### Federal Level Standards
+
+#### TTU Policies
+
+### Ethical Responsibilities
+
+### Broader Impact
+
+
+
+
+
 ### Background 
 
 Each month, the FAA receives numerous reports from various sources, including pilots and law enforcement, highlighting unauthorized flights of unmanned aircraft systems (UAS). These reports detail specific cases where drone operators’ incompetence has potentially endangered lives. To understand how the team's drone tracking project seeks to protect civilian lives, maintain privacy, and ensure security, it’s essential to examine the origins of UAS regulations and the constraints placed on drones at TTU campuses. 
@@ -72,26 +86,6 @@ State laws in Tennessee, as established by the Tennessee General Assembly, provi
  
 Below the state regulations, there are no specific Putnam County UAS ordinances. However, TTU Police, who will use and enforce the drone tracking system, must consider safety regulations. Ultimately, it is up to TTU Police to understand the regulations, determine what is permissible on campus, and handle any violations accordingly. 
 
-### Specifications and Constraints 
-
-#### The specifications of this project, which were primarily determined by the Tennessee Technological University campus police, are as follows:  
- 
-
-1. The system shall detect and track remote ID emitting drones flown over the contiguous TTU campus.
-2. The system shall display the data in a concise manner to a secure website accessible only to campus police dispatchers.
-	- The campus police have specified that the database be accessed through a website, as opposed to an app, due to the security and privacy concerns that would be introduced were the officers to use their personal device on the job. The website will be accessible to the officers on scene and at the office.  
-3. The system shall record and store critical data recovered from the Remote ID signal, until the data is uploaded to the website.
-4. The system shall notify campus police in real-time upon detection of a drone in flight.  
-5. The system shall enable campus police to grant and revoke drone authorizations as needed.
-  	- The campus police have requested the ability to authorize specific drones via the website. If a drone user has permission to be operating the drone, such as a student filming a sporting event for the university’s social media page, the police will be able to easily confirm this on the website. The website will keep track of which drones are authorized and which are not.
-6. The system shall be designed to minimize further maintenance.  
- 
-
-Depending on time restraints and the preferences of the campus police, this project may also do the following: 
-1. The system may determine the location of the drone’s user and upload this information to the website.
-2. The system may increase the urgency of the alert if a drone is detected in a specific geographical region deemed of higher importance. 
-3. The system may be extended to track drones over the Golden Eagle Golf Club and the Hyder-Burks Agriculture Pavilion.  
- 
 
 #### The project is constrained by the legal standards of the United States of America, the State of Tennessee, and Tennessee Tech. These are the guidelines with which this team will adhere to remain in compliance with the law.
 
@@ -119,6 +113,14 @@ the usage of cameras on campus, along with surveillance periods and incident rep
 - TTU Policy 856 - This policy defines standards and requirements for data security and handling. This policy defines four levels of data security, their encryption requirements, and disposal procedures of the data.
 
 	- To ensure compliance with TTU Policy 856, the drone tracking data displayed on the website will be classified according to defined security levels, with appropriate encryption measures in place to protect sensitive information. Data disposal procedures will be strictly followed to prevent unauthorized access or misuse.
+
+
+
+
+
+
+
+
 
 ## References
 [1] “C-sUAS - Edgesource,” Edgesource, Mar. 07, 2024. https://www.edgesource.com/c-suas/?gad_source=1&gclid=CjwKCAiA5Ka9BhB5EiwA1ZVtvIU81T-Bijn2FebQkpRLQ9babd4jQCjz57KS0FSbXfN7X3ajevz0rxoCGE0QAvD_BwE (accessed Feb. 12, 2025). 
@@ -150,12 +152,12 @@ the usage of cameras on campus, along with surveillance periods and incident rep
 [14] "CYB21-0049" www.highergov.com, 2022. https://www.highergov.com/subcontract/N0042117D0008-N0042120F1029-CYB21-0049/#:~:text=CYB21-0049%20worth%20$59000.00%20awarded%20to%20Edgesource%20Corporation,for%20WINDTALKER%20SYSTEM%2C%20INSTALLATION%20AND%20SERVICE%20DESK. (accessed Feb. 27, 2025)
 
 ## Statement of Contributions
-Amanda Bacon: Formulating the Problem, Specifications and Constraints, Skills, Broader Implications 
+Amanda Bacon: 
 
-Brett Ballew: Resources, Budget, Skills, References, Specific Implications 
+Brett Ballew:  
 
-Tyler Bare: Measures of Success, Timeline, Skills, References, Broader Implications
+Tyler Bare: 
 
-Erich Krepps: Survey of Existing Solutions, Specific Implications, Broader Implications, Skills, References 
+Erich Krepps:  
 
-Elle Renfroe: Introduction, Background, Skills, References 
+Elle Renfroe: 
