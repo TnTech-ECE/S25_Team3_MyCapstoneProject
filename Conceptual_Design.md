@@ -33,10 +33,10 @@ The drone tracking system is primarily contrained by the legal standards of the 
 
 ## Ethical, Professional, and Standards Consideration
 ### Legal Standards
-The drone tracking system must comply with all pertinent federal and state laws and with all applicable TTU policies. The way by which this team intends to adhere to each of these laws and policies is explained here. In regards to circuit design, the applicable standard is IEC 60364-1, which requires that the system be designed and installed in a way that does not produce a shock, over-current, fault, power interruption, or interference so as to ensure the safety of living beings and properties near the system. The team will comply with this standard by ________. In regards to data transmission and storage, the applicable standards are included in TTU Policy 403 and TTU Policy 856.
+The drone tracking system must comply with all pertinent federal and state laws and with all applicable TTU policies. The way by which this team intends to adhere to each of these laws and policies is explained here. In regards to circuit design, the applicable standard is IEC 60364-1, which requires that the system be designed and installed in a way that does not produce a shock, over-current, fault, power interruption, or interference so as to ensure the safety of living beings and properties near the system. In regards to data transmission and storage, the applicable standards are included in TTU Policy 403 and TTU Policy 856. The first of these two policies is related to proper incident reporting. 
 
 
-The tracker’s camera must adhere to the standards relating to surveillance given by TTU policy 403.  Policy 403 relates to proper incident reporting which does not apply to the tracker’s camera which is only being used for image recognition. The website where the tracker will display its’ data will follow TTU policy 856. TTU policy 856 states four levels of data security, their encryption requirements, and disposal procedures of the collected data.  
+Policy 403 relates to proper incident reporting which does not apply to the tracker’s camera which is only being used for image recognition. The website where the tracker will display its’ data will follow TTU policy 856. TTU policy 856 states four levels of data security, their encryption requirements, and disposal procedures of the collected data.  
 
 The drone tracking system shall adhere to the following standards to ensure lessened impact on the environment and public safety. 
 
