@@ -48,6 +48,7 @@ To minimize risks, the system incorporates several safeguards. Detection redunda
 The design also optimizes resource utilization by maximizing available resources and minimizing waste. Hardware efficiency is achieved through the selection of cost-effective yet high-performing components, such as the RF transceiver, spectrum analyzer, and microcontroller, while the omnidirectional antenna ensures 360-degree coverage, reducing the need for multiple units in small areas. Software optimization is accomplished through the use of open-source tools like KiCad for PCB design and FreeRTOS for embedded systems, as well as university-licensed software such as AutoCAD and Visual Studio Code. Python and C/C++ are utilized for their versatility in high-level data processing and low-level firmware development. The modular design allows for incremental deployment, starting with high-priority areas like athletic fields and dormitories, and expanding to additional zones like the Golden Eagle Golf Club as resources permit. Finally, the system is designed for long-term reliability, with weatherproofing and durable components reducing the need for frequent maintenance. 
 
 ### Hardware Block Diagram
+<img src= "/Documents/Images/Hardware Block Diagram.png" width="3200" height="900">
 
 ### Operational Flowchart
 <img src= "/Documents/Images/Conceptual Design - Flow Chart.png" width="3200" height="900">
