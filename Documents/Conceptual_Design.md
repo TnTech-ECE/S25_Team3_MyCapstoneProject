@@ -108,13 +108,13 @@ The first unit is estimated to cost approximately $1500, utilizing the equipment
 ### Division of Labor
 Amanda Bacon: Website/Server/Database; Power Supply
 
-Brett Ballew: Spectrum Analyzer
+Brett Ballew: Spectrum Analyzer Module
 
-Tyler Bare: Camera
+Tyler Bare: Camera Module
 
-Erich Krepps: Central Processor
+Erich Krepps: Central Processor (Rasperry Pi)
 
-Gabrielle Renfroe: Wi-Fi/Bluetooth RID
+Gabrielle Renfroe: Wi-Fi/RID Module
 
 ### Timeline
 <img src= "/Documents/Images/Gantt Chart for Project Proposal Updated!.png" width="3200" height="900">
