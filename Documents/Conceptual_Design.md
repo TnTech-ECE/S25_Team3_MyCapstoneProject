@@ -112,7 +112,7 @@ Brett Ballew: Spectrum Analyzer Module
 
 Tyler Bare: Camera Module
 
-Erich Krepps: Central Processor (Rasperry Pi)
+Erich Krepps: Central Computer (Rasperry Pi)
 
 Gabrielle Renfroe: Wi-Fi/RID Module
 
