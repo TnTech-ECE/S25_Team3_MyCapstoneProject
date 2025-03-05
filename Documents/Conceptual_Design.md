@@ -48,6 +48,7 @@ The team belives that the impact of this project on the general public of Tennes
 ### Hardware Block Diagram
 
 ### Operational Flowchart
+<img src= "/Documents/Images/Conceptual Design - Flow Chart (1).png" width="3200" height="900">
 
 ## Atomic Subsystem Specifications
 
