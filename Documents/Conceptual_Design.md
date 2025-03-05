@@ -139,6 +139,6 @@ Brett Ballew: High Level Solution; Hardware Block Diagram; Budget
 
 Tyler Bare: High Level Solution; Hardware Block Diagram; Operational Flowchart
 
-Erich Krepps: Ethical, Professional, and Standards Contributions; Operational Flowchart; Comparative Analysis of Potential Solutions
+Erich Krepps: Comparative Analysis of Potential Solutions; Operational Flowchart; Legal Standards
 
 Gabrielle Renfroe: Introduction; Comparative Analysis of Potential Solutions
