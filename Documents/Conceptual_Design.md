@@ -9,7 +9,7 @@ Unmanned Aircraft Systems, commonly referred to as drones, have gained significa
 
 The drone tracking system will automatically alert the police every time an unauthorized drone is detected over the contiguous university campus. It will do this by collecting and storing data from radio frequency (RF) and Wi-Fi signals emitted from the drone and transmitting this information to the TTU police department via a secure website. The website will display details such as the drone's location, altitude, velocity, time stamps, and emergency status. It will also give the police the ability to grant or deny access to particular drones for certain periods. If the device detects an unapproved RF signal, a warning will be sent to the TTU police, and real-time flight information will be accessible on the website. With the implementation of this drone tracking system, the Tennessee Tech campus police will be better equipped to foster safety, privacy, and security across campus. 
 
-## The Fully Formulated Problem
+## Fully Formulated Problem
 Other than in a few special cases, the usage of unmanned aircraft systems on the Tennessee Technological University campus is not permitted according to university policies. Be that as it may, the campus police continue to receive complaints of drones causing security, safety, and privacy issues. Without a system in place to locate the offending devices, the officers face a great challenge of actually tracking down the drones and their users. In response to that challenge, this team has been tasked with creating an electronic sensing system to automatically detect these drones and alert the TTU campus police of their presence. Information about the illicit drones will be relayed to the police department via a private website, so that they can assess the threat to campus security and take whatever action they deem necessary. The drone tracking system will meet the specifications defined by the police department, while adhering to all constraints placed upon it by the existing standards for operation, the ethical responsibilities of engineers, and the potential broader impact of the system. The specifications and constraints for this drone tracking system are expounded below. 
 
 ### Drone Tracking System Specifications
@@ -54,6 +54,21 @@ The design also optimizes resource utilization by maximizing available resources
 <img src= "/Documents/Images/Conceptual Design - Flow Chart.png" width="3200" height="900">
 
 ## Atomic Subsystem Specifications
+The purpose of this section is to explain the operation of each of the atomic subsystems indicated in the Hardware Block Diagram in more detail. 
+
+### Power Supply
+The power supply module shall convert AC power into usable DC voltage for the system components. It shall first step down the AC voltage using a transformer and then convert it to DC using an AC/DC converter. The regulated DC power shall be distributed via a bus to various modules, including the microcomputer (Raspberry Pi) and the camera module, ensuring they receive the necessary power for operation.
+
+### Spectrum Analyzer
+
+### Camera
+
+### Wi-Fi/RID Receiver
+
+### Microcomputer (Raspberry Pi)
+
+### Server/Website
+The server shall receive RF signal data from the spectrum analyzer module and packet information from the Wi-Fi/RF receiver via the Raspberry Pi microcomputer. The microcomputer shall process the data and transfer it to the server storage using a file transfer protocol. Once stored, the data processing unit shall analyze the information and make it accessible to the police on a private website. An intuitive user interface shall allow the police to interact with and interpret the captured data in real time.
 
 ## Ethical, Professional, and Standards Consideration
 ### Legal Standards
