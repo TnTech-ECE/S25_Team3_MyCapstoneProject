@@ -59,7 +59,7 @@ The team belives that the impact of this project on the general public of Tennes
 ### Division of Labor
 
 ### Timeline
-<img src= "/Documents/Gantt Chart for Project Proposal (1)-1-1.png" width="3200" height="900">
+<img src= "/Documents/Images/Gantt Chart for Project Proposal (1)-1-1.png" width="3200" height="900">
 
 ## References
 [1] “C-sUAS - Edgesource,” Edgesource, Mar. 07, 2024. https://www.edgesource.com/c-suas/?gad_source=1&gclid=CjwKCAiA5Ka9BhB5EiwA1ZVtvIU81T-Bijn2FebQkpRLQ9babd4jQCjz57KS0FSbXfN7X3ajevz0rxoCGE0QAvD_BwE (accessed Feb. 12, 2025). 
