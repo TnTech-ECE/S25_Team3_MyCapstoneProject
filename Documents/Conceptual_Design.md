@@ -54,7 +54,7 @@ The design also optimizes resource utilization by maximizing available resources
 <img src= "/Documents/Images/Conceptual Design - Flow Chart.png" width="3200" height="900">
 
 ## Atomic Subsystem Specifications
-The purpose of this section is to explain the operation of each of the atomic subsystems indicated in the Hardware Block Diagram in more detail. 
+The purpose of this section is to explain the operation of each of the atomic subsystems indicated in the Hardware Block Diagram in more detail. <--- DO WE NEED TO DELETE THIS
 
 ### Power Supply
 The power supply module shall convert AC power into usable DC voltage for the system components. It shall first step down the AC voltage using a transformer and then convert it to DC using an AC/DC converter. The regulated DC power shall be distributed via a bus to various modules, including the microcontroller (Raspberry Pi) and the camera module, ensuring they receive the necessary power for operation.
