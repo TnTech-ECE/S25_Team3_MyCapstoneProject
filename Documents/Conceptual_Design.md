@@ -62,6 +62,7 @@ The power supply module shall convert AC power into usable DC voltage for the sy
 ### Spectrum Analyzer
 
 ### Camera
+The camera module shall be responsible for capturing visual data to detect and track drones within its field of view. It shall work in conjunction with a motorized chassis to adjust its orientation and calculate the angle of the drone's position relative to the system. The captured images shall be processed using a machine learning algorithm to identify whether the object in the image is a drone. If a drone is detected, the subsystem shall track its movement and provide real-time data to the Central Processor for further analysis and action.
 
 ### Wi-Fi/RID Receiver
 
