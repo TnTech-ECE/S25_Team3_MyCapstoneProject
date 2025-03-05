@@ -4,17 +4,17 @@ Attendance: Brett Ballew, Tyler Bare, Mandy Bacon, Gabrielle Renfroe, & Erich Kr
 
 Started conceptual design work. Discussed Spectrum Analyzer & RID task assigned by Dr. Elfouly.
 
-## ddmon2025 XXXX-XXXX
-Attendance: Brett Ballew, Tyler Bare, Mandy Bacon, Gabrielle Renfroe, & Erich Krepps
+## 05MAR2025 1400-1600
+Attendance: Dr. Elfouly, Brett Ballew, Tyler Bare, Mandy Bacon, Gabrielle Renfroe, & Erich Krepps
 
-meeting overview
+Conceptual Design clean up. Met with Dr. Elfouly and went through conceptual design details as well as what we need to do next.
 
 ### Team Assignments:
-* Brett: RF Analyzer
-* Elle : Tweak
-* Tyler: RF Analyzer
-* Erich: Tweak
-* Mandy: Tweak
+* Brett: Spectrum Analyzer Module
+* Elle : Wi-Fi/RID Module
+* Tyler: Camera Module
+* Erich: Central Computer
+* Mandy: Server/Website/Database
 
 ### Things to be done by all:
 
