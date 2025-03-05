@@ -60,11 +60,13 @@ The purpose of this section is to explain the operation of each of the atomic su
 The power supply module shall convert AC power into usable DC voltage for the system components. It shall first step down the AC voltage using a transformer and then convert it to DC using an AC/DC converter. The regulated DC power shall be distributed via a bus to various modules, including the microcomputer (Raspberry Pi) and the camera module, ensuring they receive the necessary power for operation.
 
 ### Spectrum Analyzer
+The Spectrum Analyzer (SA) Module shall be mated with an omnidirectional antenna for the frequency range of 2.4 GHz to 5.8 GHz. The SA shall transmit digital data from the sampled RF signal to the microcontroller. The microcontroller shall utilize machine learning to detect the presence of a drone RF signal while also calculating the power of the signal (utilized for distance calculation). When a drone RF signal is detected, appropriate data (power of RF signal and frequency), shall be sent to the Central Microcomputer for transmission to the server.
 
 ### Camera
 The camera module shall be responsible for capturing visual data to detect and track drones within its field of view. It shall work in conjunction with a motorized chassis to adjust its orientation and calculate the angle of the drone's position relative to the system. The captured images shall be processed using a machine learning algorithm to identify whether the object in the image is a drone. If a drone is detected, the subsystem shall track its movement and provide real-time data to the Central Processor for further analysis and action.
 
 ### Wi-Fi/RID Receiver
+Minion Banana
 
 ### Central Processor (Raspberry Pi)
 The central processor shall send a digital signal to the camera subsystem to control the camera’s movement. The central processor shall receive two signals from the camera subsystem, one digital signal of the photo taken of the drone and one analog to define the angle of rotation and height of the camera. The central processor shall receive a digital signal from the spectrum analyzer of the RF signal received from the drone. The central processor shall receive a power signal from the power supply subsystem. The central processor shall receive two digital signals from the wi-fi/Bluetooth RID subsystem, one that defines the drone’s RID signal and another that is the header packets from the drone’s controller. The central processor shall send a digital signal to the website/server/database subsystem that contains the information gathered from the camera, spectrum analyzer, and wi-fi/Bluetooth RID subsystems. The central processor shall use machine learning to identify the drone from the photo received from the camera unit.
