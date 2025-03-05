@@ -5,7 +5,10 @@ Tennessee Technological University
 <div align="left">
 	
 ## Introduction 
-Unmanned Aircraft Systems (UAS), commonly referred to as drones, have gained significant popularity in recent years due to their innovative features and wide-ranging capabilities. However, not all drone operators prioritize safety or respect for others' privacy, leading to an increase in unsafe drone activities. Drones emit a radio frequency (RF) signal to communicate between the drone and controller. Based on this RF signal, the team proposes a drone tracking device that will alert the Tennessee Technological University (TTU) Police when an unauthorized drone emitting an RF signal enters the campus grounds. 
+Unmanned Aircraft Systems, commonly referred to as drones, have gained significant popularity in recent years due to their innovative features and wide-ranging capabilities. However, not all drone operators prioritize the safety and privacy of others, leading to an increase in undesirable drone activities. Unfortunately, the campus of Tennessee Technological University is not exempt from such activities. Safety concerns involving unmanned aircraft systems on campus include drones being flown too close to students and staff at athletic events, creating collision hazards; drones being flown too close to power lines or other campus infrastructure, causing damage; and drones with cameras being flown too close to dorm windows, giving potential for stalking or harassment cases. In order to more quickly and efficiently suppress these misdemeanors
+
+
+Drones emit a radio frequency (RF) signal to communicate between the drone and controller. Based on this RF signal, the team proposes a drone tracking device that will alert the Tennessee Technological University (TTU) Police when an unauthorized drone emitting an RF signal enters the campus grounds. 
 
 The purpose of this tracking device is to assist the TTU Police in addressing campus safety, privacy, and security issues caused by improper drone usage. The team aims to address safety concerns including drones flying too close to students, staff, or athletic events, creating collision hazards; drones flying near power lines or other campus infrastructure, causing damage; and drones distracting students or staff, particularly while driving or engaging in other focused activities. Privacy and security issues the team seeks to reduce include drones flying near private areas, such as dorm rooms, and invading restricted zones like construction sites. In addition to addressing these safety, privacy, and security concerns, the drone tracking device will help enforce TTU’s drone policy (Policy 190), which requires compliance with local, state, and federal regulations to operate a drone on TTU property. 
 
@@ -69,7 +72,6 @@ The design also optimizes resource utilization by maximizing available resources
 ## Resources
 
 ### Budget 
-
 As this project builds upon the work of the previous senior design team, certain components have already been purchased and are available for a single unit. However, this budget outlines the projected costs per unit, as multiple units will likely be required to adequately serve Tennessee Tech's campus. Software costs have not been included in this estimate, as the majority of the tools to be utilized are free, and any additional software required is likely covered under the university’s existing licenses. 
 
 |        Component        | Count |  Unit Cost  |    Cost    | Running Total |
@@ -86,20 +88,20 @@ As this project builds upon the work of the previous senior design team, certain
 |        Enclosure        |   1   |    $20.00   |    $20.00  |	  $1590.00   |
 |     Weather Proofing    |  N/A  |    $20.00   |    $20.00  |	  $1610.00   |
 |    Mounting Hardware    |  N/A  |    $20.00   |    $20.00  |	  $1630.00   |	
-|        Misc             |  N/A  |   $200.00   |   $200.00  | **$1830.00** |	
+|        Misc             |  N/A  |   $200.00   |   $200.00  |  **$1830.00** |	
 
 The first unit is estimated to cost approximately $1500, utilizing the equipment already provided, along with necessary modifications and supplemental components. If time permits and campus police grant approval, additional units will be installed. Each of these units will function independently while maintaining a connection to the server.
 
 ### Division of Labor
-Amanda Bacon: 
+Amanda Bacon: Website/Server/Database; Power Supply
 
-Brett Ballew:
+Brett Ballew: Spectrum Analyzer
 
-Tyler Bare:
+Tyler Bare: Camera
 
-Erich Krepps:
+Erich Krepps: Central Processor
 
-Gabrielle Renfroe: 
+Gabrielle Renfroe: Wi-Fi/Bluetooth RID
 
 ### Timeline
 <img src= "/Documents/Images/Gantt Chart for Project Proposal (1)-1-1.png" width="3200" height="900">
