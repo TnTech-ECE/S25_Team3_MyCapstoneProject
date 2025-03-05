@@ -133,12 +133,12 @@ Gabrielle Renfroe: Wi-Fi/Bluetooth RID
 [15] "Part 107- Small Unmanned Aircraft Systems," Code of Federal Regulations, Jan. 15, 2021. https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-107 (accessed Mar. 4, 2025).
 
 ## Statement of Contributions
-Amanda Bacon: The Fully Formulated Problem; Ethical, Professional, and Standards Contributions
+Amanda Bacon: Introduction; The Fully Formulated Problem; Ethical, Professional, and Standards Contributions
 
-Brett Ballew: High Level Solution
+Brett Ballew: High Level Solution; Hardware Block Diagram; Budget
 
-Tyler Bare: High Level Solution
+Tyler Bare: High Level Solution; Hardware Block Diagram; Operational Flowchart
 
-Erich Krepps: Ethical, Professional, and Standards Contributions; Comparative Analysis of Potential Solutions
+Erich Krepps: Ethical, Professional, and Standards Contributions; Operational Flowchart; Comparative Analysis of Potential Solutions
 
 Gabrielle Renfroe: Introduction; Comparative Analysis of Potential Solutions
