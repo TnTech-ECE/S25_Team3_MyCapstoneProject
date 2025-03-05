@@ -66,7 +66,8 @@ The camera module shall be responsible for capturing visual data to detect and t
 
 ### Wi-Fi/RID Receiver
 
-### Microcomputer (Raspberry Pi)
+### Central Processor (Raspberry Pi)
+The central processor shall send a digital signal to the camera subsystem to control the camera’s movement. The central processor shall receive two signals from the camera subsystem, one digital signal of the photo taken of the drone and one analog to define the angle of rotation and height of the camera. The central processor shall receive a digital signal from the spectrum analyzer of the RF signal received from the drone. The central processor shall receive a power signal from the power supply subsystem. The central processor shall receive two digital signals from the wi-fi/Bluetooth RID subsystem, one that defines the drone’s RID signal and another that is the header packets from the drone’s controller. The central processor shall send a digital signal to the website/server/database subsystem that contains the information gathered from the camera, spectrum analyzer, and wi-fi/Bluetooth RID subsystems. The central processor shall use machine learning to identify the drone from the photo received from the camera unit.
 
 ### Server/Website
 The server shall receive RF signal data from the spectrum analyzer module and packet information from the Wi-Fi/RF receiver via the Raspberry Pi microcomputer. The microcomputer shall process the data and transfer it to the server storage using a file transfer protocol. Once stored, the data processing unit shall analyze the information and make it accessible to the police on a private website. An intuitive user interface shall allow the police to interact with and interpret the captured data in real time.
