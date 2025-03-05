@@ -14,9 +14,9 @@ Other than in a few special cases, the usage of unmanned aircraft systems on the
 
 ### Drone Tracking System Specifications
 #### In accordance with the expectations of the TTU campus police department, this project shall do the following: 
-1. The system shall detect and track remote ID emitting drones flown over the contiguous TTU campus.
+1. The system shall detect and track drones emitting RF/RID signals flown over the contiguous TTU campus.
 2. The system shall display the data in a concise manner to a secure website accessible only to campus police dispatchers. The campus police have specified that the database be accessed through a website, as opposed to an app, due to the security and privacy concerns that would be introduced were the officers to use their personal device on the job. The website will be accessible to the officers on scene and at the office.  
-3. The system shall record and store critical data recovered from the Remote ID signal, until the data is uploaded to the website.
+3. The system shall record and store critical data recovered from the RF/RID signal, until the data is uploaded to the website.
 4. The system shall notify campus police in real-time upon detection of a drone in flight.  
 5. The system shall enable campus police to grant and revoke drone authorizations as needed. The campus police have requested the ability to authorize specific drones via the website. If a drone user has permission to be operating the drone, such as a student filming a sporting event for the university’s social media page, the police will be able to easily confirm this on the website. The website will keep track of which drones are authorized and which are not.
 6. The system shall be designed to minimize further maintenance.
@@ -54,8 +54,6 @@ The design also optimizes resource utilization by maximizing available resources
 <img src= "/Documents/Images/Conceptual Design - Flow Chart.png" width="3200" height="900">
 
 ## Atomic Subsystem Specifications
-The purpose of this section is to explain the operation of each of the atomic subsystems indicated in the Hardware Block Diagram in more detail. <--- DO WE NEED TO DELETE THIS
-
 ### Power Supply
 The power supply module shall convert AC power into usable DC voltage for the system components. It shall first step down the AC voltage using a transformer and then convert it to DC using an AC/DC converter. The regulated DC power shall be distributed via a bus to modules that require DC power such as the Central Computer (Raspberry Pi) and the Spectrum Analyzer, ensuring they receive the necessary power for operation.
 
