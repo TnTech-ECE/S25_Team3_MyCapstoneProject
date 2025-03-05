@@ -57,19 +57,19 @@ The design also optimizes resource utilization by maximizing available resources
 ### Power Supply
 The power supply module shall convert AC power into usable DC voltage for the system components. It shall first step down the AC voltage using a transformer and then convert it to DC using an AC/DC converter. The regulated DC power shall be distributed via a bus to modules that require DC power such as the Central Computer (Raspberry Pi) and the Spectrum Analyzer, ensuring they receive the necessary power for operation.
 
-### Spectrum Analyzer
+### Spectrum Analyzer Module
 The Spectrum Analyzer (SA) Module shall be mated with an omnidirectional antenna for the frequency range of 2.4 GHz to 5.8 GHz. The SA shall transmit digital data from the sampled RF signal to the microcontroller. The microcontroller shall utilize machine learning to detect the presence of a drone RF signal while also calculating the power of the signal (utilized for distance calculation). When a drone RF signal is detected, appropriate data (power of RF signal and frequency), shall be sent to the central computer for transmission to the server.
 
-### Camera
+### Camera Module
 The camera module shall be responsible for capturing visual data to detect and track drones within its field of view. It shall work in conjunction with a motorized chassis to adjust its orientation and calculate the angle of the drone's position relative to the system. The captured images shall be processed using a machine learning algorithm to identify whether the object in the image is a drone. If a drone is detected, the subsystem shall track its movement and provide real-time data to the central computer for further analysis and action.
 
-### Wi-Fi/RID Receiver
+### Wi-Fi/RID Module
 The Wi-Fi transceiver shall receive the appropriate Wi-Fi signal emitted by the located drone. If applicable, the Bluetooth transceiver shall receive the connected RID signal from the drone. The Wi-Fi transceiver shall identify and extract the data packets from the received signal. If an RID signal is detected, the Bluetooth transceiver shall identify and extract the data packets. The data packets shall consist of necessary identification and location information. The extracted data packets shall be transmitted to the central computer. 
 
 ### Central Computer (Raspberry Pi)
 The central computer shall send a digital signal to the camera subsystem to control the camera’s movement (PWM). The central computer shall receive two signals from the camera subsystem: one digital signal containing photo data and another digital signal containing the angle of camera rotation. The central computer shall receive a digital signal from the spectrum analyzer Microcontroller of the RF signal data received from the drone. The central computer shall receive a power from the power supply subsystem and distribute it to other subsystems via GPIO pins. The central computer shall receive two digital signals from the Wi-fi/Bluetooth RID subsystem, one that defines the drone’s RID signal and another that is the header packets from the drone’s controller. The central computer shall send a digital signal to the Website/Server/Database subsystem that contains the information gathered from the camera, spectrum analyzer, and Wi-fi/Bluetooth RID subsystems. The Micro Controller shall use machine learning to identify the drone from the photo received from the camera unit.
 
-### Server/Website
+### Server/Website/Database
 The server shall receive all data through the central computer. The central computer shall process the data and transfer it to the server storage using a file transfer protocol. Once stored, the data processing unit shall analyze the information and make it accessible to the police on a private website. An intuitive user interface shall allow the police to interact with and interpret the captured data in real time.
 
 ## Ethical, Professional, and Standards Consideration
