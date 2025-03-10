@@ -159,7 +159,7 @@ Gabrielle Renfroe: Wi-Fi/RID Module
 ## Statement of Contributions
 Amanda Bacon: Introduction; The Fully Formulated Problem; Ethical, Professional, and Standards Contributions
 
-Brett Ballew: High Level Solution; Hardware Block Diagram; Budget
+Brett Ballew: High Level Solution; Hardware Block Diagram; Budget; Comparative Analysis of Potential Solutions
 
 Tyler Bare: High Level Solution; Hardware Block Diagram; Operational Flowchart
 
