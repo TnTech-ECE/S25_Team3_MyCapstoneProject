@@ -13,7 +13,7 @@ This conceptual design presents a drone tracking system tailored for Tennessee T
 
 ## Fully Formulated Problem
 ### Problem Statement  
-Despite Tennessee Technological University’s policy prohibiting most drone operations on campus, unauthorized drone activity remains an ongoing issue. Campus police frequently receive reports of drones posing security, safety, and privacy risks, yet they lack an efficient method to locate and identify the offending devices and their operators. Without a dedicated tracking system, officers are forced to rely on eyewitness reports or visual confirmation, making enforcement difficult and often ineffective.  
+Despite Tennessee Technological University’s policy prohibiting most drone operations on campus, unauthorized drone activity remains an ongoing issue. Campus police continue to receive reports of drones posing security, safety, and privacy risks, yet they lack an efficient method to locate and identify the offending devices. Without a dedicated tracking system, officers are forced to rely on eyewitness reports or visual confirmation, making enforcement difficult and often ineffective.  
 
 To address this challenge, the team has been tasked with developing an electronic sensing system capable of detecting unauthorized drones in real time. This system will automatically identify drones emitting Remote Identification (RID) signals and relay critical flight information to TTU Police through a secure website. By providing precise location data, identification details, and alert notifications, the proposed solution will enable law enforcement to assess potential threats and respond accordingly.  
 
