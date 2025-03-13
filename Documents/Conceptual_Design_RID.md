@@ -24,9 +24,10 @@ The design of this drone tracking system must meet the operational requirements 
 1. The system shall detect and track drones emitting RID signals flown over the contiguous TTU campus.
 2. The system shall display the RID packet data (the drone's coordinates, speed, and ID)  in a concise manner to a secure website accessible only to campus police dispatchers. The campus police have specified that the database be accessed through a website, as opposed to an app, due to the security and privacy concerns that would be introduced were the officers to use their personal device on the job. The website will be accessible to the officers on scene and at the office.  
 3. The system shall record and store critical data recovered from the RID signal, until the data is uploaded to the website.
-4. The system shall notify campus police in real-time upon detection of a drone in flight.  
-5. The system shall enable campus police to grant and revoke drone authorizations as needed. The campus police have requested the ability to authorize specific drones via the website. If a drone user has permission to be operating the drone, such as a student filming a sporting event for the university’s social media page, the police will be able to easily confirm this on the website. The website will keep track of which drones are authorized and which are not.
-6. The system shall be designed to minimize further maintenance.
+4. The system shall notify campus police in real-time upon detection of a drone in flight.
+5. The system shall accurately determine the location of a detected drone within a 50-meter radius.
+6. The system shall enable campus police to grant and revoke drone authorizations as needed. The campus police have requested the ability to authorize specific drones via the website. If a drone user has permission to be operating the drone, such as a student filming a sporting event for the university’s social media page, the police will be able to easily confirm this on the website. The website will keep track of which drones are authorized and which are not.
+7. The system shall be designed to minimize further maintenance.
 
 #### Depending on time restraints and the preferences of the campus police, this project may also do the following: 
 1. The system may determine the location of the drone’s user and upload this information to the website.
