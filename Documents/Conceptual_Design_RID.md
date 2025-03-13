@@ -40,9 +40,9 @@ The drone tracking system is primarily contrained by the legal standards of the 
 
 ## Comparative Analysis of Potential Solutions
 ### Drone Tracking using Image Recognition
-The first approach involves utilizing machine learning with a camera for drone image recognition. In this method, a camera continuously scans its designated airspace, identifying drones through image recognition algorithms embedded in a microcontroller. Once a drone is detected, its position can be estimated using the camera’s horizontal and vertical angles.  
+Drone tracking through image recognition relies on a camera system equipped with a trained machine learning model capable of distinguishing drones from other airborne objects, such as birds or debris. The process begins with continuous video capture using a high-resolution camera, which may be stationary or mounted on a gimbal for a wider field of view. Each frame is then analyzed in real time using a convolutional neural network (CNN) or a pre-trained deep learning model, such as YOLO (You Only Look Once) or Faster R-CNN, which are optimized to detect drones based on unique features like rotor blades, shape, and movement patterns [17]. Once a drone is detected, the system calculates its approximate position using the camera’s field of view. The horizontal and vertical angles from the camera’s perspective are recorded, allowing for an estimated location to be determined through triangulation techniques. If multiple cameras are deployed and networked together, the system can achieve greater accuracy through multi-angle tracking. Finally, when an unauthorized drone is detected, an alert is sent to the TTU Police via a secure website, along with timestamped images or video footage for verification. Additional tracking can be initiated to follow the drone’s movement across campus.
 
-This solution is projected to be the most cost-effective and straightforward to implement, as it requires minimal complex components and does not demand extensive telecommunications expertise. However, despite its affordability and ease of deployment, this approach comes with several significant drawbacks, including the following: 
+This approach offers several benefits: 
 
 ### Drone Tracking using Triangulation
 The second solution will involve using three transceivers to triangulate the drone's location. When a drone enters the area of interest, the transceivers will detect its emitted RF signal. By analyzing the time or power of arrival of the signal at each transceiver, the drone's location will be estimated within a small area on campus. However, this method will have drawbacks, including the need for multiple transceivers, a lack of precise location data, and increased system complexity due to the requirement for synchronized transceivers.
@@ -171,6 +171,10 @@ Gabrielle Renfroe: Wi-Fi/RID Module
 [14] "CYB21-0049" www.highergov.com, 2022. https://www.highergov.com/subcontract/N0042117D0008-N0042120F1029-CYB21-0049/#:~:text=CYB21-0049%20worth%20$59000.00%20awarded%20to%20Edgesource%20Corporation,for%20WINDTALKER%20SYSTEM%2C%20INSTALLATION%20AND%20SERVICE%20DESK (accessed Feb. 27, 2025).
 
 [15] "Part 107- Small Unmanned Aircraft Systems," Code of Federal Regulations, Jan. 15, 2021. https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-107 (accessed Mar. 4, 2025).
+
+[16] J. M. Llauradó, F. A. Pujol, D. Tomás, A. Visvizi, and M. Pujol, "Study of image sensors for enhanced face recognition at a distance in the Smart City context," Scientific Reports, https://pmc.ncbi.nlm.nih.gov/articles/PMC10484932/ (accessed Mar. 13, 2025).
+
+[17] Z. Zhang, Y. Li, X. Wang, and J. Chen, "Enhanced Small Drone Detection Using Optimized YOLOv8 With Attention Mechanisms," https://ieeexplore.ieee.org/document/10577135 (accessed Mar. 13, 2025).
 
 ## Statement of Contributions
 Amanda Bacon: Introduction; The Fully Formulated Problem; Ethical, Professional, and Standards Contributions
