@@ -39,12 +39,18 @@ The design of this drone tracking system must meet the operational requirements 
 The drone tracking system is primarily contrained by the legal standards of the United States of America, the State of Tennessee, and Tennessee Tech University. It is additionally constrained by the ethical and professional duties levied on all engineers in the process of designing a new product. The specific legal and moral obligations by which this project is constrained are examined in greater detail in the Ethical, Professional, and Standards Consideration section included later in the document.
 
 ## Comparative Analysis of Potential Solutions
-Several potential solutions will be considered for implementation. The first approach involves using machine learning with a camera for drone image recognition. In this method, a camera continuously scans its designated airspace, detecting drones through image recognition algorithms embedded in the microcontroller. Once a drone is identified, the camera’s horizontal and vertical angles can be used to approximate the drone's position. While this solution is straightforward and practical, it comes with several drawbacks: high power consumption due to constant scanning, limited range due to image recognition constraints, and the inability to identify drones beyond visual data alone.
+### Drone Tracking using Image Recognition
+The first approach involves utilizing machine learning with a camera for drone image recognition. In this method, a camera continuously scans its designated airspace, identifying drones through image recognition algorithms embedded in a microcontroller. Once a drone is detected, its position can be estimated using the camera’s horizontal and vertical angles.  
 
+This solution is projected to be the most cost-effective and straightforward to implement, as it requires minimal complex components and does not demand extensive telecommunications expertise. However, despite its affordability and ease of deployment, this approach comes with several significant drawbacks, including the following: 
+
+### Drone Tracking using Triangulation
 The second solution will involve using three transceivers to triangulate the drone's location. When a drone enters the area of interest, the transceivers will detect its emitted RF signal. By analyzing the time or power of arrival of the signal at each transceiver, the drone's location will be estimated within a small area on campus. However, this method will have drawbacks, including the need for multiple transceivers, a lack of precise location data, and increased system complexity due to the requirement for synchronized transceivers.
 
+### Drone Tracking using Image Recognition and Spectral Analysis
 Another approach leverages machine learning alongside a spectrum analyzer and a camera to detect RF signals, measure their power, and determine a drone's approach angle. This method requires only one transceiver while also integrating elements from the first and fourth approaches. It utilizes a Wi-Fi/Bluetooth transceiver to capture additional data, such as the operator's location, while employing a camera for precise drone location acquisition. While this method has its advantages, it is limited to only tracking one drone at a time. 
 
+### Drone Tracking using RID Signals
 The final approach involves using Remote ID signals via Wi-Fi and Bluetooth to track and identify drones. This method relies on a Bluetooth and Wi-Fi transceiver capable of detecting and connecting to the emitted RID signal, which contains key data such as the drone's ID, location, altitude, and velocity. This method is the most effective for tracking multiple drones simultaneously as it can detect more than one signal at a time. A more detailed discussion of this approach will be provided in the high-level solution section.
 
 
