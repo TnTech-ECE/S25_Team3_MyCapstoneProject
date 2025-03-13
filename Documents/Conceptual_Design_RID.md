@@ -42,19 +42,34 @@ The drone tracking system is primarily contrained by the legal standards of the 
 ### Drone Tracking using Image Recognition
 Drone tracking through image recognition relies on a camera system equipped with a trained machine learning model capable of distinguishing drones from other airborne objects, such as birds or debris. The process begins with continuous video capture using a high-resolution camera, preferably mounted on a gimbal for a wider area of coverage. Each frame is then analyzed in real time using a convolutional neural network (CNN) or a pre-trained deep learning model, such as YOLO (You Only Look Once) or Faster R-CNN, which are optimized to detect drones based on unique features like rotor blades, shape, and movement patterns [17]. Once a drone is detected, the system calculates its approximate position using the horizontal and vertical angles from the gimbal yaw and pitch. If multiple cameras are deployed and networked together, the system can achieve greater accuracy through multi-angle tracking. Finally, when an unauthorized drone is detected, an alert is sent to the TTU Police via a secure website, along with timestamped images or video footage for verification. Additional tracking can be initiated to follow the drone’s movement across campus.
 
-This approach offers several benefits: 
+#### Pros:
 + Cost-Effective: Requires less complex hardware components compared to radar-based or RF-based solutions.
 + Easy Deployment: Simple design with limited need for specialized telecommunications knowledge.
 + Visual Confirmation: Provides direct visual evidence of unauthorized drones, aiding law enforcement in verifying threats.
 
-However, this method also comes with significant drawbacks:
+#### Cons:
 + Limited Range & Accuracy: Camera-based tracking is highly dependent on environmental conditions, such as lighting, weather, and obstructions (e.g., buildings, trees).
 + False Detections: The system may misidentify birds, flying debris, or even reflections as drones, leading to false positives (90 % accurate up to 80 meters [16]).
 + Tracking Limitations: Without multiple cameras or advanced depth-sensing technology, estimating drone altitude and precise location can be challenging.
 + Computational Demand: Real-time image processing requires significant computing power, potentially necessitating cloud-based processing or high-performance edge devices.
 
 ### Drone Tracking using Triangulation
-The second solution will involve using three transceivers to triangulate the drone's location. When a drone enters the area of interest, the transceivers will detect its emitted RF signal. By analyzing the time or power of arrival of the signal at each transceiver, the drone's location will be estimated within a small area on campus. However, this method will have drawbacks, including the need for multiple transceivers, a lack of precise location data, and increased system complexity due to the requirement for synchronized transceivers.
+Another approach to drone tracking involves using three or more transceivers strategically positioned around the monitored area to triangulate the drone's location based on its emitted RF signal. The process of triangulation begins with the transceivers measuring the Time of Arrival (ToA) or Power of Arrival (PoA) of the signal. ToA measures how long it takes for the RF signal to travel from the drone to each transceiver. The longer the signal takes to arrive, the farther the drone is from the transceiver. By calculating the time delay for the signal to reach each transceiver, the system can estimate the drone's position within a certain range. Alternatively, PoA measures the strength of the received signal, which decreases with distance. By analyzing how the signal strength changes as it reaches each receiver, the system can approximate the drone’s distance from each transceiver.
+
+Once the ToA or PoA data from all three transceivers is collected, the system uses trilateration to determine the drone’s location. Trilateration involves calculating the intersection of three spheres, each centered on one of the transceivers, with the radius of each sphere corresponding to the estimated distance between the drone and the transceiver. The intersection of these spheres reveals the approximate location of the drone within the monitored area.
+
+#### Pros:
++ Wide Coverage: Capable of tracking drones across a larger area than single-point detection systems.
++ Independent of Visual Conditions: Functions effectively in low-visibility environments, such as at night or during poor weather conditions.
++ Non-Line-of-Sight Detection: Can detect drones even when they are obscured by buildings, trees, or other obstacles, as long as they are emitting an RF signal.
++ Simple (If using PoA): Power of arrival does not require synchronized transcievers to determine position.
++ Accurate (If using ToA): Time of arrival provides superior accuracy due to a lack of variable fluctuation.
++ Transceiver Placement: Does not require preprogrammed location for transcievers if a GPS module is attatched to each unit.
+
+#### Cons:
++ Innacurate (If using PoA): Environmental factors like signal interference from other devices, obstacles, or atmospheric conditions can lead to inaccuracies in distance calculations.
++ Complex (If using ToA): Synchronizing multiple transceivers and processing the RF data in real-time adds technical complexity and increases the system’s cost.
++ Expensive: The cost of the system will increase linearly with each additional transceiver added. Furthermore, spectrum analyzers will be necessary at each unit for drone detection, which will further contribute to the overall cost of the system.
 
 ### Drone Tracking using Image Recognition and Spectral Analysis
 Another approach leverages machine learning alongside a spectrum analyzer and a camera to detect RF signals, measure their power, and determine a drone's approach angle. This method requires only one transceiver while also integrating elements from the first and fourth approaches. It utilizes a Wi-Fi/Bluetooth transceiver to capture additional data, such as the operator's location, while employing a camera for precise drone location acquisition. While this method has its advantages, it is limited to only tracking one drone at a time. 
