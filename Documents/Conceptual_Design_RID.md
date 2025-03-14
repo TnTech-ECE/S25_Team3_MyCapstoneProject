@@ -85,7 +85,17 @@ Another approach integrates machine learning with a spectrum analyzer and a came
 + Power Consumption: High power draw in its active state. The simultaneous processing of RF and image data places significant demands on computing power, which may require high-performance edge devices or cloud-based processing. 
 
 ### Drone Tracking using RID Signals
-The final approach involves using Remote ID signals via Wi-Fi and Bluetooth to track and identify drones. This method relies on a Bluetooth and Wi-Fi transceiver capable of detecting and connecting to the emitted RID signal, which contains key data such as the drone's ID, location, altitude, and velocity. This method is the most effective for tracking multiple drones simultaneously as it can detect more than one signal at a time. A more detailed discussion of this approach will be provided in the high-level solution section.
+The final solution utilizes Remote ID (RID) signals transmitted via Wi-Fi and Bluetooth to track and identify drones. This method relies on a Bluetooth and Wi-Fi transceiver that detects and connects to the emitted RID signal, which contains critical data such as the drone's unique ID, location, altitude, and velocity. By capturing these signals, the system can continuously monitor the position and status of drones within the area of interest. The information provided by the RID signal allows for efficient tracking of drones, including their real-time movements, ensuring compliance with regulations and enhancing security within the monitored space.
+
+#### Pros:
++ Multiple Drone Tracking: Offers the tracking of multiple drones simultaneously by utilizing RID information, which provides essential data without the need for continuous visual or RF monitoring.
++ Simpler Integration: Utilizes standard communication protocols (Wi-Fi and Bluetooth), making integration into existing infrastructure relatively straightforward.
++ Effective Identification: Allows for precise identification of drones by their RID, reducing the risk of false detections and improving threat assessment.
++ Coverage Range: The effective detection range is limited by the Wi-Fi and Bluetooth signal ranges, which are generally shorter than those of other RF-based solutions. However, these ranges are still significantly greater than those of camera-based tracking methods.
++ RID Data: The RID data packet has the potential to relay the operator's location or the drone's takeoff point, depending on the specific case. While this may vary, it remains a valuable benefit worth noting.
+#### Cons:
++ Dependency on RID Compliance: This method requires that the drones are equipped with and transmitting RID signals, which may not be mandatory for all drones or could be disabled by unauthorized operators.
++ Potential Interference: The system could experience interference from other devices using the same Wi-Fi or Bluetooth frequency bands, potentially impacting tracking reliability.
 
 
 ## High Level Solution
