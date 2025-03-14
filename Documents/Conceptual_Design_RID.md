@@ -117,7 +117,7 @@ The design also optimizes resource utilization by maximizing available resources
 <img src= "/Documents/Images/Conceptual Design - Block Diagram - RID-1.png" width="5000" height="450">
 
 ### Operational Flowchart
-<img src= "/Documents/Images/Conceptual Design - Flow Chart - RID.png" width="3200" height="900">
+<img src= "/Documents/Images/Conceptual Design - Flow Chart - RID-1.png" width="3200" height="900">
 
 ## Atomic Subsystem Specifications
 ### Power Supply
