@@ -174,13 +174,13 @@ The first unit is estimated to cost approximately $1500, utilizing the equipment
 ### Division of Labor
 Amanda Bacon: Website/Server/Database
 
-Brett Ballew: Chassis
+Brett Ballew: Central Computer (Rasperry Pi)
 
-Tyler Bare: Power Supply
+Tyler Bare: Bluetooth RID Module
 
-Erich Krepps: Central Computer (Rasperry Pi)
+Erich Krepps: Wi-Fi RID Module
 
-Gabrielle Renfroe: Wi-Fi/RID Module
+Gabrielle Renfroe: Power Supply, Chassis
 
 ### Timeline
 <img src= "/Documents/Images/Gantt Chart for Project Proposal-1.png" width="3200" height="900">
