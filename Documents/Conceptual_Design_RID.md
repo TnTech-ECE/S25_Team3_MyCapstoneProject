@@ -133,7 +133,15 @@ The power supply module shall convert AC power into usable DC voltage for the sy
 ...
 
 ### Bluetooth RID Module
-The Bluetooth RID subsystem shall receive and process Bluetooth signals emitted by remote ID (RID) transmitting drones. The Bluetooth transceiver shall identify and extract the RID data packets from the received signal while ignoring non-RID signals. The extracted data packets shall contain necessary identification and location information. These packets shall then be transmitted to the central computer for further processing. The bluetooth RID module shall operate exclusively within the 2.4 GHz Wi-Fi and Bluetooth frequency band. This module shall be capable of receiving all RID data from remote ID-emitting drones within its operational range. The reception range shall encompass the contiguous campus and extend up to 20 meters beyond its boundaries, ensuring comprehensive coverage for drone tracking.
+The Bluetooth RID subsystem shall receive and process Bluetooth signals emitted by drones equipped with Remote ID (RID) transmitters. The Bluetooth transceiver shall continuously scan the 2.4 GHz Wi-Fi and Bluetooth frequency band to detect and capture RID signals while filtering out non-RID transmissions. Upon detection of an RID signal, the Bluetooth transceiver shall extract the relevant data packets embedded in the signal. These packets shall include, but are not limited to:
+
++ Drone Identification: A unique alphanumeric identifier assigned to the drone.
++ Geolocation Data: The latitude, longitude, and altitude of the drone at the time of transmission.
++ Velocity Information: The drone’s ground speed and direction of movement.
++ Timestamp: A precise timestamp indicating when the data was transmitted.
++ Emergency Status (if applicable): Indication of any emergency condition, such as a loss of control or return-to-home activation.
+
+Once extracted, the RID data packets shall be transmitted in real-time to the central computer for processing and storage. The system shall ensure reliable reception of all RID data from drones operating within the designated tracking area, which includes the entire contiguous campus and extends up to 20 meters beyond its boundaries. This subsystem is designed to function autonomously, requiring minimal intervention while ensuring accurate and efficient drone tracking for compliance, security, and situational awareness purposes.
 
 ### Wi-Fi RID Module
 The Wi-Fi transceiver shall receive the appropriate Wi-Fi signal emitted by the located drone. If applicable, the Bluetooth transceiver shall receive the connected RID signal from the drone. The Wi-Fi transceiver shall identify and extract the data packets from the received signal. If an RID signal is detected, the Bluetooth transceiver shall identify and extract the data packets. The data packets shall consist of necessary identification and location information. The extracted data packets shall be transmitted to the central computer. 
