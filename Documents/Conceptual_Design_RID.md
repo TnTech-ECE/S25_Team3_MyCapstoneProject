@@ -127,7 +127,11 @@ The design also optimizes resource utilization by maximizing available resources
 
 ## Atomic Subsystem Specifications
 ### Power Supply
-The power supply shall provide power to the central computer that will be distributed to other subsystems. It shall be mounted in the chassis to ensure maximum protection and optimal performance. It shall use alternating current (AC) electricity supplied by a power bank. The frequency of the AC power waveform shall be 60 Hz. A transformer shall be used to step down the voltage to the appropriate amount needed. The AC power shall then be converted to direct current (DC) by a converter It shall regulate the voltage to 5V to ensure the Raspberry Pi receives the correct and stable amount of power. The power bus shall distribute the power to the central computer via USB-C and GPIO Header. 
+The power supply shall provide stable and efficient power to the central computer, a Raspberry Pi 4 B, ensuring continuous operation of all connected subsystems. The power to the Raspberry Pi shall be facilitated via a barrel plug power jack. The power supply shall be mounted within the chassis to ensure maximum protection, durability, and optimal thermal management.  
+
+The power supply shall utilize alternating current (AC) electricity sourced from a power bank and shall operate at a frequency of 60 Hz. A step-down transformer shall reduce the AC voltage to 5V. A full-wave rectifier shall convert the AC voltage to direct current (DC) to ensure a stable and filtered output.  
+
+A C13 male connector shall be integrated to allow ease of powering in cases where the nearest power outlet is more than 20 meters away. The power supply shall provide a continuous output of 25W. The power supply shall incorporate overcurrent protection to prevent electrical faults and protect critical components. 
 
 ### Chassis Module
 The chassis module shall provide adequate protection to the power supply and central computer. It shall ensure the subsystems are shielded from accidental impacts, shocks, or vibrations, as well as prevent accidental short circuits caused by dust, dirt, and debris build up. It shall include surge protection to the subsystems to protect them from voltage spikes or power surges The chassis shall include ventilation openings to dissipate heat and prevent overheating from the power supply and central computer. The design of the chassis shall keep components neatly organized and secure. It shall also allow for easy access for maintenance or troubleshooting. 
