@@ -156,20 +156,18 @@ As this project builds upon the work of the previous senior design team, certain
 |        Component        | Count |  Unit Cost  |    Cost    | Running Total |
 |        ---------        | ----- |    ------   |   -------  | ------------- |
 |      Power Supply       |   1   |    $60.00   |    $60.00  |      $60.00   |
-| Omnidirectional Antenna |   1   |    $50.00   |    $50.00  |     $110.00   |
-|     RF Transceiver      |   1   |    $20.00   |    $20.00  |	   $130.00   |
-|     Microcontroller     |   2   |   $100.00   |   $200.00  |	   $330.00   |
-|    Spectrum Analyzer    |   1   |  $1000.00   |  $1000.00  |	  $1330.00   | 
-|         Camera          |   1   |   $100.00   |   $100.00  |	  $1430.00   |
-|         Motors          |   2   |    $20.00   |    $40.00  |	  $1470.00   |
-|      Memory Module      |   1   |    $50.00   |    $50.00  |    $1520.00   |
-|         Wiring          |  N/A  |    $50.00   |    $50.00  |	  $1570.00   |
-|        Enclosure        |   1   |    $20.00   |    $20.00  |	  $1590.00   |
-|     Weather Proofing    |  N/A  |    $20.00   |    $20.00  |	  $1610.00   |
-|    Mounting Hardware    |  N/A  |    $20.00   |    $20.00  |	  $1630.00   |	
-|        Misc             |  N/A  |   $200.00   |   $200.00  |  **$1830.00** |	
+| Omnidirectional Antenna |   2   |    $50.00   |   $100.00  |     $160.00   |
+|     Wi-Fi Transceiver   |   1   |    $50.00   |    $50.00  |	   $210.00   |
+|  Bluetooth Transceiver  |   1   |    $50.00   |    $50.00  |	   $260.00   |
+|     Microcontroller     |   1   |   $100.00   |   $100.00  |	   $360.00   | 
+|      Memory Module      |   1   |    $50.00   |    $50.00  |     $410.00   |
+|         Wiring          |  N/A  |    $50.00   |    $50.00  |	   $460.00   |
+|        Enclosure        |   1   |    $20.00   |    $20.00  |	   $480.00   |
+|     Weather Proofing    |  N/A  |    $20.00   |    $20.00  |	   $500.00   |
+|    Mounting Hardware    |  N/A  |    $20.00   |    $20.00  |	   $520.00   |	
+|          Misc           |  N/A  |   $300.00   |   $300.00  |   **$820.00** |	
 
-The first unit is estimated to cost approximately $1500, utilizing the equipment already provided, along with necessary modifications and supplemental components. If time permits and campus police grant approval, additional units will be installed. Each of these units will function independently while maintaining a connection to the server.
+The first unit is estimated to cost approximately $590.00, utilizing the equipment already provided, along with necessary modifications and supplemental components. If time permits and campus police grant approval, additional units will be installed. Each of these units will function independently while maintaining a connection to the server.
 
 ### Division of Labor
 Amanda Bacon: Website/Server/Database
