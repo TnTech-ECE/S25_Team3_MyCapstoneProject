@@ -173,6 +173,7 @@ The Raspberry Pi Model B is the ideal candidate for the central computer due to 
 + 5V DC via GPIO Header: This feature is crucial for powering the Wi-Fi and Bluetooth RID modules, ensuring that all system components are adequately powered.
 + 2.7 W Idle Power Draw: This low power consumption makes the Raspberry Pi Model B an efficient choice, minimizing operational costs when the system is in an idle state.
 + 3.94 x 2.76 x 1.18 Inches: Its compact size ensures that the Raspberry Pi Model B can be easily housed in a custom-designed case, saving space and facilitating integration within the overall system design.
+
 These specifications ensure that the Raspberry Pi Model B is both cost-effective and capable of meeting the performance and expandability needs of the drone tracking system.
 
 ### Server/Website/Database
