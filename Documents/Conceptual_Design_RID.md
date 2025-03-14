@@ -131,6 +131,8 @@ The power supply shall provide stable and efficient power to the central compute
 
 The power supply shall utilize alternating current (AC) electricity sourced from a power bank and shall operate at a frequency of 60 Hz. A step-down transformer shall reduce the AC voltage to 5V. A full-wave rectifier shall convert the AC voltage to direct current (DC) to ensure a stable and filtered output.  
 
+The regulated 5V DC power shall then be distributed throughout the system using a power bus. The power bus serves as a central distribution point for electrical power, ensuring that the Raspberry Pi and other connected subsystems receive the correct voltage and current. The power bus shall route the 5V DC to the central computer (the Raspberry Pi) via both the USB-C port and the GPIO Header, allowing flexibility in powering the Raspberry Pi through multiple interfaces.
+
 A C13 male connector shall be integrated to allow ease of powering in cases where the nearest power outlet is more than 20 meters away. The power supply shall provide a continuous output of 25W. Additionally, it shall incorporate surge protection to safeguard against voltage spikes and transient surges, preventing potential damage to the Raspberry Pi and connected subsystems. Overcurrent protection shall also be implemented to prevent electrical faults and ensure the safety and longevity of critical components. 
 
 ### Chassis Module
