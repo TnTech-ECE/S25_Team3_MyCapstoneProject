@@ -52,6 +52,7 @@ Drone tracking through image recognition relies on a camera system equipped with
 + False Detections: The system may misidentify birds, flying debris, or even reflections as drones, leading to false positives (90 % accurate up to 80 meters [16]).
 + Tracking Limitations: Without multiple cameras or advanced depth-sensing technology, estimating drone altitude and precise location can be challenging.
 + Computational Demand: Real-time image processing requires significant computing power, potentially necessitating cloud-based processing or high-performance edge devices.
++ Drone Distinguishability: The system is unable to track multiple drones simultaneously and cannot differentiate between individual drones, making it impossible to determine whether they were previously approved for operation.
 
 ### Drone Tracking using Triangulation
 Another approach to drone tracking involves using three or more transceivers strategically positioned around the monitored area to triangulate the drone's location based on its emitted RF signal. The process of triangulation begins with the transceivers measuring the Time of Arrival (ToA) or Power of Arrival (PoA) of the signal. ToA measures how long it takes for the RF signal to travel from the drone to each transceiver. The longer the signal takes to arrive, the farther the drone is from the transceiver. By calculating the time delay for the signal to reach each transceiver, the system can estimate the drone's position within a certain range. Alternatively, PoA measures the strength of the received signal, which decreases with distance. By analyzing how the signal strength changes as it reaches each receiver, the system can approximate the drone’s distance from each transceiver.
@@ -70,6 +71,7 @@ Once the ToA or PoA data from all three transceivers is collected, the system us
 + Innacurate (If using PoA): Environmental factors like signal interference from other devices, obstacles, or atmospheric conditions can lead to inaccuracies in distance calculations.
 + Complex (If using ToA): Synchronizing multiple transceivers and processing the RF data in real-time adds technical complexity and increases the system’s cost.
 + Expensive: The cost of the system will increase linearly with each additional transceiver added. Furthermore, spectrum analyzers will be necessary at each unit for drone detection, which will further contribute to the overall cost of the system.
++ Multiple Drones: The system is unable to track multiple drones simultaneously. However, it can differentiate between individual drones based on RF characteristics.
 
 ### Drone Tracking using Image Recognition and Spectral Analysis
 Another approach integrates machine learning with a spectrum analyzer and a camera to detect RF signals, measure their power, and estimate the drone's approach angle. This method requires only a single transceiver, combining elements from both image recognition and RF-based tracking systems. In its idle state, the system continuously sweeps a designated frequency range, using machine learning algorithms to identify the presence of a drone's RF signal. Upon detecting a drone, the system estimates its position by analyzing the horizontal and vertical angles from the camera’s gimbal yaw and pitch (as previously discussed in the first method), while the spectrum analyzer provides the power level of the detected signal. The combination of these data points allows for more accurate tracking and localization of the drone within the monitored area.
@@ -80,9 +82,9 @@ Another approach integrates machine learning with a spectrum analyzer and a came
 + Cost: Of all the solutions, this approach is moderately priced, striking a balance between cost and complexity. It requires only one transceiver, but the need for additional components, such as the spectrum analyzer and camera system, elevates its overall cost compared to simpler solutions.
 
 #### Cons: 
-+ Limited to One Drone: The system is designed to track only one drone at a time, making it less effective in high-density drone environments.
 + Environmental Dependency: Like camera-based tracking, it is affected by environmental conditions such as lighting, weather, and obstructions (e.g., buildings, trees).
-+ Power Consumption: High power draw in its active state. The simultaneous processing of RF and image data places significant demands on computing power, which may require high-performance edge devices or cloud-based processing. 
++ Power Consumption: High power draw in its active state. The simultaneous processing of RF and image data places significant demands on computing power, which may require high-performance edge devices or cloud-based processing.
++ Multiple Drones: The system is unable to track multiple drones simultaneously. However, it can differentiate between individual drones based on RF characteristics.
 
 ### Drone Tracking using RID Signals
 The final solution utilizes Remote ID (RID) signals transmitted via Wi-Fi and Bluetooth to track and identify drones. This method relies on a Bluetooth and Wi-Fi transceiver that detects and connects to the emitted RID signal, which contains critical data such as the drone's unique ID, location, altitude, and velocity. By capturing these signals, the system can continuously monitor the position and status of drones within the area of interest. The information provided by the RID signal allows for efficient tracking of drones, including their real-time movements, ensuring compliance with regulations and enhancing security within the monitored space.
