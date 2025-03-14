@@ -131,10 +131,12 @@ The power supply shall provide stable and efficient power to the central compute
 
 The power supply shall utilize alternating current (AC) electricity sourced from a power bank and shall operate at a frequency of 60 Hz. A step-down transformer shall reduce the AC voltage to 5V. A full-wave rectifier shall convert the AC voltage to direct current (DC) to ensure a stable and filtered output.  
 
-A C13 male connector shall be integrated to allow ease of powering in cases where the nearest power outlet is more than 20 meters away. The power supply shall provide a continuous output of 25W. The power supply shall incorporate overcurrent protection to prevent electrical faults and protect critical components. 
+A C13 male connector shall be integrated to allow ease of powering in cases where the nearest power outlet is more than 20 meters away. The power supply shall provide a continuous output of 25W. Additionally, it shall incorporate surge protection to safeguard against voltage spikes and transient surges, preventing potential damage to the Raspberry Pi and connected subsystems. Overcurrent protection shall also be implemented to prevent electrical faults and ensure the safety and longevity of critical components. 
 
 ### Chassis Module
-The chassis module shall provide adequate protection to the power supply and central computer. It shall ensure the subsystems are shielded from accidental impacts, shocks, or vibrations, as well as prevent accidental short circuits caused by dust, dirt, and debris build up. It shall include surge protection to the subsystems to protect them from voltage spikes or power surges The chassis shall include ventilation openings to dissipate heat and prevent overheating from the power supply and central computer. The design of the chassis shall keep components neatly organized and secure. It shall also allow for easy access for maintenance or troubleshooting. 
+The chassis module shall provide robust protection and secure mounting positions for the power supply and central computer. It shall shield all subsystems from accidental impacts, shocks, and vibrations while also preventing short circuits caused by dust, dirt, and debris buildup.  
+
+To ensure efficient thermal management, the chassis shall incorporate ventilation openings to dissipate heat and prevent overheating of the power supply and central computer. The design shall promote neat organization and secure placement of components while allowing easy access for maintenance and troubleshooting. 
 
 ### Bluetooth RID Module
 The Bluetooth RID subsystem shall receive and process Bluetooth signals emitted by drones equipped with Remote ID (RID) transmitters. The Bluetooth transceiver shall continuously scan the 2.4 GHz Bluetooth frequency band to detect and capture RID signals while filtering out non-RID transmissions.
