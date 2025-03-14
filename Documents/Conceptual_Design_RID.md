@@ -133,7 +133,9 @@ The power supply module shall convert AC power into usable DC voltage for the sy
 ...
 
 ### Bluetooth RID Module
-The Bluetooth RID subsystem shall receive and process Bluetooth signals emitted by drones equipped with Remote ID (RID) transmitters. The Bluetooth transceiver shall continuously scan the 2.4 GHz Bluetooth frequency band to detect and capture RID signals while filtering out non-RID transmissions. Upon detection of an RID signal, the Bluetooth transceiver shall extract the relevant data packets embedded in the signal. These packets shall include, but are not limited to:
+The Bluetooth RID subsystem shall receive and process Bluetooth signals emitted by drones equipped with Remote ID (RID) transmitters. The Bluetooth transceiver shall continuously scan the 2.4 GHz Bluetooth frequency band to detect and capture RID signals while filtering out non-RID transmissions.
+
+Upon detection of an RID signal, the Bluetooth transceiver shall extract the relevant data packets embedded in the signal. These packets shall include, but are not limited to:
 
 + Drone Identification: A unique identifier assigned to the drone.
 + Geolocation Data: The latitude, longitude, and altitude of the drone at the time of transmission.
@@ -142,6 +144,14 @@ The Bluetooth RID subsystem shall receive and process Bluetooth signals emitted 
 + Emergency Status (if applicable): Indication of any emergency condition, such as a loss of control or return-to-home activation.
 
 Once extracted, the RID data packets shall be transmitted in real-time to the central computer for processing and server transmission. The system shall ensure reliable reception of all RID data from drones operating within the designated tracking area, which includes the entire contiguous campus. This subsystem is designed to function autonomously, requiring minimal intervention while ensuring accurate and efficient drone tracking for compliance, security, and situational awareness purposes.
+Implementation with Raspberry Pi Pico W
+
+This Bluetooth RID subsystem shall be implemented using a Raspberry Pi Pico W, which includes Bluetooth Low Energy (BLE) functionality via its CYW43439 wireless module. The implementation shall include the following components:
+
++ Bluetooth Module Setup: The Raspberry Pi Pico W shall be programmed to operate as a Bluetooth Low Energy (BLE) scanner, continuously scanning for RID signals within the 2.4 GHz spectrum. It shall filter out non-RID packets and focus solely on recognized ASTM F3411-22a or ISO 24163 RID-compliant transmissions.
++ Data Processing: The Raspberry Pi Pico W shall parse the received BLE advertising packets, extracting relevant drone identification, location, velocity, and status information.
++ Data Transmission: The processed RID data shall be transmitted via UART, SPI, or Wi-Fi to a central server for real-time monitoring and further analysis. The Raspberry Pi Pico W’s built-in Wi-Fi capability shall be leveraged to send RID data over a local network or cloud-based server for centralized tracking.
++ Power Efficiency: The Raspberry Pi Pico W shall operate in low-power scanning mode to optimize power consumption while ensuring continuous monitoring of the airspace.
 
 ### Wi-Fi RID Module
 The Wi-Fi transceiver shall receive the appropriate Wi-Fi signal emitted by the located drone. If applicable, the Bluetooth transceiver shall receive the connected RID signal from the drone. The Wi-Fi transceiver shall identify and extract the data packets from the received signal. If an RID signal is detected, the Bluetooth transceiver shall identify and extract the data packets. The data packets shall consist of necessary identification and location information. The extracted data packets shall be transmitted to the central computer. 
