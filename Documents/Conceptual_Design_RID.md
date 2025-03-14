@@ -146,7 +146,7 @@ Upon detection of an RID signal, the Bluetooth transceiver shall extract the rel
 Once extracted, the RID data packets shall be transmitted in real-time to the central computer for processing and server transmission. The system shall ensure reliable reception of all RID data from drones operating within the designated tracking area, which includes the entire contiguous campus. This subsystem is designed to function autonomously, requiring minimal intervention while ensuring accurate and efficient drone tracking for compliance, security, and situational awareness purposes.
 Implementation with Raspberry Pi Pico W
 
-For example, this subsystem may be implemented using a Raspberry Pi Pico , which includes Bluetooth Low Energy (BLE) functionality via its CYW43439 wireless module. The implementation shall include the following components:
+For example, this subsystem may be implemented using a Raspberry Pi Pico , which includes Bluetooth Low Energy (BLE) functionality via its wireless module. The implementation shall include the following components:
 
 + Bluetooth Module Setup: The Raspberry Pi Pico can be programmed to operate as a Bluetooth Low Energy (BLE) scanner, continuously scanning for RID signals within the 2.4 GHz spectrum. It shall filter out non-RID packets and focus solely on recognized RID-compliant transmissions.
 + Data Processing: The Raspberry Pi Pico can parse the received BLE advertising packets, extracting relevant drone data such as identification, location, velocity, and status information.
