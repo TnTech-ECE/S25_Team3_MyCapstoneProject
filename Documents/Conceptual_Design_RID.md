@@ -127,7 +127,7 @@ The power supply module shall convert AC power into usable DC voltage for the sy
 ...
 
 ### Bluetooth RID Module
-...
+The Bluetooth transceiver shall receive the appropriate Bluetooth signal emitted by the located drone. The Bluetooth transceiver shall identify and extract the data packets from the received signal. If an RID signal is detected, the Bluetooth transceiver shall identify and extract the data packets. The data packets shall consist of necessary identification and location information. The extracted data packets shall be transmitted to the central computer.
 
 ### Wi-Fi RID Module
 The Wi-Fi transceiver shall receive the appropriate Wi-Fi signal emitted by the located drone. If applicable, the Bluetooth transceiver shall receive the connected RID signal from the drone. The Wi-Fi transceiver shall identify and extract the data packets from the received signal. If an RID signal is detected, the Bluetooth transceiver shall identify and extract the data packets. The data packets shall consist of necessary identification and location information. The extracted data packets shall be transmitted to the central computer. 
