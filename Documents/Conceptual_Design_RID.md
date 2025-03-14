@@ -186,8 +186,16 @@ The Raspberry Pi Model B is the ideal candidate for the central computer due to 
 
 These specifications ensure that the Raspberry Pi Model B is both cost-effective and capable of meeting the performance and expandability needs of the drone tracking system.
 
-### Server/Website/Database
-The server shall receive all data through the central computer. The central computer shall process the data and transfer it to the server storage using a file transfer protocol. Once stored, the data processing unit shall analyze the information and make it accessible to the police on a private website. An intuitive user interface shall allow the police to interact with and interpret the captured data in real time.
+### Server, Database, and Website
+The server shall receive the packaged information obtained from the RID signal via a File Transfer Protocol (FTP) transmission from the central computer. After the data has been unpacked and processed, it shall be stored in the database system and acquired by the website when needed. 
+
+A website will be created to allow the police to interact with and interpret the captured data in real time. This website shall require a password to be accessed to ensure that the ability to track the detected drones and make changes to their authorization status is given to campus authorities only. The website will be straightforward with an intuitive user interface. Upon entering the password to log in to the website, the user will be presented with a map of the TTU contiguous campus. If there are any RID emitting drones detected to be flying over campus in the present moment, those drones shall be represented by mobile icons indicating their location in real time. As a visual indicator of their authorization status, drones that have been granted permission to be flown over campus shall be represented by green icons, and drones that have not been granted permission shall be represented by red icons. In the event that a new, unauthorized drone enters campus air space, the system shall respond in this way: 
+
+1. An additional red icon shall appear on the map, marking the location of the drone.
+2. A window with specific information about the drone and its flight shall appear, stemming from the corresponding icon.
+3. The user will be presented with the option to grant or the new drone permission to make its flight. If authorization is granted, the icon will turn green and the informational box will go away. Otherwise, the information will continue to be displayed, so that the situation can be easily managed by dispatchers.
+
+An ordered list of all the detected drones and their authorization status shall be available on the website, as well. The user may click the Drone Management tab and revoke authorization from a drone when needed. This tool, combined with the map, ensures that the police have awareness and control over all the drones present on campus at any given time. 
 
 ## Ethical, Professional, and Standards Consideration
 ### Legal Standards
