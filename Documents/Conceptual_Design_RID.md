@@ -159,7 +159,6 @@ For example, this subsystem may be implemented using a Raspberry Pi Pico , which
 
 + Bluetooth Module Setup: The Raspberry Pi Pico can be programmed to operate as a Bluetooth Low Energy (BLE) scanner, continuously scanning for RID signals within the 2.4 GHz spectrum. It shall filter out non-RID packets and focus solely on recognized RID-compliant transmissions.
 + Data Processing: The Raspberry Pi Pico can parse the received BLE advertising packets, extracting relevant drone data such as identification, location, velocity, and status information.
-+ Data Transmission: The processed RID data can be transmitted via UART, SPI, or Wi-Fi to a central server for real-time monitoring and further analysis. The Raspberry Pi Pico's built-in Wi-Fi capability can be leveraged to send RID data over a local network or cloud-based server for centralized tracking.
 + Power Efficiency: The power consumption of the Raspberry Pi Pico W varies depending on its operational state. In Idle Mode (Bluetooth disabled), it draws approximately 30 mA, equating to about 100 mW at 3.3V. In Deep Sleep Mode, the power consumption decreases to approximately 4 mA, equating to about 13.2 mW at 3.3V.
 
 ### Wi-Fi RID Module
