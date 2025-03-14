@@ -74,10 +74,7 @@ Once the ToA or PoA data from all three transceivers is collected, the system us
 ### Drone Tracking using Image Recognition and Spectral Analysis
 Another approach integrates machine learning with a spectrum analyzer and a camera to detect RF signals, measure their power, and estimate the drone's approach angle. This method requires only a single transceiver, combining elements from both image recognition and RF-based tracking systems. In its idle state, the system continuously sweeps a designated frequency range, using machine learning algorithms to identify the presence of a drone's RF signal. Upon detecting a drone, the system estimates its position by analyzing the horizontal and vertical angles from the camera’s gimbal yaw and pitch (as previously discussed in the first method), while the spectrum analyzer provides the power level of the detected signal. The combination of these data points allows for more accurate tracking and localization of the drone within the monitored area.
 
-While this hybrid approach offers several benefits, it is limited to tracking only one drone at a time. The integration of both visual and RF data allows for better accuracy in estimating the drone's position and tracking its movements, but processing both data streams simultaneously can become computationally intensive.
-
 #### Pros:
-+ Single Transceiver Requirement: Uses only one transceiver, simplifying the hardware setup and reducing cost.
 + Improved Accuracy: Combines visual tracking with RF signal analysis for more accurate estimation of drone location and trajectory (mostly distance from transciever).
 + Power Consmption: Low power draw in its idle state due the camera not rotating and no computation.
 + Cost: Of all the solutions, this approach is moderately priced, striking a balance between cost and complexity. It requires only one transceiver, but the need for additional components, such as the spectrum analyzer and camera system, elevates its overall cost compared to simpler solutions.
