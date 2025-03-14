@@ -154,9 +154,9 @@ For example, this subsystem may be implemented using a Raspberry Pi Pico , which
 + Power Efficiency: The power consumption of the Raspberry Pi Pico W varies depending on its operational state. In Idle Mode (Bluetooth disabled), it draws approximately 30 mA, equating to about 100 mW at 3.3V. In Deep Sleep Mode, the power consumption decreases to approximately 4 mA, equating to about 13.2 mW at 3.3V.
 
 ### Wi-Fi RID Module
-The Wi-Fi transceiver shall receive Wi-Fi signals transmitted by drones flying over the campus. The Wi-Fi module shall scan continually scan the 2.4 GHz Wi-Fi band to locate RID signals transmitted from a drone.
+The Wi-Fi transceiver shall receive Wi-Fi signals transmitted by drones flying over the campus. The Wi-Fi module shall continually scan the 2.4 GHz Wi-Fi band to locate RID signals transmitted from a drone.
 
-Once a RID signal is aquired from a drone the following infomation packets can be extracted from the signal.
+Once a RID signal is aquired from a drone, the following information can be extracted.
 
 + Drone Identification: A unique identifier assigned to the drone.
 + Geolocation Data: The latitude, longitude, and altitude of the drone at the time of transmission.
@@ -164,7 +164,7 @@ Once a RID signal is aquired from a drone the following infomation packets can b
 + Timestamp: A precise timestamp indicating when the data was transmitted.
 + Emergency Status (if applicable): Indication of any emergency condition, such as a loss of control or return-to-home activation.
 
-The Wi-Fi module shall transfer the gathered information packets to the central computer module for proper interpretation and transmition to the server. This module designed to ensure consitant reception of RID infomation packets gathered from drones within campus airspace. The Wi-Fi module shall be designed to operate autonomously and with limited outside interaction.
+The Wi-Fi module shall transfer the gathered information packets to the central computer module for proper interpretation and transmission to the server. This module designed to ensure consitant reception of RID infomation packets gathered from drones within campus airspace. The Wi-Fi module shall be designed to operate autonomously and with limited outside interaction.
 
 ### Central Computer (Raspberry Pi)
 The central computer shall be securely mounted within the chassis to ensure both physical protection and optimal performance. It shall receive power through a dedicated power supply designed to meet the system’s operational requirements. To accommodate current and future operational needs, the central computer shall be equipped with no fewer than 20 General Purpose Input/Output (GPIO) pins, allowing for seamless interfacing with various components and enabling future expansions or upgrades.
