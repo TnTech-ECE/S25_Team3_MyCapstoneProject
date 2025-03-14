@@ -123,13 +123,13 @@ The design also optimizes resource utilization by maximizing available resources
 ### Power Supply
 The power supply module shall convert AC power into usable DC voltage for the system components. It shall first step down the AC voltage using a transformer and then convert it to DC using an AC/DC converter. The regulated DC power shall be distributed via a bus to modules that require DC power such as the Central Computer (Raspberry Pi) and the Spectrum Analyzer, ensuring they receive the necessary power for operation.
 
-### Spectrum Analyzer Module
-The spectrum analyzer (SA) module shall be mated with an omnidirectional antenna for the frequency range of 2.4 GHz to 5.8 GHz. The SA shall transmit digital data from the sampled RF signal to the microcontroller. The microcontroller shall utilize machine learning to detect the presence of a drone RF signal while also calculating the power of the signal (utilized for distance calculation). When a drone RF signal is detected, appropriate data (power of RF signal and frequency), shall be sent to the central computer for transmission to the server.
+### Chassis Module
+...
 
-### Camera Module
-The camera module shall be responsible for capturing visual data to detect and track drones within its field of view. It shall work in conjunction with a motorized chassis to adjust its orientation and calculate the angle of the drone's position relative to the system. The captured images shall be processed using a machine learning algorithm to identify whether the object in the image is a drone. If a drone is detected, the subsystem shall track its movement and provide real-time data to the central computer for further analysis and action.
+### Bluetooth RID Module
+...
 
-### Wi-Fi/RID Module
+### Wi-Fi RID Module
 The Wi-Fi transceiver shall receive the appropriate Wi-Fi signal emitted by the located drone. If applicable, the Bluetooth transceiver shall receive the connected RID signal from the drone. The Wi-Fi transceiver shall identify and extract the data packets from the received signal. If an RID signal is detected, the Bluetooth transceiver shall identify and extract the data packets. The data packets shall consist of necessary identification and location information. The extracted data packets shall be transmitted to the central computer. 
 
 ### Central Computer (Raspberry Pi)
