@@ -127,10 +127,10 @@ The design also optimizes resource utilization by maximizing available resources
 
 ## Atomic Subsystem Specifications
 ### Power Supply
-The power supply module shall convert AC power into usable DC voltage for the system components. It shall first step down the AC voltage using a transformer and then convert it to DC using an AC/DC converter. The regulated DC power shall be distributed via a bus to modules that require DC power such as the Central Computer (Raspberry Pi) and the Spectrum Analyzer, ensuring they receive the necessary power for operation.
+The power supply shall provide power to the central computer that will be distributed to other subsystems. It shall be mounted in the chassis to ensure maximum protection and optimal performance. It shall use alternating current (AC) electricity supplied by a power bank. The frequency of the AC power waveform shall be 60 Hz. A transformer shall be used to step down the voltage to the appropriate amount needed. The AC power shall then be converted to direct current (DC) by a converter It shall regulate the voltage to 5V to ensure the Raspberry Pi receives the correct and stable amount of power. The power bus shall distribute the power to the central computer via USB-C and GPIO Header. 
 
 ### Chassis Module
-...
+The chassis module shall provide adequate protection to the power supply and central computer. It shall ensure the subsystems are shielded from accidental impacts, shocks, or vibrations, as well as prevent accidental short circuits caused by dust, dirt, and debris build up. It shall include surge protection to the subsystems to protect them from voltage spikes or power surges The chassis shall include ventilation openings to dissipate heat and prevent overheating from the power supply and central computer. The design of the chassis shall keep components neatly organized and secure. It shall also allow for easy access for maintenance or troubleshooting. 
 
 ### Bluetooth RID Module
 The Bluetooth RID subsystem shall receive and process Bluetooth signals emitted by drones equipped with Remote ID (RID) transmitters. The Bluetooth transceiver shall continuously scan the 2.4 GHz Bluetooth frequency band to detect and capture RID signals while filtering out non-RID transmissions.
