@@ -136,9 +136,12 @@ The regulated 5V DC power shall then be distributed throughout the system using 
 A C13 male connector shall be integrated to allow ease of powering in cases where the nearest power outlet is more than 20 meters away. The power supply shall provide a continuous output of 25W. Additionally, it shall incorporate surge protection to safeguard against voltage spikes and transient surges, preventing potential damage to the Raspberry Pi and connected subsystems. Overcurrent protection shall also be implemented to prevent electrical faults and ensure the safety and longevity of critical components. 
 
 ### Chassis Module
-The chassis module shall provide robust protection and secure mounting positions for the power supply and central computer. It shall shield all subsystems from accidental impacts, shocks, and vibrations while also preventing short circuits caused by dust, dirt, and debris buildup.  
+TThe chassis module shall provide adequate protection for the power supply and central computer, ensuring their safety and performance. It shall shield components from accidental impacts, shocks, or vibrations that could cause physical damage. The design shall prevent dust, dirt, and debris from causing short circuits or degrading system performance. By keeping the internal components enclosed, the chassis shall protect against contamination, ensuring the system operates reliably.
 
-To ensure efficient thermal management, the chassis shall incorporate ventilation openings to dissipate heat and prevent overheating of the power supply and central computer. The design shall promote neat organization and secure placement of components while allowing easy access for maintenance and troubleshooting. 
+The power supply and central computer shall be equipped with ventilation openings for heat dissipation, preventing overheating and maintaining optimal performance during operation. Proper ventilation shall ensure that the system remains cool and performs efficiently.
+
+The chassis shall provide a well-organized interior, ensuring that all components are neatly arranged and securely mounted. Cable management features shall reduce clutter and minimize the risk of short circuits or signal interference. It shall allow for easy access to components for maintenance or troubleshooting.
+
 
 ### Bluetooth RID Module
 The Bluetooth RID subsystem shall receive and process Bluetooth signals emitted by drones equipped with Remote ID (RID) transmitters. The Bluetooth transceiver shall continuously scan the 2.4 GHz Bluetooth frequency band to detect and capture RID signals while filtering out non-RID transmissions.
