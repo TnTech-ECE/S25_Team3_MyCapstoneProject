@@ -172,11 +172,11 @@ As this project builds upon the work of the previous senior design team, certain
 The first unit is estimated to cost approximately $1500, utilizing the equipment already provided, along with necessary modifications and supplemental components. If time permits and campus police grant approval, additional units will be installed. Each of these units will function independently while maintaining a connection to the server.
 
 ### Division of Labor
-Amanda Bacon: Website/Server/Database; Power Supply
+Amanda Bacon: Website/Server/Database
 
-Brett Ballew: Spectrum Analyzer Module
+Brett Ballew: Chassis
 
-Tyler Bare: Camera Module
+Tyler Bare: Power Supply
 
 Erich Krepps: Central Computer (Rasperry Pi)
 
