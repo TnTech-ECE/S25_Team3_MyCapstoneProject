@@ -1,26 +1,33 @@
 # Meeting Minutes 7
-## 12mon2025 XXXX-XXXX
+## 12MAR2025 1430-1600
 Attendance: Brett Ballew, Tyler Bare, Mandy Bacon, Gabrielle Renfroe, & Erich Krepps
 
-meeting overview
+Reassign tasks for conceptual design portions with the RID primary rather than secondary.
 
-## ddmon2025 XXXX-XXXX
-Attendance: Brett Ballew, Tyler Bare, Mandy Bacon, Gabrielle Renfroe, & Erich Krepps
+## 13MAR2025 1400-2200
+Attendance: Brett Ballew & Tyler Bare
 
-meeting overview
+RID conceptual design overhaul. Those who did not attend corrected their part at a later time the next day.
+
+## 19MAR2025 1100-1130
+Attendance: Brett Ballew & Tyler Bare
+
+Met with police to confirm their wants and desires. They indeed chose RID.
 
 ### Team Assignments:
-* Brett: 
-* Elle : 
-* Tyler: 
-* Erich: 
-* Mandy: 
+* Brett: Central Computer (RPi)
+* Elle : Power & Chasis
+* Tyler: Bluetooth
+* Erich: Wi-Fi
+* Mandy: Server/Website
 
 ### Things to be done by all:
 
+Continually improve your sections in the conceptual design based on comments.
 
 ### Important Notes
 
+Police said the proposed budget is about as much as a new pair of pants.
 
 ### Next Meeting:
-As it stands: ddmon2025 XXXX to XXXX
+As it stands: 24MAR2025 1430 to 1600
