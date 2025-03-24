@@ -205,7 +205,8 @@ The design also optimizes resource utilization by maximizing available resources
 
   	- An additional red icon shall appear on the map, marking the location of the drone.
 	- A window with specific information about the drone and its flight shall appear, stemming from the corresponding icon.
-	- The user shall be presented with the option to grant or the new drone permission to make its flight. If authorization is granted, the icon will turn green and the 	informational box will go away. Otherwise, the information shall continue to be displayed, so that the situation can be easily managed by dispatchers.
+	- The user shall be presented with the option to grant or the new drone permission to make its flight.
+ 	- Should authorization be granted, the icon shall turn green and the informational box shall go away. Otherwise, the information shall continue to be displayed, so that the situation can be easily managed by dispatchers.
 
 - An ordered list of all the detected drones and their authorization status shall be available on the website.
 - The user shall be able to click the Drone Management tab and revoke authorization from a drone when needed. 
