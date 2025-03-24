@@ -126,83 +126,89 @@ The design also optimizes resource utilization by maximizing available resources
 
 ## Atomic Subsystem Specifications
 ### Power Supply
-The power supply shall provide stable and efficient power to the central computer, a Raspberry Pi 4 B, ensuring continuous operation of all connected subsystems. The power to the Raspberry Pi shall be facilitated via a barrel plug power jack. The power supply shall be mounted within the chassis to ensure maximum protection, durability, and optimal thermal management.  
-
-The power supply shall utilize alternating current (AC) electricity sourced from a power bank and shall operate at a frequency of 60 Hz. A step-down transformer shall reduce the AC voltage to 5V. A full-wave rectifier shall convert the AC voltage to direct current (DC) to ensure a stable and filtered output.  
-
-A C13 male connector shall be integrated to allow ease of powering in cases where the nearest power outlet is more than 20 meters away. The power supply shall provide a continuous output of 25W. Additionally, it shall incorporate surge protection to safeguard against voltage spikes and transient surges, preventing potential damage to the Raspberry Pi and connected subsystems. Overcurrent protection shall also be implemented to prevent electrical faults and ensure the safety and longevity of critical components. 
+- The power supply shall provide stable and efficient power to the central computer, a Raspberry Pi 4 B, ensuring continuous operation of all connected subsystems.
+- The power to the Raspberry Pi shall be facilitated via a barrel plug power jack.
+- The power supply shall be mounted within the chassis to ensure maximum protection, durability, and optimal thermal management.  
+- The power supply shall utilize alternating current (AC) electricity sourced from a power bank and shall operate at a frequency of 60 Hz.
+- A step-down transformer shall efficiently lower the AC voltage to a range between 4.75 V and 5.25 V.
+- A full-wave rectifier shall convert the AC voltage to direct current (DC) to ensure a stable and filtered output.  
+- A C13 male connector shall be integrated to allow ease of powering in cases where the nearest power outlet is more than 20 meters away.
+- The power supply shall provide a continuous output of 25W.
+- The power supply shall incorporate surge protection to safeguard against voltage spikes and transient surges, preventing potential damage to the Raspberry Pi and connected subsystems.
+- Overcurrent protection shall also be implemented to prevent electrical faults and ensure the safety and longevity of critical components. 
 
 ### Chassis Module
-TThe chassis module shall provide adequate protection for the power supply and central computer, ensuring their safety and performance. It shall shield components from accidental impacts, shocks, or vibrations that could cause physical damage. The design shall prevent dust, dirt, and debris from causing short circuits or degrading system performance. By keeping the internal components enclosed, the chassis shall protect against contamination, ensuring the system operates reliably.
-
-The power supply and central computer shall be equipped with ventilation openings for heat dissipation, preventing overheating and maintaining optimal performance during operation. Proper ventilation shall ensure that the system remains cool and performs efficiently.
-
-The chassis shall provide a well-organized interior, ensuring that all components are neatly arranged and securely mounted. Cable management features shall reduce clutter and minimize the risk of short circuits or signal interference. It shall allow for easy access to components for maintenance or troubleshooting.
+- The chassis module shall provide adequate protection for the power supply and central computer, ensuring their safety and performance.
+- It shall shield components from accidental impacts, shocks, or vibrations that could cause physical damage.
+- The design shall prevent dust, dirt, and debris from causing short circuits or degrading system performance.
+- By keeping the internal components enclosed, the chassis shall protect against contamination, ensuring the system operates reliably.
+- The power supply and central computer shall be equipped with ventilation openings for heat dissipation, preventing overheating and maintaining optimal performance during operation.
+- Proper ventilation shall ensure that the system remains cool and performs efficiently.
+- The chassis shall provide a well-organized interior, ensuring that all components are neatly arranged and securely mounted.
+- Cable management features shall reduce clutter and minimize the risk of short circuits or signal interference.
+- It shall allow for easy access to components for maintenance or troubleshooting.
 
 
 ### Bluetooth RID Module
-The Bluetooth RID subsystem shall receive and process Bluetooth signals emitted by drones equipped with Remote ID (RID) transmitters. The Bluetooth transceiver shall continuously scan the 2.4 GHz Bluetooth frequency band to detect and capture RID signals while filtering out non-RID transmissions.
+- The Bluetooth RID subsystem shall receive and process Bluetooth signals emitted by drones equipped with Remote ID (RID) transmitters.
+- The Bluetooth transceiver shall continuously scan the 2.4 GHz Bluetooth frequency band to detect and capture RID signals while filtering out non-RID transmissions.
 
-Upon detection of an RID signal, the Bluetooth transceiver shall extract the relevant data packets embedded in the signal. These packets shall include, but are not limited to:
+- Upon detection of an RID signal, the Bluetooth transceiver shall extract the relevant data packets embedded in the signal. These packets shall include, but are not limited to:
+	- Drone Identification: A unique identifier assigned to the drone.
+ 	- Geolocation Data: The latitude, longitude, and altitude of the drone at the time of transmission.
+	- Velocity Information: The drone’s ground speed and direction of movement.
+	- Timestamp: A precise timestamp indicating when the data was transmitted.
+	- Emergency Status (if applicable): Indication of any emergency condition, such as a loss of control or return-to-home activation.
 
-+ Drone Identification: A unique identifier assigned to the drone.
-+ Geolocation Data: The latitude, longitude, and altitude of the drone at the time of transmission.
-+ Velocity Information: The drone’s ground speed and direction of movement.
-+ Timestamp: A precise timestamp indicating when the data was transmitted.
-+ Emergency Status (if applicable): Indication of any emergency condition, such as a loss of control or return-to-home activation.
-
-Once extracted, the RID data packets shall be transmitted in real-time to the central computer for processing and server transmission. The system shall ensure reliable reception of all RID data from drones operating within the designated tracking area, which includes the entire contiguous campus. This subsystem is designed to function autonomously, requiring minimal intervention while ensuring accurate and efficient drone tracking for compliance, security, and situational awareness purposes.
-Implementation with Raspberry Pi Pico W
-
-For example, this subsystem may be implemented using a Raspberry Pi Pico , which includes Bluetooth Low Energy (BLE) functionality via its wireless module. The implementation shall include the following components:
-
-+ Bluetooth Module Setup: The Raspberry Pi Pico can be programmed to operate as a Bluetooth Low Energy (BLE) scanner, continuously scanning for RID signals within the 2.4 GHz spectrum. It shall filter out non-RID packets and focus solely on recognized RID-compliant transmissions.
-+ Data Processing: The Raspberry Pi Pico can parse the received BLE advertising packets, extracting relevant drone data such as identification, location, velocity, and status information.
-+ Power Efficiency: The power consumption of the Raspberry Pi Pico W varies depending on its operational state. In Idle Mode (Bluetooth disabled), it draws approximately 30 mA, equating to about 100 mW at 3.3V. In Deep Sleep Mode, the power consumption decreases to approximately 4 mA, equating to about 13.2 mW at 3.3V.
+- Once extracted, the RID data packets shall be transmitted in real-time to the central computer for processing and server transmission.
+- The system shall ensure reliable reception of all RID data from drones operating within the designated tracking area, which includes the entire contiguous campus.
+- This subsystem is designed to function autonomously, requiring minimal intervention while ensuring accurate and efficient drone tracking for compliance, security, and situational awareness purposes.
 
 ### Wi-Fi RID Module
-The Wi-Fi transceiver shall receive Wi-Fi signals transmitted by drones flying over the campus. The Wi-Fi module shall continually scan the 2.4 GHz Wi-Fi band to locate RID signals transmitted from a drone.
+- The Wi-Fi transceiver shall receive Wi-Fi signals transmitted by drones flying over the campus.
+- The Wi-Fi module shall continually scan the 2.4 GHz Wi-Fi band to locate RID signals transmitted from a drone.
 
-Once a RID signal is aquired from a drone, the following information can be extracted.
+- Once a RID signal is aquired from a drone, the following information shall be extracted:
+	- Drone Identification: A unique identifier assigned to the drone.
+	- Geolocation Data: The latitude, longitude, and altitude of the drone at the time of transmission.
+ 	- Velocity Information: The drone’s ground speed and direction of movement.
+	- Timestamp: A precise timestamp indicating when the data was transmitted.
+	- Emergency Status (if applicable): Indication of any emergency condition, such as a loss of control or return-to-home activation.
 
-+ Drone Identification: A unique identifier assigned to the drone.
-+ Geolocation Data: The latitude, longitude, and altitude of the drone at the time of transmission.
-+ Velocity Information: The drone’s ground speed and direction of movement.
-+ Timestamp: A precise timestamp indicating when the data was transmitted.
-+ Emergency Status (if applicable): Indication of any emergency condition, such as a loss of control or return-to-home activation.
-
-The Wi-Fi module shall transfer the gathered information packets to the central computer module for proper interpretation and transmission to the server. This module designed to ensure consitant reception of RID infomation packets gathered from drones within campus airspace. The Wi-Fi module shall be designed to operate autonomously and with limited outside interaction.
+- The Wi-Fi module shall transfer the gathered information packets to the central computer module for proper interpretation and transmission to the server.
+- This module shall be designed to ensure constant reception of RID information packets gathered from drones within campus airspace.
+- The Wi-Fi module shall be designed to operate autonomously and with limited outside interaction.
 
 ### Central Computer (Raspberry Pi)
-The central computer shall be securely mounted within the chassis to ensure both physical protection and optimal performance. It shall receive power through a dedicated power supply designed to meet the system’s operational requirements. To accommodate current and future operational needs, the central computer shall be equipped with no fewer than 20 General Purpose Input/Output (GPIO) pins, allowing for seamless interfacing with various components and enabling future expansions or upgrades.
-
-In terms of power distribution, the central computer shall supply power to both the Wi-Fi and Bluetooth RID modules, ensuring that these modules have the necessary power for operation. It shall communicate with the Wi-Fi and Bluetooth RID modules through digital signaling, ensuring proper data exchange and synchronization within the system.
-
-Additionally, the central computer shall handle packet processing and data storage. It shall process incoming RID signal data, extracting relevant information such as drone ID, location, speed, and other key parameters. This data shall be securely stored for both real-time and historical tracking purposes. After processing, the central computer shall transmit the gathered drone information to the Campus Police server via a secure Wi-Fi connection. The transmitted data shall be encrypted to ensure confidentiality and integrity, preventing unauthorized access or tampering during transmission. This design shall ensure that all communication between the central computer and the server remains secure, reliable, and efficient, providing critical support to campus security operations in real-time.
-
-The Raspberry Pi Model B is the ideal candidate for the central computer due to its compact size, versatility, and sufficient processing power for the system's requirements. The following specifications highlight key features that make the Raspberry Pi Model B an appropriate choice for this application:
-
-+ 2 USB 3.0 Ports: These provide high-speed data transfer, useful for future upgrades such as connecting a spectrum analyzer or other peripherals.
-+ 2 USB 2.0 Ports: These are essential for local programming and debugging, offering an alternative to SSH access.
-+ 2 micro-HDMI Ports: These allow for direct connection to monitors for local programming and system diagnostics, providing flexibility in system setup and maintenance.
-+ 40 GPIO Pins: This provides ample room for future expansions and customizations, making the Raspberry Pi Model B highly adaptable for additional components or sensors as the system evolves.
-+ 5V DC via USB-C: This simplifies the integration of the power supply, ensuring compatibility with commonly available power sources.
-+ 5V DC via GPIO Header: This feature is crucial for powering the Wi-Fi and Bluetooth RID modules, ensuring that all system components are adequately powered.
-+ 2.7 W Idle Power Draw: This low power consumption makes the Raspberry Pi Model B an efficient choice, minimizing operational costs when the system is in an idle state.
-+ 3.94 x 2.76 x 1.18 Inches: Its compact size ensures that the Raspberry Pi Model B can be easily housed in a custom-designed case, saving space and facilitating integration within the overall system design.
-
-These specifications ensure that the Raspberry Pi Model B is both cost-effective and capable of meeting the performance and expandability needs of the drone tracking system.
+- The central computer shall be securely mounted within the chassis to ensure both physical protection and optimal performance.
+- It shall receive power through a dedicated power supply designed to meet the system’s operational requirements.
+- To accommodate current and future operational needs, the central computer shall be equipped with no fewer than 20 General Purpose Input/Output (GPIO) pins, allowing for seamless interfacing with various components and enabling future expansions or upgrades.
+- In terms of power distribution, the central computer shall supply power to both the Wi-Fi and Bluetooth RID modules, ensuring that these modules have the necessary power for operation.
+- It shall communicate with the Wi-Fi and Bluetooth RID modules through digital signaling, ensuring proper data exchange and synchronization within the system.
+- Additionally, the central computer shall handle packet processing and data storage.
+- It shall process incoming RID signal data, extracting relevant information such as drone ID, location, speed, and other key parameters.
+- This data shall be securely stored for both real-time and historical tracking purposes.
+- After processing, the central computer shall transmit the gathered drone information to the Campus Police server via a secure Wi-Fi connection.
+- The transmitted data shall be encrypted to ensure confidentiality and integrity, preventing unauthorized access or tampering during transmission.
+- This design shall ensure that all communication between the central computer and the server remains secure, reliable, and efficient, providing critical support to campus security operations in real-time.
 
 ### Server, Database, and Website
-The server shall receive the packaged information obtained from the RID signal via a File Transfer Protocol (FTP) transmission from the central computer. After the data has been unpacked and processed, it shall be stored in the database system and acquired by the website when needed. The information being stored is the information extracted by the Bluetooth or Wi-Fi module: the drone identification, geolocation data, velocity information, timestamp, and emergency status. 
+- The server shall receive the packaged information obtained from the RID signal via a File Transfer Protocol (FTP) transmission from the central computer.
+- After the data has been unpacked and processed, it shall be stored in the database system and acquired by the website when needed.
+- The website shall be created to allow the police to interact with and interpret the captured data in real time.
+- The website shall require a password to be accessed to ensure that the ability to track the detected drones and make changes to their authorization status is given to campus authorities only.
+- The website shall be straightforward with an intuitive user interface.
+- Upon entering the password to log in to the website, the user shall be presented with a map of the TTU contiguous campus.
+- If there are any RID emitting drones detected to be flying over campus in the present moment, those drones shall be represented by mobile icons indicating their location in real time.
+- As a visual indicator of their authorization status, drones that have been granted permission to be flown over campus shall be represented by green icons, and drones that have not been granted permission shall be represented by red icons.
+- In the event that a new, unauthorized drone enters campus air space, the system shall respond in this way: 
 
-The website shall be created to allow the police to interact with and interpret the captured data in real time. This website shall require a password to be accessed to ensure that the ability to track the detected drones and make changes to their authorization status is given to campus authorities only. The website will be straightforward with an intuitive user interface. Upon entering the password to log in to the website, the user will be presented with a map of the TTU contiguous campus. If there are any RID emitting drones detected to be flying over campus in the present moment, those drones shall be represented by mobile icons indicating their location in real time. As a visual indicator of their authorization status, drones that have been granted permission to be flown over campus shall be represented by green icons, and drones that have not been granted permission shall be represented by red icons. In the event that a new, unauthorized drone enters campus air space, the system shall respond in this way: 
+  	- An additional red icon shall appear on the map, marking the location of the drone.
+	- A window with specific information about the drone and its flight shall appear, stemming from the corresponding icon.
+	- The user shall be presented with the option to grant or the new drone permission to make its flight. If authorization is granted, the icon will turn green and the 	informational box will go away. Otherwise, the information shall continue to be displayed, so that the situation can be easily managed by dispatchers.
 
-1. An additional red icon shall appear on the map, marking the location of the drone.
-2. A window with specific information about the drone and its flight shall appear, stemming from the corresponding icon.
-3. The user will be presented with the option to grant or the new drone permission to make its flight. If authorization is granted, the icon will turn green and the informational box will go away. Otherwise, the information will continue to be displayed, so that the situation can be easily managed by dispatchers.
-
-An ordered list of all the detected drones and their authorization status shall be available on the website, as well. The user may click the Drone Management tab and revoke authorization from a drone when needed. This tool, combined with the map, ensures that the police have awareness and control over all the drones present on campus at any given time. 
+- An ordered list of all the detected drones and their authorization status shall be available on the website.
+- The user shall be able to click the Drone Management tab and revoke authorization from a drone when needed. 
 
 ## Ethical, Professional, and Standards Consideration
 ### Legal Standards
