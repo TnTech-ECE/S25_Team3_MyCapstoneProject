@@ -5,7 +5,6 @@ Tennessee Technological University
 <div align="left">
 	
 ## Introduction 
-### Introduction  
 
 The increasing presence of Unmanned Aircraft Systems (UAS), commonly known as drones, has introduced both opportunities and challenges in various environments, including university campuses. While drones offer numerous benefits, concerns regarding safety, privacy, and security have emerged due to unauthorized or reckless operations. In response to these challenges, regulatory measures such as the Federal Aviation Administration’s (FAA) Remote Identification (RID) requirement have been implemented to enhance drone accountability.  
 
