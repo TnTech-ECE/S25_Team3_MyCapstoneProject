@@ -162,7 +162,8 @@ The design also optimizes resource utilization by maximizing available resources
 
 - Once extracted, the RID data packets shall be transmitted in real-time to the central computer for processing and server transmission.
 - The system shall ensure reliable reception of all RID data from drones operating within the designated tracking area, which includes the entire contiguous campus.
-- This subsystem is designed to function autonomously, requiring minimal intervention while ensuring accurate and efficient drone tracking for compliance, security, and situational awareness purposes.
+- This subsystem shall function autonomously, requiring minimal intervention while ensuring accurate and efficient drone tracking for compliance, security, and situational awareness purposes.
+- The Bluetooth module shall be integrated in the the Central Computer (Raspberry Pi).
 
 ### Wi-Fi RID Module
 - The Wi-Fi transceiver shall receive Wi-Fi signals transmitted by drones flying over the campus.
