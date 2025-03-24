@@ -244,15 +244,15 @@ As this project builds upon the work of the previous senior design team, certain
 The first unit is estimated to cost approximately $590.00, utilizing the equipment already provided, along with necessary modifications and supplemental components. If time permits and campus police grant approval, additional units will be installed. Each of these units will function independently while maintaining a connection to the server.
 
 ### Division of Labor
-Amanda Bacon: Website/Server/Database
+Amanda Bacon: Chassis
 
 Brett Ballew: Central Computer (Rasperry Pi)
 
-Tyler Bare: Bluetooth RID Module
+Tyler Bare: Power Supply
 
-Erich Krepps: Wi-Fi RID Module
+Erich Krepps: Website
 
-Gabrielle Renfroe: Power Supply, Chassis
+Gabrielle Renfroe: Server/Database
 
 ### Timeline
 <img src= "/Documents/Images/Gantt Chart for Project Proposal-1.png" width="3200" height="900">
