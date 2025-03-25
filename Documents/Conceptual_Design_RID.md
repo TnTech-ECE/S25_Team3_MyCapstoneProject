@@ -119,7 +119,7 @@ To minimize risks, the system incorporates several safeguards. Data security is 
 The design also optimizes resource utilization by maximizing available resources and minimizing waste. Hardware efficiency is achieved through the selection of cost-effective yet high-performing components, such as the Wi-Fi transciever, Bluetooth transciever, and microcontroller. Software optimization is accomplished through the use of open-source tools like KiCad for PCB design and FreeRTOS for embedded systems, as well as university-licensed software such as AutoCAD and Visual Studio Code. Python and C/C++ are utilized for their versatility in high-level data processing and low-level firmware development. The modular design allows for incremental deployment, starting with high-priority areas like athletic fields and dormitories, and expanding to additional zones like the Golden Eagle Golf Club as resources permit. Finally, the system is designed for long-term reliability, with weatherproofing and durable components reducing the need for frequent maintenance. 
 
 ### Hardware Block Diagram
-<img src= "/Documents/Images/Conceptual Design - Block Diagram - RID.png" width="5000" height="450">
+<img src= "/Documents/Images/Conceptual Design - Block Diagram - RID (1).png" width="4000" height="750">
 
 ### Operational Flowchart
 <img src= "/Documents/Images/Conceptual Design - Flow Chart - RID-1.png" width="3200" height="900">
