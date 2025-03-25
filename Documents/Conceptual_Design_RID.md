@@ -193,9 +193,12 @@ The design also optimizes resource utilization by maximizing available resources
 - The transmitted data shall be encrypted to ensure confidentiality and integrity, preventing unauthorized access or tampering during transmission.
 - This design shall ensure that all communication between the central computer and the server remains secure, reliable, and efficient, providing critical support to campus security operations in real-time.
 
-### Server, Database, and Website
+### Server/Database
 - The server shall receive the packaged information obtained from the RID signal via a File Transfer Protocol (FTP) transmission from the central computer.
-- After the data has been unpacked and processed, it shall be stored in the database system and acquired by the website when needed.
+- After the data has been unpacked and processed, it shall be stored in the database system.
+
+### Website
+- The website shall pull the processed data from the server/database module.
 - The website shall be created to allow the police to interact with and interpret the captured data in real time.
 - The website shall require a password to be accessed to ensure that the ability to track the detected drones and make changes to their authorization status is given to campus authorities only.
 - The website shall be straightforward with an intuitive user interface.
@@ -210,7 +213,7 @@ The design also optimizes resource utilization by maximizing available resources
  	- Should authorization be granted, the icon shall turn green and the informational box shall go away. Otherwise, the information shall continue to be displayed, so that the situation can be easily managed by dispatchers.
 
 - An ordered list of all the detected drones and their authorization status shall be available on the website.
-- The user shall be able to click the Drone Management tab and revoke authorization from a drone when needed. 
+- The user shall be able to click the Drone Management tab and revoke authorization from a drone when needed.
 
 ## Ethical, Professional, and Standards Consideration
 ### Legal Standards
