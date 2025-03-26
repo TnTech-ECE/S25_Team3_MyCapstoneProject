@@ -154,12 +154,8 @@ The design also optimizes resource utilization by maximizing available resources
 - It shall receive power through a dedicated power supply designed to meet the system’s operational requirements.
 - The central computer shall draw no more than 16 W of power.
 - To accommodate current and future operational needs, the central computer shall be equipped with no fewer than 20 General Purpose Input/Output (GPIO) pins, allowing for seamless interfacing with various components and enabling future expansions or upgrades.
-- In terms of power distribution, the central computer shall supply power to both the Wi-Fi and Bluetooth RID modules, ensuring that these modules have the necessary power for operation.
-- It shall communicate with the Wi-Fi and Bluetooth RID modules through digital signaling, ensuring proper data exchange and synchronization within the system.
-- Additionally, the central computer shall handle packet processing and data storage.
-- It shall process incoming RID signal data, extracting relevant information such as drone ID, location, speed, and other key parameters.
-- This data shall be securely stored for both real-time and historical tracking purposes.
-- After processing, the central computer shall transmit the gathered drone information to the Campus Police server via a secure Wi-Fi connection.
+- The central computer shall process packets and store data obtained from the Wi-Fi and Bluetooth transceivers.
+- The central computer shall transmit the gathered drone information to the Campus Police server via a secure Wi-Fi connection.
 - The transmitted data shall be encrypted to ensure confidentiality and integrity, preventing unauthorized access or tampering during transmission.
 - This design shall ensure that all communication between the central computer and the server remains secure, reliable, and efficient, providing critical support to campus security operations in real-time.
 
@@ -231,18 +227,15 @@ As this project builds upon the work of the previous senior design team, certain
 |        Component        | Count |  Unit Cost  |    Cost    | Running Total |
 |        ---------        | ----- |    ------   |   -------  | ------------- |
 |      Power Supply       |   1   |    $60.00   |    $60.00  |      $60.00   |
-| Omnidirectional Antenna |   2   |    $50.00   |   $100.00  |     $160.00   |
-|     Wi-Fi Transceiver   |   1   |    $50.00   |    $50.00  |	   $210.00   |
-|  Bluetooth Transceiver  |   1   |    $50.00   |    $50.00  |	   $260.00   |
-|     Microcontroller     |   1   |   $100.00   |   $100.00  |	   $360.00   | 
-|      Memory Module      |   1   |    $50.00   |    $50.00  |     $410.00   |
-|         Wiring          |  N/A  |    $50.00   |    $50.00  |	   $460.00   |
-|        Enclosure        |   1   |    $20.00   |    $20.00  |	   $480.00   |
-|     Weather Proofing    |  N/A  |    $20.00   |    $20.00  |	   $500.00   |
-|    Mounting Hardware    |  N/A  |    $20.00   |    $20.00  |	   $520.00   |	
-|          Misc           |  N/A  |   $300.00   |   $300.00  |   **$820.00** |	
+|     Microcontroller     |   1   |   $100.00   |   $100.00  |	   $160.00   | 
+|      Memory Module      |   1   |    $50.00   |    $50.00  |     $210.00   |
+|         Wiring          |  N/A  |   $100.00   |   $100.00  |	   $310.00   |
+|        Enclosure        |   1   |    $20.00   |    $20.00  |	   $330.00   |
+|     Weather Proofing    |  N/A  |    $20.00   |    $20.00  |	   $350.00   |
+|    Mounting Hardware    |  N/A  |    $20.00   |    $20.00  |	   $370.00   |	
+|          Misc           |  N/A  |   $300.00   |   $300.00  |   **$670.00** |	
 
-The first unit is estimated to cost approximately $590.00, utilizing the equipment already provided, along with necessary modifications and supplemental components. If time permits and campus police grant approval, additional units will be installed. Each of these units will function independently while maintaining a connection to the server.
+The first unit is estimated to cost approximately $440.00, utilizing the equipment already provided, along with necessary modifications and supplemental components. If time permits and campus police grant approval, additional units will be installed. Each of these units will function independently while maintaining a connection to the server.
 
 ### Division of Labor
 Amanda Bacon: Chassis
