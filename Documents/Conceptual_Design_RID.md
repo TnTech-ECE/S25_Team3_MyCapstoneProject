@@ -185,7 +185,7 @@ The design also optimizes resource utilization by maximizing available resources
 	- Emergency Status (if applicable): Indication of any emergency condition, such as a loss of control or return-to-home activation.
 - This module shall be designed to ensure constant reception of RID information packets gathered from drones within campus airspace.
 - The Wi-Fi module shall be designed to operate autonomously and with limited outside interaction.
-- The Bluetooth module shall be integrated in the the Central Computer (Raspberry Pi).
+- The Wi-Fi module shall be integrated in the the Central Computer (Raspberry Pi).
 
 ### Server/Database
 - The server shall receive the packaged information obtained from the RID signal via a File Transfer Protocol (FTP) transmission from the central computer.
