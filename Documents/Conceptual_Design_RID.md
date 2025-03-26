@@ -151,6 +151,7 @@ The design also optimizes resource utilization by maximizing available resources
 ### Central Computer (Raspberry Pi)
 - The central computer shall be securely mounted within the chassis to ensure both physical protection and optimal performance.
 - It shall receive power through a dedicated power supply designed to meet the system’s operational requirements.
+- The central computer shall draw no more than 16 W of power.
 - To accommodate current and future operational needs, the central computer shall be equipped with no fewer than 20 General Purpose Input/Output (GPIO) pins, allowing for seamless interfacing with various components and enabling future expansions or upgrades.
 - In terms of power distribution, the central computer shall supply power to both the Wi-Fi and Bluetooth RID modules, ensuring that these modules have the necessary power for operation.
 - It shall communicate with the Wi-Fi and Bluetooth RID modules through digital signaling, ensuring proper data exchange and synchronization within the system.
@@ -171,12 +172,13 @@ The design also optimizes resource utilization by maximizing available resources
 	- Velocity Information: The drone’s ground speed and direction of movement.
 	- Timestamp: A precise timestamp indicating when the data was transmitted.
 	- Emergency Status (if applicable): Indication of any emergency condition, such as a loss of control or return-to-home activation.
-- The system shall ensure reliable reception of all RID data from drones operating within the designated tracking area, which includes the entire contiguous campus.
+- The system shall ensure reliable reception of all RID data from drones operating within the designated tracking area.
 - This system shall function autonomously, requiring minimal intervention while ensuring accurate and efficient drone tracking for compliance, security, and situational awareness purposes.
 - The Bluetooth module shall be integrated in the the Central Computer (Raspberry Pi).
 
 #### Wi-Fi RID Module (Integrated)
 - The Wi-Fi transceiver shall receive Wi-Fi signals transmitted by drones flying over the campus.
+- The transceiver shall have a minimum range of 200 meters (dependent on RID transciever quality).
 - The Wi-Fi module shall continually scan the 2.4 GHz Wi-Fi band to locate RID signals transmitted from a drone.
 - Once a RID signal is aquired from a drone, the following information shall be extracted:
 	- Drone Identification: A unique identifier assigned to the drone.
