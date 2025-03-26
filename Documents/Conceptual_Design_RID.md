@@ -187,6 +187,8 @@ The design also optimizes resource utilization by maximizing available resources
 - The Wi-Fi module shall be designed to operate autonomously and with limited outside interaction.
 - The Wi-Fi module shall be integrated in the the Central Computer (Raspberry Pi).
 
+It should be noted that, with the ranges described above for both the Bluetooth and Wi-Fi transceivers, 10 units shall be necessary to cover the roughly 1.2 square kilometers of Tennessee Tech's main campus, as each unit shall have a coverage of 0.12 square kilometers.
+
 ### Server/Database
 - The server shall receive the packaged information obtained from the RID signal via a Transmission Control Protocol (TCP) from the central computer.
 - After the data has been unpacked and processed, it shall be stored in the database system for 30 days before being deleted.
