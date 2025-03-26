@@ -148,21 +148,6 @@ The design also optimizes resource utilization by maximizing available resources
 - Cable management features shall reduce clutter and minimize the risk of short circuits or signal interference.
 - It shall allow for easy access to components for maintenance or troubleshooting.
 
-### Wi-Fi RID Module
-- The Wi-Fi transceiver shall receive Wi-Fi signals transmitted by drones flying over the campus.
-- The Wi-Fi module shall continually scan the 2.4 GHz Wi-Fi band to locate RID signals transmitted from a drone.
-
-- Once a RID signal is aquired from a drone, the following information shall be extracted:
-	- Drone Identification: A unique identifier assigned to the drone.
-	- Geolocation Data: The latitude, longitude, and altitude of the drone at the time of transmission.
- 	- Velocity Information: The drone’s ground speed and direction of movement.
-	- Timestamp: A precise timestamp indicating when the data was transmitted.
-	- Emergency Status (if applicable): Indication of any emergency condition, such as a loss of control or return-to-home activation.
-
-- The Wi-Fi module shall transfer the gathered information packets to the central computer module for proper interpretation and transmission to the server.
-- This module shall be designed to ensure constant reception of RID information packets gathered from drones within campus airspace.
-- The Wi-Fi module shall be designed to operate autonomously and with limited outside interaction.
-
 ### Central Computer (Raspberry Pi)
 - The central computer shall be securely mounted within the chassis to ensure both physical protection and optimal performance.
 - It shall receive power through a dedicated power supply designed to meet the system’s operational requirements.
@@ -176,9 +161,8 @@ The design also optimizes resource utilization by maximizing available resources
 - The transmitted data shall be encrypted to ensure confidentiality and integrity, preventing unauthorized access or tampering during transmission.
 - This design shall ensure that all communication between the central computer and the server remains secure, reliable, and efficient, providing critical support to campus security operations in real-time.
 
-#### Bluetooth RID Module
+#### Bluetooth RID Module (Integrated)
 - The Bluetooth transceiver shall continuously scan the 2.4 GHz Bluetooth frequency band to detect and capture RID signals while filtering out non-RID transmissions.
-
 - Upon detection of an RID signal, the Bluetooth transceiver shall extract the relevant data packets embedded in the signal. These packets shall include, but are not limited to:
 	- Drone Identification: A unique identifier assigned to the drone.
  	- Geolocation Data: The latitude, longitude, and altitude of the drone at the time of transmission.
@@ -187,6 +171,19 @@ The design also optimizes resource utilization by maximizing available resources
 	- Emergency Status (if applicable): Indication of any emergency condition, such as a loss of control or return-to-home activation.
 - The system shall ensure reliable reception of all RID data from drones operating within the designated tracking area, which includes the entire contiguous campus.
 - This subsystem shall function autonomously, requiring minimal intervention while ensuring accurate and efficient drone tracking for compliance, security, and situational awareness purposes.
+- The Bluetooth module shall be integrated in the the Central Computer (Raspberry Pi).
+
+#### Wi-Fi RID Module (Integrated)
+- The Wi-Fi transceiver shall receive Wi-Fi signals transmitted by drones flying over the campus.
+- The Wi-Fi module shall continually scan the 2.4 GHz Wi-Fi band to locate RID signals transmitted from a drone.
+- Once a RID signal is aquired from a drone, the following information shall be extracted:
+	- Drone Identification: A unique identifier assigned to the drone.
+	- Geolocation Data: The latitude, longitude, and altitude of the drone at the time of transmission.
+ 	- Velocity Information: The drone’s ground speed and direction of movement.
+	- Timestamp: A precise timestamp indicating when the data was transmitted.
+	- Emergency Status (if applicable): Indication of any emergency condition, such as a loss of control or return-to-home activation.
+- This module shall be designed to ensure constant reception of RID information packets gathered from drones within campus airspace.
+- The Wi-Fi module shall be designed to operate autonomously and with limited outside interaction.
 - The Bluetooth module shall be integrated in the the Central Computer (Raspberry Pi).
 
 ### Server/Database
