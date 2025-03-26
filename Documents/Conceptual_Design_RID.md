@@ -163,6 +163,8 @@ The design also optimizes resource utilization by maximizing available resources
 
 #### Bluetooth RID Module (Integrated)
 - The Bluetooth transceiver shall continuously scan the 2.4 GHz Bluetooth frequency band to detect and capture RID signals while filtering out non-RID transmissions.
+- The transceiver shall have a minimum range of 200 meters (dependent on RID transciever quality).
+- The transciever shall have a Bluetooth PHY sensitivity of LE 1M to ensure adequate connections at the minimum specified range.
 - Upon detection of an RID signal, the Bluetooth transceiver shall extract the relevant data packets embedded in the signal. These packets shall include, but are not limited to:
 	- Drone Identification: A unique identifier assigned to the drone.
  	- Geolocation Data: The latitude, longitude, and altitude of the drone at the time of transmission.
@@ -170,7 +172,7 @@ The design also optimizes resource utilization by maximizing available resources
 	- Timestamp: A precise timestamp indicating when the data was transmitted.
 	- Emergency Status (if applicable): Indication of any emergency condition, such as a loss of control or return-to-home activation.
 - The system shall ensure reliable reception of all RID data from drones operating within the designated tracking area, which includes the entire contiguous campus.
-- This subsystem shall function autonomously, requiring minimal intervention while ensuring accurate and efficient drone tracking for compliance, security, and situational awareness purposes.
+- This system shall function autonomously, requiring minimal intervention while ensuring accurate and efficient drone tracking for compliance, security, and situational awareness purposes.
 - The Bluetooth module shall be integrated in the the Central Computer (Raspberry Pi).
 
 #### Wi-Fi RID Module (Integrated)
