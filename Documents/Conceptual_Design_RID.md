@@ -142,8 +142,9 @@ The design also optimizes resource utilization by maximizing available resources
 - It shall shield components from accidental impacts, shocks, or vibrations that could cause physical damage.
 - The design shall prevent dust, dirt, and debris from causing short circuits or degrading system performance.
 - By keeping the internal components enclosed, the chassis shall protect against contamination, ensuring the system operates reliably.
-- The power supply and central computer shall be equipped with ventilation openings for heat dissipation, preventing overheating and maintaining optimal performance during operation.
-- Proper ventilation shall ensure that the system remains cool and performs efficiently.
+- A cooler with a through-wall heat sink shall be used to cool both the power supple and the raspberry pi, preventing overheating and maintaining optimal performance during operation.
+- The operational temperature range shall be from -10 to 85 degrees celsius.
+- The case shall have an IP rating of 66 to ensure a dust tight and water jet protected experience for the power suppy and Raspberry Pi.
 - The chassis shall provide a well-organized interior, ensuring that all components are neatly arranged and securely mounted.
 - Cable management features shall reduce clutter and minimize the risk of short circuits or signal interference.
 - It shall allow for easy access to components for maintenance or troubleshooting.
