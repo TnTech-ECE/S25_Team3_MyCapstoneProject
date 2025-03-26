@@ -191,7 +191,8 @@ It should be noted that, with the ranges described above for both the Bluetooth 
 
 ### Server/Database
 - The server shall receive the packaged information obtained from the RID signal via a Transmission Control Protocol (TCP) from the central computer.
-- After the data has been unpacked and processed, it shall be stored in the database system for 30 days before being deleted.
+- After the data has been unpacked and processed, the RID shall be stored in the database system. The other data shall be stored for 30 days before being deleted.
+- If the network goes down, the server shall buffer the received packets for 10 minutes.
 
 ### Website
 - The website shall pull the processed data from the server/database module.
