@@ -188,8 +188,8 @@ The design also optimizes resource utilization by maximizing available resources
 - The Wi-Fi module shall be integrated in the the Central Computer (Raspberry Pi).
 
 ### Server/Database
-- The server shall receive the packaged information obtained from the RID signal via a File Transfer Protocol (FTP) transmission from the central computer.
-- After the data has been unpacked and processed, it shall be stored in the database system.
+- The server shall receive the packaged information obtained from the RID signal via a Transmission Control Protocol (TCP) from the central computer.
+- After the data has been unpacked and processed, it shall be stored in the database system for 30 days before being deleted.
 
 ### Website
 - The website shall pull the processed data from the server/database module.
