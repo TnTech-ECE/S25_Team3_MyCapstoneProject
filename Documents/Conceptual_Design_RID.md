@@ -155,7 +155,7 @@ The design also optimizes resource utilization by maximizing available resources
 - The central computer shall draw no more than 16 W of power.
 - To accommodate current and future operational needs, the central computer shall be equipped with no fewer than 20 General Purpose Input/Output (GPIO) pins, allowing for seamless interfacing with various components and enabling future expansions or upgrades.
 - The central computer shall process packets and store data obtained from the Wi-Fi and Bluetooth transceivers.
-- The central computer shall transmit the gathered drone information to the Campus Police server via a secure Wi-Fi connection.
+- The central computer shall transmit the gathered drone information to the Campus Police server via a secure Ethernet connection.
 - The transmitted data shall be encrypted to ensure confidentiality and integrity, preventing unauthorized access or tampering during transmission.
 - This design shall ensure that all communication between the central computer and the server remains secure, reliable, and efficient, providing critical support to campus security operations in real-time.
 
