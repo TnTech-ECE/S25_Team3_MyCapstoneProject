@@ -133,7 +133,7 @@ The design also optimizes resource utilization by maximizing available resources
 - A step-down transformer shall efficiently lower the AC voltage to a range between 4.75 V and 5.25 V.
 - A full-wave rectifier shall convert the AC voltage to direct current (DC) to ensure a stable and filtered output.  
 - A C13 male connector shall be integrated to allow ease of powering in cases where the nearest power outlet is more than 20 meters away.
-- The power supply shall provide a continuous output of 25W.
+- The power supply shall be able to provide a continuous output of 25W.
 - The power supply shall incorporate surge protection to safeguard against voltage spikes and transient surges, preventing potential damage to the Raspberry Pi and connected subsystems.
 - Overcurrent protection shall also be implemented to prevent electrical faults and ensure the safety and longevity of critical components. 
 
@@ -142,8 +142,8 @@ The design also optimizes resource utilization by maximizing available resources
 - It shall shield components from accidental impacts, shocks, or vibrations that could cause physical damage.
 - The design shall prevent dust, dirt, and debris from causing short circuits or degrading system performance.
 - By keeping the internal components enclosed, the chassis shall protect against contamination, ensuring the system operates reliably.
-- A cooler with a through-wall heat sink shall be used to cool both the power supple and the raspberry pi, preventing overheating and maintaining optimal performance during operation.
-- The operational temperature range shall be from -10 to 85 degrees celsius.
+- A through wall cooler with a minimum heat displacement of 30 BTUs shall be used to cool both the power supply and the raspberry pi, preventing overheating and maintaining optimal performance during operation.
+- The operational temperature range inside the case shall be from -40 to 85 degrees celsius.
 - The case shall have an IP rating of 66 to ensure a dust tight and water jet protected experience for the power suppy and Raspberry Pi.
 - The chassis shall provide a well-organized interior, ensuring that all components are neatly arranged and securely mounted.
 - Cable management features shall reduce clutter and minimize the risk of short circuits or signal interference.
