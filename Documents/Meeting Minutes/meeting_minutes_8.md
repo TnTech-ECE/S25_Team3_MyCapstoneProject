@@ -14,7 +14,7 @@ Once again went over Mr. Rentschler's comments to make further improvements. Rer
 * Elle : Begin detailed design research for the server.
 * Tyler: Begin detailed design research for power supply.
 * Erich: Begin detailed design research for the website.
-* Mandy: Begin detailed design research for the chasis.
+* Mandy: Begin detailed design research for the chassis.
 
 ### Things to be done by all:
 
