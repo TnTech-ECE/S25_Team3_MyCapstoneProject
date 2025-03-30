@@ -7,7 +7,7 @@ Went over Mr. Rentschler's comments and made improvements to the new RID proposa
 ## 25MAR2025 1430-1600
 Attendance: Brett Ballew, Tyler Bare, Mandy Bacon, Gabrielle Renfroe, & Erich Krepps
 
-Once again went over Mr. Rentschler's comments to make further improvements. Rerequested review for further improvements. Dr. Elfouly had training that he had to attend so he was not present at this meeting.
+Once again went over Mr. Rentschler's comments to make further improvements. Rerequested review for further improvements. Dr. Elfouly had training that he had to attend, so he was not present at this meeting.
 
 ### Team Assignments:
 * Brett: Begin detailed design research for the Raspberry Pi.
