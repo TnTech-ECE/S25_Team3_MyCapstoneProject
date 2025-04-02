@@ -230,15 +230,16 @@ As this project builds upon the work of the previous senior design team, certain
 |        Component        | Count |  Unit Cost  |    Cost    | Running Total |
 |        ---------        | ----- |    ------   |   -------  | ------------- |
 |      Power Supply       |   1   |    $60.00   |    $60.00  |      $60.00   |
-|     Microcontroller     |   1   |   $100.00   |   $100.00  |	   $160.00   | 
-|      Memory Module      |   1   |    $50.00   |    $50.00  |     $210.00   |
-|         Wiring          |  N/A  |    $30.00   |    $30.00  |	   $240.00   |
-|        Enclosure        |   1   |    $20.00   |    $20.00  |	   $260.00   |
-|     Weather Proofing    |  N/A  |    $20.00   |    $20.00  |	   $280.00   |
-|    Mounting Hardware    |  N/A  |    $20.00   |    $20.00  |	   $300.00   |	
-|          Misc           |  N/A  |   $100.00   |   $100.00  |   **$400.00** |	
+|     Microcontroller     |   1   |   $100.00   |   $100.00  |	   $160.00   |
+|         Cooling         |  N/A  |    $50.00   |    $50.00  |	   $210.00   |
+|      Memory Module      |   1   |    $50.00   |    $50.00  |     $260.00   |
+|         Wiring          |  N/A  |    $30.00   |    $30.00  |	   $290.00   |
+|        Enclosure        |   1   |    $20.00   |    $20.00  |	   $310.00   |
+|     Weather Proofing    |  N/A  |    $20.00   |    $20.00  |	   $330.00   |
+|    Mounting Hardware    |  N/A  |    $20.00   |    $20.00  |	   $350.00   |	
+|          Misc           |  N/A  |   $100.00   |   $100.00  |   **$450.00** |	
 
-The first unit is estimated to cost approximately $190.00, utilizing the equipment already provided, along with necessary modifications and supplemental components. If time permits and campus police grant approval, additional units will be installed. Each of these units will function independently while maintaining a connection to the server.
+The first unit is estimated to cost approximately $240.00, utilizing the equipment already provided, along with necessary modifications and supplemental components. If time permits and campus police grant approval, additional units will be installed. Each of these units will function independently while maintaining a connection to the server.
 
 ### Division of Labor
 Amanda Bacon: Chassis
