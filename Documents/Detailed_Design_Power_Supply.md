@@ -77,6 +77,7 @@ Provide detailed information about the inputs, outputs, and data transferred to 
 <img src= "/Documents/Images/Detailed Design Power Supply 3D model #2.png" width="2000" height="900">
 
 
+
 ## Buildable Schematic 
 Integrate a buildable electrical schematic directly into the document. If the diagram is unreadable or improperly scaled, the supervisor will deny approval. Divide the diagram into sections if the text and components seem too small.
 
