@@ -1,5 +1,6 @@
 # <div align="center"> Drone Tracker Detailed Design
 ### <div align="center"> Central Computer Module
+#### <div align="center"> Brett Ballew
 <div align="center"> Department of Electrical and Computer Engineering <br>
 Tennessee Technological University
 <div align="left">
