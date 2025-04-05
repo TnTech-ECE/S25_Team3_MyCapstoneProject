@@ -72,9 +72,9 @@ Provide detailed information about the inputs, outputs, and data transferred to 
 
 
 ## 3D Model of Custom Mechanical Components
-<img src= "/Documents/Images/Detailed Design Power Supply 3D model #1.png" width="3200" height="900">
+<img src= "/Documents/Images/Detailed Design Power Supply 3D model #1.png" width="2000" height="900">
 
-<img src= "/Documents/Images/Detailed Design Power Supply 3D model #2.png" width="3200" height="900">
+<img src= "/Documents/Images/Detailed Design Power Supply 3D model #2.png" width="2000" height="900">
 
 
 ## Buildable Schematic 
