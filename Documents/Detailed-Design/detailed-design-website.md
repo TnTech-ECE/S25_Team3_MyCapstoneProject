@@ -28,10 +28,10 @@ The purpose of the website subsystem is to allow a designated user to access the
 <sup>7</sup> Privacy on campus is a big concern for this project. One of the main concerns with drones on campus is that some malicious users may utilize drones to enter or obtain a clear view of private areas. To combat this, we will designate certain areas on campus as high-priority areas and raise the priority level of any drone that enters these locations. This allows police to make informed decisions about what order to operate in. Our team argues that the most malicious drones will likely be flown in these designated "high-risk" areas, and believes that the safety of students located in these areas is of the utmost importance. 
 
 ## Schematic
-<img src="/Documentation/Images/Website Schematic.png" >
+<img src="/Documents/Images/Website Schematic.png" >
 
 ### Rough Website Design
-<img src="/Documentation/Images/website_beta.png" >
+<img src="/Documents/Images/website_beta.png" >
 
 In the above image, you can see a very rough depiction of what the final website will look like. After a user has been authorized and logged in, this is the layout that will be displayed. The banner at the top simply displays the title of the webpage. Under this banner, you can see an image that shows a marker placed on a Google Maps instance. This marker represents a detected drone, and since there was only one drone "detected" at the time this picture was taken,  only one drone's information is shown on the right side of the image. If other drones had also been detected, their serial numbers would be shown under the "selected drone" on the right side, with all other information collapsed until the user clicks on the drone marker or the serial number on the side of the screen. Under the map, you can see a checkbox that asks the user whether or not they wish to have authorized drones displayed on the map. If this box is checked, then authorized, detected drone information will also populate the map and the right edge of the screen. Again, in this image, there is only one drone detected and it is unauthorized. Links to other "quick access" tools the dispatcher may need can be added to this page, we will just need to meet with them to discuss further features.
 
