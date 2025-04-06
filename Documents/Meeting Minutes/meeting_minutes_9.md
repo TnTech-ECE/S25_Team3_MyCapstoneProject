@@ -10,11 +10,11 @@ Attendance: Dr. Elfouly, Brett Ballew, Tyler Bare, Mandy Bacon, Gabrielle Renfro
 Discussed new RID approach with advisor. Assigned some tasks.
 
 ### Team Assignments:
-* Brett: 
-* Elle : 
-* Tyler: 
-* Erich: 
-* Mandy: 
+* Brett: Continue Central Computer DD
+* Elle : Start/Continue Server DD
+* Tyler: Continue Power Supply DD
+* Erich: Continue Website DD
+* Mandy: Start/Continue Chassis DD
 
 ### Things to be done by all:
 
