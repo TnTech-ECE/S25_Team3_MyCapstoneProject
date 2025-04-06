@@ -50,7 +50,9 @@ For the website to be accessible at all times, it will need to be hosted on a ma
 
 ## Analysis
 
-This needs to be enquired about from the police
+### Interactions With Other Subsystems
+
+The website subsystem will only directly interact with the database. The website will take the processed data from the database and will update the on screen information as needed. The website will also have to ablity to send info to the database, updating the autheraztion satatus of a selected drone.
 
 ### Testing
 
