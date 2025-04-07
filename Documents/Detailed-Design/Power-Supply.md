@@ -72,36 +72,35 @@ Validation Approach
 The power supply module delivers power to the Raspberry Pi 5 subsystem while receiving input from standard AC mains. All connections are designed for reliability, safety, and minimal voltage drop.
 
 ### AC Main Input Interface
-- **Connection Type:** Hardwired screw terminals (IEC 61076-2-101 compliant)
-- **Input Specifications:**
-  - **Voltage:** 100-240V AC, 50/60Hz
-  - **Current:** 1.5A max at 100V, 0.7A max at 240V
-  - **Protection:** 
-    - MOV (VDRM250) for surge suppression
-    - 2A slow-blow fuse (Littelfuse 0215002.HXP)
-- **Cable Requirements:**
-  - 18AWG minimum (for 3A rating)
-  - 300V rated insulation
-  - C13 connector at wall outlet end
+
+| Parameter               | Specification                                           |
+|------------------------|---------------------------------------------------------|
+| Connection Type        | Hardwired screw terminals (IEC 61076-2-101 compliant)  |
+| Voltage                | 100-240V AC, 50/60Hz                                   |
+| Current                | 1.5A max at 100V, 0.7A max at 240V                    |
+| Protection             | MOV (VDRM250) for surge suppression<br>2A slow-blow fuse (Littelfuse 0215002.HXP) |
+| Cable Requirements     | 18AWG minimum (for 3A rating)<br>300V rated insulation<br>C13 connector at wall outlet end |
+
+---
 
 ### Raspberry Pi 5 Power Delivery Interface
-- **Connection Type:** Locking 5.5×2.1mm barrel jack (Amphenol DCJ020-5A-K)
-- **Output Specifications:**
-  - **Voltage:** 5V DC ±5% (4.75V-5.25V)
-  - **Current:** 0-10A continuous (50W max)
-  - **Ripple:** <50mV p-p
-- **Cable Specifications:**
-  - 16AWG stranded copper (for low voltage drop)
-  - Double-insulated
-  - 1.5m maximum length
+
+| Parameter               | Specification                                           |
+|------------------------|---------------------------------------------------------|
+| Connection Type        | Locking 5.5×2.1mm barrel jack (Amphenol DCJ020-5A-K)  |
+| Voltage                | 5V DC ±5% (4.75V-5.25V)                                |
+| Current                | 0-10A continuous (50W max)                            |
+| Ripple                 | <50mV p-p                                              |
+| Cable Specifications   | 16AWG stranded copper (for low voltage drop)<br>Double-insulated<br>1.5m maximum length |
+
+---
 
 ### Protection System Interfaces
-- **Overcurrent Protection:**
-  - Open-collector fault signal (5V, 10mA max)
-  - Connects to Raspberry Pi GPIO
-- **Thermal Protection:**
-  - Normally-closed thermal switch (70°C trip)
-  - Series with DC output
+
+| Protection Type        | Specification                                           |
+|------------------------|---------------------------------------------------------|
+| Overcurrent Protection | Open-collector fault signal (5V, 10mA max)<br>Connects to Raspberry Pi GPIO |
+| Thermal Protection     | Normally-closed thermal switch (70°C trip)<br>Series with DC output |
 
 
 ## 3D Model of Custom Mechanical Components
