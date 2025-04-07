@@ -11,11 +11,12 @@ The server and database...
 
 ## Specifications and Constraints
 
-- The server shall receive the packaged information obtained from the RID signal via a Transmission Control Protocol (TCP) from the central computer.
+The server shall receive the packaged information obtained from the RID signal via a Transmission Control Protocol (TCP) from the central computer.
+- To ensure the packaged information is sent to the correct place, the TCP method 
 
-- After unpacking and processing the data, the RID shall be permanently stored in the database, while other information, such as the last known drone location and takeoff location, shall be retained for 30 days before being deleted.
+After unpacking and processing the data, the RID shall be permanently stored in the database, while other information, such as the last known drone location and takeoff location, shall be retained for 30 days before being deleted.
 
-- Should the network go down, the server shall buffer the received packets for 10 minutes.
+Should the network go down, the server shall buffer the received packets for 10 minutes.
 
 ## Overview of Proposed Solution
 
