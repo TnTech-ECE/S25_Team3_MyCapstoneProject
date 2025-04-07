@@ -6,7 +6,7 @@ Tennessee Technological University
 <div align="left">
   
 ## Function of the Subsystem
-The power central computer is responsible for
+The central computer is responsible for
 
 
 ## Specifications and Constraints
