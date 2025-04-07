@@ -14,7 +14,7 @@ The power supply shall provide stable and efficient power to the Central Compute
 - To ensure stable and efficient power delivery, the MeanWell LRS-50-5 power supply was selected for its precisely regulated 5V DC (±5%) output. Advanced filtering circuitry maintains output ripple below 50mV, preventing voltage fluctuations that could disrupt Raspberry Pi operation. With an efficiency rating of 89%, the unit minimizes power loss and heat generation while delivering consistent performance across all operating conditions.
 
 The power supply shall be mounted within the chassis for protection and thermal management.
-- The LRS-50-5 unit is securely mounted inside the IP66-rated enclosure using screws that prevent movement while accommodating thermal expansion. The chassis provides complete environmental protection, meeting IP66 standards for being both dust-tight and resistant to powerful water jets, making it suitable for permanent outdoor deployment.
+- The LRS-50-5 unit is securely mounted inside the IP66-rated enclosure using screws while accommodating thermal expansion. The chassis provides complete environmental protection, meeting IP66 standards for being both dust-tight and resistant to powerful water jets, making it suitable for permanent outdoor deployment.
 
 The power supply shall operate from 100-240 V AC at 50/60 Hz.
 - Designed for global compatibility, the LRS-50-5 automatically adjusts to accept any AC input voltage between 100-240V at either 50 or 60Hz frequency. This universal input capability ensures reliable operation when connected to standard wall outlets. Power is delivered through a heavy-duty C13 power cable rated for continuous use, with reinforced strain relief at the connection points to prevent wear.
