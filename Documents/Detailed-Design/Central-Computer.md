@@ -72,3 +72,4 @@ The design will be validated through:
 
 
 ## References
+[1] Raspberry Pi Ltd., “Raspberry Pi 5,” Raspberry Pi, [Online]. Available: https://www.raspberrypi.com/products/raspberry-pi-5/. [Accessed: Apr. 7, 2025].
