@@ -6,7 +6,7 @@ Tennessee Technological University
 <div align="left">
   
 ## Function of the Subsystem
-The chassis for the drone tracking device is the housing that will protect and organize all the other components that make up the device. It will hold the electrical components together in a compact and orderly fashion and keep them safe from dust, dirt, debris, water, and other foreign substances. Since the drone tracking system will be located outside, the chassis is a crucial component in weather-proofing the system. Additionally, the chassis will help make sure air continuously flows over the components, keeping everything cool and running properly.
+The chassis for the drone tracking device is the housing that will protect and organize all the other components that make up the device. It will hold the electrical components together in a compact and orderly fashion and keep them safe from dust, dirt, debris, water, and other foreign substances. Since the drone tracking system will be located outside, the chassis is a crucial component in both weather-proofing the system and keeping it cool. 
 
 ## Specifications and Constraints
 1. water resistance
