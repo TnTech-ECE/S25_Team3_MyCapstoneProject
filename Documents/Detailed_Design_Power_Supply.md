@@ -69,13 +69,43 @@ Validation Approach
 
 
 ## Interface with Other Subsystems
-NOT DONE YET: Provide detailed information about the inputs, outputs, and data transferred to other subsystems. Ensure specificity and thoroughness, clarifying the method of communication and the nature of the data transmitted.
+The power supply module delivers power to the Raspberry Pi 5 subsystem while receiving input from standard AC mains. All connections are designed for reliability, safety, and minimal voltage drop.
+
+### AC Main Input Interface
+- **Connection Type:** Hardwired screw terminals (IEC 61076-2-101 compliant)
+- **Input Specifications:**
+  - **Voltage:** 100-240V AC, 50/60Hz
+  - **Current:** 1.5A max at 100V, 0.7A max at 240V
+  - **Protection:** 
+    - MOV (VDRM250) for surge suppression
+    - 2A slow-blow fuse (Littelfuse 0215002.HXP)
+- **Cable Requirements:**
+  - 18AWG minimum (for 3A rating)
+  - 300V rated insulation
+  - C13 connector at wall outlet end
+
+### Raspberry Pi 5 Power Delivery Interface
+- **Connection Type:** Locking 5.5×2.1mm barrel jack (Amphenol DCJ020-5A-K)
+- **Output Specifications:**
+  - **Voltage:** 5V DC ±5% (4.75V-5.25V)
+  - **Current:** 0-10A continuous (50W max)
+  - **Ripple:** <50mV p-p
+- **Cable Specifications:**
+  - 16AWG stranded copper (for low voltage drop)
+  - Double-insulated
+  - 1.5m maximum length
+
+### Protection System Interfaces
+- **Overcurrent Protection:**
+  - Open-collector fault signal (5V, 10mA max)
+  - Connects to Raspberry Pi GPIO
+- **Thermal Protection:**
+  - Normally-closed thermal switch (70°C trip)
+  - Series with DC output
 
 
 ## 3D Model of Custom Mechanical Components
 <img src="/Documents/Images/Detailed%20Design%20Power%20Supply%203D%20model%20%233.png" width="2000" height="900">
-
-<img src="/Documents/Images/Detailed%20Design%20Power%20Supply%203D%20model%20%232.png" width="2000" height="900">
 
 
 ## Buildable Schematic 
@@ -87,11 +117,11 @@ The schematic should be relevant to the design and provide ample details necessa
 
 | Component               | Manufacturer | Part No.    | Distributor | Qty | Unit Price | Total  |
 |-------------------------|--------------|-------------|------------|-----|------------|--------|
-| MeanWell LRS-50-5 PSU   | MeanWell     | LRS-50-5    | Digi-Key   | 1   | $18.50     | $18.50 |
+| MeanWell LRS-50-5 PSU   | MeanWell     | LRS-50-5    | Amazon     | 1   | $16.91     | $16.91 |
 | C13 Power Cord          | Tripp Lite   | P004-006    | Amazon     | 1   | $6.99      | $6.99  |
 | 5.5x2.1mm DC Jack       | Amphenol     | DCJ020-5A-K | Mouser     | 1   | $1.20      | $1.20  |
-| 2A Fuse Holder          | Littelfuse   | 0343002.H   | Arrow      | 1   | $2.50      | $2.50  |
-| **Total**               |              |             |            |     |            | **$29.19**|
+| 2A Fuse Holder          | Littelfuse   | F5749-ND    | Digi-Key   | 1   | $2.65      | $2.65  |
+| **Total**               |              |             |            |     |            | **$27.75**|
 
 ## Analysis
 The power supply subsystem has been designed to meet all operational requirements while providing substantial safety margins. The MeanWell LRS-50-5 power supply was selected after thorough analysis of the system's power demands and operational constraints.
@@ -124,7 +154,7 @@ While lower-capacity power supplies were considered, the LRS-50-5 provides optim
 - Eliminating the need for future upgrades as the system expands
 - Reducing thermal stress through lower operating temperatures
 - Improving reliability through reduced component stress
-- Maintaining cost-effectiveness at just $18.50 per unit
+- Maintaining cost-effectiveness at just $16.91 per unit
 
 ### Verification Methodology
 The design will be validated through:
@@ -137,3 +167,5 @@ The design will be validated through:
 ## References
 
 MEAN WELL LRS-50-5 50W 5VDC 10A Single Ouput Switching Mode Power Supply Amazon: https://www.amazon.com/MEAN-WELL-LRS-50-5-Single-Switching/dp/B085QKVLB6 Datasheet: https://www.meanwell.com/Upload/PDF/LRS-50/LRS-50-SPEC.PDF
+
+Raspberry Pi 5 Datasheet: https://datasheets.raspberrypi.com/rpi5/raspberry-pi-5-product-brief.pdf
