@@ -29,7 +29,7 @@ The power supply shall comply with IEC 60364-1 for electrical safety.
 - The MeanWell LRS-50-5 carries full certification to UL/IEC/EN 62368-1 safety standards, exceeding the basic IEC 60364-1 requirements. All wiring employs double-insulated conductors with proper creepage and clearance distances. The design maintains complete galvanic isolation between the AC input and DC output sides, with reinforced insulation barriers tested to 3000 VAC.
 
 The power supply shall connect to the Raspberry Pi via a barrel jack.
-- Power delivery to the Raspberry Pi is accomplished through a locking 5.5×2.1mm barrel jack connector that prevents accidental disconnection. The cable incorporates strain relief booting at both ends, and the connector's polarized design ensures proper orientation. Nickel-plated contacts minimize resistance and prevent corrosion over time.
+- Power delivery to the Raspberry Pi is accomplished through a locking 5.5×2.1 mm barrel jack connector that prevents accidental disconnection. The cable incorporates strain relief booting at both ends, and the connector's polarized design ensures proper orientation. Nickel-plated contacts minimize resistance and prevent corrosion over time.
 
 The power supply shall remain within a -40°C to 85°C operational temperature range.
 - Engineered for industrial environments, the LRS-50-5 maintains full specification operation across the entire temperature range. The IP66 enclosure provides additional protection against thermal cycling and moisture ingress. The cooling system's design accounts for worst-case ambient conditions, maintaining safe operating temperatures even during extended high-load periods.
