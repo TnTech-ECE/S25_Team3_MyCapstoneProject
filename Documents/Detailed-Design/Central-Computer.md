@@ -6,7 +6,17 @@ Tennessee Technological University
 <div align="left">
   
 ## Function of the Subsystem
-The central computer is responsible for
+In the proposed drone tracking system for Tennessee Technological University (TTU), the central computer module serves as the primary processing hub, orchestrating the collection, analysis, and dissemination of data to ensure effective monitoring and management of drone activity on campus.​
+
+Data Aggregation and Processing: The central computer module collects Remote ID (RID) signal data exclusively from the onboard Bluetooth and Wi-Fi modules. These modules are tasked with scanning for RID broadcasts from nearby drones, in accordance with FAA standards. Once received, the central computer parses and processes this data to extract key information such as drone identification, location, velocity, and operator metadata. This focused aggregation approach ensures that only relevant, standards-compliant RID information is analyzed, forming the basis for reliable drone detection and classification.
+
+Integration with Remote Identification (RID) Signals: By decoding RID signals emitted by drones, the central computer extracts critical information such as the drone's identity, location, and operator details. This integration allows for real-time monitoring and enhances the system's ability to differentiate between authorized and unauthorized drone operations.​
+
+Alert Generation and Communication: Upon detecting unauthorized drone activity, the central computer module generates alerts and communicates them to TTU Police and other relevant authorities. This prompt notification enables swift response to potential security threats, ensuring the safety and privacy of the campus community.​
+
+System Coordination and Control: Serving as the command center, the central computer coordinates the various subsystems, ensuring seamless operation and data flow. It manages system resources, schedules tasks, and maintains overall system health, aligning with the conceptual design's emphasis on a cohesive and efficient architecture.​
+
+By fulfilling these functions, the central computer module embodies the core of the drone tracking system, aligning with the conceptual design's goal of enhancing campus security through advanced technology.
 
 
 ## Specifications and Constraints
