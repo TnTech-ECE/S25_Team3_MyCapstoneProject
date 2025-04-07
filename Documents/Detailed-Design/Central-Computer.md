@@ -74,6 +74,7 @@ Validation Approach
 
 ## Interface with Other Subsystems
 Provide detailed information about the inputs, outputs, and data transferred to other subsystems. Ensure specificity and thoroughness, clarifying the method of communication and the nature of the data transmitted.
+<img src= "/Documents/Images/power_con.png" width="4000" height="750">
 
 
 ## Buildable Schematic 
