@@ -19,7 +19,7 @@ The central computer is responsible for
 -The transmitted data shall be encrypted to ensure confidentiality and integrity, preventing unauthorized access or tampering during transmission.
 -This design shall ensure that all communication between the central computer and the server remains secure, reliable, and efficient, providing critical support to campus security operations in real-time.
 
-####Bluetooth RID Module (Integrated)
+#### Bluetooth RID Module (Integrated)
 -The Bluetooth transceiver shall continuously scan the 2.4 GHz Bluetooth frequency band to detect and capture RID signals while filtering out non-RID transmissions.
 -The transceiver shall have a minimum range of 200 meters (dependent on RID transciever quality).
 -The transciever shall have a Bluetooth PHY sensitivity of LE 1M to ensure adequate connections at the minimum specified range.
@@ -33,7 +33,7 @@ The central computer is responsible for
 -This system shall function autonomously, requiring minimal intervention while ensuring accurate and efficient drone tracking for compliance, security, and situational awareness purposes.
 -The Bluetooth module shall be integrated in the the Central Computer (Raspberry Pi).
 
-####Wi-Fi RID Module (Integrated)
+#### Wi-Fi RID Module (Integrated)
 -The Wi-Fi transceiver shall receive Wi-Fi signals transmitted by drones flying over the campus.
 -The transceiver shall have a minimum range of 200 meters (dependent on RID transciever quality).
 -The Wi-Fi module shall continually scan the 2.4 GHz Wi-Fi band to locate RID signals transmitted from a drone.
