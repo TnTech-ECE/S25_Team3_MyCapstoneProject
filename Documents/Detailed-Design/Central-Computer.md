@@ -1,5 +1,5 @@
-# <div align="center"> Drone Tracker Detailed Design
-### <div align="center"> Central Computer Module
+# <div align="center"> Drone Tracker Detailed Design 
+### <div align="center"> Central Computer Module (Very Rough Draft Chat GPT Special)
 #### <div align="center"> Brett Ballew
 <div align="center"> Department of Electrical and Computer Engineering <br>
 Tennessee Technological University
