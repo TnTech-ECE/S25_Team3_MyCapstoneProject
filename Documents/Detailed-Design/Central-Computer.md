@@ -59,17 +59,15 @@ By fulfilling these functions, the central computer module embodies the core of 
 
 
 ## Overview of Proposed Solution
-The central computer subsystem is designed to 
+The Raspberry Pi 5 serves as the Central Computer Module for the drone tracking system, and it is an ideal solution that meets both the technical specifications and constraints outlined in the project. Its compact size, robust wireless capabilities, and sufficient processing power make it a highly effective and reliable choice.
 
-#### Key Design Choices
-Things that are crucial it can do and how it can perform
+Unlike typical embedded applications that rely on multiple peripherals, the Raspberry Pi 5 in this system will only use external peripherals during the initial programming and setup phase. After deployment, it will operate headlessly—without the need for connected monitors, keyboards, or other accessories.
 
-Why This Solution Works
+What makes the Raspberry Pi 5 especially suitable for this project is its integrated dual-band 802.11ac Wi-Fi and Bluetooth 5.0/BLE modules. These wireless communication features are absolutely critical for the success of the system. The drone detection process depends on capturing and interpreting Remote ID (RID) signals, which are broadcast over Bluetooth and Wi-Fi by compliant drones. The Pi’s ability to receive these signals reliably and in real time is central to the system’s function.
 
-Validation Approach
-- Lab Testing:
-- Environmental Stress Testing: 
-- Longevity Testing: 
+The onboard wireless modules eliminate the need for external receivers or dongles, simplifying the hardware setup and reducing power consumption and system complexity. With this built-in connectivity, the Raspberry Pi 5 can continuously scan for and process RID signals, enabling fast and efficient tracking of drones across the designated area.
+
+Additionally, the Pi’s 2.4GHz quad-core Cortex-A76 processor and up to 8GB of LPDDR4X RAM ensure it can handle concurrent scanning, signal processing, and data logging tasks smoothly, even under extended operation. 
 
 
 ## Interface with Other Subsystems
