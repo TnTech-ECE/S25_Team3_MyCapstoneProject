@@ -4,10 +4,10 @@
 <div align="center"> Department of Electrical and Computer Engineering <br>
 Tennessee Technological University
 <div align="left">
-  
+
 ## Function of the Subsystem
 
-The server and database...
+The server and database subsystem plays a critical role within the overall system architecture by managing, processing, and securely storing data, ensuring efficient data flow and integrity between the central computer and website.
 
 ## Specifications and Constraints
 
@@ -21,9 +21,15 @@ The server and database...
 
 Describe the solution and how it will fulfill the specifications and constraints of this subsystem.
 
+The server...
+
+The database...
+
 ## Interface with Other Subsystems
 
 Provide detailed information about the inputs, outputs, and data transferred to other subsystems. Ensure specificity and thoroughness, clarifying the method of communication and the nature of the data transmitted.
+
+The server receives the packaged information from the central computer. Once received, the server processes the data and sends it to the database for storage and organization. The database structures and stores the information, making it easily accessible. The website, through the server, queries the database to retrieve the necessary data and then displays it to the user. 
 
 ## Flowchart
 
