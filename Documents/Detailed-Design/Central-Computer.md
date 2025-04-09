@@ -71,7 +71,49 @@ Additionally, the Pi’s 2.4GHz quad-core Cortex-A76 processor and up to 8GB of 
 
 
 ## Interface with Other Subsystems
-Provide detailed information about the inputs, outputs, and data transferred to other subsystems. Ensure specificity and thoroughness, clarifying the method of communication and the nature of the data transmitted.
+​The Central Computer Module (CCM) in the drone tracking system is responsible for processing data from various inputs and communicating with other subsystems to ensure effective monitoring and management of drone activity on campus. Below is a detailed overview of the inputs, outputs, and data exchanges associated with the CCM:​
+
+#### Inputs to the Central Computer Module
+
+* Remote ID (RID) Signals:
+  * Source: Drones operating within the vicinity of the campus.​
+  * Nature of Data: RID signals contain essential information about the drone, including its unique identifier, location coordinates, altitude, velocity, and the location of the operator.​
+  * Method of Communication: The CCM captures these signals using its integrated dual-band 802.11ac Wi-Fi and Bluetooth 5.0/BLE modules, enabling real-time reception of RID broadcasts.​
+
+* Geofencing Parameters:
+  * Source: Predefined geofencing data stored within the system.​
+  * Nature of Data: This includes the geographical boundaries that define authorized and unauthorized airspace over the campus.​
+  * Method of Communication: The geofencing parameters are preloaded into the CCM's internal storage during system configuration and can be updated as needed.​
+
+#### Outputs from the Central Computer Module
+
+* Alerts and Notifications:
+  * Recipients: TTU Police Department and other designated campus security personnel.​
+  * Nature of Data: When an unauthorized drone is detected within the campus geofenced area, the CCM generates alerts containing the drone's identifier, current location, trajectory, and operator information.​
+  * Method of Communication: These alerts are transmitted via secure communication channels, such as encrypted emails or dedicated security applications, ensuring timely and confidential delivery.​
+
+* Data Logs and Reports:
+  * Recipients: Campus authorities and system administrators.​
+  * Nature of Data: Comprehensive logs of all detected drone activities, including timestamps, drone identifiers, flight paths, and any violations of geofencing rules.​
+  * Method of Communication: These logs are stored locally on the CCM and can be accessed remotely through secure network connections for analysis and record-keeping.​
+
+#### Data Transferred to Other Subsystems
+
+* User Interface Subsystem:
+  * Nature of Data: Real-time drone tracking information, including visual representations of drone locations on a campus map, status updates, and alert notifications.​
+  * Method of Communication: Data is transmitted over the campus network using standard networking protocols, allowing authorized users to access the information through a web-based interface or dedicated application.​
+
+* Database Management Subsystem:
+  * Nature of Data: Archived records of drone activities, system performance metrics, and historical data for trend analysis.​
+  * Method of Communication: The CCM periodically uploads this data to a centralized database server using secure file transfer protocols (SFTP) or through direct database connections with appropriate authentication mechanisms.​
+
+* Notification System:
+  * Nature of Data: Immediate alerts and critical notifications regarding unauthorized drone activities.​
+  * Method of Communication: The CCM interfaces with the campus's existing notification infrastructure, such as SMS gateways or emergency alert systems, to disseminate urgent messages to security personnel and other stakeholders.​
+
+In summary, the Central Computer Module serves as the hub for data acquisition, processing, and dissemination within the drone tracking system. Its integrated Wi-Fi and Bluetooth capabilities are essential for capturing RID signals, while its processing power enables real-time analysis and communication with other subsystems and campus authorities. The CCM ensures that all relevant data is accurately collected, promptly analyzed, and effectively shared to maintain campus airspace security.
+
+Fix this later to relate to power supply
 <img src= "/Documents/Images/power_con.png" width="4000" height="650">
 
 
