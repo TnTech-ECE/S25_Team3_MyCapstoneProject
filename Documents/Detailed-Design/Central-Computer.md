@@ -72,7 +72,7 @@ Additionally, the Pi’s 2.4GHz quad-core Cortex-A76 processor and up to 8GB of 
 
 ## Interface with Other Subsystems
 Provide detailed information about the inputs, outputs, and data transferred to other subsystems. Ensure specificity and thoroughness, clarifying the method of communication and the nature of the data transmitted.
-<img src= "/Documents/Images/power_con.png" width="4000" height="750">
+<img src= "/Documents/Images/power_con.png" width="4000" height="650">
 
 
 ## Buildable Schematic 
