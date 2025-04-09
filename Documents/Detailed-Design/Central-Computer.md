@@ -114,7 +114,7 @@ Additionally, the Pi’s 2.4GHz quad-core Cortex-A76 processor and up to 8GB of 
 In summary, the Central Computer Module serves as the hub for data acquisition, processing, and dissemination within the drone tracking system. Its integrated Wi-Fi and Bluetooth capabilities are essential for capturing RID signals, while its processing power enables real-time analysis and communication with other subsystems and campus authorities. The CCM ensures that all relevant data is accurately collected, promptly analyzed, and effectively shared to maintain campus airspace security.
 
 Fix this later to relate to power supply
-<img src= "/Documents/Images/power_con.png" width="4000" height="650">
+<img src= "/Documents/Images/power_con.png" width="3500" height="500">
 
 
 ## Buildable Schematic 
