@@ -53,17 +53,17 @@ Creating a database
 
 2. Table for *telemetry* - store real time flight data
 
-    | Name      | Type          | Description               |
-    | --------- | ------------- | ------------------------- |
-    | numList   | VARCHAR(100)  | Auto-increment numList    |
-    | drone_id  | VARCHAR(100)  | FK to *drones*            |
-    | timestamp | DATETIME      | Time of the data point    |
-    | latitude  | DOUBLE        | Drone latitude            |
-    | longitude | DOUBLE        | Drone longitude           | 
-    | altitude  | DOUBLE        | Altitude in meters        |
-    | speed     | DOUBLE        | Horizontal speed          |
-    | heading   | DOUBLE        | Direction of travel       |
-    | source    | ENUM          | 'broaddcast' or 'network' |
+    | Name      | Type          | Description                    |
+    | --------- | ------------- | ------------------------------ |
+    | numList   | VARCHAR(100)  | Auto-increment numList         |
+    | drone_id  | VARCHAR(100)  | FK to *drones*                 |
+    | timestamp | DATETIME      | Current time of the data point |
+    | latitude  | DOUBLE        | Drone latitude                 |
+    | longitude | DOUBLE        | Drone longitude                | 
+    | altitude  | DOUBLE        | Altitude in meters             |
+    | speed     | DOUBLE        | Horizontal speed               |
+    | heading   | DOUBLE        | Direction of travel            |
+    | source    | ENUM          | 'broadcast' or 'network'       |
     
     *FK - foreign key: points to a row in another table. For example, ensures telemetry.drone_id matches drones.drone_id*
 
