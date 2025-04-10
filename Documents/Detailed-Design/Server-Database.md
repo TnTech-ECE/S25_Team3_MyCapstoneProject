@@ -1,5 +1,5 @@
 # <div align="center"> Drone Tracker Detailed Design
-### <div align="center"> Server and Database
+### <div align="center"> Server and Database - UNFINISHED 
 #### <div align="center"> Gabrielle Renfroe
 <div align="center"> Department of Electrical and Computer Engineering <br>
 Tennessee Technological University
@@ -7,7 +7,7 @@ Tennessee Technological University
 
 ## Function of the Subsystem
 
-The server and database subsystem plays a critical role within the overall system architecture by managing, processing, and securely storing data, ensuring efficient data flow and integrity between the central computer and website. 
+The server and database subsystem is essential to the overall system architecture, managing, processing, and securely storing real-time telemetry data from both broadcast and network Remote ID sources. It ensures smooth data flow between the data collection layer and user-facing components like the website. This subsystem efficiently handles high-frequency telemetry, enforces data validation, maintains historical logs, and ensures consistency across sessions. By leveraging proper indexing, optimized queries, and security practices, it ensures high performance and data integrity. Additionally, the database is designed for scalability, capable of handling increasing drone data and supporting both real-time tracking and historical analysis as the application grows.
 
 ## Specifications and Constraints
 
@@ -37,11 +37,40 @@ For sections including a software component, produce a chart that demonstrates t
 
 Installing the MySQL server
 
+Using the following commands to install MySQL 
+
 Creating a database
 
-Organizing stacks for different 
+1. Table for *drones* - stores drone identity
+
+    | Name         | Type          | Description                       |
+    | ------------ | ------------- | --------------------------------- |
+    | drone_id     | VARCHAR(100)  | Unique drone identifier (UAS ID)  |
+    | operator_id  | VARCHAR(100)  | Opertaor ID                       |
+    | manufacturer | VARCHAR(100)  | Drone brand                       |
+    | model        | VARCHAR(100)  | Drone model                       | 
+    | last_seen    | TIMESTAMP     | Last time information was sent    |
+
+2. Table for *telemetry* - store real time flight data
+
+    | Name      | Type          | Description               |
+    | --------- | ------------- | ------------------------- |
+    | numList   | VARCHAR(100)  | Auto-increment numList    |
+    | drone_id  | VARCHAR(100)  | FK to *drones*            |
+    | timestamp | DATETIME      | Time of the data point    |
+    | latitude  | DOUBLE        | Drone latitude            |
+    | longitude | DOUBLE        | Drone longitude           | 
+    | altitude  | DOUBLE        | Altitude in meters        |
+    | speed     | DOUBLE        | Horizontal speed          |
+    | heading   | DOUBLE        | Direction of travel       |
+    | source    | ENUM          | 'broaddcast' or 'network' |
+    
+    *FK - foreign key: points to a row in another table. For example, ensures telemetry.drone_id matches drones.drone_id*
+
+
 
 ## References
 
 [1] W3Schools, “SQL Tutorial,” W3schools.com, 2019. https://www.w3schools.com/sql/default.asp (Accessed April 8, 2025).
 
+[2] Emmet, “Setup a Raspberry Pi MYSQL Database,” Pi My Life Up, Jul. 04, 2019. https://pimylifeup.com/raspberry-pi-mysql/ (Accessed April 8, 2025).
