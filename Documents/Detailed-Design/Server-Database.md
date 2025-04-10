@@ -19,27 +19,31 @@ The server and database subsystem is essential to the overall system architectur
 
 ## Overview of Proposed Solution
 
-Describe the solution and how it will fulfill the specifications and constraints of this subsystem.
+The database is implemented using Structured Query Language (SQL), the standard language for managing and manipulating data in relational databases. MySQL is installed on the Raspberry Pi as the database server, and SQL commands are utilized to define and organize the data across multiple tables. This structure ensures efficient storage, retrieval, and management of the data, enabling smooth interactions between the system components.
 
-The server...
-
-The database is written using a Structured Query Language (SQL). It is the standard language used to store, manipulate, and retrieve data in databases. MySQL server is installed onto the Raspberry Pi. Using SQL commands, the database is organzied into multiple tables.
+Python is used to implement a 10-minute buffering mechanism that temporarily stores telemetry data if the network connection is lost. In the event of a network failure, the server will buffer incoming packets for up to 10 minutes. Once the connection is restored, the buffered data is flushed to the database. This ensures that no data is lost during network interruptions and that the system continues operating smoothly without impacting real-time data tracking.
 
 ## Interface with Other Subsystems
 
-The server receives the packaged information from the central computer. Once received, the server processes the data and sends it to the database for storage and organization. The database structures and stores the information, making it easily accessible. The website, through the server, queries the database to retrieve the necessary data and then displays it to the user. 
+The server receives packaged data from the central computer and processes it accordingly. After processing, the server forwards the information to the database for structured storage. The database organizes the data in a way that ensures easy retrieval. When requested, the website interacts with the server to query the database, retrieving the relevant data, which is then presented to the user.
 
 ## Flowchart
 
-For sections including a software component, produce a chart that demonstrates the decision-making process of the microcontroller. It should provide an overview of the device's function without exhaustive detail.
+<img src="/Documents/Images/Server-Database Flowchart.png" width="600" height="900">
 
 ## Analysis
 
-Installing the MySQL server
+The following command installs MySQL to the Raspberry Pi:
 
-Using the following commands to install MySQL 
+    sudo apt install mariadb-server
 
-Creating a database
+To secure the software and set a password:
+
+    sudo mysql_secure_installation
+
+To access the Raspberry Pi's MySQL server and make changes:
+
+    sudo mysql -u root -p
 
 1. Table for *drones* - stores drone identity
 
@@ -66,8 +70,6 @@ Creating a database
     | source    | ENUM          | 'broadcast' or 'network'       |
     
     *FK - foreign key: points to a row in another table. For example, ensures telemetry.drone_id matches drones.drone_id*
-
-
 
 ## References
 
