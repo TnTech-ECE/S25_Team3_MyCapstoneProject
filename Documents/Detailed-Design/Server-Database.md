@@ -88,3 +88,8 @@ Most important SQL commands:
 [1] W3Schools, “SQL Tutorial,” W3schools.com, 2019. https://www.w3schools.com/sql/default.asp (Accessed April 8, 2025).
 
 [2] Emmet, “Setup a Raspberry Pi MYSQL Database,” Pi My Life Up, Jul. 04, 2019. https://pimylifeup.com/raspberry-pi-mysql/ (Accessed April 8, 2025).
+
+[3] S. W. Card, A. Wiethuechter, R. Moskowitz, S. Zhao, and Andrei Gurtov, “RFC 9434: Drone Remote Identification Protocol (DRIP) Architecture,” IETF Datatracker, 2023. https://datatracker.ietf.org/doc/rfc9434 (Accessed April 8, 2025).
+
+[4] “Data Indexing Strategies for Faster & Efficient Retrieval | Crown Information Management USA,” Crown Information Management USA, Mar. 19, 2025. https://www.crownrms.com/us/insights/data-indexing-strategies/ (Accessed April 10, 2025).
+
