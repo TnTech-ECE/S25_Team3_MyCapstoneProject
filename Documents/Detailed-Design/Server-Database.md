@@ -47,6 +47,16 @@ To access the Raspberry Pi's MySQL server and make changes:
 
     sudo mysql -u root -p
 
+Most important SQL commands:
+
+    SELECT - extracts data from a database
+    UPDATE - updates data in a database
+    DELETE - deletes data from a databse
+    INSERT INTO - inserts new data into a database
+    CREATE - used to create a new database, table, index, etc.
+    ALTER - used to alter a new database, table, index, etc.
+    DROP - used to delete a new database, table, index, etc.
+
 1. Table for *drones* - stores drone identity
 
     | Name         | Type          | Description                       |
