@@ -12,9 +12,9 @@ Data Aggregation and Processing:
 The central computer module is designed to collect Remote ID (RID) signal data exclusively from its onboard Bluetooth and Wi-Fi modules. These modules will continuously scan for RID broadcasts from nearby drones, in accordance with FAA regulations. Upon reception, the central computer will parse and process this data to extract key information such as drone identification, location, velocity, and operator metadata. This targeted aggregation approach ensures that only relevant, standards-compliant RID information is analyzed, providing a solid foundation for accurate drone detection and classification.
 
 Server and Website Hosting:
-Due to restrictions imposed by TTU Campus Police IT policies, the central computer in the primary detection unit will host both the server and the website used to manage and display drone tracking data. This localized hosting model ensures data security and compliance with campus network requirements. Any additional detection units deployed across campus will be configured to communicate with this primary unit, forming a cohesive network architecture that centralizes all data handling through a single server.
+Due to restrictions imposed by TTU Campus Police IT policies, the central computer in the first detection unit will host both the server and the website used to manage and display drone tracking data. This localized hosting model ensures data security and compliance with campus network requirements. Any additional detection units deployed across campus will be configured to communicate with this primary unit, forming a cohesive network architecture that centralizes all data handling through a single server.
 
-Communication with the Server:
+Server Communication:
 The central computer will serve as the communication bridge between RID detection modules and the hosted server, enabling real-time data transmission and control. Once RID data is processed, it will be securely transmitted to the local server, which will update the hosted website in real time. This site will provide an accessible, user-friendly interface for authorized personnel to monitor drone activity across the campus. Additional detection units will relay their data to the primary unit's central computer via Ethernet connections, supporting reliable and high-speed communication. This distributed yet centralized system design allows for scalable expansion of the network while maintaining consistent and secure data management, ensuring effective and comprehensive drone surveillance throughout TTU's campus.
 
 
@@ -80,7 +80,7 @@ These specifications make the Raspberry Pi 5 a cost-effective yet powerful solut
 
 
 ## Interface with Other Subsystems -> Stopped Fixing Here, Sorry :(
-​The Central Computer Module (CCM) in the drone tracking system is responsible for processing data from various inputs and communicating with other subsystems to ensure effective monitoring and management of drone activity on campus. Below is a detailed overview of the inputs, outputs, and data exchanges associated with the CCM:​
+​
 
 #### Inputs to the Central Computer Module
 
