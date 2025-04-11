@@ -66,7 +66,8 @@ The Raspberry Pi 5 is the ideal candidate for the central computer in the drone 
 + 40 GPIO Pins: Offer extensive expandability for custom components or sensors, enabling system adaptability as future requirements evolve.
 + 5V DC via USB-C: Ensures compatibility with standard power supplies, simplifying integration and reducing the need for specialized hardware.
 + RJ45 Ethernet Port: Enables stable wired communication between client devices and additional detection units, supporting system scalability and reliability.
-+ 3 PCI Express Lanes: Allow for expansion through accessories such as M.2 storage, Power over Ethernet (PoE) modules, and other add-ons, enhancing system capabilities.
++ PCI Express Lane: Allows for expansion through accessories such as M.2 storage enhancing system capabilities and performance.
++ PoE Interface: Provides the ability to use an alternative power source for locations that do not have access to standard wall outlets.
 + 2.7 W Idle Power Draw: Offers energy efficiency, reducing operational costs and enabling continuous deployment with minimal power requirements.
 + Dimensions (3.94 x 2.76 x 1.18 inches): Its small footprint allows for easy enclosure in a custom-designed case, facilitating compact integration within the overall system.
 + Dual-band 802.11ac Wi-Fi: Supports both 2.4 GHz and 5 GHz bands, providing robust wireless connectivity with improved sensitivity and extended range. This enables the system to reliably detect RID broadcasts over a wider area, especially in open environments. The dual-band capability also helps reduce interference from congested networks, ensuring consistent data collection from nearby drones.
@@ -75,7 +76,7 @@ The Raspberry Pi 5 is the ideal candidate for the central computer in the drone 
 
 These specifications make the Raspberry Pi 5 a cost-effective yet powerful solution, capable of supporting both the current needs and future expansions of the drone tracking system.
 
-<img src= "/Documents/Images/rpi5_Size.png" width="500" height="400"><img src= "/Documents/Images/rpi5_layout.jpg" width="500" height="400">
+<div align="center"> <img src= "/Documents/Images/rpi5_Size.png" width="500" height="400"> <img src= "/Documents/Images/rpi5_layout.jpg" width="500" height="400"> <div align="left"> <br>
 
 
 ## Interface with Other Subsystems -> Stopped Fixing Here, Sorry :(
