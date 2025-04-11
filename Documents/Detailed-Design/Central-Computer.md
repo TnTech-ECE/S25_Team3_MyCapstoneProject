@@ -102,49 +102,52 @@ These specifications make the Raspberry Pi 5 a cost-effective yet powerful solut
 
 ## Interface with Other Subsystems -> Stopped Fixing Here, Sorry :(
 ​
+The central computer subsystem, implemented on a Raspberry Pi 5, interfaces with two components: external drones broadcasting Remote ID (RID) data, and a local server hosted on the Pi. It receives RID signals over integrated Bluetooth and Wi-Fi radios, processes the data, and transmits the extracted information to the server via a local HTTP interface.
 
-#### Inputs to the Central Computer Module
+#### Inputs:
+The central computer receives broadcasted RID signals from nearby drones. These signals arrive via two wireless communication interfaces:
++ Bluetooth Low Energy (BLE): Drones emit RID data as BLE advertisement packets. The Raspberry Pi continuously scans for these packets using its integrated Bluetooth radio. A custom script (e.g., using the bluez stack or a Python BLE library) extracts the payloads in real time.
++ Wi-Fi NAN (Neighbor Awareness Networking): RID data is also broadcast over Wi-Fi using NAN frames. The Pi’s Wi-Fi interface, set to monitor mode, captures these frames using tools such as tcpdump, tshark, or a custom packet parser.
 
-* Remote ID (RID) Signals:
-  * Source: Drones operating within the vicinity of the campus.​
-  * Nature of Data: RID signals contain essential information about the drone, including its unique identifier, location coordinates, altitude, velocity, and the location of the operator.​
-  * Method of Communication: The CCM captures these signals using its integrated dual-band 802.11ac Wi-Fi and Bluetooth 5.0/BLE modules, enabling real-time reception of RID broadcasts.​
+Each RID broadcast contains a standardized set of data fields:
++ Drone ID (e.g., UUID or MAC address)
++ GPS coordinates (latitude, longitude, altitude)
++ Ground and vertical velocity
++ Timestamp of the broadcast
++ Emergency status flags
++ Optional operator identification
 
-* Geofencing Parameters:
-  * Source: Predefined geofencing data stored within the system.​
-  * Nature of Data: This includes the geographical boundaries that define authorized and unauthorized airspace over the campus.​
-  * Method of Communication: The geofencing parameters are preloaded into the CCM's internal storage during system configuration and can be updated as needed.​
+#### Internal Processing:
+The Pi runs a continuously operating parser script that decodes incoming BLE and Wi-Fi packets, extracts the relevant fields, and formats them into structured JSON-like objects. Example:
 
-#### Outputs from the Central Computer Module
+(data = { <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"drone_id": unique_id, <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"location": { <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"latitude": lat_value, <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"longitude": lon_value, <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"altitude": alt_value }, <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"velocity": { <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"horizontal": speed_value, <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"vertical": vertical_speed_value }, <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"timestamp": current_time, <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"emergency_status": status_flag }) <br>
 
-* Alerts and Notifications:
-  * Recipients: TTU Police Department and other designated campus security personnel.​
-  * Nature of Data: When an unauthorized drone is detected within the campus geofenced area, the CCM generates alerts containing the drone's identifier, current location, trajectory, and operator information.​
-  * Method of Communication: These alerts are transmitted via secure communication channels, such as encrypted emails or dedicated security applications, ensuring timely and confidential delivery.​
+#### Output to Server:
+Once parsed, the data is transmitted to a backend server hosted locally on the Pi. The server is implemented using a lightweight framework (e.g., Flask or FastAPI), which exposes an HTTP endpoint to receive the data.
 
-* Data Logs and Reports:
-  * Recipients: Campus authorities and system administrators.​
-  * Nature of Data: Comprehensive logs of all detected drone activities, including timestamps, drone identifiers, flight paths, and any violations of geofencing rules.​
-  * Method of Communication: These logs are stored locally on the CCM and can be accessed remotely through secure network connections for analysis and record-keeping.​
+Communication occurs over a local HTTP POST request. The pseudocode for this transfer is as follows:
 
-#### Data Transferred to Other Subsystems
+(send_http_post( url = "http://127.0.0.1:8000/drone-data", payload = data ))
 
-* User Interface Subsystem:
-  * Nature of Data: Real-time drone tracking information, including visual representations of drone locations on a campus map, status updates, and alert notifications.​
-  * Method of Communication: Data is transmitted over the campus network using standard networking protocols, allowing authorized users to access the information through a web-based interface or dedicated application.​
+The server receives, validates, and stores this information for further use or for transmission to an external system. This setup enables real-time capture and processing of drone telemetry.
 
-* Database Management Subsystem:
-  * Nature of Data: Archived records of drone activities, system performance metrics, and historical data for trend analysis.​
-  * Method of Communication: The CCM periodically uploads this data to a centralized database server using secure file transfer protocols (SFTP) or through direct database connections with appropriate authentication mechanisms.​
+#### Summary of Data Flow:
++ BLE and Wi-Fi interfaces receive RID broadcasts from drones.
++ A parser extracts and structures the data into a usable format.
++ Structured data is sent via HTTP POST to the onboard server.
++ The server handles storage or further processing.
 
-* Notification System:
-  * Nature of Data: Immediate alerts and critical notifications regarding unauthorized drone activities.​
-  * Method of Communication: The CCM interfaces with the campus's existing notification infrastructure, such as SMS gateways or emergency alert systems, to disseminate urgent messages to security personnel and other stakeholders.​
-
-In summary, the Central Computer Module serves as the hub for data acquisition, processing, and dissemination within the drone tracking system. Its integrated Wi-Fi and Bluetooth capabilities are essential for capturing RID signals, while its processing power enables real-time analysis and communication with other subsystems and campus authorities. The CCM ensures that all relevant data is accurately collected, promptly analyzed, and effectively shared to maintain campus airspace security.
-
-Fix this later to relate to power supply
-<img src= "/Documents/Images/power_con.png" width="3500" height="500">
+The power supply is not involved in any data exchange and does not constitute a communication interface for this subsystem.
 
 ## BOM
 
