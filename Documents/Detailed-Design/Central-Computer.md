@@ -57,6 +57,7 @@ The central computer will serve as the communication bridge between RID detectio
 
 
 ## Overview of Proposed Solution
+<div align="center"> <img src= "/Documents/Images/rpi.jpg" width="500" height="300"> <div align="left"> <br>
 The Raspberry Pi 5 is the ideal candidate for the central computer in the drone tracking system due to its compact form factor, versatility, and sufficient processing power to meet system requirements. The following specifications highlight key features that make the Raspberry Pi 5 well-suited for this application:
 
 + 2 USB 3.0 Ports: Provide high-speed data transfer capabilities, useful for future upgrades such as connecting a spectrum analyzer or other high-bandwidth peripherals.
@@ -74,7 +75,7 @@ The Raspberry Pi 5 is the ideal candidate for the central computer in the drone 
 
 These specifications make the Raspberry Pi 5 a cost-effective yet powerful solution, capable of supporting both the current needs and future expansions of the drone tracking system.
 
-<img src= "/Documents/Images/rpi.jpg" width="500" height="300"> <img src= "/Documents/Images/rpi5_Size.png" width="500" height="300">
+<img src= "/Documents/Images/rpi5_Size.png" width="500" height="400"><img src= "/Documents/Images/rpi5_layout.jpg" width="500" height="400">
 
 
 ## Interface with Other Subsystems -> Stopped Fixing Here, Sorry :(
@@ -192,3 +193,4 @@ Therefore, the design not only satisfies current project requirements but also p
 
 ## References
 [1] Raspberry Pi Ltd., “Raspberry Pi 5,” Raspberry Pi, [Online]. Available: https://www.raspberrypi.com/products/raspberry-pi-5/. [Accessed: Apr. 7, 2025].
+[2] Yahboom, “Yahboom Official Original Raspberry Pi 5 4GB RAM Development Board (In Stock),” RobotShop, [Online]. Available: https://www.robotshop.com/products/yahboom-official-original-raspberry-pi-5-4gb-ram-development-board-in-stock. [Accessed: Apr. 11, 2025].
