@@ -74,7 +74,7 @@ The Raspberry Pi 5 is the ideal candidate for the central computer in the drone 
 
 These specifications make the Raspberry Pi 5 a cost-effective yet powerful solution, capable of supporting both the current needs and future expansions of the drone tracking system.
 
-<img src= "/Documents/Images/rpi.png" width="500" height="50"> <img src= "/Documents/Images/rpi5_size.png" width="500" height="50">
+<img src= "/Documents/Images/rpi.jpg" width="500" height="300"> <img src= "/Documents/Images/rpi5_Size.png" width="500" height="300">
 
 
 ## Interface with Other Subsystems -> Stopped Fixing Here, Sorry :(
