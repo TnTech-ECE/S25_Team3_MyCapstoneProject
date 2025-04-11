@@ -60,22 +60,37 @@ The central computer will serve as the communication bridge between RID detectio
 <div align="center"> <img src= "/Documents/Images/rpi.jpg" width="500" height="300"> <div align="left"> <br>
 The Raspberry Pi 5 is the ideal candidate for the central computer in the drone tracking system due to its compact form factor, versatility, and sufficient processing power to meet system requirements. The following specifications highlight key features that make the Raspberry Pi 5 well-suited for this application:
 
+### Nice to Haves
 + 2 USB 3.0 Ports: Provide high-speed data transfer capabilities, useful for future upgrades such as connecting a spectrum analyzer or other high-bandwidth peripherals.
 + 2 USB 2.0 Ports: Serve as reliable interfaces for local programming and debugging, offering an alternative to SSH access when needed.
 + 2 micro-HDMI Ports: Allow direct connection to external monitors for local programming, diagnostics, and system maintenance, enhancing flexibility during setup and troubleshooting.
-+ 40 GPIO Pins: Offer extensive expandability for custom components or sensors, enabling system adaptability as future requirements evolve.
 + 5V DC via USB-C: Ensures compatibility with standard power supplies, simplifying integration and reducing the need for specialized hardware.
-+ RJ45 Ethernet Port: Enables stable wired communication between client devices and additional detection units, supporting system scalability and reliability.
 + PCI Express Lane: Allows for expansion through accessories such as M.2 storage enhancing system capabilities and performance.
 + PoE Interface: Provides the ability to use an alternative power source for locations that do not have access to standard wall outlets.
 + 2.7 W Idle Power Draw: Offers energy efficiency, reducing operational costs and enabling continuous deployment with minimal power requirements.
 + Dimensions (3.94 x 2.76 x 1.18 inches): Its small footprint allows for easy enclosure in a custom-designed case, facilitating compact integration within the overall system.
-+ CYW43455 Wi-Fi/Bluetooth Chip:The Infineon CYW43455 is a highly integrated single-chip transceiver that provides dual-band 802.11ac Wi-Fi and Bluetooth 5.0 connectivity. It supports 2.4 GHz and 5 GHz Wi-Fi bands with 802.11ac single-stream (1x1) operation, offering efficient performance for compact embedded systems like the Raspberry Pi 5.
+
+### Critical Components
+#### CYW43455 Wi-Fi/Bluetooth Chip:
+The Infineon CYW43455 is a highly integrated single-chip transceiver that provides dual-band 802.11ac Wi-Fi and Bluetooth 5.0 connectivity. It supports 2.4 GHz and 5 GHz Wi-Fi bands with 802.11ac single-stream (1x1) operation, offering efficient performance for compact embedded systems like the Raspberry Pi 5.
 
 To meet a minimum range requirement of 200 meters, the effective wireless performance is highly dependent on both environmental factors and the paired transceiver (RID device). The CYW43455’s support for 802.11ac and its output power (up to +19.5 dBm for 2.4 GHz and +17.5 dBm for 5 GHz, as per the datasheet) makes it suitable for long-range communication, assuming appropriate antenna design and low-noise environments.
 
 For Bluetooth communication, the CYW43455 offers a Bluetooth 5.0-compliant radio, which includes LE 1M PHY mode. This mode provides a balance of range and data rate, and the chip features a Bluetooth RX sensitivity of –94.5 dBm in LE 1M mode, which is sufficient to maintain reliable connections at extended ranges, including the specified 200 meters under favorable conditions. This ensures consistent and robust connectivity for low-energy Bluetooth applications, including telemetry and device control in drone or IoT systems.
-+ MicroSD Card Slot: Provides flexible and scalable storage options for the system, supporting high-capacity cards suitable for long-term data logging. This feature allows the central computer to locally store collected RID data, host the server and website interface, and maintain logs for historical analysis or compliance documentation. The use of a microSD card ensures easy upgrades or replacements, contributing to the overall maintainability and adaptability of the system.
+
+#### MicroSD Card Slot: 
+Provides flexible and scalable storage options for the system, supporting high-capacity cards suitable for long-term data logging. This feature allows the central computer to locally store collected RID data, host the server and website interface, and maintain logs for historical analysis or compliance documentation. The use of a microSD card ensures easy upgrades or replacements, contributing to the overall maintainability and adaptability of the system.
+
+#### 40 GPIO Pins: 
+Offer extensive expandability for custom components or sensors, enabling system adaptability as future requirements evolve.
+
+#### RJ45 Ethernet Port: 
+Enables stable wired communication between client devices and additional detection units, supporting system scalability and reliability.
+
+#### Broadcom BCM2712 Processor:
+The Broadcom BCM2712 is a quad-core Arm Cortex-A76 processor running at 2.4GHz, offering a strong balance between performance and efficiency. With four high-speed cores, it can easily manage multiple tasks simultaneously, such as hosting a local server to handle web dashboards, API endpoints, or telemetry logging. The high clock speed and modern architecture ensure responsive performance even under load, making it suitable for continuous operation without significant slowdowns or thermal throttling.
+
+This processing capability is especially valuable for drone Remote ID (RID) tracking, where the system needs to receive and interpret real-time data over Bluetooth Low Energy (BLE) and Wi-Fi NAN. The BCM2712 is capable of decoding these wireless signals while concurrently running server processes, enabling real-time data collection, analysis, and visualization. Its ability to manage concurrent wireless and server workloads ensures reliable and uninterrupted tracking in complex or busy environments.
 
 These specifications make the Raspberry Pi 5 a cost-effective yet powerful solution, capable of supporting both the current needs and future expansions of the drone tracking system.
 
