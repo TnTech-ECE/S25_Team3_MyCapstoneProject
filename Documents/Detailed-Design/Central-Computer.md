@@ -100,7 +100,7 @@ Its small footprint allows for easy enclosure in a custom-designed case, facilit
 These specifications make the Raspberry Pi 5 a cost-effective yet powerful solution, capable of supporting both the current needs and future expansions of the drone tracking system.
 
 
-## Interface with Other Subsystems -> Stopped Fixing Here, Sorry :(
+## Interface with Other Subsystems
 ​
 The central computer subsystem, implemented on a Raspberry Pi 5, interfaces with two components: external drones broadcasting Remote ID (RID) data, and a local server hosted on the Pi. It receives RID signals over integrated Bluetooth and Wi-Fi radios, processes the data, and transmits the extracted information to the server via a local HTTP interface.
 
@@ -158,7 +158,7 @@ The power supply is not involved in any data exchange and does not constitute a 
 |  RPi Active Cooler  |  Raspberry Pi Foundation  |          SC1148         |  Micro Center  |  1  |    $4.99   |   $98.42   |
 |      **Total**      |                           |                         |                |     |            | **$98.42** |
 
-## Analysis
+## Analysis -> Stopped Fixing Here, Sorry :(
 
 The design of the Central Computer Module (CCM), centered around the Raspberry Pi 5, effectively meets the functional requirements and constraints outlined in the conceptual design for Tennessee Technological University’s drone tracking system. This analysis highlights the CCM’s capabilities, addresses system limitations, and supports the conclusion that the design will succeed in achieving its goals.
 
