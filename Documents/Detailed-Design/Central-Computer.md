@@ -20,6 +20,7 @@ The central computer will serve as the communication bridge between RID detectio
 
 ## Specifications and Constraints
 - The central computer shall be securely mounted within the chassis to ensure both physical protection and optimal performance.
+- The central computer shall have dimensions no greater than 6 x 6 x 6 inches, ensuring easy integration into a compact and appropriately sized chassis for streamlined deployment.
 - The central computer shall receive power through a dedicated power supply designed to meet the system’s operational requirements.
 - The central computer shall draw no more than 16 W of power.
 - To accommodate current and future operational needs, the central computer shall be equipped with no fewer than 20 General Purpose Input/Output (GPIO) pins, allowing for seamless interfacing with various components and enabling future expansions or upgrades.
@@ -68,7 +69,6 @@ The Raspberry Pi 5 is the ideal candidate for the central computer in the drone 
 + PCI Express Lane: Allows for expansion through accessories such as M.2 storage enhancing system capabilities and performance.
 + PoE Interface: Provides the ability to use an alternative power source for locations that do not have access to standard wall outlets.
 + 2.7 W Idle Power Draw: Offers energy efficiency, reducing operational costs and enabling continuous deployment with minimal power requirements.
-+ Dimensions (3.94 x 2.76 x 1.18 inches): Its small footprint allows for easy enclosure in a custom-designed case, facilitating compact integration within the overall system.
 
 ### Critical Components
 #### CYW43455 Wi-Fi/Bluetooth Chip:
@@ -92,9 +92,12 @@ The Broadcom BCM2712 is a quad-core Arm Cortex-A76 processor running at 2.4GHz, 
 
 This processing capability is especially valuable for drone Remote ID (RID) tracking, where the system needs to receive and interpret real-time data over Bluetooth Low Energy (BLE) and Wi-Fi NAN. The BCM2712 is capable of decoding these wireless signals while concurrently running server processes, enabling real-time data collection, analysis, and visualization. Its ability to manage concurrent wireless and server workloads ensures reliable and uninterrupted tracking in complex or busy environments.
 
-These specifications make the Raspberry Pi 5 a cost-effective yet powerful solution, capable of supporting both the current needs and future expansions of the drone tracking system.
+#### Dimensions (3.94 x 2.76 x 1.18 inches): 
+Its small footprint allows for easy enclosure in a custom-designed case, facilitating compact integration within the overall system.
 
 <div align="center"> <img src= "/Documents/Images/rpi5_Size.png" width="500" height="400"> <img src= "/Documents/Images/rpi5_layout.jpg" width="500" height="400"> <div align="left"> <br>
+
+These specifications make the Raspberry Pi 5 a cost-effective yet powerful solution, capable of supporting both the current needs and future expansions of the drone tracking system.
 
 
 ## Interface with Other Subsystems -> Stopped Fixing Here, Sorry :(
