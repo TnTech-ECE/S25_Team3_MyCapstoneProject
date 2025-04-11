@@ -6,17 +6,16 @@ Tennessee Technological University
 <div align="left">
   
 ## Function of the Subsystem
-In the proposed drone tracking system for Tennessee Technological University (TTU), the central computer module serves as the primary processing hub, orchestrating the collection, analysis, and dissemination of data to ensure effective monitoring and management of drone activity on campus.​
+In the proposed drone tracking system for Tennessee Technological University (TTU), the central computer module will serve as the primary processing hub, orchestrating the collection, analysis, and dissemination of data to ensure effective monitoring and management of drone activity on campus.​
 
-Data Aggregation and Processing: The central computer module collects Remote ID (RID) signal data exclusively from the onboard Bluetooth and Wi-Fi modules. These modules are tasked with scanning for RID broadcasts from nearby drones, in accordance with FAA standards. Once received, the central computer parses and processes this data to extract key information such as drone identification, location, velocity, and operator metadata. This focused aggregation approach ensures that only relevant, standards-compliant RID information is analyzed, forming the basis for reliable drone detection and classification.
+Data Aggregation and Processing:
+The central computer module is designed to collect Remote ID (RID) signal data exclusively from its onboard Bluetooth and Wi-Fi modules. These modules will continuously scan for RID broadcasts from nearby drones, in accordance with FAA regulations. Upon reception, the central computer will parse and process this data to extract key information such as drone identification, location, velocity, and operator metadata. This targeted aggregation approach ensures that only relevant, standards-compliant RID information is analyzed, providing a solid foundation for accurate drone detection and classification.
 
-Integration with Remote Identification (RID) Signals: By decoding RID signals emitted by drones, the central computer extracts critical information such as the drone's identity, location, and operator details. This integration allows for real-time monitoring and enhances the system's ability to differentiate between authorized and unauthorized drone operations.​
+Server and Website Hosting:
+Due to restrictions imposed by TTU Campus Police IT policies, the central computer in the primary detection unit will host both the server and the website used to manage and display drone tracking data. This localized hosting model ensures data security and compliance with campus network requirements. Any additional detection units deployed across campus will be configured to communicate with this primary unit, forming a cohesive network architecture that centralizes all data handling through a single server.
 
-Alert Generation and Communication: Upon detecting unauthorized drone activity, the central computer module generates alerts and communicates them to TTU Police and other relevant authorities. This prompt notification enables swift response to potential security threats, ensuring the safety and privacy of the campus community.​
-
-System Coordination and Control: Serving as the command center, the central computer coordinates the various subsystems, ensuring seamless operation and data flow. It manages system resources, schedules tasks, and maintains overall system health, aligning with the conceptual design's emphasis on a cohesive and efficient architecture.​
-
-By fulfilling these functions, the central computer module embodies the core of the drone tracking system, aligning with the conceptual design's goal of enhancing campus security through advanced technology.
+Communication with the Server:
+The central computer will serve as the communication bridge between RID detection modules and the hosted server, enabling real-time data transmission and control. Once RID data is processed, it will be securely transmitted to the local server, which will update the hosted website in real time. This site will provide an accessible, user-friendly interface for authorized personnel to monitor drone activity across the campus. Additional detection units will relay their data to the primary unit's central computer via Ethernet connections, supporting reliable and high-speed communication. This distributed yet centralized system design allows for scalable expansion of the network while maintaining consistent and secure data management, ensuring effective and comprehensive drone surveillance throughout TTU's campus.
 
 
 ## Specifications and Constraints
