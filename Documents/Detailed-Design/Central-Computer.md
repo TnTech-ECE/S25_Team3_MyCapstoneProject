@@ -57,18 +57,19 @@ The central computer will serve as the communication bridge between RID detectio
 
 
 ## Overview of Proposed Solution
-The Raspberry Pi Model B is the ideal candidate for the central computer due to its compact size, versatility, and sufficient processing power for the system's requirements. The following specifications highlight key features that make the Raspberry Pi Model B an appropriate choice for this application:
- 
-+ 2 USB 3.0 Ports: These provide high-speed data transfer, useful for future upgrades such as connecting a spectrum analyzer or other peripherals.
-+ 2 USB 2.0 Ports: These are essential for local programming and debugging, offering an alternative to SSH access.
-+ 2 micro-HDMI Ports: These allow for direct connection to monitors for local programming and system diagnostics, providing flexibility in system setup and maintenance.
-+ 40 GPIO Pins: This provides ample room for future expansions and customizations, making the Raspberry Pi Model B highly adaptable for additional components or sensors as the system evolves.
-+ 5V DC via USB-C: This simplifies the integration of the power supply, ensuring compatibility with commonly available power sources.
-+ 5V DC via GPIO Header: This feature is crucial for powering the Wi-Fi and Bluetooth RID modules, ensuring that all system components are adequately powered.
-+ 2.7 W Idle Power Draw: This low power consumption makes the Raspberry Pi Model B an efficient choice, minimizing operational costs when the system is in an idle state.
-+ 3.94 x 2.76 x 1.18 Inches: Its compact size ensures that the Raspberry Pi Model B can be easily housed in a custom-designed case, saving space and facilitating integration within the overall system design.
- 
-These specifications ensure that the Raspberry Pi Model B is both cost-effective and capable of meeting the performance and expandability needs of the drone tracking system.
+The Raspberry Pi 5 Model B is an ideal candidate for the central computer in the drone tracking system due to its compact form factor, versatility, and sufficient processing power to meet system requirements. The following specifications highlight key features that make the Raspberry Pi 5 Model B well-suited for this application:
+
++ 2 USB 3.0 Ports: Provide high-speed data transfer capabilities, useful for future upgrades such as connecting a spectrum analyzer or other high-bandwidth peripherals.
++ 2 USB 2.0 Ports: Serve as reliable interfaces for local programming and debugging, offering an alternative to SSH access when needed.
++ 2 micro-HDMI Ports: Allow direct connection to external monitors for local programming, diagnostics, and system maintenance, enhancing flexibility during setup and troubleshooting.
++ 40 GPIO Pins: Offer extensive expandability for custom components or sensors, enabling system adaptability as future requirements evolve.
++ 5V DC via USB-C: Ensures compatibility with standard power supplies, simplifying integration and reducing the need for specialized hardware.
++ RJ45 Ethernet Port: Enables stable wired communication between client devices and additional detection units, supporting system scalability and reliability.
++ 3 PCI Express Lanes: Allow for expansion through accessories such as M.2 storage, Power over Ethernet (PoE) modules, and other add-ons, enhancing system capabilities.
++ 2.7 W Idle Power Draw: Offers energy efficiency, reducing operational costs and enabling continuous deployment with minimal power requirements.
++ Dimensions (3.94 x 2.76 x 1.18 inches): Its small footprint allows for easy enclosure in a custom-designed case, facilitating compact integration within the overall system.
+
+These specifications make the Raspberry Pi 5 Model B a cost-effective yet powerful solution, capable of supporting both the current needs and future expansions of the drone tracking system.
 
 
 ## Interface with Other Subsystems
