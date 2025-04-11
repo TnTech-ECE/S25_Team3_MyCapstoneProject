@@ -24,9 +24,8 @@ The central computer will serve as the communication bridge between RID detectio
 - The central computer shall draw no more than 16 W of power.
 - To accommodate current and future operational needs, the central computer shall be equipped with no fewer than 20 General Purpose Input/Output (GPIO) pins, allowing for seamless interfacing with various components and enabling future expansions or upgrades.
 - The central computer shall process packets and store data obtained from the Wi-Fi and Bluetooth transceivers.
-- The central computer shall transmit the gathered drone information to the Campus Police server via a secure Ethernet connection.
-- The transmitted data shall be encrypted to ensure confidentiality and integrity, preventing unauthorized access or tampering during transmission.
-- This design shall ensure that all communication between the central computer and the server remains secure, reliable, and efficient, providing critical support to campus security operations in real-time.
+- The central computer shall internally transmit the gathered drone information to the hosted server.
+- The central computer shall ensure that all communication between the central computer and the hosted server remains secure, reliable, and efficient, providing critical support to campus security operations in real-time.
 
 #### Bluetooth RID Module (Integrated)
 - The Bluetooth transceiver shall continuously scan the 2.4 GHz Bluetooth frequency band to detect and capture RID signals while filtering out non-RID transmissions.
@@ -40,7 +39,7 @@ The central computer will serve as the communication bridge between RID detectio
   - Emergency Status (if applicable): Indication of any emergency condition, such as a loss of control or return-to-home activation.
 - The system shall ensure reliable reception of all RID data from drones operating within the designated tracking area.
 - This system shall function autonomously, requiring minimal intervention while ensuring accurate and efficient drone tracking for compliance, security, and situational awareness purposes.
-- The Bluetooth module shall be integrated in the the Central Computer (Raspberry Pi).
+- The Bluetooth module shall be integrated in the the Central Computer.
 
 #### Wi-Fi RID Module (Integrated)
 - The Wi-Fi transceiver shall receive Wi-Fi signals transmitted by drones flying over the campus.
@@ -54,7 +53,7 @@ The central computer will serve as the communication bridge between RID detectio
   - Emergency Status (if applicable): Indication of any emergency condition, such as a loss of control or return-to-home activation.
 - This module shall be designed to ensure constant reception of RID information packets gathered from drones within campus airspace.
 - The Wi-Fi module shall be designed to operate autonomously and with limited outside interaction.
-- The Wi-Fi module shall be integrated in the the Central Computer (Raspberry Pi).
+- The Wi-Fi module shall be integrated in the the Central Computer.
 
 
 ## Overview of Proposed Solution
