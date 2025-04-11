@@ -73,6 +73,7 @@ The Raspberry Pi 5 is the ideal candidate for the central computer in the drone 
 + MicroSD Card Slot: Provides flexible and scalable storage options for the system, supporting high-capacity cards suitable for long-term data logging. This feature allows the central computer to locally store collected RID data, host the server and website interface, and maintain logs for historical analysis or compliance documentation. The use of a microSD card ensures easy upgrades or replacements, contributing to the overall maintainability and adaptability of the system.
 
 These specifications make the Raspberry Pi 5 a cost-effective yet powerful solution, capable of supporting both the current needs and future expansions of the drone tracking system.
+
 <img src= "/Documents/Images/rpi.png" width="500" height="50"> <img src= "/Documents/Images/rpi5_size.png" width="500" height="50">
 
 
