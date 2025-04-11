@@ -127,10 +127,12 @@ Fix this later to relate to power supply
 
 ## BOM
 
-|     Component    |        Manufacturer       |   Part No.  |   Distributor  | Qty | Unit Price |    Total   |
-|------------------|---------------------------|-------------|----------------|-----|------------|------------|
-|  Raspberry Pi 5  |  Raspberry Pi Foundation  |    SC1112   |  Micro Center  |  1  |   $79.99   |   $79.99   |
-|     **Total**    |                           |             |                |     |            | **$79.99** |
+|      Component      |        Manufacturer       |         Part No.        |   Distributor  | Qty | Unit Price |    Total   |
+|---------------------|---------------------------|-------------------------|----------------|-----|------------|------------|
+|   Raspberry Pi 5    |  Raspberry Pi Foundation  |          SC1112         |  Micro Center  |  1  |   $79.99   |   $79.99   |
+|   Micro SD 128 GB   |          SanDisk          |    SDSQUAB-128G-GN6MN   |     Amazon     |  1  |   $13.44   |   $93.43   |
+|  RPi Active Cooler  |  Raspberry Pi Foundation  |          SC1148         |  Micro Center  |  1  |    $4.99   |   $98.42   |
+|      **Total**      |                           |                         |                |     |            | **$98.42** |
 
 ## Analysis
 
