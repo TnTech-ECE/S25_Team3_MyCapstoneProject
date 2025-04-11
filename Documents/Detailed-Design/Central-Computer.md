@@ -57,7 +57,7 @@ The central computer will serve as the communication bridge between RID detectio
 
 
 ## Overview of Proposed Solution
-The Raspberry Pi 5 Model B is an ideal candidate for the central computer in the drone tracking system due to its compact form factor, versatility, and sufficient processing power to meet system requirements. The following specifications highlight key features that make the Raspberry Pi 5 Model B well-suited for this application:
+The Raspberry Pi 5 Model B is the ideal candidate for the central computer in the drone tracking system due to its compact form factor, versatility, and sufficient processing power to meet system requirements. The following specifications highlight key features that make the Raspberry Pi 5 Model B well-suited for this application:
 
 + 2 USB 3.0 Ports: Provide high-speed data transfer capabilities, useful for future upgrades such as connecting a spectrum analyzer or other high-bandwidth peripherals.
 + 2 USB 2.0 Ports: Serve as reliable interfaces for local programming and debugging, offering an alternative to SSH access when needed.
@@ -68,11 +68,14 @@ The Raspberry Pi 5 Model B is an ideal candidate for the central computer in the
 + 3 PCI Express Lanes: Allow for expansion through accessories such as M.2 storage, Power over Ethernet (PoE) modules, and other add-ons, enhancing system capabilities.
 + 2.7 W Idle Power Draw: Offers energy efficiency, reducing operational costs and enabling continuous deployment with minimal power requirements.
 + Dimensions (3.94 x 2.76 x 1.18 inches): Its small footprint allows for easy enclosure in a custom-designed case, facilitating compact integration within the overall system.
++ Dual-band 802.11ac Wi-Fi: Supports both 2.4 GHz and 5 GHz bands, providing robust wireless connectivity with improved sensitivity and extended range. This enables the system to reliably detect RID broadcasts over a wider area, especially in open environments. The dual-band capability also helps reduce interference from congested networks, ensuring consistent data collection from nearby drones.
++ Bluetooth 5.0 / Bluetooth Low Energy (BLE): Offers enhanced sensitivity and greater range compared to previous Bluetooth versions—up to four times the range and twice the speed of Bluetooth 4.2. This makes it highly effective for picking up RID signals broadcast by drones operating within regulatory limits, even in complex or obstructed environments. The inclusion of BLE also ensures efficient power usage while maintaining consistent connectivity with RID-emitting devices.
++ MicroSD Card Slot: Provides flexible and scalable storage options for the system, supporting high-capacity cards suitable for long-term data logging. This feature allows the central computer to locally store collected RID data, host the server and website interface, and maintain logs for historical analysis or compliance documentation. The use of a microSD card ensures easy upgrades or replacements, contributing to the overall maintainability and adaptability of the system.
 
 These specifications make the Raspberry Pi 5 Model B a cost-effective yet powerful solution, capable of supporting both the current needs and future expansions of the drone tracking system.
 
 
-## Interface with Other Subsystems
+## Interface with Other Subsystems -> Stopped Fixing Here, Sorry :(
 ​The Central Computer Module (CCM) in the drone tracking system is responsible for processing data from various inputs and communicating with other subsystems to ensure effective monitoring and management of drone activity on campus. Below is a detailed overview of the inputs, outputs, and data exchanges associated with the CCM:​
 
 #### Inputs to the Central Computer Module
