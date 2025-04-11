@@ -57,15 +57,18 @@ The central computer will serve as the communication bridge between RID detectio
 
 
 ## Overview of Proposed Solution
-The Raspberry Pi 5 serves as the Central Computer Module for the drone tracking system, and it is an ideal solution that meets both the technical specifications and constraints outlined in the project. Its compact size, robust wireless capabilities, and sufficient processing power make it a highly effective and reliable choice.
-
-Unlike typical embedded applications that rely on multiple peripherals, the Raspberry Pi 5 in this system will only use external peripherals during the initial programming and setup phase. After deployment, it will operate headlessly—without the need for connected monitors, keyboards, or other accessories.
-
-What makes the Raspberry Pi 5 especially suitable for this project is its integrated dual-band 802.11ac Wi-Fi and Bluetooth 5.0/BLE modules. These wireless communication features are absolutely critical for the success of the system. The drone detection process depends on capturing and interpreting Remote ID (RID) signals, which are broadcast over Bluetooth and Wi-Fi by compliant drones. The Pi’s ability to receive these signals reliably and in real time is central to the system’s function.
-
-The onboard wireless modules eliminate the need for external receivers or dongles, simplifying the hardware setup and reducing power consumption and system complexity. With this built-in connectivity, the Raspberry Pi 5 can continuously scan for and process RID signals, enabling fast and efficient tracking of drones across the designated area.
-
-Additionally, the Pi’s 2.4GHz quad-core Cortex-A76 processor and up to 8GB of LPDDR4X RAM ensure it can handle concurrent scanning, signal processing, and data logging tasks smoothly, even under extended operation. 
+The Raspberry Pi Model B is the ideal candidate for the central computer due to its compact size, versatility, and sufficient processing power for the system's requirements. The following specifications highlight key features that make the Raspberry Pi Model B an appropriate choice for this application:
+ 
++ 2 USB 3.0 Ports: These provide high-speed data transfer, useful for future upgrades such as connecting a spectrum analyzer or other peripherals.
++ 2 USB 2.0 Ports: These are essential for local programming and debugging, offering an alternative to SSH access.
++ 2 micro-HDMI Ports: These allow for direct connection to monitors for local programming and system diagnostics, providing flexibility in system setup and maintenance.
++ 40 GPIO Pins: This provides ample room for future expansions and customizations, making the Raspberry Pi Model B highly adaptable for additional components or sensors as the system evolves.
++ 5V DC via USB-C: This simplifies the integration of the power supply, ensuring compatibility with commonly available power sources.
++ 5V DC via GPIO Header: This feature is crucial for powering the Wi-Fi and Bluetooth RID modules, ensuring that all system components are adequately powered.
++ 2.7 W Idle Power Draw: This low power consumption makes the Raspberry Pi Model B an efficient choice, minimizing operational costs when the system is in an idle state.
++ 3.94 x 2.76 x 1.18 Inches: Its compact size ensures that the Raspberry Pi Model B can be easily housed in a custom-designed case, saving space and facilitating integration within the overall system design.
+ 
+These specifications ensure that the Raspberry Pi Model B is both cost-effective and capable of meeting the performance and expandability needs of the drone tracking system.
 
 
 ## Interface with Other Subsystems
