@@ -141,13 +141,12 @@ Communication occurs over a local HTTP POST request. The pseudocode for this tra
 
 The server receives, validates, and stores this information for further use or for transmission to an external system. This setup enables real-time capture and processing of drone telemetry.
 
-#### Summary of Data Flow:
-+ BLE and Wi-Fi interfaces receive RID broadcasts from drones.
-+ A parser extracts and structures the data into a usable format.
-+ Structured data is sent via HTTP POST to the onboard server.
-+ The server handles storage or further processing.
-
+#### Note: 
 The power supply is not involved in any data exchange and does not constitute a communication interface for this subsystem.
+
+## Flowchart
+
+<div align="center"> <img src= "/Documents/Images/central_computer_flow.png" width="400" height="600"> <div align="left"> <br>
 
 ## BOM
 
