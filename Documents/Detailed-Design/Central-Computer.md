@@ -159,62 +159,7 @@ The power supply is not involved in any data exchange and does not constitute a 
 
 ## Analysis -> Stopped Fixing Here, Sorry :(
 
-The design of the Central Computer Module (CCM), centered around the Raspberry Pi 5, effectively meets the functional requirements and constraints outlined in the conceptual design for Tennessee Technological University’s drone tracking system. This analysis highlights the CCM’s capabilities, addresses system limitations, and supports the conclusion that the design will succeed in achieving its goals.
 
-Functional Suitability
-The primary role of the CCM is to detect, process, and report Remote ID (RID) signals broadcast by drones. These signals contain critical data such as the drone’s unique ID, current GPS location, altitude, velocity, and operator coordinates. The Raspberry Pi 5 is equipped with integrated Wi-Fi and Bluetooth radios, which are directly aligned with the two primary RID broadcasting standards (Wi-Fi NAN and Bluetooth Low Energy). These integrated radios ensure:
-
-* Low latency data reception, crucial for real-time tracking,
-* Elimination of extra hardware, reducing system complexity and cost,
-* Efficient signal capture, enabling quick detection of potential threats.
-
-By leveraging the Pi’s wireless modules, the system can reliably scan for RID signals over a wide area, even from multiple drones concurrently.
-
-#### Constraint Compliance
-1. Power and Space Constraints
-  * The Raspberry Pi 5 operates on a 5V/5A power supply and features a compact footprint (85.6mm × 56.5mm).
-  * This aligns perfectly with the limited physical and power resources typical of embedded surveillance systems.
-  * The lack of need for additional peripherals during operation minimizes power draw and system heat, ensuring continuous uptime.
-
-2. Scalability and Modularity
-  * The CCM design is modular, allowing future enhancements (e.g., additional sensors, LTE modules) via USB or PCIe without fundamental redesign.
-  * Software-defined radio processing and signal filtering algorithms can be updated or scaled via software packages without hardware change.
-
-3. Autonomy and Low Maintenance
-  * Once programmed, the CCM runs autonomously without a keyboard, mouse, or monitor.
-  * Logs and alerts are accessible via remote access over Wi-Fi, requiring little to no physical interaction post-deployment.
-
-#### Reliability and Real-Time Processing
-The Raspberry Pi 5’s quad-core Cortex-A76 CPU (2.4GHz) and optional 8GB RAM provide sufficient headroom for real-time tasks, such as:
-
-* Continuous signal scanning,
-* RID decoding and validation,
-* Triggering alerts when policy violations are detected,
-* Storing and transmitting logs with timestamps.
-
-The CPU’s efficiency ensures real-time responsiveness even when tracking multiple drones simultaneously or logging extensive datasets.
-
-#### Data Integration and Communication
-The CCM is designed to interface seamlessly with other system components:
-
-* Notification Subsystem: Sends automated alerts to campus police and security via encrypted messages or app-based push notifications.
-* User Interface: Sends real-time position and status updates to the map-based visual display via the campus LAN or secure web interface.
-* Database Subsystem: Uploads detailed logs and flight history to a central database, supporting analysis and regulatory compliance.
-
-All data transmission is handled over standard, secure networking protocols (e.g., HTTPS, SFTP), ensuring compatibility, security, and reliability.
-
-#### Robustness and Maintainability
-* The system can be updated remotely, and the OS (typically a Linux-based distro like Raspberry Pi OS) allows for advanced logging, debugging, and recovery tools.
-* Built-in watchdog and cron services can ensure the system auto-recovers from unexpected failures, improving robustness.
-
-#### Conclusion
-In summary, the Central Computer Module design is a technically sound, well-integrated, and forward-compatible solution for drone detection and tracking. By leveraging the Raspberry Pi 5’s wireless capabilities, computational power, and flexible software environment, the system:
-
-* Meets all specified power, size, and autonomy constraints,
-* Efficiently performs the critical task of RID signal capture and processing,
-* Communicates with other subsystems in a secure and effective manner.
-
-Therefore, the design not only satisfies current project requirements but also positions the system for future adaptability and scalability. It is a reliable, cost-effective, and mission-appropriate implementation that supports the success of the entire drone tracking platform.
 
 
 ## References
