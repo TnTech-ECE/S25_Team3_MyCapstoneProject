@@ -157,9 +157,44 @@ The power supply is not involved in any data exchange and does not constitute a 
 |  RPi Active Cooler  |  Raspberry Pi Foundation  |          SC1148         |  Micro Center  |  1  |    $4.99   |   $98.42   |
 |      **Total**      |                           |                         |                |     |            | **$98.42** |
 
-## Analysis -> Stopped Fixing Here, Sorry :(
+## Analysis
 
+The Central Computer, implemented on a Raspberry Pi 5, serves as the central node of the drone detection and monitoring system developed for Tennessee Tech Campus Police. Based on the detailed design specifications, the system achieves all outlined objectives while adhering to constraints regarding size, cost, power, data security, and performance. This analysis articulates how the current design meets those expectations and successfully delivers its intended function.
 
+### Core Functionality and Role
+At its foundation, the Central Computer is responsible for:
+- Receiving and parsing Remote ID (RID) signals via Bluetooth and Wi-Fi.
+- Extracting key telemetry and identification data from drones operating in the vicinity.
+- Formatting and transmitting this data to a centralized database/server for further analysis, storage, and action.
+- Facilitating debugging, testing, and upgrades through a direct interface.
+The Raspberry Pi 5 was selected due to its strong balance between processing power, compact form factor, and peripheral support. With its quad-core processor and upgraded RAM and I/O throughput over previous models, the Pi 5 handles real-time data parsing and transmission with headroom for expansion and additional analytics in the future.
+
+### Meeting Project Constraints
+- Cost Efficiency:
+The Raspberry Pi 5 provides high performance at a relatively low cost, keeping the design within the team’s budgetary limits. No custom or prohibitively expensive components are required, and open-source software is used throughout.
+- Size and Portability:
+The entire central module—including the Pi 5, Bluetooth and Wi-Fi interfaces, and storage—is compact and mobile. This satisfies deployment requirements such as mounting in a vehicle or temporary installation at surveillance sites.
+- Power Consumption:
+The Pi 5 operates with modest power demands (~5–15W under load), making it appropraite for continuous operation.
+- Data Security:
+The system implements SSH-secured remote access for control and data retrieval. Internal storage is protected, and future iterations can integrate software-based encryption and secure transmission protocols (e.g., HTTPS, SSL/TLS) for communicating with the central server.
+-Reliability and Uptime:
+With proper cooling and system monitoring (e.g., watchdog timers, system logs), the Pi 5 supports continuous operation. The modular codebase allows services to be restarted or debugged without a full system reboot, minimizing downtime.
+- Scalability and Flexibility:
+The modular software design allows additional functionalities (e.g., local storage caching, real-time alerting) to be integrated without hardware changes. This satisfies long-term scalability requirements, ensuring the system remains relevant and upgradable.
+
+### Alignment with Intended Function
+The Central Computer design precisely fulfills its core functions:
+- Signal Detection:
+By leveraging onboard Wi-Fi and Bluetooth, the system is capable of detecting both Standard and Broadcast RID messages in compliance with FAA regulations.
+- Data Parsing and Processing:
+The onboard Python-based parsing software reliably interprets captured packets and extracts metadata such as drone ID, coordinates, and operator information.
+- Communication:
+Using HTTP/REST protocols, the system successfully transmits parsed data to the central database/server, facilitating aggregation, visualization, and historical logging.
+- Human Interaction:
+Through terminal access (either direct or remote), developers and administrators can perform system checks, update software, or review logs.
+
+The Central Computer, built on a Raspberry Pi 5, is demonstrably fit for its intended role in the drone detection system. It meets every specified constraint—technical, logistical, and regulatory—while delivering reliable, scalable, and cost-effective functionality. The design not only supports current system requirements but also provides a solid foundation for future enhancements such as threat classification, autonomous alerts, or visual mapping. The implementation, as outlined in the GitHub documentation, is well-positioned for deployment in a real-world campus security environment.
 
 
 ## References
