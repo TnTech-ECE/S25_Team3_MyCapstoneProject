@@ -132,7 +132,7 @@ The Pi runs a continuously operating parser script that decodes incoming BLE and
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"timestamp": current_time, <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"emergency_status": status_flag }) <br>
 
-#### Output to Server:
+#### Output to Server Subsystem:
 Once parsed, the data is transmitted to a backend server hosted locally on the Pi. The server is implemented using a lightweight framework (e.g., Flask or FastAPI), which exposes an HTTP endpoint to receive the data.
 
 Communication occurs over a local HTTP POST request. The pseudocode for this transfer is as follows:
@@ -142,7 +142,7 @@ Communication occurs over a local HTTP POST request. The pseudocode for this tra
 The server receives, validates, and stores this information for further use or for transmission to an external system. This setup enables real-time capture and processing of drone telemetry.
 
 #### Note: 
-The power supply is not involved in any data exchange and does not constitute a communication interface for this subsystem.
+The power supply subsystem is not involved in any data exchange and does not constitute a communication interface for this subsystem.
 
 ## Flowchart
 
