@@ -46,13 +46,13 @@ After obtaining an API key, the API call can implemented using the key in the HT
 
 The program will then prompt the database for all data sets that match the search characteristic (default value is set to the current date.) These data points will then have a Google Maps marker placed on their respective locations. The dispatcher can then select a certain drone and view the related data received from the Remote ID. Drones will populate the list in the reverse order they were detected, with the most recent drones appearing first.
 
-For the website to be accessible at all times, it will need to be hosted on a machine that doesn't turn off. The team has enquired with the campus police and they have allowed the team to use thier sever to host both the database and website.
+For the website to be accessible at all times, it will need to be hosted on a machine that doesn't turn off. The team has asked the campus police to use a server on their server rack, but due to policies put into place by the FBI and TBI only specific personnel are allowed to access those servers. The team made the decision to host both the website and database off of the raspberry pi 5.
 
 ## Analysis
 
 ### Interactions With Other Subsystems
 
-The website subsystem will only directly interact with the database. The website will take the processed data from the database and will update the on screen information as needed. The website will also have to ablity to send info to the database, updating the autheraztion satatus of a selected drone.
+The website subsystem will only directly interact with the database. The website will take the processed data from the database and will update the on screen information as needed. The website will also have to ablity to send info to the database, updating the autheraztion status of a selected drone.
 
 ### Testing
 
