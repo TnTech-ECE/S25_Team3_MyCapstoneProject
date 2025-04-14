@@ -57,6 +57,34 @@ Most important SQL commands:
     ALTER - used to alter a new database, table, index, etc.
     DROP - used to delete a new database, table, index, etc.
 
+To create a database:
+
+    CREATE DATABASE drone_tracking
+
+To create a table in the database:
+
+    CREATE TABLE drones
+    (
+        drone_id VARCHAR(100),
+        operator_id VARCHAR(100),
+        manufacturer VARCHAR(100),
+        model VARCHAR(100),
+        last_seen TIMESTAMP
+    );
+
+    CREATE TABLE telemetry
+    (
+        numList VARCHAR(100),
+        drone_id VARCHAR(100),
+        timestamp DATETIME,
+        latitude DOUBLE,
+        longitude DOUBLE,
+        altitude DOUBLE,
+        speed DOUBLE,
+        heading DOUBLE,
+        source ENUM
+    );
+
 1. Table for *drones* - stores drone identity
 
     | Name         | Type          | Description                       |
