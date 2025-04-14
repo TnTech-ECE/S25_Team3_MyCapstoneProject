@@ -1,21 +1,21 @@
 # <div align="center"> Drone Tracker Detailed Design 
-### <div align="center"> Central Computer Module (Rough Draft: Chat GPT Special)
+### <div align="center"> Central Computer Module 
 #### <div align="center"> Brett Ballew
 <div align="center"> Department of Electrical and Computer Engineering <br>
 Tennessee Technological University
 <div align="left">
   
 ## Function of the Subsystem
-In the proposed drone tracking system for Tennessee Technological University Campus Police, the central computer module will serve as the primary processing hub, orchestrating the collection, analysis, and dissemination of data to ensure effective monitoring and management of drone activity on campus.​
+The central computer module will act as the system’s processing hub, handling data collection, analysis, and distribution to monitor drone activity on campus.​
 
-Data Aggregation and Processing:
-The central computer module is designed to collect Remote ID (RID) signal data exclusively from its onboard Bluetooth and Wi-Fi modules. These modules will continuously scan for RID broadcasts from nearby drones, in accordance with FAA regulations. Upon reception, the central computer will parse and process this data to extract key information such as drone identification, location, velocity, and operator metadata. This targeted aggregation approach ensures that only relevant, standards-compliant RID information is analyzed, providing a solid foundation for accurate drone detection and classification.
+Data Processing:
+It will collect Remote ID (RID) signals via onboard Bluetooth and Wi-Fi, scanning for FAA-compliant broadcasts. Extracted data—such as drone ID, location, velocity, and operator info—will be parsed and analyzed to ensure accurate detection and classification.
 
 Server and Website Hosting:
-Due to restrictions imposed by TTU Campus Police IT policies, the central computer in the first detection unit will host both the server and the website used to manage and display drone tracking data. This localized hosting model ensures data security and compliance with campus network requirements. Any additional detection units deployed across campus will be configured to communicate with this primary unit, forming a cohesive network architecture that centralizes all data handling through a single server.
+Due to TTU Campus Police IT policies, the first detection unit’s central computer will locally host both the server and the monitoring website, ensuring data security and compliance. Other detection units will connect to this primary node, forming a unified network.
 
 Server Communication:
-The central computer will serve as the communication bridge between RID detection modules and the hosted server, enabling real-time data transmission and control. Once RID data is processed, it will be securely transmitted to the local server, which will update the hosted website in real time. This site will provide an accessible, user-friendly interface for authorized personnel to monitor drone activity across the campus. Additional detection units will relay their data to the primary unit's central computer via Ethernet connections, supporting reliable and high-speed communication. This distributed yet centralized system design allows for scalable expansion of the network while maintaining consistent and secure data management, ensuring effective and comprehensive drone surveillance throughout TTU's campus.
+The central unit will relay processed RID data to the local server for real-time website updates. Additional detection units will transmit their data via Ethernet to this central hub, supporting scalable, secure, and consistent campus-wide drone surveillance.
 
 
 ## Specifications and Constraints
@@ -74,7 +74,7 @@ The Raspberry Pi 5 is the ideal candidate for the central computer in the drone 
 #### CYW43455 Wi-Fi/Bluetooth Chip:
 The Infineon CYW43455 is a highly integrated single-chip transceiver that provides dual-band 802.11ac Wi-Fi and Bluetooth 5.0 connectivity. It supports 2.4 GHz and 5 GHz Wi-Fi bands with 802.11ac single-stream (1x1) operation, offering efficient performance for compact embedded systems like the Raspberry Pi 5.
 
-To meet a minimum range requirement of 200 meters, the effective wireless performance is highly dependent on both environmental factors and the paired transceiver (RID device). The CYW43455’s support for 802.11ac and its output power (up to +19.5 dBm for 2.4 GHz and +17.5 dBm for 5 GHz, as per the datasheet) makes it suitable for long-range communication, assuming appropriate antenna design and low-noise environments.
+To meet a minimum range requirement of 200 meters, the effective wireless performance is highly dependent on both environmental factors and the paired transceiver (RID device). The CYW43455’s support for 802.11ac and its output power (up to +19.5 dBm for 2.4 GHz and +17.5 dBm for 5 GHz, as per the datasheet) makes it suitable for long-range communication.
 
 For Bluetooth communication, the CYW43455 offers a Bluetooth 5.0-compliant radio, which includes LE 1M PHY mode. This mode provides a balance of range and data rate, and the chip features a Bluetooth RX sensitivity of –94.5 dBm in LE 1M mode, which is sufficient to maintain reliable connections at extended ranges, including the specified 200 meters under favorable conditions. This ensures consistent and robust connectivity for low-energy Bluetooth applications, including telemetry and device control in drone or IoT systems.
 
