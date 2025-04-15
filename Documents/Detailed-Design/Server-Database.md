@@ -35,23 +35,23 @@ When the website requests data, it interacts with the server, which then queries
 
 ## Analysis
 
-The following command installs MySQL to the Raspberry Pi:
+The choice of MySQL as the database management system is rooted in its widespread use, robust feature set, and proven performance in handling structured data. It ensures that the data remains accurate and intact, even in cases of unexpected failures. MySQL is also well-supported on the Raspberry Pi, making it an accessible solution suitable for this project.
+
+One of the key constraints is ensuring continuity of data flow even during network interruptions. To address this, a 10-minute buffering mechanism is implemented in Python. This decision is a trade-off between memory usage and data reliability. By keeping buffered data in temporary local storage, the system can tolerate short-term outages without impacting data integrity. This approach meets the reliability constraint and ensures the system’s availability under intermittent network conditions.
+
+MySQL installation and security configuration is achieved through standard commands:
 
     sudo apt install mariadb-server
-
-To secure the software and set a password:
-
     sudo mysql_secure_installation
-
-To access the Raspberry Pi's MySQL server and make changes:
-
     sudo mysql -u root -p
+
+This secures the database against unauthorized access, which aligns with both data integrity and ethical constraints regarding user information and surveillance data.
 
 Most important SQL commands:
 
     SELECT - extracts data from a database
     UPDATE - updates data in a database
-    DELETE - deletes data from a databse
+    DELETE - deletes data from a database
     INSERT INTO - inserts new data into a database
     CREATE - used to create a new database, table, index, etc.
     ALTER - used to alter a new database, table, index, etc.
@@ -90,7 +90,7 @@ To create a table in the database:
     | Name         | Type          | Description                       |
     | ------------ | ------------- | --------------------------------- |
     | drone_id     | VARCHAR(100)  | Unique drone identifier (UAS ID)  |
-    | operator_id  | VARCHAR(100)  | Opertaor ID                       |
+    | operator_id  | VARCHAR(100)  | Operator ID                       |
     | manufacturer | VARCHAR(100)  | Drone brand                       |
     | model        | VARCHAR(100)  | Drone model                       | 
     | last_seen    | TIMESTAMP     | Last time information was sent    |
