@@ -1,5 +1,5 @@
 # <div align="center"> Drone Tracker Detailed Design
-### <div align="center"> Server and Database - UNFINISHED 
+### <div align="center"> Server and Database
 #### <div align="center"> Gabrielle Renfroe
 <div align="center"> Department of Electrical and Computer Engineering <br>
 Tennessee Technological University
