@@ -19,9 +19,11 @@ The chassis for the drone tracking system is the housing that will protect and o
 9. The chassis shall allow easy access to the interior components without compromising its IP66 rating. 
 
 ## Overview of Proposed Solution
-The chassis shall be a 3D printed structure specifically tailored to the needs of the drone tracking device. 
+The chassis shall be a 3D printed structure specifically tailored to the needs of the drone tracking device. It shall consist of two parts: an interior shell fitted to the Raspberry Pi with the PoE hat addition and an exterior shell to provide additional weather protection. The interior shell shall match the parameters of the Raspberry Pi with the PoE hat exactly. It shall be a two part case, with a removable top to allow for easy access to the microcomputer. It shall be well ventilated, with slits along the case to allow air from the fan to circulate. It shall use 16 mm X m2.5 standoffs between the pi and PoE hat. It shall require m2.5 screws into the top standoffs to hold on the top of the case. 
 
-#### Key Design Choices
+### Raspberry Pi with PoE Hat Design
+
+### Choice of 3D Printing Material
 
 ## Interface with Other Subsystems
 The chassis shall integrate with the other physical atomic subsystems by securing and protecting the other hardware components. It shall provide mounting points for the Raspberry Pi, keeping it securely in place with screws and shock absorbing rubber bumpers to protect it from damage from drops, knocks, and vibrations. The Raspberry Pi shall have power supplied to it from a PoE (Power over Ethernet) hat. A Cat 6 Ethernet Cable will be required to plug into the PoE Hat, so an eyelet for the cable shall be included in the chassis design. Weatherproof grommets shall keep water and dirt from entering the device through the eyelet. 
@@ -29,25 +31,19 @@ The chassis shall integrate with the other physical atomic subsystems by securin
 ## 3D Model of Custom Mechanical Components
 <img src="/Documents/Images/Top of Raspberry Pi Case.png" width="2000" height="900">
 <img src="/Documents/Images/Bottom of Raspberry Pi Case.png" width="2000" height="900">
+<img src="/Documents/Images/Raspberry Pi Case.jpg" width="2000" height="900">
 
 
 ## BOM
 
 | Component               | Manufacturer | Part No.    | Distributor | Qty | Unit Price | Total  |
-|-------------------------|--------------|-------------|------------|-----|------------|--------|
-| blank                   | blank        | blank       | blank      | 1   |  blank     |        |
-| **Total**               |              |             |            |     |            | **$blank**|
+|-------------------------|--------------|-------------|-------------|-----|------------|--------|
+| 16 mm M2.5 standoffs    | blank        | blank       | blank       | 1   |  blank     |        |
+| **Total**               |              |             |             |     |            | **$blank**|
 
 ## Analysis
 
-### Budget Analysis
-
-### Component-Specific Considerations
-
-### Safety Margin Justification
-
-### Verification Methodology
-
+### 
 
 
 ## References
