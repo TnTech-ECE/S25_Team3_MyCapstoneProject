@@ -120,7 +120,7 @@ The power supply module delivers power to the Raspberry Pi 5 subsystem while rec
 | C13 Power Cord          | Tripp Lite   | P004-006    | Amazon     | 1   | $6.99      | $6.99  |
 | 5.5x2.1 mm DC Jack      | Amphenol     | DCJ020-5A-K | Mouser     | 1   | $1.20      | $1.20  |
 | 2 A Fuse Holder         | Littelfuse   | F5749-ND    | Digi-Key   | 1   | $2.65      | $2.65  |
-| UF-B Cable              | Southwire    | 13055921    | Amazon     | 1   | $39.98     | $39.98  |
+| UF-B Cable (25 ft.)     | Southwire    | 13055921    | Amazon     | 1   | $39.98     | $39.98  |
 | **Total**               |              |             |            |     |            | **$67.73**|
 
 ## Analysis
