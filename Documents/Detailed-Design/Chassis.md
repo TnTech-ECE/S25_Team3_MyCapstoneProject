@@ -29,8 +29,8 @@ The chassis shall be a 3D printed structure specifically tailored to the needs o
 The chassis shall integrate with the other physical atomic subsystems by securing and protecting the other hardware components. It shall provide mounting points for the Raspberry Pi, keeping it securely in place with screws and shock absorbing rubber bumpers to protect it from damage from drops, knocks, and vibrations. The Raspberry Pi shall have power supplied to it from a PoE (Power over Ethernet) hat. A Cat 6 Ethernet Cable will be required to plug into the PoE Hat, so an eyelet for the cable shall be included in the chassis design. Weatherproof grommets shall keep water and dirt from entering the device through the eyelet. 
 
 ## 3D Model of Custom Mechanical Components
-<img src="/Documents/Images/Top of Raspberry Pi Case.png" width="2000" height="700">
-<img src="/Documents/Images/Bottom of Raspberry Pi Case.png" width="2000" height="700">
+<img src="/Documents/Images/Top of Raspberry Pi Case.png" width="1800" height="800">
+<img src="/Documents/Images/Bottom of Raspberry Pi Case.png" width="1800" height="800">
 <img src="/Documents/Images/Raspberry Pi Case.png" width="2000" height="700">
 
 
@@ -38,8 +38,8 @@ The chassis shall integrate with the other physical atomic subsystems by securin
 
 | Component               | Manufacturer | Part No.    | Distributor | Qty | Unit Price | Total  |
 |-------------------------|--------------|-------------|-------------|-----|------------|--------|
-| 16 mm M2.5 standoffs    | blank        | blank       | blank       | 1   |  blank     |        |
-| **Total**               |              |             |             |     |            | **$blank**|
+| 16 mm M2.5 standoffs    |              |             |             |     |            |        |
+| **Total**               |              |             |             |     |            | **$$$**|
 
 ## Analysis
 
