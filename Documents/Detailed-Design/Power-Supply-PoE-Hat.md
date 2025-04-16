@@ -10,36 +10,35 @@ The power supply module is responsible for delivering stable and efficient power
 
 
 ## Specifications and Constraints
-The power supply shall provide stable and efficient power to the Central Computer Module.
-- To ensure stable and efficient power delivery, the MeanWell LRS-50-5 power supply was selected for its precisely regulated 5 V DC (±5%) output. Advanced filtering circuitry maintains output ripple below 50mV, preventing voltage fluctuations that could disrupt Raspberry Pi operation. With an efficiency rating of 89%, the unit minimizes power loss and heat generation while delivering consistent performance across all operating conditions.
+The power supply shall provide stable and efficient power to the Central Computer Module.  
+- The PoE HAT delivers **5V DC ±5%** via direct board-to-board connection, with built-in DC-DC conversion (<50mV ripple). Efficiency exceeds **85%** under typical loads (IEEE 802.3af compliant).  
 
-The power supply shall be mounted within the chassis for protection and thermal management.
-- The LRS-50-5 unit is securely mounted inside the IP66-rated enclosure using screws while accommodating thermal expansion. The chassis provides complete environmental protection, meeting IP66 standards for being both dust-tight and resistant to powerful water jets, making it suitable for permanent outdoor deployment.
+The power supply shall be mounted within the chassis for protection and thermal management.  
+- The HAT attaches directly to the Raspberry Pi 5’s GPIO header, with an **integrated heatsink and cooling fan**. The IP66 enclosure provides environmental protection.  
 
-The power supply shall operate from 100-240 V AC at 60 Hz.
-- Designed for global compatibility, the LRS-50-5 automatically adjusts to accept any AC input voltage of 120 V at 60 Hz frequency. This universal input capability ensures reliable operation when connected to standard wall outlets. Power is delivered through a heavy-duty C13 power cable rated for continuous use, with reinforced strain relief at the connection points to prevent wear.
+The power supply shall operate from 100-240 V AC at 60 Hz.  
+- Power is supplied via **802.3af/at PoE switch** (input: 100-240V AC). The HAT accepts **37–57V DC** from PoE and converts it to 5V.  
 
-The power supply shall deliver a continuous 25 W output.
-- While rated for a maximum 50 W output (5 V at 10 A), the power supply typically operates at just 50% of capacity when powering the Raspberry Pi, providing substantial headroom for peak loads. This derating significantly extends the unit's operational lifespan while maintaining stable output. A 5 A fast-acting fuse provides additional protection against potential overload conditions.
+The power supply shall deliver a continuous 25 W output.  
+- Complies with **802.3at (25.5W max)**. The Raspberry Pi 5’s peak draw (15W) leaves 40% headroom.  
 
-The power supply shall incorporate surge and overcurrent protection.
-- Multiple protection layers are implemented, beginning with a metal oxide varistor (MOV) that instantly clamps any voltage spikes above 250 V from the AC line. A 2 A slow-blow fuse protects against sustained overcurrent conditions, while the power supply's built-in safeguards include automatic shutdown for short-circuit, overload, and overvoltage scenarios. These redundant protection systems ensure both device safety and continuous operation.
+The power supply shall incorporate surge and overcurrent protection.  
+- **IEEE 802.3af/at** provides inherent surge protection via Ethernet isolation transformers. The HAT includes short-circuit/overload safeguards.  
 
-The power supply shall comply with IEC 60364-1 for electrical safety.
-- The MeanWell LRS-50-5 carries full certification to UL/IEC/EN 62368-1 safety standards, exceeding the basic IEC 60364-1 requirements. All wiring employs double-insulated conductors with proper creepage and clearance distances. The design maintains complete galvanic isolation between the AC input and DC output sides, with reinforced insulation barriers tested to 3000 VAC.
+The power supply shall comply with IEC 60364-1 for electrical safety.  
+- The PoE HAT is **UL/IEC 60950-1 certified** and meets IEEE 802.3af/at standards for galvanic isolation.  
 
-The power supply shall connect to the Raspberry Pi via a barrel jack.
-- Power delivery to the Raspberry Pi is accomplished through a locking 5.5×2.1 mm barrel jack connector that prevents accidental disconnection. The cable incorporates strain relief booting at both ends, and the connector's polarized design ensures proper orientation. Nickel-plated contacts minimize resistance and prevent corrosion over time.
+The power supply shall connect to the Raspberry Pi via a barrel jack.  
+- **Updated:** Power is delivered through the **GPIO header** (no barrel jack). Ethernet replaces AC power cabling.  
 
-The power supply shall remain within a -40°C to 85°C operational temperature range.
-- Engineered for industrial environments, the LRS-50-5 maintains full specification operation across the entire temperature range. The IP66 enclosure provides additional protection against thermal cycling and moisture ingress. The cooling system's design accounts for worst-case ambient conditions, maintaining safe operating temperatures even during extended high-load periods.
+The power supply shall remain within a -40°C to 85°C operational range.  
+- The HAT’s **active cooling** maintains safe temperatures. The PoE switch operates at -40°C to 75°C.  
 
-The power supply shall cost less than $60 per unit.
-- Through careful component selection and leveraging commercial off the shelf solutions, the complete power subsystem maintains a total cost of less than $60 per unit. This includes all necessary cabling, connectors, and protection devices while staying well below the budget threshold. The design achieves this cost efficiency without compromising on quality or reliability.
+The power supply shall cost less than $60 per unit.  
+- **Total cost: $54.98** (PoE HAT: $29.99 + 4-port PoE switch: $24.99).  
 
-The power supply shall minimize maintenance requirements.
-- The completely solid-state design eliminates all moving parts, removing wear items like fans from the system. The sealed IP66 enclosure prevents dust and moisture ingress that could degrade components over time. Industrial-grade capacitors and other components are rated for at least 100,000 hours of continuous operation, ensuring long-term reliability with minimal maintenance needs.
-
+The power supply shall minimize maintenance requirements.  
+- Fan requires occasional dusting. No consumable parts (e.g., fuses) to replace.
 
 
 ## Overview of Proposed Solution
@@ -69,42 +68,16 @@ Validation Approach
 
 
 ## Interface with Other Subsystems
-The power supply module delivers power to the Raspberry Pi 5 subsystem while receiving input from standard AC mains. All connections are designed for reliability, safety, and minimal voltage drop.
 
-### AC Main Input Interface
-
-| Parameter               | Specification                                           |
-|------------------------|---------------------------------------------------------|
-| Connection Type        | Hardwired screw terminals (IEC 61076-2-101 compliant)  |
-| Voltage                | 100-240V AC, 50/60 Hz                                   |
-| Current                | 1.5 A max at 100 V, 0.7 A max at 240 V                    |
-| Protection             | MOV (VDRM250) for surge suppression<br>2 A slow-blow fuse (Littelfuse 0215002.HXP) |
-| Cable Requirements     | 18AWG minimum (for 3 A rating)<br>300 V rated insulation<br>C13 connector at wall outlet end |
-
----
-
-### Raspberry Pi 5 Power Delivery Interface
-
-| Parameter               | Specification                                           |
-|------------------------|---------------------------------------------------------|
-| Connection Type        | Locking 5.5×2.1mm barrel jack (Amphenol DCJ020-5A-K)  |
-| Voltage                | 5 V DC ±5% (4.75 V-5.25 V)                                |
-| Current                | 0-10 A continuous (50 W max)                            |
-| Ripple                 | <50 mV p-p                                              |
-| Cable Specifications   | 16AWG stranded copper (for low voltage drop)<br>Double-insulated<br>1.5m maximum length |
-
----
-
-### Protection System Interfaces
-
-| Protection Type        | Specification                                           |
-|------------------------|---------------------------------------------------------|
-| Overcurrent Protection | Open-collector fault signal (5 V, 10 mA max)<br>Connects to Raspberry Pi GPIO |
-| Thermal Protection     | Normally-closed thermal switch (70°C trip)<br>Series with DC output |
+| **Parameter**          | **Specification**                                      |  
+|------------------------|--------------------------------------------------------|  
+| **PoE Input**          | 802.3af/at (48V DC, 0.3–0.6A) via Cat6 cable           |  
+| **RPi 5 Power**        | 5V ±5% @ 5A max (via GPIO header)                      |  
+| **Thermal Control**    | PWM fan (controlled by RPi 5)                          |  
 
 
 ## 3D Model of Custom Mechanical Components
-<img src="/Documents/Images/Detailed%20Design%20Power%20Supply%203D%20model%20%233.png" width="2000" height="900">
+<img src="/Documents/Images/" width="2000" height="900">
 
 
 ## Buildable Schematic 
@@ -114,13 +87,15 @@ The schematic should be relevant to the design and provide ample details necessa
 
 ## BOM
 
-| Component               | Manufacturer | Part No.    | Distributor | Qty | Unit Price | Total  |
-|-------------------------|--------------|-------------|------------|-----|------------|--------|
-| MeanWell LRS-50-5 PSU   | MeanWell     | LRS-50-5    | Amazon     | 1   | $16.91     | $16.91 |
-| C13 Power Cord          | Tripp Lite   | P004-006    | Amazon     | 1   | $6.99      | $6.99  |
-| 5.5x2.1 mm DC Jack      | Amphenol     | DCJ020-5A-K | Mouser     | 1   | $1.20      | $1.20  |
-| 2 A Fuse Holder         | Littelfuse   | F5749-ND    | Digi-Key   | 1   | $2.65      | $2.65  |
-| **Total**               |              |             |            |     |            | **$27.75**|
+## BOM
+
+| Component               | Manufacturer | Distributor | Qty | Unit Price | Total  |
+|-------------------------|--------------|-------------|-----|------------|--------|
+| PoE HAT for Raspberry Pi 5 | Waveshare | Amazon      | 1   | $29.99     | $28.79 |
+| Single Port PoE Injector | TP-Link     | Amazon      | 1   | $24.99     | $19.89 |
+| Cat6 Ethernet Cable     | Cable Matters| Amazon      | 1   | $8.99      | $8.99  |
+| **Total**               |              |             |     |            | **$57.67** |
+
 
 ## Analysis
 The power supply subsystem has been designed to meet all operational requirements while providing substantial safety margins. The MeanWell LRS-50-5 power supply was selected after thorough analysis of the system's power demands and operational constraints.
