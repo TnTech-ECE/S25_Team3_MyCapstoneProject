@@ -163,3 +163,9 @@ The design will be validated through:
 MEAN WELL LRS-50-5 50W 5VDC 10A Single Ouput Switching Mode Power Supply Amazon: https://www.amazon.com/MEAN-WELL-LRS-50-5-Single-Switching/dp/B085QKVLB6 Datasheet: https://www.meanwell.com/Upload/PDF/LRS-50/LRS-50-SPEC.PDF
 
 Raspberry Pi 5 Datasheet: https://datasheets.raspberrypi.com/rpi5/raspberry-pi-5-product-brief.pdf
+
+Littelfuse 2A Slow-Blow Fuse (0215002.HXP) Datasheet: https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_0215_2_hxp_datasheet.pdf
+
+IP66 Enclosure Standards (IEC 60529): https://www.iec.ch/standards
+
+IEC 60364-1 Electrical Installation Standards: https://webstore.iec.ch/publication/6376
