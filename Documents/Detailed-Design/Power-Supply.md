@@ -46,27 +46,29 @@ The power supply subsystem is designed to provide reliable, efficient, and safe 
 Switching Power Supply - MeanWell LRS-50-5
 - Selected for its high efficiency (89%), compact size, and compliance with UL/IEC/EN 62368-1 safety standards. Unlike linear regulators, a switching design minimizes heat generation while maintaining stable voltage under load fluctuations.
 
+Outdoor Wiring Method  
+- 12/2 UF-B cable (Southwire 13128202) for exposed outdoor AC power delivery  
+- NEC 225.22/340-compliant without conduit when properly supported  
+- GFCI protection at source outlet (NEC 210.8)
+
 Surge & Overcurrent Protection
 - Metal Oxide Varistor (MOV) clamps transient voltage spikes (>250V) from AC mains. 2 A slow-blow fuse protects against sustained overcurrent, preventing catastrophic failure. Built-in protections in the LRS-50-5 (overload/short-circuit/overvoltage) add redundancy.
 
 Thermal & Environmental Resilience
 - Fanless operation eliminates mechanical wear, critical for long-term reliability. IP66-rated enclosure shields electronics from rain, dust, and humidity. Through-wall cooler (30 BTU) passively dissipates heat, ensuring stable operation in -40°C to 85°C environments.
 
-Outdoor Wiring Method  
-- 12/2 UF-B cable (Southwire 13128202) for exposed outdoor AC power delivery  
-- NEC 225.22/340-compliant without conduit when properly supported  
-- GFCI protection at source outlet (NEC 210.8)
-
 Raspberry Pi Integration
 - 5.5×2.1mm barrel jack ensures secure power delivery with reverse-polarity prevention. Low ripple (<50 mV) avoids voltage instability that could crash the Raspberry Pi.
 
 Why This Solution Works
 - Compliance with Standards: Meets IEC 60364-1 for electrical safety and FCC Part 15 for EMI limits. Scalability: Modular design allows replication across all 10 campus units.
-- Cost-Effectiveness: Off-the-shelf components keep unit cost under $30, freeing budget for other subsystems.
+- Scalability: Modular design allows replication across all 10 campus units.
+- Cost-Effectiveness: Off-the-shelf components keep unit cost under $70 while meeting all requirements.
 
 Validation Approach
 - Lab Testing: Verify voltage stability under load (0 – 5 A) using oscilloscope measurements.
 - Environmental Stress Testing: Confirm operation in high-temperature (85°C) and humid conditions.
+- NEC Compliance Testing: Validate UF-B cable routing meets 225.22 clearance requirements.
 - Longevity Testing: Simulate 1,000+ hours of continuous use to validate durability.
 
 
@@ -77,11 +79,11 @@ The power supply module delivers power to the Raspberry Pi 5 subsystem while rec
 
 | Parameter               | Specification                                           |
 |------------------------|---------------------------------------------------------|
-| Connection Type        | Hardwired screw terminals (IEC 61076-2-101 compliant)  |
+| Connection Type        | UF-B cable to screw terminals (IEC 61076-2-101 compliant) |
 | Voltage                | 100-240V AC, 50/60 Hz                                   |
-| Current                | 1.5 A max at 100 V, 0.7 A max at 240 V                    |
+| Current                | 1.5 A max at 100 V, 0.7 A max at 240 V                  |
 | Protection             | MOV (VDRM250) for surge suppression<br>2 A slow-blow fuse (Littelfuse 0215002.HXP) |
-| Cable Requirements     | 18AWG minimum (for 3 A rating)<br>300 V rated insulation<br>C13 connector at wall outlet end |
+| Cable Specifications   | 12/2 UF-B (300V wet-rated)<br>Surface-mounted with UV clips<br>Min. 10ft clearance over walkways |
 
 ---
 
@@ -149,9 +151,9 @@ The design incorporates a 2:1 safety margin between maximum expected load (25 W)
 - Measurement Uncertainty: Variations in actual versus specified power consumption
 
 NEC Compliance Verification 
-- UF-B meets 225.22 for exposed outdoor feeders  
-- GFCI satisfies 210.8 wet location requirements  
-- Physical protection via IP66 enclosure and secure routing
+- UF-B Cable: Complies with NEC 225.22 for exposed outdoor feeders and 340 for wet location ratings
+- GFCI Protection: Meets NEC 210.8(A) for outdoor receptacles
+- Physical Protection: IP66 enclosure satisfies NEC 300.4(D) for damage prevention
 
 ### Cost-Benefit Analysis
 While lower-capacity power supplies were considered, the LRS-50-5 provides optimal value by:
