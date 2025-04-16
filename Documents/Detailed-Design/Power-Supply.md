@@ -107,11 +107,6 @@ The power supply module delivers power to the Raspberry Pi 5 subsystem while rec
 <img src="/Documents/Images/Detailed%20Design%20Power%20Supply%203D%20model%20%233.png" width="2000" height="900">
 
 
-## Buildable Schematic 
-NOT DONE YET: Integrate a buildable electrical schematic directly into the document. If the diagram is unreadable or improperly scaled, the supervisor will deny approval. Divide the diagram into sections if the text and components seem too small.
-
-The schematic should be relevant to the design and provide ample details necessary for constructing the model. It must be comprehensive so that someone, with no prior knowledge of the design, can easily understand it. Each related component's value and measurement should be clearly mentioned.
-
 ## BOM
 
 | Component               | Manufacturer | Part No.    | Distributor | Qty | Unit Price | Total  |
