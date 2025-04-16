@@ -106,6 +106,9 @@ The power supply module delivers power to the Raspberry Pi 5 subsystem while rec
 ## 3D Model of Custom Mechanical Components
 <img src="/Documents/Images/Detailed%20Design%20Power%20Supply%203D%20model%20%233.png" width="2000" height="900">
 
+<div align="center"> <img src="/Documents/Images/Power Supply Dimensions.png" width="600" height="800">
+<div align="left">
+
 
 ## BOM
 
