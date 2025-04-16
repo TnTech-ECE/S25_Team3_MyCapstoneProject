@@ -31,7 +31,7 @@ The chassis shall integrate with the other physical atomic subsystems by securin
 ## 3D Model of Custom Mechanical Components
 <img src="/Documents/Images/Top of Raspberry Pi Case.png" width="2000" height="700">
 <img src="/Documents/Images/Bottom of Raspberry Pi Case.png" width="2000" height="700">
-<img src="/Documents/Images/Raspberry Pi Case.jpg" width="2000" height="700">
+<img src="/Documents/Images/Raspberry Pi Case.png" width="2000" height="700">
 
 
 ## BOM
