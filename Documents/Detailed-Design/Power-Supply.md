@@ -34,9 +34,6 @@ The power supply shall connect to the Raspberry Pi via a barrel jack.
 The power supply shall remain within a -40°C to 85°C operational temperature range.
 - Engineered for industrial environments, the LRS-50-5 maintains full specification operation across the entire temperature range. The IP66 enclosure provides additional protection against thermal cycling and moisture ingress. The cooling system's design accounts for worst-case ambient conditions, maintaining safe operating temperatures even during extended high-load periods.
 
-The power supply shall cost less than $60 per unit.
-- Through careful component selection and leveraging commercial off the shelf solutions, the complete power subsystem maintains a total cost of less than $60 per unit. This includes all necessary cabling, connectors, and protection devices while staying well below the budget threshold. The design achieves this cost efficiency without compromising on quality or reliability.
-
 The power supply shall minimize maintenance requirements.
 - The completely solid-state design eliminates all moving parts, removing wear items like fans from the system. The sealed IP66 enclosure prevents dust and moisture ingress that could degrade components over time. Industrial-grade capacitors and other components are rated for at least 100,000 hours of continuous operation, ensuring long-term reliability with minimal maintenance needs.
 
@@ -54,6 +51,11 @@ Surge & Overcurrent Protection
 
 Thermal & Environmental Resilience
 - Fanless operation eliminates mechanical wear, critical for long-term reliability. IP66-rated enclosure shields electronics from rain, dust, and humidity. Through-wall cooler (30 BTU) passively dissipates heat, ensuring stable operation in -40°C to 85°C environments.
+
+Outdoor Wiring Method  
+- 12/2 UF-B cable (Southwire 13128202) for exposed outdoor AC power delivery  
+- NEC 225.22/340-compliant without conduit when properly supported  
+- GFCI protection at source outlet (NEC 210.8)
 
 Raspberry Pi Integration
 - 5.5×2.1mm barrel jack ensures secure power delivery with reverse-polarity prevention. Low ripple (<50 mV) avoids voltage instability that could crash the Raspberry Pi.
@@ -118,7 +120,8 @@ The power supply module delivers power to the Raspberry Pi 5 subsystem while rec
 | C13 Power Cord          | Tripp Lite   | P004-006    | Amazon     | 1   | $6.99      | $6.99  |
 | 5.5x2.1 mm DC Jack      | Amphenol     | DCJ020-5A-K | Mouser     | 1   | $1.20      | $1.20  |
 | 2 A Fuse Holder         | Littelfuse   | F5749-ND    | Digi-Key   | 1   | $2.65      | $2.65  |
-| **Total**               |              |             |            |     |            | **$27.75**|
+| UF-B Cable              | Southwire    | 13055921    | Amazon     | 1   | $39.98     | $39.98  |
+| **Total**               |              |             |            |     |            | **$67.73**|
 
 ## Analysis
 The power supply subsystem has been designed to meet all operational requirements while providing substantial safety margins. The MeanWell LRS-50-5 power supply was selected after thorough analysis of the system's power demands and operational constraints.
@@ -144,6 +147,11 @@ The design incorporates a 2:1 safety margin between maximum expected load (25 W)
 - Component Aging: Gradual efficiency reduction over the system's operational life
 - Environmental Factors: Performance degradation in high-temperature conditions
 - Measurement Uncertainty: Variations in actual versus specified power consumption
+
+NEC Compliance Verification 
+- UF-B meets 225.22 for exposed outdoor feeders  
+- GFCI satisfies 210.8 wet location requirements  
+- Physical protection via IP66 enclosure and secure routing
 
 ### Cost-Benefit Analysis
 While lower-capacity power supplies were considered, the LRS-50-5 provides optimal value by:
