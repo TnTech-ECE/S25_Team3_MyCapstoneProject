@@ -31,7 +31,7 @@ Below are several images of the 3D models for both the interior and exterior she
 <img src="/Documents/Images/Bottom of Raspberry Pi Case.png" width="1800" height="800"> <br> <br>
 <img src="/Documents/Images/Raspberry Pi Case.png" width="2000" height="700">
 
-## BOM
+## Bill of Materials
 
 | Component | Description | Manufacturer | Distributor | Qty | Unit Price | Total  |
 |-----|-----|-----|-----|-----|-----|-----|
@@ -46,7 +46,7 @@ Below are several images of the 3D models for both the interior and exterior she
 ## Analysis
 
 ### 3D Printing Material Selection
-The type of 3D printing polymer that shall be used for the chassis is Polyethylene Terephthalate Glycol (PETG). When compared to other types of 3D printing plastics, PETG appears to be the best choice due to its combination of strength, UV resistance, low moisture absorption, and relatively high heat resistance [2]. Additionally, PETG is compatible with the Tennessee Tech 3D printers and is a cost-effective option. To enhance thermal performance, white PETG filament was selected, as lighter colors absorb less radiant heat from the sun, which is an important factor for outdoor operation.
+The type of 3D printing polymer that shall be used for the chassis is Polyethylene Terephthalate Glycol (PETG). When compared to other types of 3D printing plastics, PETG appears to be the best choice due to its combination of strength, UV resistance, low moisture absorption, and relatively high heat resistance [2]. It is a non-conductive plastic, so the a 0.5 cm thick shell shall not block or significantly attenuate incoming signals. Furthermore, PETG is compatible with the Tennessee Tech 3D printers and is a cost-effective option. To enhance thermal performance, white PETG filament was selected, as lighter colors absorb less radiant heat from the sun, which is an important factor for outdoor operation.
 
 ### Shell Design and Dimensions
 The enclosure consists of two main 3D-printed parts: an interior shell tightly fitted around the Raspberry Pi 5 and its PoE HAT, and a larger exterior shell designed to shield the internal components from environmental exposure. The Raspberry Pi 5 itself measures approximately 85 mm × 56 mm × 18 mm [7]. To house this and allow some airflow around the PoE fan, the interior shell is sized accordingly. The exterior shell has been designed with dimensions of 13 cm × 10 cm × 6 cm and a wall thickness of 0.5 cm, offering enough space for air circulation and structural stability, while also maintaining a compact profile suitable for mounting on a light post. With these dimensions, the total surface area of the box is 536 square centimeters (0.0536 square meters), which will be used in the heat transfer calculation. 
@@ -68,7 +68,7 @@ All these things taken together, the enclosure shall be more than capable of kee
 To ensure weather resistance, the chassis incorporates several protective design elements tailored for outdoor deployment. The sealed exterior shell has no ventilation holes and only two potential ingress points: the lid seam, which will be sealed with a waterproof sealant, and a cable eyelet, which will be reinforced with a weatherproof grommet. These measures support the goal of achieving an IP65 rating, making the enclosure dust-tight and capable of withstanding low-pressure water jets from any direction. The interior shell adds a secondary layer of protection, organizing and shielding the Raspberry Pi from mechanical shock while still allowing internal airflow. The decision to 3D print the shell in PETG — a polymer known for its water resistance and UV durability — further enhances its suitability for outdoor use. Together, these choices provide robust protection against rain, humidity, dirt, and environmental debris, ensuring safe and consistent operation of the drone tracking system in a wide range of weather conditions.
 
 ### Budget Analysis
-Since the chassis is a custom made 3D print held together by screws, the expenses are minimal. Tennessee Tech already has 3D printers accessible to students, so we would just have to buy the PLA printing material and a few miscellaneous pieces. In total, the cost comes out to less than $40, which is reasonable given its function. 
+Since the chassis is a custom made 3D print held together by screws, the expenses are minimal. Tennessee Tech already has 3D printers accessible to students, so the only outlays would be the PETG printing filament, sealant, and a few supplementary screws and grommets. In total, the cost comes out to less than $40, which is reasonable given its function. 
 
 ## References
 [1] R. Bohn, “IP Ratings Explained - What Are IP Ratings? | NEMA Enclosures,” Stainless Steel Enclosures | NEMA Enclosures, Aug. 02, 2013. https://www.nemaenclosures.com/blog/ingress-protection-ratings/. 
