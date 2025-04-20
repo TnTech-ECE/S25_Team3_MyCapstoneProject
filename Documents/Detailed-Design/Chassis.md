@@ -37,11 +37,11 @@ Below are several images of the 3D models for both the interior and exterior she
 |-----|-----|-----|-----|-----|-----|-----|
 | PETG Filament | 1.75 mm White PETG Filament, 1 kg spool | 3DHoJor | Amazon | 1 | $13.99 | $13.99 |
 | 16 mm M2.5 Standoffs | Brass or aluminum standoffs, male-female, M2.5, 16 mm, set of 10 | Unicorp | Amazon | 1 | $3.00 | $3.00 |
-| M2.5 screws |
+| M2.5 screws | 16 mm M2.5 screws, 50 piece pack | Generic | Amazon | 1 | $2.10 | $2.10 |
 | Waterproof Sealant | Silicone or urethane sealant for plastic enclosure seams | GE | Amazon | 1 | $7.78 | $7.78 |
 | Weatherproof Grommets | IP65 Cable Glands / Grommets (for Cat 6 cable), pack of 6 | Gunovy | Amazon | 1 | $6.99 | $6.99 |
-| Total Before Tax              |              |             |             |     |            | | $ |
-| **Total After Tax**               |              |             |             |     |           | | **$$$**|
+| Total Before Tax |  |  |  |  |  | $33.86 |
+| **Total After Tax** |  |  |  |  |  | **$36.91**|
 
 ## Analysis
 
@@ -68,7 +68,7 @@ All these things taken together, the enclosure shall be more than capable of kee
 To ensure weather resistance, the chassis incorporates several protective design elements tailored for outdoor deployment. The sealed exterior shell has no ventilation holes and only two potential ingress points: the lid seam, which will be sealed with a waterproof sealant, and a cable eyelet, which will be reinforced with a weatherproof grommet. These measures support the goal of achieving an IP65 rating, making the enclosure dust-tight and capable of withstanding low-pressure water jets from any direction. The interior shell adds a secondary layer of protection, organizing and shielding the Raspberry Pi from mechanical shock while still allowing internal airflow. The decision to 3D print the shell in PETG — a polymer known for its water resistance and UV durability — further enhances its suitability for outdoor use. Together, these choices provide robust protection against rain, humidity, dirt, and environmental debris, ensuring safe and consistent operation of the drone tracking system in a wide range of weather conditions.
 
 ### Budget Analysis
-Since the chassis is a custom made 3D print held together by screws, the expenses are minimal. Tennessee Tech already has 3D printers accessible to students, so we would just have to buy the PLA printing material and a few miscellaneous pieces. In total, the cost comes out to less than ______ which is reasonable given its function. 
+Since the chassis is a custom made 3D print held together by screws, the expenses are minimal. Tennessee Tech already has 3D printers accessible to students, so we would just have to buy the PLA printing material and a few miscellaneous pieces. In total, the cost comes out to less than $40, which is reasonable given its function. 
 
 ## References
 [1] R. Bohn, “IP Ratings Explained - What Are IP Ratings? | NEMA Enclosures,” Stainless Steel Enclosures | NEMA Enclosures, Aug. 02, 2013. https://www.nemaenclosures.com/blog/ingress-protection-ratings/. 
