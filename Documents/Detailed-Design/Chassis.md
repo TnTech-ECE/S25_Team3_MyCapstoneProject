@@ -10,8 +10,8 @@ The chassis for the drone tracking system is the housing that shall protect and 
 
 ## Specifications and Constraints
 1. The chassis shall be water and humidity resistant. It shall protect the internal electronics from water ingress due to rain storms, snow storms, water jets, high humidity, and similar hazards. 
-2. The chassis shall be dust and dirt resistant, preventing buildup that could block vents or short-circuit components. It shall have a protection rating of IP65 to ensure a dust tight and water jet protected experience for the power supply and Raspberry Pi [3].
-3. The chassis shall be external temperature resistant. It shall operate reliably in the wide range of temperatures typical of Tennessee weather, using ventilation and fans to keep the operational temperature between -40 and 85 degrees celsius.
+2. The chassis shall be dust and dirt resistant, preventing buildup that could block vents or short-circuit components. It shall have a protection rating of IP65 to ensure a dust tight and water jet protected experience for the power supply and Raspberry Pi [1].
+3. The chassis shall be external temperature resistant. It shall operate reliably in the wide range of temperatures typical of Tennessee weather, using ventilation and fans to keep the operational temperature between -40° and 85° C.
 4. The chassis shall be shock resistant. It shall protect the internal components from damage due to drops, vibrations, or knocks. 
 5. The chassis shall be wind resistant. It shall ensure that the device stays anchored or intact during strong gusts or extreme wind.
 6. The chassis shall not significantly attenuate or block incoming Wifi or Bluetooth signals.
@@ -39,20 +39,43 @@ Below are several images of the 3D models for both the interior and exterior she
 | M2.5 screws
 | PLA printing material
 | weather proof grommets
+| sealant for around the lid
+| rubber bumpers
 | **Total**               |              |             |             |     |            | **$$$**|
 
 ## Analysis
 
-### 
-
-### Raspberry Pi with PoE Hat Design
-
 ### Choice of 3D Printing Material
 
+### Interior and Exterior Shell Dimensions
+A Raspberry Pi 5 is about 85 mm long, 56 mm wide, and 18 mm tall [7]. The interior shell has been designed to encase the Raspberry Pi with the PoE hat tightly, but the exterior shell has more flexibility in its dimensions. The chosen dimensions are 14 cm by 11 cm by 11 cm. These dimensions were chosen because they allow it to be compact and mountable to a light post but still have enough surface area to give a large enough heat dissipation through passive heat dissipation through the plastic, as will be explained below. 
+
+### Heat Transfer Calculation
+
+### Summary of Thermal Considerations
+A big challenge in designing electronic equipment is countering the heat that is produced, especially when the device is operating in a warm environment, such as the great Tennessee outdoors during the summer months. Heat production and dissipation is an important thing to consider because it affects the performance and reliability of the parts and equipment [4]. For the drone tracking device to operate correctly, it needs to remain in the operating temperature range of -40° to 85° C. Given that the lowest recorded temperature of all time in Cookeville was -30° C [5], this lower bound isn't much of a concern. However, between the hot tennessee sun and the heat produced by the device itself, we need to make sure it never exceeds 85° C to avoid thermal throttling [6]. For the most part, the Raspberry Pi and PoE hat combination take care of themselves using a passive heat sink, active cooler, and fan. However, a couple additional measures have been taken for greater heat dissipation. First, the color of choice for the 3D printing material is white, because it absorbs the least amount of heat. Also, the exterior shell has larger dimensions than the interior shell, allowing room for more air to circulate and more power to be dissipated. As explained above, about ___ W of power are dissipated, which will assist in keeping the temperature down. Between all these things, the device shall be able to operate even in high temperatures. 
+
+### Weather Proofing Decisions
+
+### Budget Analysis
+Since the chassis is a custom made 3D print held together by screws, the expenses are minimal. Tennessee Tech already has 3D printers accessible to students, so we would just have to buy the PLA printing material and a few miscellaneous pieces. In total, the cost comes out to less than ______ which is reasonable given its function. 
 
 ## References
-[1] E. Ortiz, “What is a Chassis?,” Trentonsystems.com, Jun. 02, 2022. https://www.trentonsystems.com/en-us/resource-hub/blog/what-is-a-chassis (accessed Apr. 16, 2025). 
+[1] R. Bohn, “IP Ratings Explained - What Are IP Ratings? | NEMA Enclosures,” Stainless Steel Enclosures | NEMA Enclosures, Aug. 02, 2013. https://www.nemaenclosures.com/blog/ingress-protection-ratings/. 
 
-[2] “Best 3D Printing Materials for Outdoor Use,” All3DP Pro, Apr. 18, 2024. https://all3dp.com/1/best-3d-printing-materials-for-outdoor-use/ (accessed Apr. 16, 2025).  
+[2] “Best 3D Printing Materials for Outdoor Use,” All3DP Pro, Apr. 18, 2024. https://all3dp.com/1/best-3d-printing-materials-for-outdoor-use/.  
 
-[3] R. Bohn, “IP Ratings Explained - What Are IP Ratings? | NEMA Enclosures,” Stainless Steel Enclosures | NEMA Enclosures, Aug. 02, 2013. https://www.nemaenclosures.com/blog/ingress-protection-ratings/ (accessed Apr. 16, 2025). 
+[3] E. Ortiz, “What is a Chassis?,” Trentonsystems.com, Jun. 02, 2022. https://www.trentonsystems.com/en-us/resource-hub/blog/what-is-a-chassis. 
+
+[4] ROHM, “Application Note Thermal Design (Basic) Basics of Thermal Resistance and Heat Dissipation,” Aug. 2021. https://fscdn.rohm.com/en/products/databook/applinote/common/basics_of_thermal_resistance_and_heat_dissipation_an-e.pdf. 
+
+[5] US, “All-time Records for Various Middle Tennessee Locations,” Weather.gov, 2025. https://www.weather.gov/ohx/alltimerecords (accessed Apr. 19, 2025).
+
+[6] A. Allan, “Heating and cooling Raspberry Pi 5,” Raspberry Pi, Oct. 04, 2023. https://www.raspberrypi.com/news/heating-and-cooling-raspberry-pi-5/
+
+[7] “Raspberry Pi 5,” 2023. Available: https://datasheets.raspberrypi.com/rpi5/raspberry-pi-5-product-brief.pdf
+‌
+‌
+‌
+‌
+
