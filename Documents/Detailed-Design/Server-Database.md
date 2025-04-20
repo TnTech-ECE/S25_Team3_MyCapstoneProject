@@ -33,16 +33,33 @@ When the website requests data, it interacts with the server, which then queries
 
 <img src="/Documents/Images/Server-Database Flowchart.png" width="600" height="900">
 
+## BOM
+
+|      Component      |        Manufacturer       |         Part No.        |   Distributor  | Qty | Unit Price |
+|---------------------|---------------------------|-------------------------|----------------|-----|------------|
+|   Raspberry Pi 5    |  Raspberry Pi Foundation  |          SC1112         |  Micro Center  |  1  |   $79.99   |
+
 ## Analysis
 
 The choice of MySQL as the database management system is rooted in its widespread use, robust feature set, and proven performance in handling structured data. It ensures that the data remains accurate and intact, even in cases of unexpected failures. MySQL is also well-supported on the Raspberry Pi, making it an accessible solution suitable for this project.
 
 One of the key constraints is ensuring continuity of data flow even during network interruptions. To address this, a 10-minute buffering mechanism is implemented in Python. This decision is a trade-off between memory usage and data reliability. By keeping buffered data in temporary local storage, the system can tolerate short-term outages without impacting data integrity. This approach meets the reliability constraint and ensures the system’s availability under intermittent network conditions.
 
-MySQL installation and security configuration is achieved through standard commands:
+To download and install package:
 
-    sudo apt install mariadb-server
+    wget https://dev.mysql.com/get/mysql-apt-config_0.8.29-1_all.deb
+    sudo dpkg -i mysql-apt-config_0.8.29-1_all.deb
+    
+To update the package list:
+
+    sudo apt update
+
+MySQL installation and security configuration is achieved through standard commands:
+    
+    sudo apt install mysql-server -y
     sudo mysql_secure_installation
+    sudo systemctl start mysql
+    sudo systemctl enable mysql
     sudo mysql -u root -p
 
 This secures the database against unauthorized access, which aligns with both data integrity and ethical constraints regarding user information and surveillance data.
