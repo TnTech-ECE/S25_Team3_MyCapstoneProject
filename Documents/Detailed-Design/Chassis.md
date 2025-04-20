@@ -22,7 +22,7 @@ The chassis for the drone tracking system is the housing that shall protect and 
 The chassis shall be a 3D printed structure specifically tailored to the needs of the drone tracking device. It shall consist of two main parts: an interior shell and an exterior shell. The interior shell shall be precisely fitted to the dimensions of the Raspberry Pi with its PoE (Power over Ethernet) hat attached. This shell shall serve as a lidded case, featuring a removable top for easy access to the microcomputer. Its purpose is to keep all the internal components compactly organized and protected from minor bumps or jostling during use. Since the PoE hat includes a 5 V cooling fan, the interior shell shall include ventilation slits to allow airflow and ensure effective heat dissipation. The exterior shell shall serve as a protective enclosure, shielding the internal components from weather and debris. It shall be a larger, sealed box with no openings apart from a single cable eyelet, which shall be secured with a weatherproof grommet to help achieve the desired IP65 rating. This outer shell shall also provide additional space for air circulation around the PoE fan and shall include brackets for mounting the device onto a light post. Specific design choices — such as dimensions, materials, and thermal considerations — will be examined in greater detail in the Analysis section below.
 
 ## Interface with Other Subsystems
-The chassis shall integrate with the other physical atomic subsystems by securing and protecting their hardware components. It shall provide mounting points for the Raspberry Pi, keeping it securely in place with screws and shock absorbing rubber bumpers to guard it against damage from drops, knocks, and vibrations. Power will be supplied to the Raspberry Pi via a PoE hat, which requires a Cat 6 Ethernet cable connection. To accommodate this, the chassis will feature an eyelet for the cable. Additionally, the design will allow sufficient space for the PoE hat’s fan to circulate air effectively.
+The chassis shall integrate with the other physical atomic subsystems by securing and protecting their hardware components. It shall provide mounting points for the Raspberry Pi, keeping it securely in place with screws to guard it against damage from drops, knocks, and vibrations. Power will be supplied to the Raspberry Pi via a PoE hat, which requires a Cat 6 Ethernet cable connection. To accommodate this, the chassis will feature an eyelet for the cable. Additionally, the design will allow sufficient space for the PoE hat’s fan to circulate air effectively.
 
 ## 3D Model of Custom Mechanical Components
 Below are several images of the 3D models for both the interior and exterior shells of the chassis. The first three images model the interior shell. They show the top (lid) portion of the shell, the bottom (base) portion of the shell, and the entire shell once assembled. The design uses 16 mm M2.5 standoffs to separate the Raspberry Pi from the PoE hat, and M2.5 screws to secure the lid to the standoffs. The next set of images depict the exterior shell, which features a simple, functional design. It is another lidded box, but unlike the interior shell, it does not have ventilation slits. The only potential entry points for water or debris are the seam at the lid — which will be sealed with a waterproof sealant — and the cable eyelet, which will be protected with a weatherproof grommet. The interior shell shall be mounted inside the exterior shell using M2.5 x 16 mm screws through integrated mounting brackets. There are also mounting brackets on the outside of the chassis to allow it to be securely fastened to a lightpost using M2.5 x 16 mm screws. These brackets ensure stability and durability, even in high winds or stormy conditions. Although the exterior shell appears black in the images for visibility, it shall be printed in white to minimize heat absorption. 
@@ -33,15 +33,15 @@ Below are several images of the 3D models for both the interior and exterior she
 
 ## BOM
 
-| Component               | Manufacturer | Part No.    | Distributor | Qty | Unit Price | Total  |
-|-------------------------|--------------|-------------|-------------|-----|------------|--------|
-| 16 mm M2.5 standoffs    |              |             |             |     |            |        |
-| M2.5 screws
-| PETG printing material
-| weather proof grommets
-| sealant for around the lid
-| rubber bumpers
-| **Total**               |              |             |             |     |            | **$$$**|
+| Component | Description | Manufacturer | Distributor | Qty | Unit Price | Total  |
+|-----|-----|-----|-----|-----|-----|-----|
+| PETG Filament | 1.75 mm White PETG Filament, 1 kg spool | 3DHoJor | Amazon | 1 | $13.99 | $13.99 |
+| 16 mm M2.5 Standoffs | Brass or aluminum standoffs, male-female, M2.5, 16 mm, set of 10 | Unicorp | Amazon | 1 | $3.00 | $3.00 |
+| M2.5 screws |
+| Waterproof Sealant | Silicone or urethane sealant for plastic enclosure seams | GE | Amazon | 1 | $7.78 | $7.78 |
+| Weatherproof Grommets | IP65 Cable Glands / Grommets (for Cat 6 cable), pack of 6 | Gunovy | Amazon | 1 | $6.99 | $6.99 |
+| Total Before Tax              |              |             |             |     |            | | $ |
+| **Total After Tax**               |              |             |             |     |           | | **$$$**|
 
 ## Analysis
 
@@ -65,6 +65,7 @@ Electronics can be extremely sensitive to heat, especially when operated in seal
 All these things taken together, the enclosure shall be more than capable of keeping internal temperatures well below the 85°C threshold, even during Tennessee’s hottest weather. 
 
 ### Weather Proofing Decisions
+To ensure weather resistance, the chassis incorporates several protective design elements tailored for outdoor deployment. The sealed exterior shell has no ventilation holes and only two potential ingress points: the lid seam, which will be sealed with a waterproof sealant, and a cable eyelet, which will be reinforced with a weatherproof grommet. These measures support the goal of achieving an IP65 rating, making the enclosure dust-tight and capable of withstanding low-pressure water jets from any direction. The interior shell adds a secondary layer of protection, organizing and shielding the Raspberry Pi from mechanical shock while still allowing internal airflow. The decision to 3D print the shell in PETG — a polymer known for its water resistance and UV durability — further enhances its suitability for outdoor use. Together, these choices provide robust protection against rain, humidity, dirt, and environmental debris, ensuring safe and consistent operation of the drone tracking system in a wide range of weather conditions.
 
 ### Budget Analysis
 Since the chassis is a custom made 3D print held together by screws, the expenses are minimal. Tennessee Tech already has 3D printers accessible to students, so we would just have to buy the PLA printing material and a few miscellaneous pieces. In total, the cost comes out to less than ______ which is reasonable given its function. 
