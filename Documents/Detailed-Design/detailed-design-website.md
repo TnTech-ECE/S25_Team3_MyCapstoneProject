@@ -50,6 +50,8 @@ For the website to be accessible at all times, it will need to be hosted on a ma
 
 ## Analysis
 
+After doing research on the pi 5, the team found that the pi 5 with the M.2 hat extention will be far bigger than is needed to host both the website and database.
+
 ### Interactions With Other Subsystems
 
 The website subsystem will only directly interact with the database. The website will take the processed data from the database and will update the on screen information as needed. The website will also have to ablity to send info to the database, updating the autheraztion status of a selected drone.
