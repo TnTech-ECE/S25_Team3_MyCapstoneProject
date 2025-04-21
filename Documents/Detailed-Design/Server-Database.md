@@ -21,9 +21,13 @@ The server and database subsystem is essential to the overall system architectur
 
 The database is implemented using Structured Query Language (SQL), the standard language for managing and manipulating data in relational databases. MySQL is installed on the Raspberry Pi as the database server, and SQL commands are used to define the schema and organize data across multiple tables. This structure ensures efficient storage, retrieval, and management of the data while preserving the relationships between various data points, enabling smooth interactions between the system components.
 
-Python is used to implement a 10-minute buffering mechanism that temporarily stores telemetry data if the network connection is lost. In the event of a network failure, the server will buffer incoming packets for up to 10 minutes. Once the connection is restored, the buffered data is flushed to the database. This ensures that no data is lost during network interruptions and that the system continues operating smoothly without impacting real-time data tracking.
+Python is used to create the TCP socket for the webserver. The socket is a two-way communication channel. Python is also used to implement a 10-minute buffering mechanism that temporarily stores telemetry data if the network connection is lost. In the event of a network failure, the server will buffer incoming packets for up to 10 minutes. Once the connection is restored, the buffered data is flushed to the database. This ensures that no data is lost during network interruptions and that the system continues operating smoothly without impacting real-time data tracking.
 
 ## Interface with Other Subsystems
+
+Packet structure received:
+
+<img src="/Documents/Images/Server-Database Packet Structure.png" width="600" height="300">
 
 The server receives packaged data from the central computer and processes it according to the defined protocols. After processing, the server forwards the information to the database for structured storage, ensuring that the data is categorized and indexed appropriately. The database is optimized for fast access and retrieval, making it easy to query for the required data.
 
@@ -78,7 +82,7 @@ To create a database:
 
     CREATE DATABASE drone_tracking
 
-To create a table in the database:
+To create tables in the database:
 
     CREATE TABLE drones
     (
