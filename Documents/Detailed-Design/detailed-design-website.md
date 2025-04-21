@@ -35,9 +35,9 @@ The website subsystem is designed to provide a designated user with access to dr
 
 In the image above, a rough depiction of what the final website will look like is shown. Once a user has been authorized and logged in, this layout will be displayed. The banner at the top simply displays the title of the webpage. Below the banner, there is an image showing a marker placed on a Google Maps instance. This marker represents a detected drone, and since only one drone was "detected" at the time the picture was taken, only the information for that single drone is displayed on the right side of the image. If additional drones had been detected, their serial numbers would appear under the "selected drone" section on the right side, with all other information collapsed until the user clicks on the drone marker or the serial number on the side of the screen.
 
-### HTML/CSS and JavaScript
+### HTML/CSS, JavaScript, and Python
 
-The languages chosen to implement this program will be HTML, CSS, and JavaScript. HTML will be used initially to create the framework of the webpage, where CSS will then be utilized to make the page look more presentable and coherent with Tech's current website theme. JavaScript will be implemented where necessary to make the webpage responsive to user inputs.
+The languages chosen to implement this program will be HTML, CSS, JavaScript, and Python. HTML will be used initially to create the framework of the webpage, where CSS will then be utilized to make the page look more presentable and coherent with Tech's current website theme. JavaScript will be implemented where necessary to make the webpage responsive to user inputs. Python will be used to create the webserver for both the website and database
 
 ### Google Maps API
 The team has decided to use Google's Maps JavaScript API to handle the placement of drones in the correct places on the map. Google allows users to utilize up to $200 monthly worth of Maps API resources for free, with the credit resetting on the first of each month. This amount of money covers nearly 30,000 map loads per month.[^1] With this API, a map can be centered on the campus of TTU, and, using the coordinates retrieved from the Remote ID signal, markers can be placed on the map in the exact location where the drone is detected. 
@@ -69,5 +69,4 @@ The website subsystem will only directly interact with the database. The website
 <!-- This is how to do footnotes for the references: --> 
 [^1]: (https://mapsplatform.google.com/pricing/)
 [^2]: (https://developers.google.com/maps/documentation/javascript/usage-and-billing)
-[^3]: (https://validator.w3.org/#validate_by_uri)
 <!--etc.-->
