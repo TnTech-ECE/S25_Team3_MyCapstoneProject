@@ -10,7 +10,7 @@ the chassis, including an evaluation of the additional power draw introduced by 
 system performance.
 
 ## 16APR2025 1500-1600 (Cancelled)
-Attendance: Dr. Elfouly, Brett Ballew, Tyler Bare, Mandy Bacon, Gabrielle Renfroe, & Erich Krepps
+Attendance: 
 
 Advisor team meeting cancelled due to a lack of progress and Easter holiday.
 
