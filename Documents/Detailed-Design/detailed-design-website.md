@@ -54,18 +54,6 @@ For the website to be accessible at all times, it will need to be hosted on a ma
 
 The website subsystem will only directly interact with the database. The website will take the processed data from the database and will update the on screen information as needed. The website will also have to ablity to send info to the database, updating the autheraztion status of a selected drone.
 
-### Testing
-
-To ensure the website's proper operation, a wide variety of test cases will be used for thorough testing. The initial test will be conducted using a set of valid and invalid login data. Utilizing this pair of login keys, this will allow the team to be able to check whether or not the website is accurately allowing only authorized users to access it. Once it has been verified that only authorized users can use the site, testing will move forward to the other features of the website. 
-
-A dummy database filled with data that the team created will be used to verify the correct operation of the website. Some of this data will be created to hinder the program, which will result in errors being generated and handled correctly. If the program can sufficiently handle all of the erroneous cases, then it will certainly be able to handle the data received from the database subsystem. 
-
-To be certain that the specified [constraints](#constraints) are met, experiments will be conducted and data will be collected to prove that the subsystem operates as specified. The first three constraints can be validated by launching a Remote ID-compliant drone and seeing how long it takes our system to detect it. Constraint four is difficult to quantify, and will instead be tested by asking someone from campus police to demo the website. Feedback received from the user will be used to adapt the website to their liking. The next constraint is more difficult to prove. One way that the team has discussed proving this constraint has been met is by asking CEROC (the Cybersecurity Education, Research, and Outreach Center) here at Tennessee Tech to try to break into the website. This activity will provide validation that a "reasonable level" of security has been met. 
-
-Constraint number six will be tested by running the website through the [^3][Markup Validation Service](https://validator.w3.org/#validate_by_uri) provided by w3.org. This validator will display any errors that may prevent the website from operating properly on certain browsers/systems. The final two constraints can again be tested utilizing a Remote ID-compliant drone. By using a drone whose serial number is known, authorization will be provied to it and see if the system behaves as expected when an authorized drone is detected. After revoking this drone's authorization, then a test to check the elevation system by flying the drone into a designated area. If the drone is shown as having an elevated status, then the team will know that the constraint has been met and that the system functions as intended.
-
-A more detailed testing regimen will be developed as the website becomes more and more refined. This process is iterative, and functionality, while laid out amicably above, is not definite yet. There are some processes that the team is not entirely sure if they want to include, and will be more along the lines of quality-of-life features. Rigorous testing procedures for these features will be created alongside the features themselves, demonstrating the precise execution of code.
-
 ## BOM
 | Item     | Part Number | Quantity | Price/Unit     | Total Cost |
 | -------- | ------------| -------- |----------------|------------|
