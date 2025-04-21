@@ -58,8 +58,10 @@ The website subsystem will only directly interact with the database. The website
 | Item     | Part Number | Quantity | Price/Unit     | Total Cost |
 | -------- | ------------| -------- |----------------|------------|
 |Domain    |            -|         1|        $30/year|         $30|
-|Google Maps API Access|-|         1|     $0.007/call|          $0|
+|Google Maps API Access|-|         1|    $0.007/call*|          $0|
 |Total     |             |          |                |         $30|
+
+*The price and total for Google Maps API Access is so low due to Google allowing users to have $200 worth of map usage which is 30,000 map loads. The team only expects around 500 loads per month which is under that amount.
 
 ## References
 <!-- This is how to do footnotes for the references: --> 
