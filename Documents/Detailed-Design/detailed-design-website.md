@@ -37,7 +37,7 @@ In the image above, a rough depiction of what the final website will look like i
 
 ### HTML/CSS, JavaScript, and Python
 
-The languages chosen to implement this program will be HTML, CSS, JavaScript, and Python. HTML will be used initially to create the framework of the webpage, where CSS will then be utilized to make the page look more presentable and coherent with Tech's current website theme. JavaScript will be implemented where necessary to make the webpage responsive to user inputs. Python will be used to create the webserver for both the website and database
+The languages chosen to implement this program will be HTML, CSS, JavaScript, and Python. HTML will be used initially to create the framework of the webpage, where CSS will then be utilized to make the page look more presentable and coherent with Tech's current website theme. JavaScript will be implemented where necessary to make the webpage responsive to user inputs. Python will be used to create the webserver for both the website.
 
 ### Google Maps API
 The team has decided to use Google's Maps JavaScript API to handle the placement of drones in the correct places on the map. Google allows users to utilize up to $200 monthly worth of Maps API resources for free, with the credit resetting on the first of each month. This amount of money covers nearly 30,000 map loads per month.[^1] With this API, a map can be centered on the campus of TTU, and, using the coordinates retrieved from the Remote ID signal, markers can be placed on the map in the exact location where the drone is detected. 
