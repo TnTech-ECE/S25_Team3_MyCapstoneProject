@@ -142,7 +142,8 @@ Communication occurs over a local HTTP POST request. The pseudocode for this tra
 The server receives, validates, and stores this information for further use or for transmission to an external system. This setup enables real-time capture and processing of drone telemetry.
 
 #### Note: 
-The power supply subsystem is not involved in any data exchange and does not constitute a communication interface for this subsystem.
+The power supply and chasis subsystems are not involved in any data exchange and do not constitute communication interfaces. The chasis will however need to dissipate 16 watts of heat during peak load ad passively dissipate 8 watts of heat during standard operation. 
+
 
 ## Flowchart
 
