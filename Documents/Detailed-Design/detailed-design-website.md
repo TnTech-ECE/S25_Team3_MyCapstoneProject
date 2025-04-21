@@ -50,7 +50,7 @@ For the website to be accessible at all times, it will need to be hosted on a ma
 
 ## Analysis
 
-After doing research on the pi 5, the team found that the pi 5 with the M.2 hat extention will be far bigger than is needed to host both the website and database.
+After doing research on the pi 5, the team found that the pi 5 with the M.2 hat extention will be far bigger than is needed to host both the website and database. The pi 5 has a 64-bit ARM processor running at 2.4 GHz, and the model chosen has 8 GB of RAM included. The pi 5 has a 4 core proccessor which is more than enough power to maintain a website and database.
 
 ### Interactions With Other Subsystems
 
