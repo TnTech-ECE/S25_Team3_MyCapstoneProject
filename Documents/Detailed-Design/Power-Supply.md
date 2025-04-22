@@ -128,6 +128,93 @@ The power supply module delivers power to the Raspberry Pi 5 subsystem while rec
 ## Analysis
 The power supply subsystem has been designed to meet all operational requirements while providing substantial safety margins. The MeanWell LRS-50-5 power supply was selected after thorough analysis of the system's power demands and operational constraints.
 
+### Thermal Analysis of Power Supply Enclosure
+
+#### 1. Power Supply Heat Dissipation Calculations
+
+The MeanWell LRS-50-5 power supply's thermal characteristics were analyzed to determine enclosure requirements:
+
+**Given Specifications:**
+- Maximum output power: 50W (5V at 10A)
+- Typical operating power (Raspberry Pi 5 load): 15W
+- Efficiency: 89% (0.89)
+- Maximum operating temperature: 85° C
+- Worst-case ambient temperature: 50° C (outdoor environment)
+
+**Heat Dissipation Calculations:**
+
+1. **Full Load Condition (50W output):**
+**Input power calculation:**
+P<sub>in</sub> = P<sub>out</sub> / η
+= 50W / 0.89
+= 56.2 W
+
+**Heat dissipation at full load:**
+P<sub>loss</sub> = P<sub>in</sub> - P<sub>out</sub>
+= 56.2 W - 50 W
+= 6.2 W
+
+
+2. **Typical Operation (15 W output):**
+**For typical Raspberry Pi 5 operation (15 W load):**
+P<sub>in</sub> = 15 W / 0.89 = 16.85 W
+P<sub>loss</sub> = 16.82 W - 15 W = 1.85 W
+
+
+#### 2. Enclosure Thermal Performance Requirements
+To maintain the power supply below 85° C in 50° C ambient:
+
+**Thermal Resistance Calculation:**
+R<sub>th</sub> = (T<sub>max</sub> - T<sub>amb</sub>) / P<sub>loss</sub>
+= (85° C - 50° C) / 6.2 W
+= 5.62° C/W (required total thermal resistance)
+
+**Thermal Path Breakdown:**
+1. **Power Supply Internal:** ~3° C/W (junction-to-case)
+2. **Mounting Interface:** ~1° C/W (with thermal pad)
+3. **Enclosure-to-Ambient:** Must be ≤ 1.65° C/W
+
+**Enclosure Surface Area Requirement:**
+For natural convection (h ≈ 5 W/m²K): 
+A ≥ 1/(h × R<sub>θEA</sub>) = 1/(5 × 1.65) ≈ 0.12 m² (1200 cm²)
+
+
+#### 3. Design Validation
+
+**Temperature Rise Verification:**
+- **At 15 W load:** ΔT = 1.85 W × 5.65° C/W = 10.5° C → T<sub>PSU</sub> = 60.5° C
+- **At 50 W load:** ΔT = 6.2 W × 5.65° C/W = 35° C → T<sub>PSU</sub> = 85° C (limit)
+
+**Conclusion:** The current IP66 enclosure design meets requirements when:
+- Minimum 1200 cm² external surface area is maintained
+- Proper thermal interface material is used between PSU and enclosure
+- Enclosure is mounted in a location with adequate airflow
+
+#### 4. Recommendations for Robust Operation
+
+1. **For Additional Safety Margin:**
+   - Increase enclosure surface area by 25% (to 1500 cm²)
+   - Use aluminum construction (k ≈ 200 W/mK)
+   - Implement heat-spreading fins if space-constrained
+
+2. **Verification Testing:**
+   - Measure case temperature at:
+     - 15W load (should be ≤61° C at 50° C ambient)
+     - 50W load (should be ≤85° C at 50° C ambient)
+   - Confirm stability during 24-hour continuous operation
+
+3. **Alternative Considerations:**
+   - If thermal margins are insufficient, either:
+     - Derate maximum load to 40 W, or
+     - Add passive heat sinks to enclosure exterior
+
+### Thermal Performance Summary
+| Parameter            | Typical (15 W) | Worst-Case (50 W) |
+|----------------------|---------------|------------------|
+| Power Dissipation    | 1.85 W         | 6.2 W             |
+| Temperature Rise     | 10.5° C        | 35° C             |
+| PSU Temperature      | 60.5° C        | 85° C             |
+
 ### Power Budget Analysis
 The Raspberry Pi 5 represents the primary power consumer in the system, with maximum power draw specifications of 5 V at 3.0 A (15 W) under peak load conditions. When combined with peripheral components including Wi-Fi and Bluetooth transceivers, the total system power requirement remains well below the power supply's 50 W capacity. This substantial derating provides multiple benefits:
 
