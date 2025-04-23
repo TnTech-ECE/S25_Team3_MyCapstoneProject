@@ -55,8 +55,8 @@ The central computer will relay processed RID data to the server using Transmiss
 
 
 ## Overview of Proposed Solution
-<div align="center"> <img src= "/Documents/Images/rpi.jpg" width="500" height="300"> <div align="left"> <br>
-The Raspberry Pi 5 is the ideal candidate for the central computer in the drone tracking system due to its compact form factor, versatility, and sufficient processing power to meet system requirements. The following specifications highlight key features that make the Raspberry Pi 5 well-suited for this application:
+<div align="center"> <img src= "/Documents/Images/rpi_4b.jpg" width="500" height="300"> <div align="left"> <br>
+The Raspberry Pi 4 Model B is the ideal candidate for the central computer in the drone tracking system due to its compact form factor, versatility, and sufficient processing power to meet system requirements. The following specifications highlight key features that make the Raspberry Pi 4 Model B well-suited for this application:
 
 ### Nice to Haves
 + 2 USB 2.0 Ports: Serves as reliable interfaces for local programming and debugging, offering an alternative to SSH access when needed.
@@ -86,16 +86,14 @@ Offer extensive expandability for custom components or sensors, enabling system 
 Enables stable wired communication between client devices and additional detection units, supporting system scalability and reliability.
 
 #### Broadcom BCM2712 Processor:
-The Broadcom BCM2712 is a quad-core Arm Cortex-A76 processor running at 2.4GHz, offering a strong balance between performance and efficiency. With four high-speed cores, it can easily manage multiple tasks simultaneously, such as hosting a local server to handle web dashboards, API endpoints, or telemetry logging. The high clock speed and modern architecture ensure responsive performance even under load, making it suitable for continuous operation without significant slowdowns or thermal throttling.
-
-This processing capability is especially valuable for drone Remote ID (RID) tracking, where the system needs to receive and interpret real-time data over Bluetooth Low Energy (BLE) and Wi-Fi NAN. The BCM2712 is capable of decoding these wireless signals while concurrently running server processes, enabling real-time data collection, analysis, and visualization. Its ability to manage concurrent wireless and server workloads ensures reliable and uninterrupted tracking in complex or busy environments.
+The Broadcom BCM2711 features a quad-core Arm Cortex-A72 CPU at 1.5GHz, delivering efficient performance for embedded systems. It supports concurrent processing of Bluetooth Low Energy (BLE) and Wi-Fi NAN signals, making it suitable for real-time Remote ID (RID) tracking without interruption.
 
 #### Dimensions (3.94 x 2.76 x 1.18 inches): 
 Its small footprint allows for easy enclosure in a custom-designed case, facilitating compact integration within the overall system.
 
-<div align="center"> <img src= "/Documents/Images/rpi5_Size.png" width="500" height="400"> <img src= "/Documents/Images/rpi5_layout.jpg" width="500" height="400"> <div align="left"> <br>
+<div align="center"> <img src= "/Documents/Images/rpi4b_size.png" width="500" height="400"> <img src= "/Documents/Images/rpi5_layout.jpg" width="500" height="400"> <div align="left"> <br>
 
-These specifications make the Raspberry Pi 5 a cost-effective yet powerful solution, capable of supporting both the current needs and future expansions of the drone tracking system.
+These specifications make the Raspberry Pi 4 Model B a cost-effective yet powerful solution, capable of supporting both the current needs and future expansions of the drone tracking system.
 
 
 ## Interface with Other Subsystems
