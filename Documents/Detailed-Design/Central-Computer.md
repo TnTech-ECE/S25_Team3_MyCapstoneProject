@@ -9,7 +9,7 @@ Tennessee Technological University
 The central computer module will act as the system’s processing hub, handling data collection, analysis, and distribution to monitor drone activity on campus.​
 
 Data Processing:
-It will collect Remote ID (RID) signals via onboard Bluetooth and Wi-Fi, scanning for FAA-compliant broadcasts. Extracted data—such as drone ID, location, velocity, and operator info—will be parsed and analyzed to ensure accurate detection and classification.
+It will collect Remote ID (RID) signals via onboard Bluetooth and Wi-Fi, scanning for FAA-compliant broadcasts. Extracted data, such as drone ID, location, velocity, and operator info, will be parsed and analyzed to ensure accurate detection and classification.
 
 Server Communication:
 The central computer will relay processed RID data to the server using Transmission Control Protocol (TCP) over an Ethernet connection, enabling real-time updates to the website. 
@@ -56,7 +56,7 @@ The central computer will relay processed RID data to the server using Transmiss
 
 ## Overview of Proposed Solution
 <div align="center"> <img src= "/Documents/Images/rpi_4b.jpg" width="550" height="400"> <div align="left"> <br>
-The Raspberry Pi 4 Model B is the ideal candidate for the central computer in the drone tracking system due to its compact form factor, versatility, and sufficient processing power to meet system requirements. The following specifications highlight key features that make the Raspberry Pi 4 Model B well-suited for this application:
+The Raspberry Pi 4 Model B is the ideal candidate for the central computer in the drone tracking system due to its compact form factor, versatility, and sufficient processing power to meet system requirements. The following specifications highlight key features that make the Raspberry Pi 4 Model B well suited for this application:
 
 ### Nice to Haves
 + 2 USB 2.0 Ports: Serves as reliable interfaces for local programming and debugging, offering an alternative to SSH access when needed.
@@ -77,7 +77,7 @@ The Raspberry Pi 5 includes an integrated dual-band 802.11ac Wi-Fi antenna, whic
 USB 3.0 ports enable high-speed data transfer for peripherals like spectrum analyzers and allow external Bluetooth adapters when the onboard antenna lacks sufficient range.
 
 #### MicroSD Card Slot: 
-Provides flexible and scalable storage options for the system, supporting high-capacity cards suitable for long-term data logging. This feature allows the central computer to locally store collected RID data, host the server and website interface, and maintain logs for historical analysis or compliance documentation. The use of a microSD card ensures easy upgrades or replacements, contributing to the overall maintainability and adaptability of the system.
+Provides flexible and scalable storage options for the system, supporting high-capacity cards suitable for long term data logging. This feature allows the central computer to locally store collected RID data, host the server and website interface, and maintain logs for historical analysis or compliance documentation. The use of a microSD card ensures easy upgrades or replacements, contributing to the overall maintainability and adaptability of the system.
 
 #### 40 GPIO Pins: 
 Offer extensive expandability for custom components or sensors, enabling system adaptability as future requirements evolve.
@@ -221,7 +221,7 @@ By leveraging *onboard Wi-Fi and Bluetooth, the system is capable of detecting b
 - Data Parsing and Processing:
 The onboard Python-based parsing software reliably interprets captured packets and extracts metadata such as drone ID, coordinates, and operator information.
 - Communication:
-Using HTTPS protocols, the system successfully transmits parsed data to the central database/server, facilitating aggregation, visualization, and historical logging.
+Using TCP protocols, the system successfully transmits parsed data to the central database/server, facilitating aggregation, visualization, and historical logging.
 - Human Interaction:
 Through terminal access (either direct or remote), developers and administrators can perform system checks, update software, or review logs.
 
