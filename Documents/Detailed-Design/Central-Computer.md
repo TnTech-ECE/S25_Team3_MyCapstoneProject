@@ -134,13 +134,18 @@ The Pi runs a continuously operating parser script that decodes incoming BLE and
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"emergency_status": status_flag }) <br>
 
 #### Output to Server Subsystem:
-Once parsed, the data is transmitted to a backend server hosted locally on the Pi. The server is implemented using a lightweight framework (e.g., Flask or FastAPI), which exposes an HTTP endpoint to receive the data.
+Once parsed, the data is transmitted to a backend server hosted locally on the Pi. The server, implemented using a lightweight framework (Flask or FastAPI), exposes a secured HTTPS endpoint to receive the data. Communication is protected by SSL/TLS encryption to ensure data confidentiality and integrity. Additionally, token-based authentication (JWT) is used to validate requests.
 
-Communication occurs over a local HTTP POST request. The pseudocode for this transfer is as follows:
+Communication occurs over a local HTTPS POST request. The pseudocode for this transfer is as follows:
 
-(send_http_post( url = "http://127.0.0.1:8000/drone-data", payload = data ))
+send_https_post( 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url = "http://127.0.0.1:8000/drone-data",
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;payload = data,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;headers = {"Authorization": "Bearer <jwt-token>"},
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;verify = '/path/to/cert.pem'
+)
 
-The server receives, validates, and stores this information for further use or for transmission to an external system. This setup enables real-time capture and processing of drone telemetry.
+The server receives, validates, and stores the data for further processing or transmission. This setup enables real-time capture and secure handling of drone telemetry.
 
 #### Note: 
 The power supply and chasis subsystems are not involved in any data exchange and do not constitute communication interfaces. The chasis will however need to dissipate 16 watts of heat during peak load ad passively dissipate 8 watts of heat during standard operation. 
