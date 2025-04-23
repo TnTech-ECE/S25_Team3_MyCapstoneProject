@@ -62,9 +62,8 @@ The central unit will relay processed RID data to the local server for real-time
 The Raspberry Pi 5 is the ideal candidate for the central computer in the drone tracking system due to its compact form factor, versatility, and sufficient processing power to meet system requirements. The following specifications highlight key features that make the Raspberry Pi 5 well-suited for this application:
 
 ### Nice to Haves
-+ 2 USB 3.0 Ports: Provide high-speed data transfer capabilities, useful for future upgrades such as connecting a spectrum analyzer or other high-bandwidth peripherals.
-+ 2 USB 2.0 Ports: Serve as reliable interfaces for local programming and debugging, offering an alternative to SSH access when needed.
-+ 2 micro-HDMI Ports: Allow direct connection to external monitors for local programming, diagnostics, and system maintenance, enhancing flexibility during setup and troubleshooting.
++ 2 USB 2.0 Ports: Serves as reliable interfaces for local programming and debugging, offering an alternative to SSH access when needed.
++ 2 micro-HDMI Ports: Allows direct connection to external monitors for local programming, diagnostics, and system maintenance, enhancing flexibility during setup and troubleshooting.
 + 5V DC via USB-C: Ensures compatibility with standard power supplies, simplifying integration and reducing the need for specialized hardware.
 + PCI Express Lane: Allows for expansion through accessories such as M.2 storage enhancing system capabilities and performance.
 + PoE Interface: Provides the ability to use an alternative power source for locations that do not have access to standard wall outlets.
@@ -74,7 +73,12 @@ The Raspberry Pi 5 is the ideal candidate for the central computer in the drone 
 #### CYW43455 Wi-Fi/Bluetooth Chip:
 The Infineon CYW43455 is a highly integrated single-chip transceiver that provides dual-band 802.11ac Wi-Fi and Bluetooth 5.0 connectivity. It supports 2.4 GHz and 5 GHz Wi-Fi bands with 802.11ac single-stream (1x1) operation.
 
-#### 
+#### Integrated Antenna
+The Raspberry Pi 5 includes an integrated dual-band 802.11ac Wi-Fi antenna, which delivers satisfactory performance for long-range, unobstructed communication scenarios. Community testing and user feedback indicate that the onboard antenna can maintain a stable wireless connection at distances of up to approximately 50 meters in open environments [6]. While the integrated antenna offers a compact and cost-effective solution, it lacks advanced features such as MIMO or directional gain, which can limit performance in obstructed or high-interference settings. For applications requiring enhanced range or reliability in challenging RF environments, the use of an external antenna or a high-gain USB Wi-Fi adapter is recommended. A more detailed evaluation of these factors is provided in the analysis section.
+
+#### 2 USB 3.0 Ports 
+USB 3.0 ports enable high-speed data transfer for peripherals like spectrum analyzers and allow external Bluetooth adapters when the onboard antenna lacks sufficient range.
+
 #### MicroSD Card Slot: 
 Provides flexible and scalable storage options for the system, supporting high-capacity cards suitable for long-term data logging. This feature allows the central computer to locally store collected RID data, host the server and website interface, and maintain logs for historical analysis or compliance documentation. The use of a microSD card ensures easy upgrades or replacements, contributing to the overall maintainability and adaptability of the system.
 
@@ -155,7 +159,7 @@ The power supply and chasis subsystems are not involved in any data exchange and
 |  RPi Active Cooler  |  Raspberry Pi Foundation  |          SC1148         |     Amazon     |  1  |   $10.69   |   $114.12   |
 |     Antenna Kit     |          UeeKKoo          |    ORD-CM4-ANTENNA      |     Amazon     |  1  |    $9.59   |   $123.71   |
 |    U.FL Connector   |      DHT Electronics      |          AD054          |     Amazon     |  1  |    $5.00   |   $128.71   |
-|  Bluetooth Adapter  |  Raspberry Pi Foundation  |        UB500 Plus       |     Amazon     |  1  |   $17.99   |   $146.70   |
+|  Bluetooth Adapter  |         TP-Link           |        UB500 Plus       |     Amazon     |  1  |   $17.99   |   $146.70   |
 |    Ethernet Cable   |          Jadaol           |    Cat6-50Ft-White-ML   |     Amazon     |  1  |    $9.99   |   $156.69   |
 |      **Total**      |                           |                         |                |     |            | **$156.69** |
 
@@ -209,4 +213,6 @@ The Central Computer, built on a Raspberry Pi 5, is demonstrably fit for its int
 [4] Infineon Technologies, CYW43455 Single-Chip 5G WiFi IEEE 802.11n/ac MAC/Baseband/Radio with Integrated Bluetooth 5.0 Datasheet – Additional Technical Information, v16.00, Apr. 2022. [Online]. Available: https://www.infineon.com/dgdl/Infineon-CYW43455_Single-Chip_5G_WiFi_IEEE_802.11n_ac_MAC_Baseband_Radio_with_Integrated_Bluetooth_5.0_Datasheet-AdditionalTechnicalInformation-v16_00-EN.pdf?fileId=8ac78c8c7d0d8da4017d0ee226686889 <br>
 
 [5] T. Genes, "External antenna mod for Raspberry Pi 5 - Questions," Zynthian Discourse, Nov. 19, 2024. [Online]. Available: https://discourse.zynthian.org/t/external-antenna-mod-for-raspberry-pi-5-questions/10532. [Accessed: Apr. 22, 2025]. <br>
+
+[6] illecitnom, "Bluetooth 5.0 actual performance with Pi 4," Raspberry Pi Forums, Feb. 28, 2021. [Online]. Available: https://forums.raspberrypi.com/viewtopic.php?t=305574. [Accessed: Apr. 22, 2025]. <br>
 
