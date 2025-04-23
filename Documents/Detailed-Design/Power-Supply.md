@@ -194,7 +194,6 @@ A ≥ 1/(h × R<sub>θEA</sub>) = 1/(5 × 1.65) ≈ 0.12 m² (1200 cm²)
 
 1. **For Additional Safety Margin:**
    - Increase enclosure surface area by 25% (to 1500 cm²)
-   - Use aluminum construction (k ≈ 200 W/mK)
    - Implement heat-spreading fins if space-constrained
 
 2. **Verification Testing:**
