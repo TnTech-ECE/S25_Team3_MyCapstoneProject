@@ -151,7 +151,7 @@ The power supply and chasis subsystems are not involved in any data exchange and
 
 ## Flowchart
 
-<div align="center"> <img src= "/Documents/Images/central_computer_flow.png" width="400" height="600"> <div align="left"> <br>
+<div align="center"> <img src= "/Documents/Images/central_computer_flow3.png" width="300" height="600"> <div align="left"> <br>
 
 ## BOM
 
