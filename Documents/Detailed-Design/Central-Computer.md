@@ -170,7 +170,8 @@ The power supply and chasis subsystems are not involved in any data exchange and
 
 ## Analysis
 
-The Central Computer, built on a Raspberry Pi 5, is the core of TTU Campus Police’s drone detection system. It meets all design goals and constraints—size, cost, power, security, and performance—while enabling real-time drone monitoring and future scalability.
+### Analysis of Effective Range
+As outlined in the specifications section, a minimum reception range of 200 meters is required for receiving RID signals. To assess the feasibility of this requirement, a small experiment was conducted to evaluate the performance of the Raspberry Pi 5's integrated antenna. Although limited documentation exists on the integrated antenna, the specification sheet indicates support for Class 1 (100 m) and Class 2 (10 m) devices. An iPhone 13, which supports only Class 2 devices, was selected as a test subject due to availability. Both antennas are expected to have similar gains, typically around 3 to 5 dBi. The iPhone 13 was placed at the top of the bleachers on the north side of Tucker Stadium, with the RID module moved across various distances until a satisfactory result was achieved. The results are as follows:
 
 ### Core Functionality and Role
 At its foundation, the Central Computer is responsible for:
@@ -195,17 +196,18 @@ Supports long-term uptime with cooling, watchdogs, and modular recovery features
 Modular software allows easy feature expansion without hardware changes.
 
 ### Alignment with Intended Function
-The Central Computer design precisely fulfills its core functions:
+The Central Computer design fulfills its core functions:
 - Signal Detection:
-By leveraging onboard Wi-Fi and Bluetooth, the system is capable of detecting both Standard and Broadcast RID messages in compliance with FAA regulations.
+By leveraging *onboard Wi-Fi and Bluetooth, the system is capable of detecting both Standard and Broadcast RID messages in compliance with FAA regulations.
 - Data Parsing and Processing:
 The onboard Python-based parsing software reliably interprets captured packets and extracts metadata such as drone ID, coordinates, and operator information.
 - Communication:
-Using HTTP/REST protocols, the system successfully transmits parsed data to the central database/server, facilitating aggregation, visualization, and historical logging.
+Using HTTPS protocols, the system successfully transmits parsed data to the central database/server, facilitating aggregation, visualization, and historical logging.
 - Human Interaction:
 Through terminal access (either direct or remote), developers and administrators can perform system checks, update software, or review logs.
 
-The Central Computer, built on a Raspberry Pi 5, is demonstrably fit for its intended role in the drone detection system. It meets every specified constraint—technical, logistical, and regulatory—while delivering reliable, scalable, and cost-effective functionality. The design not only supports current system requirements but also provides a solid foundation for future enhancements.
+
+(might take out)The Central Computer, built on a Raspberry Pi 5, is demonstrably fit for its intended role in the drone detection system. It meets every specified constraint—technical, logistical, and regulatory—while delivering reliable, scalable, and cost-effective functionality. The design not only supports current system requirements but also provides a solid foundation for future enhancements.
 
 
 ## References
