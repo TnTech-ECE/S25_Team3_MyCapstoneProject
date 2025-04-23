@@ -178,7 +178,7 @@ In the test, the iPhone 13 was placed atop the north bleachers at Tucker Stadium
   <img src= "/Documents/Images/RID_400m_proof_LR.png" width="650" height="400">
   <div align="left"> <br>
 
-The results indicate that achieving a minimum receiving distance of 200 meters should not be an issue. However, it is important to note that the test used the Potensic RID 916, a mid-tier module with a claimed transmission range exceeding 300 meters [7]. Performance may vary when using lower-cost or less capable RID modules. To further evaluate this concern, a link budget calculation was performed to estimate the required antenna sensitivity based on various RID transmission power levels and the 200 meter range requirement. The results were as follows:
+The results indicate that achieving a minimum receiving distance of 200 meters should not be an issue. However, it is important to note that the test used the Potensic RID 916, a mid-tier module with a claimed transmission range exceeding 300 meters [7]. Performance may vary when using lower-cost or less capable RID modules. To further evaluate this concern, a link budget calculation was performed to estimate the required antenna sensitivity based on various RID transmission power levels and the 200 meter range requirement [8]. The results were as follows:
 
 insert booty calcs
 
@@ -235,4 +235,6 @@ Through terminal access (either direct or remote), developers and administrators
 [6] illecitnom, "Bluetooth 5.0 actual performance with Pi 4," Raspberry Pi Forums, Feb. 28, 2021. [Online]. Available: https://forums.raspberrypi.com/viewtopic.php?t=305574. [Accessed: Apr. 22, 2025]. <br>
 
 [7] Potensic, “Potensic RID-916 Remote ID Module,” Potensic Store, [Online]. Available: https://store.potensic.com/products/rid-916?gQT=1. [Accessed: Apr. 23, 2025].
+
+[8] C. Bisdikian, "Link Budget Calculation," Internet Society, Oct. 2017. [Online]. Available: https://www.internetsociety.org/wp-content/uploads/2017/10/Link-Budget-Calculation.pdf
 
