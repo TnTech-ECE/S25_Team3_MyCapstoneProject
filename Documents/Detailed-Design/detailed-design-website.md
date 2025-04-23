@@ -37,8 +37,10 @@ These constraints were created by the previous team working on this website. The
 
 In the image above, a rough depiction of what the final website will look like is shown. Once a user has been authorized and logged in, this layout will be displayed. The banner at the top simply displays the title of the webpage. Below the banner, there is an image showing a marker placed on a Google Maps instance. This marker represents a detected drone, and since only one drone was "detected" at the time the picture was taken, only the information for that single drone is displayed on the right side of the image. If additional drones had been detected, their serial numbers would appear under the "selected drone" section on the right side, with all other information collapsed until the user clicks on the drone marker or the serial number on the side of the screen.
 
-### HTML/CSS, JavaScript, and Python
+## Logistics
+The following information was found orginally by the previous team and was reporpused by the current team. The first team's information have be found in this [document](https://github.com/TnTech-ECE/S24_Team1_DroneTracker/blob/main/Documentation/Signoffs/Website_System.md).
 
+### HTML/CSS, JavaScript, and Python
 The languages chosen to implement this program will be HTML, CSS, JavaScript, and Python. HTML will be used initially to create the framework of the webpage, where CSS will then be utilized to make the page look more presentable and coherent with Tech's current website theme. JavaScript will be implemented where necessary to make the webpage responsive to user inputs. The Python package TCP socket will be used to create and maintain the webserver.
 
 ### Google Maps API
@@ -51,11 +53,9 @@ The program will then prompt the database for all data sets that match the searc
 For the website to be accessible at all times, it will need to be hosted on a machine that doesn't turn off. The team has asked the campus police to use a server on their server rack, but due to policies put into place by the FBI and TBI only specific personnel are allowed to access those servers. The team made the decision to host both the website and database off of the raspberry pi 5.
 
 ## Analysis
-
 The team chose the raspberry pi 5 due to it's 2.4 Hz quad core processor which will have more than enough power to maintain and organize both a database and website. The pi 5 also has a micro sd card slot allowing it to be expanded in case of more storage needing to be added. The 5 pi has both a bluetooth 5.0 and dual band Wi-fi module which is perfect for picking up drones. In short the team believes that the pi 5 will perfectly encompass the constraints give. All info listed here can be found within this [link](https://datasheets.raspberrypi.com/rpi5/raspberry-pi-5-product-brief.pdf).
 
 ### Interactions With Other Subsystems
-
 The website subsystem will only directly interact with the database. The website will take the processed data from the database and will update the on screen information as needed. The website will also have to ablity to send info to the database, updating the autheraztion status of a selected drone.
 
 ## BOM
@@ -68,6 +68,5 @@ The website subsystem will only directly interact with the database. The website
 *The price and total for Google Maps API Access is so low due to Google allowing users to have $200 worth of map usage which is 30,000 map loads. The team only expects around 500 loads per month which is under that amount.
 
 ## References
-
 [^1]: (https://mapsplatform.google.com/pricing/)
 [^2]: (https://developers.google.com/maps/documentation/javascript/usage-and-billing)
