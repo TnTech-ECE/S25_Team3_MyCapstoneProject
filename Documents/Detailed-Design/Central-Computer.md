@@ -160,12 +160,14 @@ The power supply and chasis subsystems are not involved in any data exchange and
 |   Raspberry Pi 4B   |  Raspberry Pi Foundation  |        SC0193(6A)       |     Amazon     |  1  |   $65.59   |    $65.59   |
 |   Micro SD 128 GB   |          SanDisk          |    SDSQUAB-128G-GN6MN   |     Amazon     |  1  |   $13.24   |    $78.83   |
 |  RPi Active Cooler  |  Raspberry Pi Foundation  |          SC1148         |     Amazon     |  1  |   $10.69   |    $89.52   |
-|     Antenna Kit     |          UeeKKoo          |    ORD-CM4-ANTENNA      |     Amazon     |  1  |    $9.59   |    $99.11   |
-|    U.FL Connector   |      DHT Electronics      |          AD054          |     Amazon     |  1  |    $5.00   |   $104.11   |
-|  Bluetooth Adapter  |         Techkey           |       Black-5.3-1       |     Amazon     |  1  |   $14.44   |   $118.55   |
-|    Wi-Fi Adapter    |          L-LINK           |        B0BLZ5678J       |     Amazon     |  1  |   $28.99   |   $147.54   |
+|    *Antenna Kit     |          UeeKKoo          |    ORD-CM4-ANTENNA      |     Amazon     |  1  |    $9.59   |    $99.11   |
+|   *U.FL Connector   |      DHT Electronics      |          AD054          |     Amazon     |  1  |    $5.00   |   $104.11   |
+| *Bluetooth Adapter  |         Techkey           |       Black-5.3-1       |     Amazon     |  1  |   $14.44   |   $118.55   |
+|   *Wi-Fi Adapter    |          L-LINK           |        B0BLZ5678J       |     Amazon     |  1  |   $28.99   |   $147.54   |
 |    Ethernet Cable   |          Jadaol           |    Cat6-50Ft-White-ML   |     Amazon     |  1  |    $9.99   |   $157.53   |
 |      **Total**      |                           |                         |                |     |            | **$157.53** |
+
+Note: Any budget element marked with an asterisk (*) is considered a reserve component. These elements are intended for use only if the stock board configuration fails to meet the signal detection requirements outlined in the specifications section.
 
 ## Analysis
 
@@ -180,9 +182,10 @@ In the test, the iPhone 13 was placed atop the north bleachers at Tucker Stadium
 
 The results indicate that achieving a minimum receiving distance of 200 meters should not be an issue. However, it is important to note that the test used the Potensic RID 916, a mid-tier module with a claimed transmission range exceeding 300 meters [7]. Performance may vary when using lower-cost or less capable RID modules. To further assess this concern, a link budget calculation was performed to estimate the required antenna sensitivity for detecting signals from a mid-tier RID module at the 200 meter range [8]. The results were as follows:
 
-<img src= "/Documents/Images/link_budget_visual.png" width="650" height="400">
+<div align="center"> <img src= "/Documents/Images/link_budget_visual.png" width="325" height="200">
+  <img src= "/Documents/Images/link_budget_nums.png" width="325" height="200">
   <div align="left"> <br>
-
+    
 According to the Potensic website, the RID 916 has a transmit power of 8 dBm [9]. Path loss was calculated using the formula:
 Loss(dB) = 100 + 20log(d) where d is the distance in kilometers and the assumed operating frequency is 2.4 GHz [8]. The receiver antenna gain was estimated at 4 dBi, based on comparable devices. Cable losses were assumed to be approximately 1 dB, given the short circuit layout. Based on these parameters, the required receiver sensitivity was calculated to be –69 dBm which is well within the expected range of the Raspberry Pi’s integrated antenna, supporting the feasibility of reliable RID reception at 200 meters.
 
