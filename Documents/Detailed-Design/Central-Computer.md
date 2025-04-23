@@ -170,17 +170,27 @@ The power supply and chasis subsystems are not involved in any data exchange and
 ## Analysis
 
 ### Analysis of Effective Range
-As outlined in the specifications section, a minimum reception range of 200 meters is required for effective RID signal capture. To evaluate the feasibility of this requirement, a preliminary experiment was conducted to assess the relative performance of the Raspberry Pi 5's integrated antenna. While documentation on the antenna is limited, the official specification sheet notes support for Class 1 (100 m) and Class 2 (10 m) Bluetooth devices. An iPhone 13, which supports only Class 2, was selected as a test device for its availability. Since the iPhone is limited to short-range communication, the Raspberry Pi is expected to perform at least comparably, if not better. Both devices are estimated to use antennas with similar gain characteristics, typically in the range of -3 to -5 dBi. The experiment involved placing the iPhone 13 at the top of the bleachers on the north side of Tucker Stadium, while the RID module was moved incrementally away until reliable data reception was no longer possible. The results are as follows:
+As specified, a minimum reception range of 200 meters is required for effective RID signal capture. To assess feasibility, a preliminary experiment relatively tested the Raspberry Pi 4 Model B’s integrated antenna.
+
+Although documentation is limited, the Pi supports Bluetooth Class 1 (100 m) and Class 2 (10 m) devices. An iPhone 13, a Class 2 device, was used for testing due to availability. Since the iPhone supports only short-range communication, the Pi is expected to perform comparably or better.
+
+Both devices likely use antennas with similar gain (−3 to −5 dBi), but differ in sensitivity: the iPhone’s is estimated at −75 dBm, while the Pi’s ranges from −80 to −90 dBm, indicating potentially greater detection capability.
+
+In the test, the iPhone 13 was placed atop the north bleachers at Tucker Stadium. The RID module was moved away incrementally until reception failed. Results are as follows:
 
 <div align="center"> <img src= "/Documents/Images/RID_400m.PNG" width="200" height="400"> <img src= "/Documents/Images/distance.png" width="650" height="400"> <br>
   <img src= "/Documents/Images/RID_400m_proof_LR.png" width="650" height="400">
   <div align="left"> <br>
 
-The results strongly suggest that achieving a minimum receiving distance of 200 meters should not pose a problem. However, it is important to note that the RID module used in testing was the Potensic RID 916, a mid-tier device with a claimed transmission range exceeding 300 meters [7]. Performance may vary with lower-cost or less capable modules. To mitigate potential limitations, two solutions have been identified. If the tracker demonstrates inconsistent performance across different RID modules, a hardware modification can be implemented by adding a U.FL connector and an external antenna. This enhancement has been shown to significantly improve reception range, as demonstrated in an experiment by Leonard Fischer [5]. His results are shown below, where the addition of an external antenna demonstrated a clear improvement in reception strength across various scenarios, including unobstructed environments, obstructed paths, and even inside a microwave, where the external antenna was still able to receive a signal by peeking through openings.
+The results indicate that achieving a minimum receiving distance of 200 meters should not be an issue. However, it is important to note that the test used the Potensic RID 916, a mid-tier module with a claimed transmission range exceeding 300 meters [7]. Performance may vary when using lower-cost or less capable RID modules. To further evaluate this concern, a link budget calculation was performed to estimate the required antenna sensitivity based on various RID transmission power levels and the 200 meter range requirement. The results were as follows:
+
+insert booty calcs
+
+To mitigate potential setbacks, two solutions have been identified. If the tracker demonstrates inconsistent performance across different RID modules, a Bluetooth and Wi-Fi adapter will be used to completely bypass the integrated chip and antenna. This approach allows for the use of a dedicated long-range Bluetooth and Wi-Fi transceivers known to perform reliably in Linux environments. Compatible devices have been identified and listed in the Bill of Materials (BOM).
+
+Should the adapters pose functional issues (worst case), a hardware modification can be implemented by adding a U.FL connector and an external antenna. This enhancement has been shown to significantly improve reception range, as demonstrated in an experiment by Leonard Fischer [5]. His results are shown below, where the addition of an external antenna demonstrated a clear improvement in reception strength across various scenarios, including unobstructed environments, obstructed paths, and even inside a microwave, where the external antenna was still able to receive a signal by peeking through openings.
 
 <div align="center"> <img src= "/Documents/Images/gain_test.png" width="325" height="200"> <img src= "/Documents/Images/gain_test_results.png" width="325" height="200"><div align="left"> <br>
-
-If the external antenna modification proves insufficient, a Bluetooth adapter will be used to completely bypass the integrated chip and antenna. This approach allows for the use of a dedicated long-range Bluetooth transceiver known to perform reliably in Linux environments. A compatible device has been identified and is listed in the Bill of Materials (BOM).
 
 ### Core Functionality and Role
 At its foundation, the Central Computer is responsible for:
