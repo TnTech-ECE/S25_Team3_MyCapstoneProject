@@ -131,9 +131,7 @@ The Pi runs a continuously operating parser script that decodes incoming BLE and
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"emergency_status": status_flag }) <br>
 
 #### Output to Server Subsystem:
-Parsed Remote ID (RID) data is transmitted to the Campus Police server over a Transmission Control Protocol (TCP) connection via Ethernet. This ensures reliable, low-latency delivery of telemetry data for real-time monitoring and response.
-
-To maintain security and data integrity, the system will incorporate encryption (e.g., SSL/TLS) and token-based authentication mechanisms such as JWT.
+Parsed Remote ID (RID) data is transmitted to the Campus Police server over a Transmission Control Protocol (TCP) connection via Ethernet. This ensures reliable, low-latency delivery of telemetry data for real-time monitoring and response. To maintain security and data integrity, the system will incorporate encryption (e.g., SSL/TLS) and token-based authentication mechanisms such as JWT.
 
 The communication process is represented by the following pseudocode:
 
