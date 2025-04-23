@@ -55,7 +55,7 @@ The central computer will relay processed RID data to the server using Transmiss
 
 
 ## Overview of Proposed Solution
-<div align="center"> <img src= "/Documents/Images/rpi_4b.jpg" width="550" height="400"> <div align="left"> <br>
+<div align="center"> <img src= "/Documents/Images/rpi_4b.jpg" width="500" height="400"> <div align="left"> <br>
 The Raspberry Pi 4 Model B is the ideal candidate for the central computer in the drone tracking system due to its compact form factor, versatility, and sufficient processing power to meet system requirements. The following specifications highlight key features that make the Raspberry Pi 4 Model B well suited for this application:
 
 ### Nice to Haves
