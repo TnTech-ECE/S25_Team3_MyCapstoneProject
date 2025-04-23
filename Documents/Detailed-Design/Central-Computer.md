@@ -11,11 +11,8 @@ The central computer module will act as the system’s processing hub, handling 
 Data Processing:
 It will collect Remote ID (RID) signals via onboard Bluetooth and Wi-Fi, scanning for FAA-compliant broadcasts. Extracted data—such as drone ID, location, velocity, and operator info—will be parsed and analyzed to ensure accurate detection and classification.
 
-Server and Website Hosting:
-Due to TTU Campus Police IT policies, the first detection unit’s central computer will locally host both the server and the monitoring website, ensuring data security and compliance. Other detection units will connect to this primary node, forming a unified network.
-
 Server Communication:
-The central unit will relay processed RID data to the local server for real-time website updates. Additional detection units will transmit their data via Ethernet to this central hub, supporting scalable, secure, and consistent campus-wide drone surveillance.
+The central computer will relay processed RID data to the server using Transmission Control Protocol (TCP) over an Ethernet connection, enabling real-time updates to the website. 
 
 
 ## Specifications and Constraints
@@ -25,8 +22,8 @@ The central unit will relay processed RID data to the local server for real-time
 - The central computer shall draw no more than 16 W of power.
 - To accommodate current and future operational needs, the central computer shall be equipped with no fewer than 20 General Purpose Input/Output (GPIO) pins, allowing for seamless interfacing with various components and enabling future expansions or upgrades.
 - The central computer shall process packets and store data obtained from the Wi-Fi and Bluetooth transceivers.
-- The central computer shall internally transmit the gathered drone information to the hosted server.
-- The central computer shall ensure that all communication between the central computer and the hosted server remains secure, reliable, and efficient, providing critical support to campus security operations in real-time.
+- The central computer shall transmit the gathered drone information to the server.
+- The central computer shall ensure that all communication between the central computer and the server remains secure, reliable, and efficient, providing critical support to campus security operations in real-time.
 
 #### Bluetooth RID Module (Integrated)
 - The Bluetooth transceiver shall continuously scan the 2.4 GHz Bluetooth frequency band to detect and capture RID signals while filtering out non-RID transmissions.
