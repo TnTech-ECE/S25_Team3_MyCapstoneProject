@@ -157,14 +157,15 @@ The power supply and chasis subsystems are not involved in any data exchange and
 
 |      Component      |        Manufacturer       |         Part No.        |   Distributor  | Qty | Unit Price |    Total    |
 |---------------------|---------------------------|-------------------------|----------------|-----|------------|-------------|
-|   Raspberry Pi 5    |  Raspberry Pi Foundation  |          SC1112         |     Amazon     |  1  |   $90.19   |    $90.19   |
-|   Micro SD 128 GB   |          SanDisk          |    SDSQUAB-128G-GN6MN   |     Amazon     |  1  |   $13.24   |   $103.43   |
-|  RPi Active Cooler  |  Raspberry Pi Foundation  |          SC1148         |     Amazon     |  1  |   $10.69   |   $114.12   |
-|     Antenna Kit     |          UeeKKoo          |    ORD-CM4-ANTENNA      |     Amazon     |  1  |    $9.59   |   $123.71   |
-|    U.FL Connector   |      DHT Electronics      |          AD054          |     Amazon     |  1  |    $5.00   |   $128.71   |
-|  Bluetooth Adapter  |         TP-Link           |        UB500 Plus       |     Amazon     |  1  |   $17.99   |   $146.70   |
-|    Ethernet Cable   |          Jadaol           |    Cat6-50Ft-White-ML   |     Amazon     |  1  |    $9.99   |   $156.69   |
-|      **Total**      |                           |                         |                |     |            | **$156.69** |
+|   Raspberry Pi 4B   |  Raspberry Pi Foundation  |        SC0193(6A)       |     Amazon     |  1  |   $65.59   |    $65.59   |
+|   Micro SD 128 GB   |          SanDisk          |    SDSQUAB-128G-GN6MN   |     Amazon     |  1  |   $13.24   |    $78.83   |
+|  RPi Active Cooler  |  Raspberry Pi Foundation  |          SC1148         |     Amazon     |  1  |   $10.69   |    $89.52   |
+|     Antenna Kit     |          UeeKKoo          |    ORD-CM4-ANTENNA      |     Amazon     |  1  |    $9.59   |    $99.11   |
+|    U.FL Connector   |      DHT Electronics      |          AD054          |     Amazon     |  1  |    $5.00   |   $104.11   |
+|  Bluetooth Adapter  |         Techkey           |       Black-5.3-1       |     Amazon     |  1  |   $14.44   |   $118.55   |
+|    Wi-Fi Adapter    |          L-LINK           |        B0BLZ5678J       |     Amazon     |  1  |   $28.99   |   $147.54   |
+|    Ethernet Cable   |          Jadaol           |    Cat6-50Ft-White-ML   |     Amazon     |  1  |    $9.99   |   $157.53   |
+|      **Total**      |                           |                         |                |     |            | **$157.53** |
 
 ## Analysis
 
