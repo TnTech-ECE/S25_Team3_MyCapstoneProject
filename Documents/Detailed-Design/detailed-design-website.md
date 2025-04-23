@@ -3,15 +3,17 @@
 The website subsystem is designed to provide a designated user with access to drone data stored in the database subsystem. It will regularly check for updates in the database, ensuring that newly logged drones are identified by the campus police as quickly as possible, aiming for near real-time detection. The displayed data will be organized clearly and efficiently, facilitating the effective management of dispatcher resources. The website will also allow the user to approve drones for flight, enabling the necessary authorization for flights. If a system malfunction occurs, the user can also assess the system's status through the website to identify the source of the issue.   
 
 ## Constraints
+These constraints were created by the previous team working on this website. The current team deemed these previous constraints to be on par with what is needed for the website. Minor changes have been made to them to better reflect the constraints that the campus police gave the team. The previous team's constraints can be found here https://github.com/TnTech-ECE/S24_Team1_DroneTracker/blob/main/Documentation/Signoffs/Website_System.md . 
+
 | No.| Constraint | Origin |
 | -- | --------- |--------|
 |  1 | The database must be accessed through a website instead of a mobile phone application. | Campus Police |
-|  2 | Real-time is defined as less than or equal to ten seconds. The system shall notify campus police and display data in 'real-time' on the website. | Project Team / Campus Police |
-|  3 | The drone information will be displayed on the website concisely, allowing for utilization with minimized training. | Project Team |
+|  2 | Real-time is defined as less than or equal to ten seconds. The system shall notify campus police and display data in 'real-time' on the website. | Previous Project Team / Campus Police |
+|  3 | The drone information will be displayed on the website concisely, allowing for utilization with minimized training. | Previous Project Team |
 |  4 | The website will be constructed securely, within reason. | Project Team |
-|  5 | The website will be constructed to comply with standards put into place by the W3C (World Wide Web Consortium). | Project Team / Supervisor |
-|  6 | The system shall allow campus police to authorize specific drones for permitted flights in a specified time frame. | Project Team |  
-|  7 | The system shall increase the alert's urgency if a drone is detected in any designated geographical region. | Project Team |  
+|  5 | The website will be constructed to comply with standards put into place by the W3C (World Wide Web Consortium). | Previous Project Team / Previous Supervisor |
+|  6 | The system shall allow campus police to authorize specific drones for permitted flights in a specified time frame. | Previous Project Team |  
+|  7 | The system shall increase the alert's urgency if a drone is detected in any designated geographical region. | Previous Project Team |  
 
 <sup>1</sup> For the safety of officers in the field, the campus police department has requested that the obtained Remote ID (RID) data be displayed on a website instead of a mobile application. Concerns were raised about officers using personal mobile devices in the field. The police captain and dispatcher have explicitly stated a preference for a website-based information display. To relay data to officers, a dispatcher will communicate drone information directly to the officer.
 
@@ -27,7 +29,7 @@ The website subsystem is designed to provide a designated user with access to dr
 
 <sup>7</sup> Privacy concerns on campus are significant for this project. Malicious drone use may pose a threat to private areas on campus. To mitigate this risk, certain areas will be designated as high-priority zones. Any drone entering these areas will trigger an increased alert level. This prioritization allows the police to make informed decisions about which incidents to address first. The project team believes that the most malicious drones will likely be flown in these high-risk areas, and the safety of students in these zones is considered a top priority.
 
-## Schematic
+## Flowchart
 <img src="/Documents/Images/Website Schematic.png" >
 
 ### Rough Website Design
