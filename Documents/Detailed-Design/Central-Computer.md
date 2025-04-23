@@ -173,8 +173,8 @@ The power supply and chasis subsystems are not involved in any data exchange and
 ### Analysis of Effective Range
 As outlined in the specifications section, a minimum reception range of 200 meters is required for effective RID signal capture. To evaluate the feasibility of this requirement, a preliminary experiment was conducted to assess the relative performance of the Raspberry Pi 5's integrated antenna. While documentation on the antenna is limited, the official specification sheet notes support for Class 1 (100 m) and Class 2 (10 m) Bluetooth devices. An iPhone 13, which supports only Class 2, was selected as a test device for its availability. Since the iPhone is limited to short-range communication, the Raspberry Pi is expected to perform at least comparably, if not better. Both devices are estimated to use antennas with similar gain characteristics, typically in the range of -3 to -5 dBi. The experiment involved placing the iPhone 13 at the top of the bleachers on the north side of Tucker Stadium, while the RID module was moved incrementally away until reliable data reception was no longer possible. The results are as follows:
 
-<div align="center"> <img src= "/Documents/Images/RID_400m.PNG" width="400" height="800"> <img src= "/Documents/Images/distance.png" width="500" height="400"> <br>
-  <img src= "/Documents/Images/RID_400m_proof.PNG" width="500" height="400">
+<div align="center"> <img src= "/Documents/Images/RID_400m.PNG" width="200" height="400"> <img src= "/Documents/Images/distance.png" width="650" height="400"> <br>
+  <img src= "/Documents/Images/RID_400m_proof_LR.png" width="650" height="400">
   <div align="left"> <br>
 
 ### Core Functionality and Role
