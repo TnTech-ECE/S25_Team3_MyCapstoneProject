@@ -179,7 +179,9 @@ As outlined in the specifications section, a minimum reception range of 200 mete
 
 The results strongly suggest that achieving a minimum receiving distance of 200 meters should not pose a problem. However, it is important to note that the RID module used in testing was the Potensic RID 916, a mid-tier device with a claimed transmission range exceeding 300 meters [7]. Performance may vary with lower-cost or less capable modules. To mitigate potential limitations, two solutions have been identified. If the tracker demonstrates inconsistent performance across different RID modules, a hardware modification can be implemented by adding a U.FL connector and an external antenna. This enhancement has been shown to significantly improve reception range, as demonstrated in an experiment by Leonard Fischer [5]. His results are shown below, where the addition of an external antenna demonstrated a clear improvement in reception strength across various scenarios, including unobstructed environments, obstructed paths, and even inside a microwave, where the external antenna was still able to receive a signal by peeking through openings.
 
+<div align="center"> <img src= "/Documents/Images/gain_test.png" width="325" height="200"> <img src= "/Documents/Images/gain_test_results.png" width="325" height="200"><div align="left"> <br>
 
+If the external antenna modification proves insufficient, a Bluetooth adapter will be used to completely bypass the integrated chip and antenna. This approach allows for the use of a dedicated long-range Bluetooth transceiver known to perform reliably in Linux environments. A compatible device has been identified and is listed in the Bill of Materials (BOM).
 
 ### Core Functionality and Role
 At its foundation, the Central Computer is responsible for:
