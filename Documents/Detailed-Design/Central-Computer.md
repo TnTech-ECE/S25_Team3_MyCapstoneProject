@@ -177,6 +177,10 @@ As outlined in the specifications section, a minimum reception range of 200 mete
   <img src= "/Documents/Images/RID_400m_proof_LR.png" width="650" height="400">
   <div align="left"> <br>
 
+The results strongly suggest that achieving a minimum receiving distance of 200 meters should not pose a problem. However, it is important to note that the RID module used in testing was the Potensic RID 916, a mid-tier device with a claimed transmission range exceeding 300 meters [7]. Performance may vary with lower-cost or less capable modules. To mitigate potential limitations, two solutions have been identified. If the tracker demonstrates inconsistent performance across different RID modules, a hardware modification can be implemented by adding a U.FL connector and an external antenna. This enhancement has been shown to significantly improve reception range, as demonstrated in an experiment by Leonard Fischer [5]. His results are shown below, where the addition of an external antenna demonstrated a clear improvement in reception strength across various scenarios, including unobstructed environments, obstructed paths, and even inside a microwave, where the external antenna was still able to receive a signal by peeking through openings.
+
+
+
 ### Core Functionality and Role
 At its foundation, the Central Computer is responsible for:
 - Receiving and parsing Remote ID (RID) signals via Bluetooth and Wi-Fi.
@@ -226,4 +230,6 @@ Through terminal access (either direct or remote), developers and administrators
 [5] T. Genes, "External antenna mod for Raspberry Pi 5 - Questions," Zynthian Discourse, Nov. 19, 2024. [Online]. Available: https://discourse.zynthian.org/t/external-antenna-mod-for-raspberry-pi-5-questions/10532. [Accessed: Apr. 22, 2025]. <br>
 
 [6] illecitnom, "Bluetooth 5.0 actual performance with Pi 4," Raspberry Pi Forums, Feb. 28, 2021. [Online]. Available: https://forums.raspberrypi.com/viewtopic.php?t=305574. [Accessed: Apr. 22, 2025]. <br>
+
+[7] Potensic, “Potensic RID-916 Remote ID Module,” Potensic Store, [Online]. Available: https://store.potensic.com/products/rid-916?gQT=1. [Accessed: Apr. 23, 2025].
 
