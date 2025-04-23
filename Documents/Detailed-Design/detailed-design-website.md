@@ -3,7 +3,7 @@
 The website subsystem is designed to provide a designated user with access to drone data stored in the database subsystem. It will regularly check for updates in the database, ensuring that newly logged drones are identified by the campus police as quickly as possible, aiming for near real-time detection. The displayed data will be organized clearly and efficiently, facilitating the effective management of dispatcher resources. The website will also allow the user to approve drones for flight, enabling the necessary authorization for flights. If a system malfunction occurs, the user can also assess the system's status through the website to identify the source of the issue.   
 
 ## Constraints
-These constraints were created by the previous team working on this website. The current team deemed these previous constraints to be on par with what is needed for the website. Minor changes have been made to them to better reflect the constraints that the campus police gave the team. The previous team's constraints can be found in this [link](https://github.com/TnTech-ECE/S24_Team1_DroneTracker/blob/main/Documentation/Signoffs/Website_System.md) . 
+These constraints were created by the previous team working on this website. The current team deemed these previous constraints to be on par with what is needed for the website. Minor changes have been made to them to better reflect the constraints that the campus police gave the team. The previous team's constraints can be found in this [link](https://github.com/TnTech-ECE/S24_Team1_DroneTracker/blob/main/Documentation/Signoffs/Website_System.md). 
 
 | No.| Constraint | Origin |
 | -- | --------- |--------|
@@ -39,7 +39,7 @@ In the image above, a rough depiction of what the final website will look like i
 
 ### HTML/CSS, JavaScript, and Python
 
-The languages chosen to implement this program will be HTML, CSS, JavaScript, and Python. HTML will be used initially to create the framework of the webpage, where CSS will then be utilized to make the page look more presentable and coherent with Tech's current website theme. JavaScript will be implemented where necessary to make the webpage responsive to user inputs. Python will be used to create the webserver.
+The languages chosen to implement this program will be HTML, CSS, JavaScript, and Python. HTML will be used initially to create the framework of the webpage, where CSS will then be utilized to make the page look more presentable and coherent with Tech's current website theme. JavaScript will be implemented where necessary to make the webpage responsive to user inputs. The Python package TCP socket will be used to create and maintain the webserver.
 
 ### Google Maps API
 The team has decided to use Google's Maps JavaScript API to handle the placement of drones in the correct places on the map. Google allows users to utilize up to $200 monthly worth of Maps API resources for free, with the credit resetting on the first of each month. This amount of money covers nearly 30,000 map loads per month.[^1] With this API, a map can be centered on the campus of TTU, and, using the coordinates retrieved from the Remote ID signal, markers can be placed on the map in the exact location where the drone is detected. 
@@ -52,7 +52,7 @@ For the website to be accessible at all times, it will need to be hosted on a ma
 
 ## Analysis
 
-After doing research on the pi 5, the team found that the pi 5 with the M.2 hat extention will be far bigger than is needed to host both the website and database. The pi 5 has a 64-bit ARM processor running at 2.4 GHz, and the model chosen has 8 GB of RAM included. The pi 5 has a 4 core proccessor which is more than enough power to maintain a website and database.
+The team chose the raspberry pi 5 due to it's 2.4 Hz quad core processor which will have more than enough power to maintain and organize both a database and website. The pi 5 also has a micro sd card slot allowing it to be expanded in case of more storage needing to be added. The 5 pi has both a bluetooth 5.0 and dual band Wi-fi module which is perfect for picking up drones. In short the team believes that the pi 5 will perfectly encompass the constraints give. All info list here can be found within this [link](https://datasheets.raspberrypi.com/rpi5/raspberry-pi-5-product-brief.pdf).
 
 ### Interactions With Other Subsystems
 
@@ -68,7 +68,6 @@ The website subsystem will only directly interact with the database. The website
 *The price and total for Google Maps API Access is so low due to Google allowing users to have $200 worth of map usage which is 30,000 map loads. The team only expects around 500 loads per month which is under that amount.
 
 ## References
-<!-- This is how to do footnotes for the references: --> 
+
 [^1]: (https://mapsplatform.google.com/pricing/)
 [^2]: (https://developers.google.com/maps/documentation/javascript/usage-and-billing)
-<!--etc.-->
