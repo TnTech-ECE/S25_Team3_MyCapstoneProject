@@ -72,12 +72,9 @@ The Raspberry Pi 5 is the ideal candidate for the central computer in the drone 
 
 ### Critical Components
 #### CYW43455 Wi-Fi/Bluetooth Chip:
-The Infineon CYW43455 is a highly integrated single-chip transceiver that provides dual-band 802.11ac Wi-Fi and Bluetooth 5.0 connectivity. It supports 2.4 GHz and 5 GHz Wi-Fi bands with 802.11ac single-stream (1x1) operation, offering efficient performance for compact embedded systems like the Raspberry Pi 5.
+The Infineon CYW43455 is a highly integrated single-chip transceiver that provides dual-band 802.11ac Wi-Fi and Bluetooth 5.0 connectivity. It supports 2.4 GHz and 5 GHz Wi-Fi bands with 802.11ac single-stream (1x1) operation.
 
-To meet a minimum range requirement of 200 meters, the effective wireless performance is highly dependent on both environmental factors and the paired transceiver (RID device). The CYW43455’s support for 802.11ac and its output power (up to +19.5 dBm for 2.4 GHz and +17.5 dBm for 5 GHz, as per the datasheet) makes it suitable for long-range communication.
-
-For Bluetooth communication, the CYW43455 offers a Bluetooth 5.0-compliant radio, which includes LE 1M PHY mode. This mode provides a balance of range and data rate, and the chip features a Bluetooth RX sensitivity of –94.5 dBm in LE 1M mode, which is sufficient to maintain reliable connections at extended ranges, including the specified 200 meters under favorable conditions. This ensures consistent and robust connectivity for low-energy Bluetooth applications, including telemetry and device control in drone or IoT systems.
-
+#### 
 #### MicroSD Card Slot: 
 Provides flexible and scalable storage options for the system, supporting high-capacity cards suitable for long-term data logging. This feature allows the central computer to locally store collected RID data, host the server and website interface, and maintain logs for historical analysis or compliance documentation. The use of a microSD card ensures easy upgrades or replacements, contributing to the overall maintainability and adaptability of the system.
 
@@ -151,12 +148,16 @@ The power supply and chasis subsystems are not involved in any data exchange and
 
 ## BOM
 
-|      Component      |        Manufacturer       |         Part No.        |   Distributor  | Qty | Unit Price |    Total   |
-|---------------------|---------------------------|-------------------------|----------------|-----|------------|------------|
-|   Raspberry Pi 5    |  Raspberry Pi Foundation  |          SC1112         |  Micro Center  |  1  |   $79.99   |   $79.99   |
-|   Micro SD 128 GB   |          SanDisk          |    SDSQUAB-128G-GN6MN   |     Amazon     |  1  |   $13.44   |   $93.43   |
-|  RPi Active Cooler  |  Raspberry Pi Foundation  |          SC1148         |  Micro Center  |  1  |    $4.99   |   $98.42   |
-|      **Total**      |                           |                         |                |     |            | **$98.42** |
+|      Component      |        Manufacturer       |         Part No.        |   Distributor  | Qty | Unit Price |    Total    |
+|---------------------|---------------------------|-------------------------|----------------|-----|------------|-------------|
+|   Raspberry Pi 5    |  Raspberry Pi Foundation  |          SC1112         |     Amazon     |  1  |   $90.19   |    $90.19   |
+|   Micro SD 128 GB   |          SanDisk          |    SDSQUAB-128G-GN6MN   |     Amazon     |  1  |   $13.24   |   $103.43   |
+|  RPi Active Cooler  |  Raspberry Pi Foundation  |          SC1148         |     Amazon     |  1  |   $10.69   |   $114.12   |
+|     Antenna Kit     |          UeeKKoo          |    ORD-CM4-ANTENNA      |     Amazon     |  1  |    $9.59   |   $123.71   |
+|    U.FL Connector   |      DHT Electronics      |          AD054          |     Amazon     |  1  |    $5.00   |   $128.71   |
+|  Bluetooth Adapter  |  Raspberry Pi Foundation  |        UB500 Plus       |     Amazon     |  1  |   $17.99   |   $146.70   |
+|    Ethernet Cable   |          Jadaol           |    Cat6-50Ft-White-ML   |     Amazon     |  1  |    $9.99   |   $156.69   |
+|      **Total**      |                           |                         |                |     |            | **$156.69** |
 
 ## Analysis
 
@@ -204,3 +205,8 @@ The Central Computer, built on a Raspberry Pi 5, is demonstrably fit for its int
 [2] Yahboom, “Yahboom Official Original Raspberry Pi 5 4GB RAM Development Board (In Stock),” RobotShop, [Online]. Available: https://www.robotshop.com/products/yahboom-official-original-raspberry-pi-5-4gb-ram-development-board-in-stock. [Accessed: Apr. 11, 2025]. <br>
 
 [3] Raspberry Pi Forums, "Raspberry Pi 5 details and specs," Raspberry Pi Forums, Oct. 2023. [Online]. Available: https://forums.raspberrypi.com/viewtopic.php?t=341526 <br>
+
+[4] Infineon Technologies, CYW43455 Single-Chip 5G WiFi IEEE 802.11n/ac MAC/Baseband/Radio with Integrated Bluetooth 5.0 Datasheet – Additional Technical Information, v16.00, Apr. 2022. [Online]. Available: https://www.infineon.com/dgdl/Infineon-CYW43455_Single-Chip_5G_WiFi_IEEE_802.11n_ac_MAC_Baseband_Radio_with_Integrated_Bluetooth_5.0_Datasheet-AdditionalTechnicalInformation-v16_00-EN.pdf?fileId=8ac78c8c7d0d8da4017d0ee226686889 <br>
+
+[5] T. Genes, "External antenna mod for Raspberry Pi 5 - Questions," Zynthian Discourse, Nov. 19, 2024. [Online]. Available: https://discourse.zynthian.org/t/external-antenna-mod-for-raspberry-pi-5-questions/10532. [Accessed: Apr. 22, 2025]. <br>
+
