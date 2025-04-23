@@ -52,7 +52,7 @@ For the website to be accessible at all times, it will need to be hosted on a ma
 
 ## Analysis
 
-The team chose the raspberry pi 5 due to it's 2.4 Hz quad core processor which will have more than enough power to maintain and organize both a database and website. The pi 5 also has a micro sd card slot allowing it to be expanded in case of more storage needing to be added. The 5 pi has both a bluetooth 5.0 and dual band Wi-fi module which is perfect for picking up drones. In short the team believes that the pi 5 will perfectly encompass the constraints give. All info list here can be found within this [link](https://datasheets.raspberrypi.com/rpi5/raspberry-pi-5-product-brief.pdf).
+The team chose the raspberry pi 5 due to it's 2.4 Hz quad core processor which will have more than enough power to maintain and organize both a database and website. The pi 5 also has a micro sd card slot allowing it to be expanded in case of more storage needing to be added. The 5 pi has both a bluetooth 5.0 and dual band Wi-fi module which is perfect for picking up drones. In short the team believes that the pi 5 will perfectly encompass the constraints give. All info listed here can be found within this [link](https://datasheets.raspberrypi.com/rpi5/raspberry-pi-5-product-brief.pdf).
 
 ### Interactions With Other Subsystems
 
