@@ -85,7 +85,7 @@ Offer extensive expandability for custom components or sensors, enabling system 
 #### RJ45 Ethernet Port: 
 Enables stable wired communication between client devices and additional detection units, supporting system scalability and reliability.
 
-#### Broadcom BCM2712 Processor:
+#### Broadcom BCM2711 Processor:
 The Broadcom BCM2711 features a quad-core Arm Cortex-A72 CPU at 1.5GHz, delivering efficient performance for embedded systems. It supports concurrent processing of Bluetooth Low Energy (BLE) and Wi-Fi NAN signals, making it suitable for real-time Remote ID (RID) tracking without interruption.
 
 #### Dimensions (3.94 x 2.76 x 1.18 inches): 
@@ -98,12 +98,14 @@ These specifications make the Raspberry Pi 4 Model B a cost-effective yet powerf
 
 ## Interface with Other Subsystems
 ​
-The central computer subsystem, implemented on a Raspberry Pi 5, interfaces with two components: external drones broadcasting Remote ID (RID) data, and a local server hosted on the Pi. It receives RID signals over integrated Bluetooth and Wi-Fi radios, processes the data, and transmits the extracted information to the server via a local HTTPS interface.
+The central computer subsystem, implemented on a Raspberry Pi 4 Model B, interfaces with two components: external drones broadcasting Remote ID (RID) data, and a Campus Police server hosted on a Rapberry Pi 5. It receives RID signals over integrated Bluetooth and Wi-Fi radios, processes the data, and transmits the extracted information to the server via Transmission Control Protocol (TCP).
 
 #### Inputs:
 The central computer receives broadcasted RID signals from nearby drones. These signals arrive via two wireless communication interfaces:
 + Bluetooth Low Energy (BLE): Drones emit RID data as BLE advertisement packets. The Raspberry Pi continuously scans for these packets using its integrated Bluetooth radio. A custom script (e.g., using the bluez stack or a Python BLE library) extracts the payloads in real time.
-+ Wi-Fi NAN (Neighbor Awareness Networking): RID data is also broadcast over Wi-Fi using NAN frames. The Pi’s Wi-Fi interface, set to monitor mode, captures these frames using tools such as tcpdump, tshark, or a custom packet parser.
++ Wi-Fi NAN (Neighbor Awareness Networking): RID data is also broadcast over Wi-Fi using NAN frames. The Pi’s Wi-Fi interface, set to monitor mode, captures these frames using tools such as tcpdump, tshark, or a custom packet parser. <br>
+
+Note: If the integrated radio proves insufficient, external antennas or adapters will be employed. Further discussion on this can be found in the analysis section. <br>
 
 Each RID broadcast contains a standardized set of data fields:
 + Drone ID (e.g., UUID or MAC address)
@@ -129,18 +131,21 @@ The Pi runs a continuously operating parser script that decodes incoming BLE and
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"emergency_status": status_flag }) <br>
 
 #### Output to Server Subsystem:
-Once parsed, the data is transmitted to a backend server hosted locally on the Pi. The server, implemented using a lightweight framework (Flask or FastAPI), exposes a secured HTTPS endpoint to receive the data. Communication is protected by SSL/TLS encryption to ensure data confidentiality and integrity. Additionally, token-based authentication (JWT) is used to validate requests.
+Parsed Remote ID (RID) data is transmitted to the Campus Police server over a Transmission Control Protocol (TCP) connection via Ethernet. This ensures reliable, low-latency delivery of telemetry data for real-time monitoring and response.
 
-Communication occurs over a local HTTPS POST request. The pseudocode for this transfer is as follows:
+To maintain security and data integrity, the system will incorporate encryption (e.g., SSL/TLS) and token-based authentication mechanisms such as JWT.
 
-send_https_post( <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url = "http://127.0.0.1:8000/drone-data", <br>
+The communication process is represented by the following pseudocode:
+
+send_tcp_data( <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;host = "campus-police.server.edu", <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;port = 12345, <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;payload = data, <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;headers = {"Authorization": "Bearer <jwt-token>"}, <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;verify = '/path/to/cert.pem' <br>
 )
 
-The server receives, validates, and stores the data for further processing or transmission. This setup enables real-time capture and secure handling of drone telemetry.
+The server receives, validates, and logs the data for further analysis or operational response. This architecture enables centralized, secure handling of drone telemetry.
 
 #### Note: 
 The power supply and chasis subsystems are not involved in any data exchange and do not constitute communication interfaces. The chasis will however need to dissipate 16 watts of heat during peak load ad passively dissipate 8 watts of heat during standard operation. 
