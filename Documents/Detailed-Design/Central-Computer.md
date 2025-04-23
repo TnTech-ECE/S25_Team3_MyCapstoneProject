@@ -170,11 +170,7 @@ The power supply and chasis subsystems are not involved in any data exchange and
 ## Analysis
 
 ### Analysis of Effective Range
-As specified, a minimum reception range of 200 meters is required for effective RID signal capture. To assess feasibility, a preliminary experiment relatively tested the Raspberry Pi 4 Model B’s integrated antenna.
-
-Although documentation is limited, the Pi supports Bluetooth Class 1 (100 m) and Class 2 (10 m) devices. An iPhone 13, a Class 2 device, was used for testing due to availability. Since the iPhone supports only short-range communication, the Pi is expected to perform comparably or better.
-
-Both devices likely use antennas with similar gain (−3 to −5 dBi), but differ in sensitivity: the iPhone’s is estimated at −75 dBm, while the Pi’s ranges from −80 to −90 dBm, indicating potentially greater detection capability.
+As specified, a minimum reception range of 200 meters is required for effective RID signal capture. To assess feasibility, a preliminary experiment relatively tested the Raspberry Pi 4 Model B’s integrated antenna. Although documentation is limited, the Pi supports Bluetooth Class 1 (100 m) and Class 2 (10 m) devices. An iPhone 13, a Class 2 device, was used for testing due to availability. Since the iPhone supports only short-range communication, the Pi is expected to perform comparably or better. Both devices likely use antennas with similar gain (−3 to −5 dBi), but differ in sensitivity: the iPhone’s is estimated at −75 dBm, while the Pi’s ranges from −80 to −90 dBm, indicating potentially greater detection capability.
 
 In the test, the iPhone 13 was placed atop the north bleachers at Tucker Stadium. The RID module was moved away incrementally until reception failed. Results are as follows:
 
