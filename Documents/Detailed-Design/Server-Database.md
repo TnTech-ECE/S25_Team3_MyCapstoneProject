@@ -39,9 +39,9 @@ When the website requests data, it interacts with the server, which then queries
 
 ## BOM
 
-|      Component      |        Manufacturer       |         Part No.        |   Distributor  | Qty | Unit Price |  Total  |
-|---------------------|---------------------------|-------------------------|----------------|-----|------------|---------|
-|   Raspberry Pi 5    |  Raspberry Pi Foundation  |          SC1112         |  Micro Center  |  2  |   $79.99   | $159.98 |
+|      Component      |        Manufacturer       |         Part No.        |   Distributor  | Qty | Unit Price |
+|---------------------|---------------------------|-------------------------|----------------|-----|------------|
+|   Raspberry Pi 5    |  Raspberry Pi Foundation  |          SC1112         |  Micro Center  |  1  |   $79.99   |
 
 ## Analysis
 
