@@ -138,11 +138,11 @@ Once parsed, the data is transmitted to a backend server hosted locally on the P
 
 Communication occurs over a local HTTPS POST request. The pseudocode for this transfer is as follows:
 
-send_https_post( 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url = "http://127.0.0.1:8000/drone-data",
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;payload = data,
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;headers = {"Authorization": "Bearer <jwt-token>"},
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;verify = '/path/to/cert.pem'
+send_https_post( <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url = "http://127.0.0.1:8000/drone-data", <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;payload = data, <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;headers = {"Authorization": "Bearer <jwt-token>"}, <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;verify = '/path/to/cert.pem' <br>
 )
 
 The server receives, validates, and stores the data for further processing or transmission. This setup enables real-time capture and secure handling of drone telemetry.
