@@ -55,7 +55,7 @@ The central computer will relay processed RID data to the server using Transmiss
 
 
 ## Overview of Proposed Solution
-<div align="center"> <img src= "/Documents/Images/rpi_4b.jpg" width="500" height="300"> <div align="left"> <br>
+<div align="center"> <img src= "/Documents/Images/rpi_4b.jpg" width="550" height="400"> <div align="left"> <br>
 The Raspberry Pi 4 Model B is the ideal candidate for the central computer in the drone tracking system due to its compact form factor, versatility, and sufficient processing power to meet system requirements. The following specifications highlight key features that make the Raspberry Pi 4 Model B well-suited for this application:
 
 ### Nice to Haves
@@ -91,7 +91,7 @@ The Broadcom BCM2711 features a quad-core Arm Cortex-A72 CPU at 1.5GHz, deliveri
 #### Dimensions (3.94 x 2.76 x 1.18 inches): 
 Its small footprint allows for easy enclosure in a custom-designed case, facilitating compact integration within the overall system.
 
-<div align="center"> <img src= "/Documents/Images/rpi4b_size.png" width="500" height="400"> <img src= "/Documents/Images/rpi5_layout.jpg" width="500" height="400"> <div align="left"> <br>
+<div align="center"> <img src= "/Documents/Images/rpi_4b_size.png" width="550" height="400"> <img src= "/Documents/Images/rpi4b_layout.png" width="550" height="400"> <div align="left"> <br>
 
 These specifications make the Raspberry Pi 4 Model B a cost-effective yet powerful solution, capable of supporting both the current needs and future expansions of the drone tracking system.
 
