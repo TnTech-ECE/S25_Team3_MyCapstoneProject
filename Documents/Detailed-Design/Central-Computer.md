@@ -178,9 +178,13 @@ In the test, the iPhone 13 was placed atop the north bleachers at Tucker Stadium
   <img src= "/Documents/Images/RID_400m_proof_LR.png" width="650" height="400">
   <div align="left"> <br>
 
-The results indicate that achieving a minimum receiving distance of 200 meters should not be an issue. However, it is important to note that the test used the Potensic RID 916, a mid-tier module with a claimed transmission range exceeding 300 meters [7]. Performance may vary when using lower-cost or less capable RID modules. To further evaluate this concern, a link budget calculation was performed to estimate the required antenna sensitivity based on various RID transmission power levels and the 200 meter range requirement [8]. The results were as follows:
+The results indicate that achieving a minimum receiving distance of 200 meters should not be an issue. However, it is important to note that the test used the Potensic RID 916, a mid-tier module with a claimed transmission range exceeding 300 meters [7]. Performance may vary when using lower-cost or less capable RID modules. To further assess this concern, a link budget calculation was performed to estimate the required antenna sensitivity for detecting signals from a mid-tier RID module at the 200 meter range [8]. The results were as follows:
 
-insert booty calcs
+<img src= "/Documents/Images/link_budget_visual.png" width="650" height="400">
+  <div align="left"> <br>
+
+According to the Potensic website, the RID 916 has a transmit power of 8 dBm [9]. Path loss was calculated using the formula:
+Loss(dB) = 100 + 20log(d) where d is the distance in kilometers and the assumed operating frequency is 2.4 GHz [8]. The receiver antenna gain was estimated at 4 dBi, based on comparable devices. Cable losses were assumed to be approximately 1 dB, given the short circuit layout. Based on these parameters, the required receiver sensitivity was calculated to be –69 dBm which is well within the expected range of the Raspberry Pi’s integrated antenna, supporting the feasibility of reliable RID reception at 200 meters.
 
 To mitigate potential setbacks, two solutions have been identified. If the tracker demonstrates inconsistent performance across different RID modules, a Bluetooth and Wi-Fi adapter will be used to completely bypass the integrated chip and antenna. This approach allows for the use of a dedicated long-range Bluetooth and Wi-Fi transceivers known to perform reliably in Linux environments. Compatible devices have been identified and listed in the Bill of Materials (BOM).
 
@@ -237,4 +241,6 @@ Through terminal access (either direct or remote), developers and administrators
 [7] Potensic, “Potensic RID-916 Remote ID Module,” Potensic Store, [Online]. Available: https://store.potensic.com/products/rid-916?gQT=1. [Accessed: Apr. 23, 2025].
 
 [8] C. Bisdikian, "Link Budget Calculation," Internet Society, Oct. 2017. [Online]. Available: https://www.internetsociety.org/wp-content/uploads/2017/10/Link-Budget-Calculation.pdf
+
+[9] Potensic, "RID 916 Specifications," Potensic, [Online]. Available: https://www.potensic.com/rid-916-specs.html [Accessed: Apr. 23, 2025].
 
