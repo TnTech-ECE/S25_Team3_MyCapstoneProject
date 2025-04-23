@@ -103,7 +103,7 @@ These specifications make the Raspberry Pi 5 a cost-effective yet powerful solut
 
 ## Interface with Other Subsystems
 ​
-The central computer subsystem, implemented on a Raspberry Pi 5, interfaces with two components: external drones broadcasting Remote ID (RID) data, and a local server hosted on the Pi. It receives RID signals over integrated Bluetooth and Wi-Fi radios, processes the data, and transmits the extracted information to the server via a local HTTP interface.
+The central computer subsystem, implemented on a Raspberry Pi 5, interfaces with two components: external drones broadcasting Remote ID (RID) data, and a local server hosted on the Pi. It receives RID signals over integrated Bluetooth and Wi-Fi radios, processes the data, and transmits the extracted information to the server via a local HTTPS interface.
 
 #### Inputs:
 The central computer receives broadcasted RID signals from nearby drones. These signals arrive via two wireless communication interfaces:
@@ -215,10 +215,6 @@ The onboard Python-based parsing software reliably interprets captured packets a
 Using HTTPS protocols, the system successfully transmits parsed data to the central database/server, facilitating aggregation, visualization, and historical logging.
 - Human Interaction:
 Through terminal access (either direct or remote), developers and administrators can perform system checks, update software, or review logs.
-
-
-(might take out)The Central Computer, built on a Raspberry Pi 5, is demonstrably fit for its intended role in the drone detection system. It meets every specified constraint—technical, logistical, and regulatory—while delivering reliable, scalable, and cost-effective functionality. The design not only supports current system requirements but also provides a solid foundation for future enhancements.
-
 
 ## References
 [1] Raspberry Pi Ltd., “Raspberry Pi 5,” Raspberry Pi, [Online]. Available: https://www.raspberrypi.com/products/raspberry-pi-5/. [Accessed: Apr. 7, 2025]. <br>
