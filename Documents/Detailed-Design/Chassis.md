@@ -30,8 +30,8 @@ Below are several images of the 3D models for both the interior and exterior she
 <img src="/Documents/Images/Top of Raspberry Pi Case.png" width="1800" height="800"> <br> <br>
 <img src="/Documents/Images/Bottom of Raspberry Pi Case.png" width="1800" height="800"> <br> <br>
 <img src="/Documents/Images/Raspberry Pi Case.png" width="2000" height="700"> <br> <br>
-<img src="/Documents/Images/Waterproof Box.png" width="1800" height="800"> <br> <br>
-<img src="/Documents/Images/Waterproof Box Dimensions.png" width="1800" height="800"> <br> <br>
+<img src="/Documents/Images/Weatherproof Box.png" width="1800" height="800"> <br> <br>
+<img src="/Documents/Images/Weatherproof Box Dimensions.png" width="2000" height="700"> <br> <br>
 
 ## Bill of Materials
 
