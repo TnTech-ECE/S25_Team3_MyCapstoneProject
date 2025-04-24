@@ -3,7 +3,7 @@
 The website subsystem is designed to provide a designated user with access to drone data stored in the database subsystem. It will regularly check for updates in the database, ensuring that newly logged drones are identified by the campus police as quickly as possible, aiming for near real-time detection. The displayed data will be organized clearly and efficiently, facilitating the effective management of dispatcher resources. The website will also allow the user to approve drones for flight, enabling the necessary authorization for flights. If a system malfunction occurs, the user can also assess the system's status through the website to identify the source of the issue.   
 
 ## Constraints
-These constraints were created by the previous team working on this website. The current team deemed these previous constraints to be on par with what is needed for the website. Minor changes have been made to them to better reflect the constraints that the campus police gave the team. The previous team's constraints can be found in this [link](https://github.com/TnTech-ECE/S24_Team1_DroneTracker/blob/main/Documentation/Signoffs/Website_System.md). 
+These constraints were created by the previous team working on this website. The current team deemed these previous constraints to be on par with what is needed for the website. Minor changes have been made to them to better reflect the constraints that the campus police gave the team.[^1]
 
 | No.| Constraint | Origin |
 | -- | --------- |--------|
@@ -32,31 +32,31 @@ These constraints were created by the previous team working on this website. The
 ## Flowchart
 <img src="/Documents/Images/Website Schematic.png" >
 
-### Rough Website Design
+### Rough Website Design [^1]
 <img src="/Documents/Images/website_beta.png" >
 
 In the image above, a rough depiction of what the final website will look like is shown. Once a user has been authorized and logged in, this layout will be displayed. The banner at the top simply displays the title of the webpage. Below the banner, there is an image showing a marker placed on a Google Maps instance. This marker represents a detected drone, and since only one drone was "detected" at the time the picture was taken, only the information for that single drone is displayed on the right side of the image. If additional drones had been detected, their serial numbers would appear under the "selected drone" section on the right side, with all other information collapsed until the user clicks on the drone marker or the serial number on the side of the screen.
 
 ## Logistics
-The following information was found orginally by the previous team and was reporpused by the current team. The first team's information have be found in this [document](https://github.com/TnTech-ECE/S24_Team1_DroneTracker/blob/main/Documentation/Signoffs/Website_System.md).
+The following information was found orginally by the previous team and was reporpused by the current team.[^1]
 
 ### HTML/CSS, JavaScript, and Python
 The languages chosen to implement this program will be HTML, CSS, JavaScript, and Python. HTML will be used initially to create the framework of the webpage, where CSS will then be utilized to make the page look more presentable and coherent with Tech's current website theme. JavaScript will be implemented where necessary to make the webpage responsive to user inputs. The Python package TCP socket will be used to create and maintain the webserver.
 
 ### Google Maps API
-The team has decided to use Google's Maps JavaScript API to handle the placement of drones in the correct places on the map. Google allows users to utilize up to $200 monthly worth of Maps API resources for free, with the credit resetting on the first of each month. This amount of money covers nearly 30,000 map loads per month.[^1] With this API, a map can be centered on the campus of TTU, and, using the coordinates retrieved from the Remote ID signal, markers can be placed on the map in the exact location where the drone is detected. 
+The team has decided to use Google's Maps JavaScript API to handle the placement of drones in the correct places on the map. Google allows users to utilize up to $200 monthly worth of Maps API resources for free, with the credit resetting on the first of each month. This amount of money covers nearly 30,000 map loads per month.[^2] With this API, a map can be centered on the campus of TTU, and, using the coordinates retrieved from the Remote ID signal, markers can be placed on the map in the exact location where the drone is detected. 
 
-After obtaining an API key, the API call can implemented using the key in the HTML5 webpage, where the map will then become usable in the browser. The Maps JavaScript API allows up to 300 calls per minute per IP address.[^2] This means that the absolute maximum number of times the website can call the API is 5 times per second. Assuming that the API is called a generous 500 times per day, then in even the longest months, the most API calls the program will make will be 15,500. For the first 100,000 API calls each month, the cost per call is 0.007 USD. This means that even with a high volume of API calls, such as 500, only slightly more than half of the built-in API budget is consumed.
+After obtaining an API key, the API call can implemented using the key in the HTML5 webpage, where the map will then become usable in the browser. The Maps JavaScript API allows up to 300 calls per minute per IP address.[^3] This means that the absolute maximum number of times the website can call the API is 5 times per second. Assuming that the API is called a generous 500 times per day, then in even the longest months, the most API calls the program will make will be 15,500. For the first 100,000 API calls each month, the cost per call is 0.007 USD. This means that even with a high volume of API calls, such as 500, only slightly more than half of the built-in API budget is consumed.
 
 The program will then prompt the database for all data sets that match the search characteristic (default value is set to the current date.) These data points will then have a Google Maps marker placed on their respective locations. The dispatcher can then select a certain drone and view the related data received from the Remote ID. Drones will populate the list in the reverse order they were detected, with the most recent drones appearing first.
 
 For the website to be accessible at all times, it will need to be hosted on a machine that doesn't turn off. The team has asked the campus police to use a server on their server rack, but due to policies put into place by the FBI and TBI only specific personnel are allowed to access those servers. The team made the decision to host both the website and database off of the raspberry pi 5.
 
 ## Analysis
-The team chose the raspberry pi 5 due to it's 2.4 Hz quad core processor which will have more than enough power to maintain and organize both a database and website. The pi 5 also has a micro sd card slot allowing it to be expanded in case of more storage needing to be added. The 5 pi has both a bluetooth 5.0 and dual band Wi-fi module which is perfect for picking up drones. In short the team believes that the pi 5 will perfectly encompass the constraints give. All info listed here can be found within this [link](https://datasheets.raspberrypi.com/rpi5/raspberry-pi-5-product-brief.pdf).
+The team chose the raspberry pi 5 due to it's 2.4 Hz quad core processor which will have more than enough power to maintain and organize both a database and website. The pi 5 also has a micro sd card slot allowing it to be expanded in case of more storage needing to be added. The 5 pi has both a bluetooth 5.0 and dual band Wi-fi module which is perfect for picking up drones. In short the team believes that the pi 5 will perfectly encompass the constraints give.[^4]
 
 ### Interactions With Other Subsystems
-The website subsystem will only directly interact with the database. The website will take the processed data from the database and will update the on screen information as needed. The website will also have to ablity to send info to the database, updating the autheraztion status of a selected drone.
+The website subsystem will only directly interact with the database. The website will take the processed data from the database and will update the on screen information as needed. The website will also have to ablity to send info to the database, updating the authorization status of a selected drone.
 
 ## BOM
 | Item     | Part Number | Quantity | Price/Unit     | Total Cost |
@@ -68,5 +68,7 @@ The website subsystem will only directly interact with the database. The website
 *The price and total for Google Maps API Access is so low due to Google allowing users to have $200 worth of map usage which is 30,000 map loads. The team only expects around 500 loads per month which is under that amount.
 
 ## References
-[^1]: (https://mapsplatform.google.com/pricing/)
-[^2]: (https://developers.google.com/maps/documentation/javascript/usage-and-billing)
+[^1]: (https://github.com/TnTech-ECE/S24_Team1_DroneTracker/blob/main/Documentation/Signoffs/Website_System.md)
+[^2]: (https://mapsplatform.google.com/pricing/)
+[^3]: (https://developers.google.com/maps/documentation/javascript/usage-and-billing)
+[^4]: (https://datasheets.raspberrypi.com/rpi5/raspberry-pi-5-product-brief.pdf)
