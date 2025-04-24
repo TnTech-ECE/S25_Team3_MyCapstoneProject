@@ -36,15 +36,14 @@ Below are several images of the 3D models for both the interior and exterior she
 
 ## Bill of Materials
 
-| Component | Description | Manufacturer | Distributor | Qty | Unit Price | Total  |
-|-----|-----|-----|-----|-----|-----|-----|
-| PETG Filament | 1.75 mm White PETG Filament, 1 kg spool | 3DHoJor | Amazon | 1 | $13.99 | $13.99 |
-| 16 mm M2.5 Standoffs | Brass or aluminum standoffs, male-female, M2.5, 16 mm, set of 10 | Unicorp | Amazon | 1 | $3.00 | $3.00 |
-| M2.5 screws | 16 mm M2.5 screws, 50 piece pack | Generic | Amazon | 1 | $2.10 | $2.10 |
-| Waterproof Sealant | Silicone or urethane sealant for plastic enclosure seams | GE | Amazon | 1 | $7.78 | $7.78 |
-| Weatherproof Grommets | IP65 Cable Glands / Grommets (for Cat 6 cable), pack of 6 | Gunovy | Amazon | 1 | $6.99 | $6.99 |
-| Total Before Tax |  |  |  |  |  | $33.86 |
-| **Total After Tax** |  |  |  |  |  | **$36.91**|
+| Component | Description | Manufacturer | Distributor | Part No. | Qty | Unit Price | Total  | URL |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| PETG Filament | 1.75 mm White PETG Filament, 1 kg spool | 3DHoJor | Amazon | B0C1RHGJ2M | 1 | $13.99 | $13.99 | [Link](https://www.amazon.com/3DHoJor-Filament-Printing-Dimensional-Stringing/dp/B0C1RHGJ2M/ref=sr_1_2_sspa?crid=3G10FWO5TJ3FT&dib=eyJ2IjoiMSJ9.BwJ9sOUnwVQyg2XOdLPHw55Wy34__Z9ThiAp_xy_Zw4Ei3iBpkQKOnpMer4fMSi1M_QC1h8YFV_yIrxNymwDCSzi2GVYQsiSHGZG2QlD0HDnwjrS3CmLEr2zL3Mj_AEJrpZORQQ-8LnnceSC_AsvLmXKkBK1cgnbZPsQml_MZ-b1xm8BfMfaO-bsZSLUa--6zElOY-UL7lcvWVpzGLLZzSth24xyJUZfrit-QRXxNT8.2AHNmJ06m5A0CkH9ZNVAMBgaXs8A-hjBjigpYy6Ho9s&dib_tag=se&keywords=1.75%2Bmm%2BWhite%2BPETG%2BFilament%2C%2B1%2Bkg%2Bspool&qid=1745115995&sprefix=1.75%2Bmm%2Bwhite%2Bpetg%2Bfilament%2C%2B1%2Bkg%2Bspool%2Caps%2C118&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1) |
+| 16 mm M2.5 Standoffs | Brass or aluminum standoffs, male-female, M2.5, 16 mm, set of 10 | Unicorp | Amazon | MP431-M03-F21 | 1 | $3.00 | $3.00 | [Link](https://www.amazon.com/UNICORP-MP431-M03-F21-M2-5-Female-Threaded-Standoff/dp/B017976IX4/ref=sr_1_1?crid=3CEZCX449NDRE&dib=eyJ2IjoiMSJ9.YnZDHLrsUmTs6zhZx3j21swj5q6loGx8tegW3xn2_AzRBb1l34w3IOhsJtPv8y3YOHvzx9KG7NNo8lGJOHcXBxIXT1h_3hKLSFJuqDV7yDEnnzGaODDgKGhxAv7lpm-Rn3ieR4VDrrdvk5TztC0gpYr_JvQ1vTv1SUwoe6mey5Rhi6XFEVDESQkP7aWC3_9PUZJYI9390G3u7FO8__WUU1BVPInd2Hmy9cTSFr7tVVI.w7uNpVIVXVzNq2sJJIselREohLwAOqLPLlGo0J_AEl8&dib_tag=se&keywords=16+mm+M2.5+Standoffs&qid=1745116434&rnid=2661611011&sprefix=16+mm+m2.5+standoffs%2Caps%2C103&sr=8-1) |
+| M2.5 screws | 16 mm M2.5 screws, 50 piece pack | Generic | Amazon | B0DHSRMD9X | 1 | $2.10 | $2.10 | [Link](https://www.amazon.com/Socket-Screws-Thread-Metric-0-45mm/dp/B0DHSRMD9X/ref=sr_1_10?crid=18KSZX9354LVQ&dib=eyJ2IjoiMSJ9.YWpyXSyHmoAIJkxcbw1VgpV5BlZrVBcbmzq5WYZGkzAUEJv_FUmVoY7UCSGfar9xqb9XzTAyITvXmvPrKx5l97Le4A1GFgDgt9TWulKm7EKi8cPXS109Q8YiMHRTB7h6T8h7LIJiHAybbZGM0of96CeeRvj9OIz5_uuWKmEPg4m9jdEXP8E9Jb_jHvAMSiztaBfoa_o3nKxCZYxmAQ4f16FeKYdO-FCYDpOhAQaH2Ag.xvKdJ5gi7XILVlMNHBscnt1xwrmeDLyd7ozMeicbZlU&dib_tag=se&keywords=m2.5+screws&qid=1745117552&sprefix=m2.5+%2Caps%2C151&sr=8-10) |
+| Waterproof Sealant | Silicone or urethane sealant for plastic enclosure seams | GE | Amazon | B0C448QB1K | 1 | $7.78 | $7.78 | [Link](https://www.amazon.com/GE-Advanced-Silicone-Kitchen-Bathroom/dp/B0C448QB1K/ref=sr_1_3?crid=COTAP735BTAS&dib=eyJ2IjoiMSJ9._Ujx0HR-KIDyVH65ttpYIQxtX6CQ2EigpMh4daAX5S58Ig5zZWU0TO4s6_sQ1OBxtcEX0thLOJEEDy4f245Rebz7ZmS2bEd0_9PhTJ-rS0GNLb4KlYNeRRgSiR5U_eeZrB1JPKmozb_yU5eXvCeVHud0hDQ1lG03sBDGH8lTcu6a9aBiumcWXwAsKtsEEjAPk2gSiQGQ3Rt7uE4dWQp24f4TiyTj4HqrSnLan1LXWPk.dfbCTbDFlgKQBuQEDV5BPzY4Dn7ukCUB5o2Mu_cXxo0&dib_tag=se&keywords=waterproof%2Bsealant&qid=1745116674&sprefix=waterproof%2Bsealant%2Caps%2C105&sr=8-3&th=1) |
+| Weatherproof Grommets | IP65 Cable Glands / Grommets (for Cat 6 cable), pack of 6 | Gunovy | Amazon | B0DKXHWSVX | 1 | $6.99 | $6.99 | [Link](https://www.amazon.com/Starlink-Grommets-Waterproof-Organizing-Protecting/dp/B0DKXHWSVX/ref=sr_1_1?crid=34K2IHNHNQ89Z&dib=eyJ2IjoiMSJ9.5TSnWz2aXBGt6Wsth9tRfusF-Tq0Y9TNGgi0WwLrWISzkki2NC9x9_0605p8lOmYmnQZ5W6xTvtK3s457PF82H3r48OFiD0WioLaPVlhVQt_tlhn4p7q0uRpv0TW9MJ1-uQH4qX6rH_8ZOzuqE6LxcCN-BwU2Q6_i5zy4DETNspdMe54PaFnQvYD4Kio1DxdfL8e8CPNQMqWL8elouFGlRPLe0DaNUlU6T25tqSdFAE.zio3JghYG1HfMagrrtO8qMQjAhO2Atx4ArCD_OSUkcg&dib_tag=se&keywords=grommet%2Bfor%2Bcat6%2Bcable&qid=1745116821&sprefix=grommet%2Bfor%2Bcat6%2Bcable%2Caps%2C127&sr=8-1&th=1) |
+| **Total** |  |  |  |  |  | **$33.86** |
 
 ## Analysis
 
