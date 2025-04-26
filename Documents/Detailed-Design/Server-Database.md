@@ -49,6 +49,8 @@ The choice of MySQL as the database management system is rooted in its widesprea
 
 One of the key constraints is ensuring continuity of data flow even during network interruptions. To address this, a 10-minute buffering mechanism is implemented in Python. This decision is a trade-off between memory usage and data reliability. By keeping buffered data in temporary local storage, the system can tolerate short-term outages without impacting data integrity. This approach meets the reliability constraint and ensures the system’s availability under intermittent network conditions.
 
+The Raspberry Pi 5 has sufficient processing power to handle telemetry data incoming from several remote transceivers at the required sample rate. It is equipped with a 2.4 GHz quad-core ARM Cortex-A76 CPU, and is capable of managing high-frequency telemetry from multiple sources.
+
 To download and install package:
 
     wget https://dev.mysql.com/get/mysql-apt-config_0.8.29-1_all.deb
@@ -142,3 +144,4 @@ To create tables in the database:
 
 [4] “Data Indexing Strategies for Faster & Efficient Retrieval | Crown Information Management USA,” Crown Information Management USA, Mar. 19, 2025. https://www.crownrms.com/us/insights/data-indexing-strategies/ (Accessed April 10, 2025).
 
+[5] “Raspberry Pi 5,” 2023. https://datasheets.raspberrypi.com/rpi5/raspberry-pi-5-product-brief.pdf (Accessed April 11, 2025).
