@@ -14,6 +14,9 @@ These constraints were created by the previous team working on this website. The
 |  5 | The website will be constructed to comply with standards put into place by the W3C (World Wide Web Consortium). | Previous Project Team / Previous Supervisor |
 |  6 | The system shall allow campus police to authorize specific drones for permitted flights in a specified time frame. | Previous Project Team |  
 |  7 | The system shall increase the alert's urgency if a drone is detected in any designated geographical region. | Previous Project Team |  
+|  8 | The website shall display all past aurthorized drones from a 30 day span in the drone management tab | Project Team | 
+|  9 | The drone management tab shall allow the user to unaurthorize a done from the list of drones previously authorized | Project Team |
+
 
 <sup>1</sup> For the safety of officers in the field, the campus police department has requested that the obtained Remote ID (RID) data be displayed on a website instead of a mobile application. Concerns were raised about officers using personal mobile devices in the field. The police captain and dispatcher have explicitly stated a preference for a website-based information display. To relay data to officers, a dispatcher will communicate drone information directly to the officer.
 
