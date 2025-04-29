@@ -49,7 +49,7 @@ The choice of MySQL as the database management system is rooted in its widesprea
 
 One of the key constraints is ensuring continuity of data flow even during network interruptions. To address this, a 10-minute buffering mechanism is implemented in Python. This decision is a trade-off between memory usage and data reliability. By keeping buffered data in temporary local storage, the system can tolerate short-term outages without impacting data integrity. This approach meets the reliability constraint and ensures the system’s availability under intermittent network conditions.
 
-The Raspberry Pi 5 has sufficient processing power to handle telemetry data incoming from several remote transceivers at the required sample rate. It is equipped with a 2.4 GHz quad-core ARM Cortex-A76 CPU.
+The Raspberry Pi 5 has sufficient processing power to handle telemetry data incoming from several remote transceivers at the required sample rate. It is equipped with a 2.4 GHz quad-core ARM Cortex-A76 CPU. Each of the four cores can independently execute threads or processes, enabling the system to manage multiple simultaneous TCP connections. The A76 is built to process instructions and tasks in parallel much more effectively. This parallelism is essential for maintaining stable performance when dealing with multiple data streams. 
 
 To download and install package:
 
@@ -149,3 +149,5 @@ To create tables in the database:
 [6] “Telemetry - DJI Onboard SDK Documentation,” Dji.com, 2017. https://developer.dji.com/onboard-sdk/documentation/guides/component-guide-telemetry.html (Accessed Apr. 28, 2025).
 
 [7] “RemoteID Final Rule | Federal Aviation Administration,” Faa.gov, 2021. https://www.faa.gov/newsroom/remoteid-final-rule (Accessed Apr. 28, 2025).
+
+[8] A. Frumusanu, “Arm’s Cortex-A76 CPU Unveiled: Taking Aim at the Top for 7nm,” www.anandtech.com. https://www.anandtech.com/show/12785/arm-cortex-a76-cpu-unveiled-7nm-powerhouse (Accessed Apr. 28, 2025).
