@@ -52,7 +52,7 @@ Attendance: Brett Ballew, Tyler Bare, Mandy Bacon, Erich Krepps, & Gabrielle Ren
 * Update previous website or create our own to display information.
 
 ### Notes to All: 
-Documentation is cool :0
+Documentation is cool :0 <br>
 Cheesy rollups = 180 cal
 
 ### Next Meeting: 
