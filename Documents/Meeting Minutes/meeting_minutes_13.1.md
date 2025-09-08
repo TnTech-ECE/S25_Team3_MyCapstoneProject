@@ -37,9 +37,19 @@ Attendance: Brett Ballew, Tyler Bare, Mandy Bacon, Erich Krepps, & Gabrielle Ren
 * Meeting was scheduled with Dr. Elfouly. 
 
 ### Team Assignments:
-* Brett & Mandy: Get program to detect signal and return useful location data
-* Elle & Tyler: Continue work on the database/server
-* Erich: Make tangible progress on website
+* Brett: Get program to detect signal and return useful location data
+* Mandy: Write script to send captured data to database. 
+* Elle & Tyler: Continue work on the database
+* Erich: Create a rough draft on website compatible with database; merge pull request from last semester
+
+### Future Assignments:
+* Get WiFi version to work, too :)
+* Get wifi-signal detection code to compile on RPi5. 
+* Test that the code is working by having it pick up the signal of the RID emitter and the Parrot drone. 
+* Write a program to extract the useful RID information from the code (name, location). 
+* Figure out how to distinguish drone wifi/bluetooth signals from other wifi/bluetooth signals. 
+* Get password to previous website from Abe. 
+* Update previous website or create our own to display information. 
 
 ### Next Meeting: 
 As it stands, 15SEP2025 1000-1100 with Dr. Elfouly. 
