@@ -53,6 +53,7 @@ Attendance: Brett Ballew, Tyler Bare, Mandy Bacon, Erich Krepps, & Gabrielle Ren
 
 ### Notes to All: 
 Documentation is cool :0
+Cheesy rollups = 180 cal
 
 ### Next Meeting: 
 As it stands, 15SEP2025 1000-1100 with Dr. Elfouly. 
