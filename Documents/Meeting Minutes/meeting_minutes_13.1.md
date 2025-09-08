@@ -49,7 +49,10 @@ Attendance: Brett Ballew, Tyler Bare, Mandy Bacon, Erich Krepps, & Gabrielle Ren
 * Write a program to extract the useful RID information from the code (name, location). 
 * Figure out how to distinguish drone wifi/bluetooth signals from other wifi/bluetooth signals. 
 * Get password to previous website from Abe. 
-* Update previous website or create our own to display information. 
+* Update previous website or create our own to display information.
+
+### Notes to All: 
+Documentation is cool :0
 
 ### Next Meeting: 
 As it stands, 15SEP2025 1000-1100 with Dr. Elfouly. 
