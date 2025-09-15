@@ -24,5 +24,50 @@ Reprogram Pi 1 and figure out RID transmission method for parrot drone.
 
 We need to talk to Elfouly and the Customer soon.
 
-### Next Meeting:
-As it stands: 03SEP2025 1500 to 1600
+## 03SEP2025 1500-1800
+Attendance: Brett Ballew, Tyler Bare, Mandy Bacon, Erich Krepps, & Gabrielle Renfroe
+
+Continued work to reprogram the Raspberry Pi 1. 
+
+## 08SEP2025 1500-1800
+Attendance: Brett Ballew, Tyler Bare, Mandy Bacon, Erich Krepps, & Gabrielle Renfroe
+
+* Basic database was created and a packet was sent to test functionality. 
+* Additional work was done to reprogram the Pi. The program runs but all useful information shows as empty. 
+* Meeting was scheduled with Dr. Elfouly. 
+
+### Team Assignments:
+* Brett: Get program to detect signal and return useful location data
+* Mandy: Write script to send captured data to database. 
+* Elle & Tyler: Continue work on the database
+* Erich: Create a rough draft on website compatible with database; merge pull request from last semester
+
+### Future Assignments:
+* Get WiFi version to work, too :)
+* Get wifi-signal detection code to compile on RPi5. 
+* Test that the code is working by having it pick up the signal of the RID emitter and the Parrot drone. 
+* Write a program to extract the useful RID information from the code (name, location). 
+* Figure out how to distinguish drone wifi/bluetooth signals from other wifi/bluetooth signals. 
+* Get password to previous website from Abe. 
+* Update previous website or create our own to display information.
+
+### Notes to All: 
+Documentation is cool :0 <br>
+Cheesy rollups = 180 cal
+
+### Next Meeting: 
+As it stands, 15SEP2025 1000-1100 with Dr. Elfouly. 
+
+## 15SEP2025 1000-1100
+Attendance: Brett Ballew, Tyler Bare, Mandy Bacon, Erich Krepps, Gabrielle Renfroe, Dr. Tarek Elfouly
+
+* Got Dr. Elfouly caught up on progress.
+* Real time demo of capture, database, and website working.
+* Attempted to get drone to fly. 
+
+### Future Assignments:
+* Get the Parrot Anafi Ai drone to actually fly.
+* Get data from bluetooth capture to send and store in database.
+* Start on wifi capture.
+* Continue progress on database and website. 
+
