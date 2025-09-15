@@ -29,7 +29,7 @@ Attendance: Brett Ballew, Tyler Bare, Mandy Bacon, Erich Krepps, & Gabrielle Ren
 
 Continued work to reprogram the Raspberry Pi 1. 
 
-## 08SEP2025 1500-
+## 08SEP2025 1500-1800
 Attendance: Brett Ballew, Tyler Bare, Mandy Bacon, Erich Krepps, & Gabrielle Renfroe
 
 * Basic database was created and a packet was sent to test functionality. 
@@ -57,3 +57,16 @@ Cheesy rollups = 180 cal
 
 ### Next Meeting: 
 As it stands, 15SEP2025 1000-1100 with Dr. Elfouly. 
+
+## 15SEP2025 1000-1100
+Attendance: Brett Ballew, Tyler Bare, Mandy Bacon, Erich Krepps, Gabrielle Renfroe, Dr. Tarek Elfouly
+
+* Got Dr. Elfouly caught up on progress.
+* Real time demo of capture, database, and website working.
+* Attempted to get drone to fly. 
+
+### Future Assignments:
+* Get the Parrot Anafi Ai drone to actually fly.
+* Get data from bluetooth capture to send and store in database.
+* Start on wifi capture.
+* Continue progress on database and website. 
