@@ -1,0 +1,24 @@
+## 29SEP2025 1000-1100
+Attendance: Brett Ballew, Tyler Bare, Mandy Bacon, Erich Krepps, Gabrielle Renfroe, Dr. Tarek Elfouly
+
+* Updated Dr. Elfouly on progress made.
+* Researched solutions for wifi monitoring road block.
+
+## 1OCT2025 1500-1600
+Attendance: Brett Ballew, Tyler Bare, Mandy Bacon, Erich Krepps, Gabrielle Renfroe, Dr. Storm Johnson
+
+* Updated Dr. Johnson on progress made.
+* Received information about future assignments and documentation. 
+
+## 6OCT2025 1000-1100
+Attendance: Brett Ballew, Tyler Bare, Mandy Bacon, Erich Krepps, Gabrielle Renfroe, Dr. Tarek Elfouly
+
+* Updated Dr. Elfouly on progress made.
+* Discussed the need to get monitor mode working as soon as possible.
+* Tried rebooting RPi4 with Nexmon installation. 
+
+### Future Assignments
+Erich: Get ESP32 up and running. <br>
+Tyler: Make Excel sheet documenting all our components. <br>
+Elle: Paint the chassis. <br>
+Mandy & Brett: Get monitor mode working on RPi4. 
