@@ -21,5 +21,13 @@ Attendance: Brett Ballew, Mandy Bacon, Gabrielle Renfroe, Dr. Tarek Elfouly
       • Could run a Python program simultaneously to read text output from terminal. <br>
       • Might be able to edit where text gets output, using socat instead of writing to terminal. <br>
 
+## 13OCT2025 1000-1100
+Attendance: Brett Ballew, Tyler Bare, Mandy Bacon, Erich Krepps, Gabrielle Renfroe, Dr. Tarek Elfouly
+
+* Updated Dr. Elfouly on progress made.
+* Discussed the possibility of using a websocket to send the data to the server. 
+
 ### Future Assignments
-Brett: Make a copy of the SD card, so we don't mess anything up...
+Brett: Make a copy of the SD card, so we don't mess anything up...  
+Mandy: Research websockets or find other solution to real time data transfer problem.   
+Tyler, Elle, Erich: Take care of documentation.   
