@@ -1,18 +1,10 @@
-# Experimental Analysis Report
+# <div align="center"> Drone Tracker Experimental Analysis
+#### <div align="center"> Amanda Bacon, Tyler Bare, Brett Ballew, Gabrielle Krepps, Erich Krepps
+<div align="center"> Department of Electrical and Computer Engineering <br>
+Tennessee Technological University
+<div align="left">
 
-**Course:** ECE 3710 — Experimental Analysis  
-**Project Title:** Drone Tracker System  
-**Institution:** Tennessee Technological University  
-**Semester:** Fall 2025  
-**Team Members:**  
-- [Name 1]  
-- [Name 2]  
-- [Name 3]  
-- [Name 4]  
-- [Name 5]  
-
----
-
+  
 ## Experiment 1: [Experiment Title Here]
 
 ### Purpose and Justification
@@ -119,11 +111,11 @@ All components ordered, borrowed, or assigned are listed below. Each item includ
 
 | **Experiment #** | **Items Used** | **Condition Changes (if any)** | **Notes** |
 |:-----------------:|----------------|-------------------------------|-----------|
-| 1 | Items #001, #002, #004 | None | Verified basic SDR setup and network scan |
-| 2 | Items #003, #007 | None | Zigbee and antenna test completed successfully |
-| 3 | Items #008, #009, #010 | None | PoE power analysis performed |
-| 4 | Items #004, #005 | None | Connector soldering and signal verification |
-| 5 | Items #012, #014 | None | Final assembly and chassis integration |
+| 1 | Items #001, #002, #004 | None | N/A |
+| 2 | Items #003, #007 | None | N/A |
+| 3 | Items #008, #009, #010 | None | N/A |
+| 4 | Items #004, #005 | None | N/A |
+| 5 | Items #012, #014 | None | N/A |
 
 ---
 
@@ -138,19 +130,12 @@ At the end of the semester:
 
 ## Statement of Contributions
 
-Each team member must contribute meaningfully to the experimental analysis and document their contributions clearly below.  
+Amanda Bacon: ...
 
-Each team member should describe **their own work** — no one may complete this section on another’s behalf.  
-By submitting this report, the team certifies that the contributions are accurate and complete.
+Tyler Bare: ...
 
-| **Team Member** | **Experiment Design** | **Execution / Data Collection** | **Data Analysis** | **Report Writing** |
-|:----------------|:----------------------|:-------------------------------|:------------------|:-------------------|
-| [Name 1] | [Description] | [Description] | [Description] | [Description] |
-| [Name 2] | [Description] | [Description] | [Description] | [Description] |
-| [Name 3] | [Description] | [Description] | [Description] | [Description] |
-| [Name 4] | [Description] | [Description] | [Description] | [Description] |
-| [Name 5] | [Description] | [Description] | [Description] | [Description] |
+Brett Ballew: ...
 
----
+Gabrielle Krepps: ...
 
-**End of Report**
+Erich Krepps: ...
