@@ -15,20 +15,20 @@ All components ordered, borrowed, or assigned are listed below. Each item includ
 
 | **Item #** | **Description** | **Quantity** | **Vendor / Source** | **Order # / ID** | **Storage Location (Lab Station / Box #)** | **Date Acquired** | **Condition (New / Used)** | **Notes (Experiment Used, Damaged, Returned)** |
 |:-----------:|----------------|:-------------:|---------------------|------------------|--------------------------------------------|-------------------|----------------------------|------------------------------------------------|
-| 001 | GeeekPi nRF52840 Micro Dev Kit USB Dongle | 1 | Amazon | B07MJ12XLG | Lab Station 1 / Box A | ASAP | New | Used in SDR Interface Testing |
-| 002 | JAPOO W50L-5DB WiFi Adapter | 1 | Amazon | B0DBLL14NP | Lab Station 1 / Box A | ASAP | New | Used for Wi-Fi Signal Capture |
-| 003 | SONOFF Zigbee 3.0 USB Dongle Plus-E Gateway | 1 | Amazon | B06P22YJC | Lab Station 1 / Box B | ASAP | New | Used in Zigbee Node Testing |
-| 004 | SanDisk 128GB Ultra microSDXC | 1 | Amazon | B07NYT2S6 | Lab Station 1 / Box B | ASAP | New | OS Storage for Raspberry Pi 5 |
-| 005 | DHT Electronics Socket Jack Female RF Coaxial Connector | 1 | Amazon | B00CXC0SZ4 | Lab Station 1 / Box C | 8/15/2025 | New | Used in Antenna Connector Assembly |
-| 006 | Jadaol Cat6 Ethernet Cable (50 ft) | 1 | Amazon | B00MWD17GQ | Lab Station 1 / Box D | 8/15/2025 | New | Used in PoE Testing Setup |
-| 007 | UeeKKoo ORD-CMA-Antenna | 1 | Amazon | B0D4MKJHXJ | Lab Station 2 / Box E | 8/15/2025 | New | Used in Drone Antenna Simulation |
-| 008 | Waveshare PoE HAT for Raspberry Pi | 1 | Amazon | B0928ZD7QQ | Lab Station 2 / Box F | 8/15/2025 | New | Used in Pi 5 PoE Power Testing |
-| 009 | ThePoEStore Single Port PoE Injector | 1 | Amazon | B07V24C4M8 | Lab Station 2 / Box F | 8/15/2025 | New | Used in PoE Power Delivery Testing |
-| 010 | YDDECW 14/2 UF-B Cable (25 ft) | 1 | Amazon | B0DF2Q5LGX | Lab Station 3 / Box G | 8/15/2025 | New | Used for AC/DC Power Simulation |
-| 011 | Amazon Basics Ethernet Cable (10 ft) | 1 | Amazon | B00N2VIALK | Lab Station 3 / Box G | 8/15/2025 | New | Used in Network Interconnects |
-| 012 | GE All Purpose Silicone Caulk - 100% Waterproof Sealant | 1 | Amazon | B08QPH3RW | Lab Station 4 / Toolbox | 8/15/2025 | New | Used for Weatherproofing Enclosure |
-| 013 | TTU Printing Services Drone Tracker Chassis Decal | 2 | TTU Printing Services | N/A | Lab Station 4 / Binder | 8/15/2025 | New | Used for Project Labeling |
-| 014 | UCTRONICS PoE Hat for Raspberry Pi 5 | 1 | Amazon | B0DBHFQ1TC | Lab Station 2 / Box F | 8/15/2025 | New | Replaced failed PoE HAT (F) unit |
+| 1 | GeeekPi nRF52840 Micro Dev Kit USB Dongle | 1 | Amazon | B07MJ12XLG | ? | 8/15/2025 | New | Used in SDR Interface Testing |
+| 2 | JAPOO W50L-5DB WiFi Adapter | 1 | Amazon | B0DBLL14NP | ? | 8/15/2025 | New | Used for Wi-Fi Signal Capture |
+| 3 | SONOFF Zigbee 3.0 USB Dongle Plus-E Gateway | 1 | Amazon | B06P22YJC | ? | 8/15/2025 | New | Used in Zigbee Node Testing |
+| 4 | SanDisk 128GB Ultra microSDXC | 1 | Amazon | B07NYT2S6 | ? | 8/15/2025 | New | OS Storage for Raspberry Pi 5 |
+| 5 | DHT Electronics Socket Jack Female RF Coaxial Connector | 1 | Amazon | B00CXC0SZ4 | ? | 8/15/2025 | New | Used in Antenna Connector Assembly |
+| 6 | Jadaol Cat6 Ethernet Cable (50 ft) | 1 | Amazon | B00MWD17GQ | ? | 8/15/2025 | New | Used in PoE Testing Setup |
+| 7 | UeeKKoo ORD-CMA-Antenna | 1 | Amazon | B0D4MKJHXJ | ? | 8/15/2025 | New | Used in Drone Antenna Simulation |
+| 8 | Waveshare PoE HAT for Raspberry Pi | 1 | Amazon | B0928ZD7QQ | ? | 8/15/2025 | New | Used in Pi 5 PoE Power Testing |
+| 9 | ThePoEStore Single Port PoE Injector | 1 | Amazon | B07V24C4M8 | ? | 8/15/2025 | New | Used in PoE Power Delivery Testing |
+| 10 | YDDECW 14/2 UF-B Cable (25 ft) | 1 | Amazon | B0DF2Q5LGX | ? | 8/15/2025 | New | Used for AC/DC Power Simulation |
+| 11 | Amazon Basics Ethernet Cable (10 ft) | 1 | Amazon | B00N2VIALK | ? | 8/15/2025 | New | Used in Network Interconnects |
+| 12 | GE All Purpose Silicone Caulk - 100% Waterproof Sealant | 1 | Amazon | B08QPH3RW | ? | 8/15/2025 | New | Used for Weatherproofing Enclosure |
+| 13 | TTU Printing Services Drone Tracker Chassis Decal | 2 | TTU Printing Services | N/A | ? | 10/1/2025 | New | Used for Project Labeling |
+| 14 | UCTRONICS PoE Hat for Raspberry Pi 5 | 1 | Amazon | B0DBHFQ1TC | ? | ? | New | Replaced failed PoE HAT (F) unit |
 
 ---
 
