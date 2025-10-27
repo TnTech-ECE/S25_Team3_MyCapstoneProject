@@ -20,6 +20,8 @@ Ensure another team could replicate your work using only this description.
 State the hypothesis or expected outcomes **before** running the experiment.  
 Include relevant equations, signal characteristics, or theoretical predictions.
 
+I expect the system to be able to track a drone on campus. Also, it should be able to display the location and information on the website.
+
 ### Actual Results
 Present your collected data clearly.  
 You can use:
