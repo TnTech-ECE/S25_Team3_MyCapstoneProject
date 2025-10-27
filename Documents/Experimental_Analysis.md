@@ -1,5 +1,5 @@
 # <div align="center"> Drone Tracker Experimental Analysis
-#### <div align="center"> Amanda Bacon, Tyler Bare, Brett Ballew, Gabrielle Krepps, Erich Krepps
+#### <div align="center"> Amanda Bacon, Tyler Bare, Brett Ballew, Gabrielle Renfroe, Erich Krepps
 <div align="center"> Department of Electrical and Computer Engineering <br>
 Tennessee Technological University
 <div align="left">
