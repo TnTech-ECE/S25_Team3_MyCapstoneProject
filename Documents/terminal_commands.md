@@ -1,7 +1,12 @@
 ## Running the Capture Program
 1. Enter the desired folder: cd Downloads/unix_rid_capture (I think... double check file path)
 2. Compile any helper programs that have been updated: g++ -o data_forwarder data_forwarder.cpp
-3. Run one of the following lines to start scan:
+3. Prep system for monitor mode:
+    sudo airmon-ng check kill  
+    sudo airmon-ng start wlan0  
+    sudo airodump-ng wlan0mon  
+    sudo iw dev wlan0mon set channel 6  
+5. Run one of the following lines to start scan (last one recommended):
 * To run just the bluetooth capture: sudo ./rid_capture -w bluetooth-monitor -x
 * To run the bluetooth capture with data forwarder: sudo ./rid_capture -w bluetooth-monitor -x | python3 forward_rid.py
 * To run the wifi and bluetooth capture: sudo ./rid_capture -x wlan1 -w wlan0mon
