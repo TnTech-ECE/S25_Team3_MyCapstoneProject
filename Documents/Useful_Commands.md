@@ -17,6 +17,17 @@ cd projects/drone_server
 gcc -o drone_server server.c -lpthread -lsqlite3  
 ./drone_server
 
+## Database Commands
+
+#### Clearing the table
+DROP TABLE drone_packets;
+DROP TABLE telemetry;
+Then rerun the server to create a new database
+
+#### View the Table
+SELECT* FROM drone_packets;
+SELECT* FROM telemetry;
+
 ## More Useful Commands
 * To disable ethernet prioritization: sudo ip route del default dev eth0
 * To see wifi networks: nmcli dev wifi
