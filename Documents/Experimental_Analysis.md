@@ -68,12 +68,9 @@ Include detailed reasoning supported by your data.
 
 ## Summary of Experimental Outcomes
 
-Summarize the results of all experiments collectively.  
-State whether your experiments **demonstrated that the project meets its original success criteria** as outlined in your conceptual design.  
+Overall, the experimental results collectively demonstrate that the system functions as intended: it reliably detects drones operating within range of the Raspberry Pi unit, retrieves their geolocation and identifying RID data, stores this information on a central server, and uploads it to a secure website where Tennessee Tech campus police are alerted when new drones appear and can view their positions on a map. Testing confirmed that the detection and reporting pipeline is consistent and accurate, though a noticeable delay exists between initial detection and server-side display. As anticipated during the design phase, expanding coverage across the entire TTU campus will require a network of multiple Raspberry Pis to ensure continuous detection and minimize blind spots. 
 
-If **success criteria were not met**, provide a clear explanation of why and what steps could be taken for improvement (e.g., design modification, component replacement, or calibration issues).
-
----
+This section evaluates how effectively the final drone tracking system met the specifications and constraints established at the beginning of the project. The requirements provided by the TTU campus police department formed the foundation for the system’s functional goals, and the legal and ethical constraints guided the design decisions throughout development. As detailed in the following subsections, the completed system meets the intent of the required specifications and operates within the stated constraints. Each specification is addressed individually, with justification and performance evidence provided to demonstrate to what extent the implemented system fulfills the original project objectives.
 
 ## Documenting and Tracking Components
 
