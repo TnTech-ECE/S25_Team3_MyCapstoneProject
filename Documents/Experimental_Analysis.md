@@ -77,15 +77,6 @@ If **success criteria were not met**, provide a clear explanation of why and wha
 
 ## Documenting and Tracking Components
 
-Each team must maintain a complete and accurate record of all components acquired or assigned during the semester.  
-This will be **strictly enforced** — component tracking is **not optional**.  
-Failure to keep a complete and accurate inventory will result in **automatic failure** of the Experimental Analysis report.  
-
-At the end of the semester, **all items must be accounted for** and **stations must be clean**.  
-Missing items or incomplete records will be treated as a failure to meet critical project requirements.
-
----
-
 ### Initial Inventory
 
 All components ordered, borrowed, or assigned are listed below. Each item includes vendor/source, order ID, cost, and assigned storage location.
