@@ -116,8 +116,6 @@ All components ordered, borrowed, or assigned are listed below. Each item includ
 | 1 | Items #001, #002, #004 | None | N/A |
 | 2 | Items #003, #007 | None | N/A |
 | 3 | Items #008, #009, #010 | None | N/A |
-| 4 | Items #004, #005 | None | N/A |
-| 5 | Items #012, #014 | None | N/A |
 
 ---
 
