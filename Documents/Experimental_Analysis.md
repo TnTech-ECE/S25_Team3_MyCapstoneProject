@@ -217,7 +217,7 @@ All components ordered, borrowed, or assigned are listed below. Each item includ
 
 ## Statement of Contributions
 
-Amanda Bacon: ...
+Amanda Bacon: Summary of Experimental Outcomes
 
 Tyler Bare: Initial Inventory, Usage Tracking
 
