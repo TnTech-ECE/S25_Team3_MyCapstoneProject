@@ -80,10 +80,10 @@ All components ordered, borrowed, or assigned are listed below. Each item includ
 
 | **Item #** | **Description** | **Quantity** | **Vendor / Source** | **Order # / ID** | **Storage Location (Lab Station / Box #)** | **Date Acquired** | **Condition (New / Used)** | **Notes (Experiment Used, Damaged, Returned)** |
 |:-----------:|----------------|:-------------:|---------------------|------------------|--------------------------------------------|-------------------|----------------------------|------------------------------------------------|
-| 001 | GeeekPi nRF52840 Micro Dev Kit USB Dongle | 1 | Amazon | B07MJ12XLG | ? | ASAP | New | Used in SDR Interface Testing |
-| 002 | JAPOO W50L-5DB WiFi Adapter | 1 | Amazon | B0DBLL14NP | ? | ASAP | New | Used for Wi-Fi Signal Capture |
-| 003 | SONOFF Zigbee 3.0 USB Dongle Plus-E Gateway | 1 | Amazon | B06P22YJC | ? | ASAP | New | Used in Zigbee Node Testing |
-| 004 | SanDisk 128GB Ultra microSDXC | 1 | Amazon | B07NYT2S6 | ? | ASAP | New | OS Storage for Raspberry Pi 5 |
+| 001 | GeeekPi nRF52840 Micro Dev Kit USB Dongle | 1 | Amazon | B07MJ12XLG | ? | 8/15/2025 | New | Used in SDR Interface Testing |
+| 002 | JAPOO W50L-5DB WiFi Adapter | 1 | Amazon | B0DBLL14NP | ? | 8/15/2025 | New | Used for Wi-Fi Signal Capture |
+| 003 | SONOFF Zigbee 3.0 USB Dongle Plus-E Gateway | 1 | Amazon | B06P22YJC | ? | 8/15/2025 | New | Used in Zigbee Node Testing |
+| 004 | SanDisk 128GB Ultra microSDXC | 1 | Amazon | B07NYT2S6 | ? | 8/15/2025 | New | OS Storage for Raspberry Pi 5 |
 | 005 | DHT Electronics Socket Jack Female RF Coaxial Connector | 1 | Amazon | B00CXC0SZ4 | ? | 8/15/2025 | New | Used in Antenna Connector Assembly |
 | 006 | Jadaol Cat6 Ethernet Cable (50 ft) | 1 | Amazon | B00MWD17GQ | ? | 8/15/2025 | New | Used in PoE Testing Setup |
 | 007 | UeeKKoo ORD-CMA-Antenna | 1 | Amazon | B0D4MKJHXJ | ? | 8/15/2025 | New | Used in Drone Antenna Simulation |
