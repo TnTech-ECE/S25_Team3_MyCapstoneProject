@@ -94,6 +94,8 @@ All components ordered, borrowed, or assigned are listed below. Each item includ
 | 012 | TTU Printing Services Drone Tracker Chassis Decal | 2 | TTU Printing Services | N/A | ? | 8/15/2025 | New | Used for Project Labeling |
 | 013 | UCTRONICS PoE Hat for Raspberry Pi 5 | 1 | Amazon | B0DBHFQ1TC | ? | 8/15/2025 | New | Replaced failed PoE HAT (F) unit |
 | 014 | Waterproof Chassis Enclosure (Project Box) | 1 | Provided by Customer | N/A | ? | 8/15/2025 | New | Provided at no cost by customer; used as main system enclosure |
+| 015 | Raspberry Pi 5 (8GB) | 1 | TTU ECE Dept | N/A | ? | 8/15/2025 | New | Main processing unit for Drone Tracker |
+| 016 | Raspberry Pi 5 (8GB) | 1 | TTU ECE Dept | N/A | ? | 8/15/2025 | New | Server/Website |
 
 ---
 
@@ -101,9 +103,9 @@ All components ordered, borrowed, or assigned are listed below. Each item includ
 
 | **Experiment #** | **Items Used** | **Condition Changes (if any)** | **Notes** |
 |:-----------------:|----------------|-------------------------------|-----------|
-| 1 | Items #001, #002, #004 | None | N/A |
-| 2 | Items #003, #007 | None | N/A |
-| 3 | Items #008, #009, #010 | None | N/A |
+| 1 | Items #006, #009, #011, #013, #012, #014, #015, #016  | None | N/A |
+| 2 | Items #006, #009, #011, #013, #012, #014, #015, #016  | None | N/A |
+| 3 | Items #006, #009, #011, #013, #012, #014, #015, #016  | None | N/A |
 
 ---
 
