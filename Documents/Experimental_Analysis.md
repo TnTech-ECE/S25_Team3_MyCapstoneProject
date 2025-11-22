@@ -63,44 +63,41 @@ Ahead of testing, expectations were:
 - The system should be capable of reliably detecting RID-equipped drones on campus and displaying them on the website.
 
 ### Actual Results
-Bluetooth RID Detection
-Distance	Detected	Detection Time
-5m	Yes	2.21 s
-10m	Yes	2.30 s
-20m	Yes	2.30 s
-50m	Yes	4.02 s
-100m	Yes	8.32 s
-150m	Yes	20.14 s
-200m	No	N/A
-Wi-Fi RID Detection
-Distance	Detected	Detection Time
-5m	Yes	2.27 s
-10m	Yes	2.29 s
-20m	Yes	2.32 s
-50m	Yes	3.89 s
-100m	Yes	4.10 s
-150m	Yes	12.28 s
-200m	Yes	12.40 s
-300m	Yes	16.93 s
-600m	Yes	24.67 s
-1000m	No	N/A
+
+#### Bluetooth RID Detection
+| Distance | Detected | Detection Time |
+|:--------:|:--------:|:---------------:|
+| 5m       | Yes      | 2.21 s          |
+| 10m      | Yes      | 2.30 s          |
+| 20m      | Yes      | 2.30 s          |
+| 50m      | Yes      | 4.02 s          |
+| 100m     | Yes      | 8.32 s          |
+| 150m     | Yes      | 20.14 s         |
+| 200m     | No       | N/A             |
+
+#### Wi-Fi RID Detection
+| Distance | Detected | Detection Time |
+|:--------:|:--------:|:----------------:|
+| 5m       | Yes      | 2.27 s           |
+| 10m      | Yes      | 2.29 s           |
+| 20m      | Yes      | 2.32 s           |
+| 50m      | Yes      | 3.89 s           |
+| 100m     | Yes      | 4.10 s           |
+| 150m     | Yes      | 12.28 s          |
+| 200m     | Yes      | 12.40 s          |
+| 300m     | Yes      | 16.93 s          |
+| 600m     | Yes      | 24.67 s          |
+| 1000m    | No       | N/A              |
 
 ### Interpretation and Conclusions
 
 - Wi-Fi RID significantly outperformed Bluetooth in range, remaining detectable up to 600 meters, whereas Bluetooth detection ended around 150–180 meters.
-
 - Detection latency increased with distance, consistent with reduced signal strength.
-
   - At close range, both protocols detected in ~2.2–2.3 seconds.
-
   - At long range, Wi-Fi detection reached ~25 seconds at 600m.
-
 - The system successfully detected both Bluetooth and Wi-Fi RID signals, supporting the core requirement for drone tracking.
-
 - Bluetooth RID is not suitable for long-range campus coverage, but it works well at short to mid-range.
-
 - Wi-Fi RID is effective for campus-scale monitoring, validating its use as the system’s primary detection method.
-
 - Elevating the receiver (50 ft up) clearly improved performance; further elevation or directional antennas could extend coverage even more.
   
 ## Experiment 2: [Experiment Title Here]
