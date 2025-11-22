@@ -121,20 +121,11 @@ All components ordered, borrowed, or assigned are listed below. Each item includ
 
 ---
 
-### Final Inventory Check
-
-At the end of the semester:
-- All components listed above must be returned, properly stored, and accounted for.  
-- Lab stations and storage boxes must be **clean and organized**.  
-- Missing items or incomplete documentation will result in **automatic failure** of the Experimental Analysis report.
-
----
-
 ## Statement of Contributions
 
 Amanda Bacon: ...
 
-Tyler Bare: Initial Inventory, Usage Tracking, Final Inventory Check 
+Tyler Bare: Initial Inventory, Usage Tracking
 
 Brett Ballew: ...
 
