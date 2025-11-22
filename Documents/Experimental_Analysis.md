@@ -4,8 +4,106 @@
 Tennessee Technological University
 <div align="left">
 
+
+## Experiment 1: Range and Detection Latency of Wi-Fi & Bluetooth Drone RID Signals
+
+
+### Purpose and Justification
+
+This experiment was designed to evaluate how well the drone-tracking system detects Remote ID (RID) signals broadcast over Bluetooth and Wi-Fi, and how quickly detection occurs at various distances.
+
+This aligns with the project’s critical success criteria:
+
+- The system must track a drone on campus using its RID signal.
+- The system must display the drone’s ID and location data on the website.
+- The system must demonstrate sufficient range, signal reliability, and detection latency for real-time campus-scale tracking.
+
+This experiment validates the RF receiver hardware, RID-processing pipeline, and backend detection logic.
+
+### Detailed Procedure
+
+#### System Setup
+
+- The receiver hardware and software were installed at the Tucker Stadium announcer’s box, approximately 50 ft above ground level.
+- The system was configured to continuously scan for:
+  - Bluetooth RID packets from aftermarket transmitters.
+  - Wi-Fi RID beacons on channel 6 (used by the Parrot Anafi AI drone).
+
+#### Transmitters Used
+
+- Bluetooth RID: Aftermarket Potensic Bluetooth RID transmitter.
+- Wi-Fi RID: Parrot Anafi AI drone (flight disabled; RID active only).
+
+#### Testing Process
+
+- Two team members walked away from the stadium in a straight line:
+  - One carried the Bluetooth RID transmitter.
+  - The other carried the Parrot Anafi AI emitting Wi-Fi RID.
+- Distances were pre-marked:
+  - Bluetooth: 5m → 200m
+  - Wi-Fi: 5m → 1000m
+- At each distance:
+  - The transmitter was held stationary.
+  - The team waited for the system to detect the RID signal.
+  - Detection time was recorded from arrival to first logged RID packet.
+  - If no detection occurred, it was recorded as N/A.
+
+#### Data Collection
+
+- All detections were verified using the system’s backend logs.
+- Data was recorded in tabular form (shown below).
+
+### Expected Results
+
+Ahead of testing, expectations were:
+
+- Wi-Fi RID (higher power and modulation robustness) should exceed Bluetooth in detection range.
+- Bluetooth RID expected to be reliable at short to moderate distances (up to ~150–200m).
+- Detection times should be fastest at close range (≈2–5 seconds) and increase with distance.
+- The system should be capable of reliably detecting RID-equipped drones on campus and displaying them on the website.
+
+### Actual Results
+Bluetooth RID Detection
+Distance	Detected	Detection Time
+5m	Yes	2.21 s
+10m	Yes	2.30 s
+20m	Yes	2.30 s
+50m	Yes	4.02 s
+100m	Yes	8.32 s
+150m	Yes	20.14 s
+200m	No	N/A
+Wi-Fi RID Detection
+Distance	Detected	Detection Time
+5m	Yes	2.27 s
+10m	Yes	2.29 s
+20m	Yes	2.32 s
+50m	Yes	3.89 s
+100m	Yes	4.10 s
+150m	Yes	12.28 s
+200m	Yes	12.40 s
+300m	Yes	16.93 s
+600m	Yes	24.67 s
+1000m	No	N/A
+
+### Interpretation and Conclusions
+
+- Wi-Fi RID significantly outperformed Bluetooth in range, remaining detectable up to 600 meters, whereas Bluetooth detection ended around 150–180 meters.
+
+- Detection latency increased with distance, consistent with reduced signal strength.
+
+  - At close range, both protocols detected in ~2.2–2.3 seconds.
+
+  - At long range, Wi-Fi detection reached ~25 seconds at 600m.
+
+- The system successfully detected both Bluetooth and Wi-Fi RID signals, supporting the core requirement for drone tracking.
+
+- Bluetooth RID is not suitable for long-range campus coverage, but it works well at short to mid-range.
+
+- Wi-Fi RID is effective for campus-scale monitoring, validating its use as the system’s primary detection method.
+
+- Elevating the receiver (50 ft up) clearly improved performance; further elevation or directional antennas could extend coverage even more.
   
-## Experiment 1: [Experiment Title Here]
+## Experiment 2: [Experiment Title Here]
 
 ### Purpose and Justification
 Explain why this experiment was designed and how it relates to your critical success criteria.  
@@ -45,7 +143,7 @@ Include detailed reasoning supported by your data.
 
 ---
 
-## Experiment 2: [Experiment Title Here]
+## Experiment 3: [Experiment Title Here]
 
 *(Repeat the same structure as above for each experiment — typically 3–5 experiments total.)*
 
