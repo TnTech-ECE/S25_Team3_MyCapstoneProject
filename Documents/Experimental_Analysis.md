@@ -7,35 +7,29 @@ Tennessee Technological University
 
 ## Experiment 1: Range and Detection Latency of Wi-Fi & Bluetooth Drone RID Signals
 
-
 ### Purpose and Justification
 
 This experiment was designed to evaluate how well the drone-tracking system detects Remote ID (RID) signals broadcast over Bluetooth and Wi-Fi, and how quickly detection occurs at various distances.
 
 This aligns with the project’s critical success criteria:
-
 - The system must track a drone on campus using its RID signal.
 - The system must display the drone’s ID and location data on the website.
 - The system must demonstrate sufficient range, signal reliability, and detection latency for real-time campus-scale tracking.
-
 This experiment validates the RF receiver hardware, RID-processing pipeline, and backend detection logic.
 
 ### Detailed Procedure
 
 #### System Setup
-
 - The receiver hardware and software were installed at the Tucker Stadium announcer’s box, approximately 50 ft above ground level.
 - The system was configured to continuously scan for:
   - Bluetooth RID packets from aftermarket transmitters.
   - Wi-Fi RID beacons on channel 6 (used by the Parrot Anafi AI drone).
 
 #### Transmitters Used
-
 - Bluetooth RID: Aftermarket Potensic Bluetooth RID transmitter.
 - Wi-Fi RID: Parrot Anafi AI drone (flight disabled; RID active only).
 
 #### Testing Process
-
 - Two team members walked away from the stadium in a straight line:
   - One carried the Bluetooth RID transmitter.
   - The other carried the Parrot Anafi AI emitting Wi-Fi RID.
@@ -49,12 +43,10 @@ This experiment validates the RF receiver hardware, RID-processing pipeline, and
   - If no detection occurred, it was recorded as N/A.
 
 #### Data Collection
-
 - All detections were verified using the system’s backend logs.
 - Data was recorded in tabular form (shown below).
 
 ### Expected Results
-
 Ahead of testing, expectations were:
 
 - Wi-Fi RID (higher power and modulation robustness) should exceed Bluetooth in detection range.
@@ -63,7 +55,6 @@ Ahead of testing, expectations were:
 - The system should be capable of reliably detecting RID-equipped drones on campus and displaying them on the website.
 
 ### Actual Results
-
 #### Bluetooth RID Detection
 | Distance | Detected | Detection Time |
 |:--------:|:--------:|:---------------:|
@@ -90,7 +81,6 @@ Ahead of testing, expectations were:
 | 1000m    | No       | N/A              |
 
 ### Interpretation and Conclusions
-
 - Wi-Fi RID significantly outperformed Bluetooth in range, remaining detectable up to 600 meters, whereas Bluetooth detection ended around 150–180 meters.
 - Detection latency increased with distance, consistent with reduced signal strength.
   - At close range, both protocols detected in ~2.2–2.3 seconds.
