@@ -184,24 +184,24 @@ All components ordered, borrowed, or assigned are listed below. Each item includ
 
 | **Item #** | **Description** | **Quantity** | **Vendor / Source** | **Order # / ID** | **Storage Location (Lab Station / Box #)** | **Date Acquired** | **Condition (New / Used)** | **Notes (Experiment Used, Damaged, Returned)** |
 |:-----------:|----------------|:-------------:|---------------------|------------------|--------------------------------------------|-------------------|----------------------------|------------------------------------------------|
-| 01 | GeeekPi nRF52840 Micro Dev Kit USB Dongle | 1 | Amazon | B07MJ12XLG | ? | 8/15/2025 | New | Used in SDR Interface Testing |
-| 02 | JAPOO W50L-5DB WiFi Adapter | 1 | Amazon | B0DBLL14NP | ? | 8/15/2025 | New | Used for Wi-Fi Signal Capture |
-| 03 | SONOFF Zigbee 3.0 USB Dongle Plus-E Gateway | 1 | Amazon | B06P22YJC | ? | 8/15/2025 | New | Used in Zigbee Node Testing |
-| 04 | SanDisk 128GB Ultra microSDXC | 1 | Amazon | B07NYT2S6 | ? | 8/15/2025 | New | OS Storage for Raspberry Pi 5 |
-| 05 | DHT Electronics Socket Jack Female RF Coaxial Connector | 1 | Amazon | B00CXC0SZ4 | ? | 8/15/2025 | New | Used in Antenna Connector Assembly |
-| 06 | Jadaol Cat6 Ethernet Cable (50 ft) | 1 | Amazon | B00MWD17GQ | ? | 8/15/2025 | New | Used in PoE Testing Setup |
-| 07 | UeeKKoo ORD-CMA-Antenna | 1 | Amazon | B0D4MKJHXJ | ? | 8/15/2025 | New | Used in Drone Antenna Simulation |
-| 08 | Waveshare PoE HAT for Raspberry Pi | 1 | Amazon | B0928ZD7QQ | ? | 8/15/2025 | New | Used in Pi 5 PoE Power Testing |
-| 09 | ThePoEStore Single Port PoE Injector | 1 | Amazon | B07V24C4M8 | ? | 8/15/2025 | New | Used in PoE Power Delivery Testing |
-| 10 | YDDECW 14/2 UF-B Cable (25 ft) | 1 | Amazon | B0DF2Q5LGX | ? | 8/15/2025 | New | Used for AC/DC Power Simulation |
-| 11 | Amazon Basics Ethernet Cable (10 ft) | 1 | Amazon | B00N2VIALK | ? | 8/15/2025 | New | Used in Network Interconnects |
-| 12 | TTU Printing Services Drone Tracker Chassis Decal | 2 | TTU Printing Services | N/A | ? | 8/15/2025 | New | Used for Project Labeling |
-| 13 | UCTRONICS PoE Hat for Raspberry Pi 5 | 1 | Amazon | B0DBHFQ1TC | ? | 8/15/2025 | New | Replaced failed PoE HAT (F) unit |
-| 14 | Waterproof Chassis Enclosure (Project Box) | 1 | Provided by Customer | N/A | ? | 8/15/2025 | New | Provided at no cost by customer; used as main system enclosure |
-| 15 | Raspberry Pi 5 (8GB) | 1 | TTU ECE Dept | N/A | ? | 8/15/2025 | New | Main processing unit for Drone Tracker |
-| 16 | Raspberry Pi 5 (8GB) | 1 | TTU ECE Dept | N/A | ? | 8/15/2025 | New | Server/Website |
-| 17 | Potensic FAA-Compliant Remote ID Broadcast Module | 1 | Amazon / Potensic | N/A | ? | 9/2025 | Used | Used for RID signal testing and validation |
-| 18 | Parrot ANAFI Ai Drone | 1 | TTU Police / Testing Loan | N/A | ? | 9/2025 | Used | Used for live-flight RID testing and telemetry validation |
+| 01 | GeeekPi nRF52840 Micro Dev Kit USB Dongle | 1 | Amazon | B07MJ12XLG | Drone Tracker Lab Station | 8/15/2025 | New | Used in SDR Interface Testing |
+| 02 | JAPOO W50L-5DB WiFi Adapter | 1 | Amazon | B0DBLL14NP | Drone Tracker Lab Station | 8/15/2025 | New | Used for Wi-Fi Signal Capture |
+| 03 | SONOFF Zigbee 3.0 USB Dongle Plus-E Gateway | 1 | Amazon | B06P22YJC | Drone Tracker Lab Station | 8/15/2025 | New | Used in Zigbee Node Testing |
+| 04 | SanDisk 128GB Ultra microSDXC | 1 | Amazon | B07NYT2S6 | Drone Tracker Lab Station | 8/15/2025 | New | OS Storage for Raspberry Pi 5 |
+| 05 | DHT Electronics Socket Jack Female RF Coaxial Connector | 1 | Amazon | B00CXC0SZ4 | Drone Tracker Lab Station | 8/15/2025 | New | Used in Antenna Connector Assembly |
+| 06 | Jadaol Cat6 Ethernet Cable (50 ft) | 1 | Amazon | B00MWD17GQ | Drone Tracker Lab Station | 8/15/2025 | New | Used in PoE Testing Setup |
+| 07 | UeeKKoo ORD-CMA-Antenna | 1 | Amazon | B0D4MKJHXJ | Drone Tracker Lab Station | 8/15/2025 | New | Used in Drone Antenna Simulation |
+| 08 | Waveshare PoE HAT for Raspberry Pi | 1 | Amazon | B0928ZD7QQ | Drone Tracker Lab Station | 8/15/2025 | New | Used in Pi 5 PoE Power Testing |
+| 09 | ThePoEStore Single Port PoE Injector | 1 | Amazon | B07V24C4M8 | Drone Tracker Lab Station | 8/15/2025 | New | Used in PoE Power Delivery Testing |
+| 10 | YDDECW 14/2 UF-B Cable (25 ft) | 1 | Amazon | B0DF2Q5LGX | Drone Tracker Lab Station | 8/15/2025 | New | Used for AC/DC Power Simulation |
+| 11 | Amazon Basics Ethernet Cable (10 ft) | 1 | Amazon | B00N2VIALK | Drone Tracker Lab Station | 8/15/2025 | New | Used in Network Interconnects |
+| 12 | TTU Printing Services Drone Tracker Chassis Decal | 2 | TTU Printing Services | N/A | Drone Tracker Lab Station | 8/15/2025 | New | Used for Project Labeling |
+| 13 | UCTRONICS PoE Hat for Raspberry Pi 5 | 1 | Amazon | B0DBHFQ1TC | Drone Tracker Lab Station | 8/15/2025 | New | Replaced failed PoE HAT (F) unit |
+| 14 | Waterproof Chassis Enclosure (Project Box) | 1 | Provided by Customer | N/A | Drone Tracker Lab Station | 8/15/2025 | New | Provided at no cost by customer; used as main system enclosure |
+| 15 | Raspberry Pi 5 (8GB) | 1 | TTU ECE Dept | N/A | Drone Tracker Lab Station | 8/15/2025 | New | Main processing unit for Drone Tracker |
+| 16 | Raspberry Pi 5 (8GB) | 1 | TTU ECE Dept | N/A | Drone Tracker Lab Station | 8/15/2025 | New | Server/Website |
+| 17 | Potensic FAA-Compliant Remote ID Broadcast Module | 1 | Amazon / Potensic | N/A | Drone Tracker Lab Station | 9/2025 | Used | Used for RID signal testing and validation |
+| 18 | Parrot ANAFI Ai Drone | 1 | TTU Police / Testing Loan | N/A | Drone Tracker Lab Station | 9/2025 | Used | Used for live-flight RID testing and telemetry validation |
 
 ---
 
