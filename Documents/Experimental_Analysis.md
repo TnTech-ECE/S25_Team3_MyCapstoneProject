@@ -130,24 +130,30 @@ Include detailed reasoning supported by your data.
 
 ---
 
-## Experiment 3: [Experiment Title Here]
-
-*(Repeat the same structure as above for each experiment — typically 3–5 experiments total.)*
+## Experiment 3: Update Speed Improvement 
 
 ### Purpose and Justification
-[Write here.]
+The purpose of this experiment was to test different methods of coding to improve the speed at which the server raspberry pi receives and updates the website with data. This experiment focuses on answering the question of can the update speed be improved upon. This revalidates the website, server, and database subsystems.
 
 ### Detailed Procedure
-[Write here.]
+The procedure follows as such: 
+1: Setting up the drone and defining a designated flight path 
+2: Running the original code while the drone flies its’s defined to set a control update time
+3: Update the server code 
+4: Run the new code while the drone is flying the same path and record the new update times
+5: Make code tweaks to improve the update time 
+6: Rerun the code, test again, and record new times
 
 ### Expected Results
-[Write here.]
+The hypothesis was that the new methods would decrease the update time for displaying data from the server to the website. The decrease in time would improve the response time to unauthorized drones on campus. 
 
 ### Actual Results
-[Write here.]
-
+| **Test Condition** | **Time Between Start and First Update (Seconds)** | **Time Between First and Second Update (Seconds)** | **Time Between Second and Third Update (Seconds)** | **Time Between Third and Fourth Update (Seconds)** | **Average Time Between (Seconds)** |
+|:-------------------:|:------------------------:|:------------------------:|:----------------:|:----------------:|:------------:|
+| Control | 35 | 67 | 3 | 26 | 33 |
+| Updated | 10 | 60 | 5 | 5 | 20 |
 ### Interpretation and Conclusions
-[Write here.]
+In conclusion, the update in code did decrease the update time by 10 seconds. This decreased in time supports the goal of this experiment of improving the website, server, and database subsystems.
 
 ---
 
