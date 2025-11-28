@@ -90,43 +90,30 @@ Ahead of testing, expectations were:
 - Wi-Fi RID is effective for campus-scale monitoring, validating its use as the system’s primary detection method.
 - Elevating the receiver (50 ft up) clearly improved performance; further elevation or directional antennas could extend coverage even more.
   
-## Experiment 2: [Experiment Title Here]
+## Experiment 2: Operation and Reliability
 
 ### Purpose and Justification
-Explain why this experiment was designed and how it relates to your critical success criteria.  
-Clearly describe what question this experiment is trying to answer and what part of the system it validates.
+The purpose of this experiment is to verify the consistency of the central computer, website, server, and database subsystems. The focus of the experiment is to prove that the entirety of the project operates reliably without constant intervention from an operator.
 
 ### Detailed Procedure
-Describe the step-by-step process of how this experiment was conducted.  
-Include hardware setup, software configuration, testing conditions, and data collection methods.  
-Ensure another team could replicate your work using only this description.
+The procedure follows as such:
+-A drone will be deployed and shall fly a predefined flight path 
+-The central computer and server/database computer will be started and connected to one another 
+-The website will be monitored and recorded 
+-Any errors and inconsistencies shall be recorded 
+-The computers will be shut down and be updated to address any errors or inconsistencies found
 
 ### Expected Results
-State the hypothesis or expected outcomes **before** running the experiment.  
-Include relevant equations, signal characteristics, or theoretical predictions.
-
-I expect the system to be able to track a drone on campus. Also, it should be able to display the location and information on the website.
+The hypothesis of this experiment is that the subsystems will:
+-Operate without fail 
+-Operate without inconsistencies
+-Operate without intervention from an operator
 
 ### Actual Results
-Present your collected data clearly.  
-You can use:
-- Tables (Markdown-formatted)
-- Images (e.g., waveform screenshots)
-- Graphs (linked from repo or plotted via code)
-
-Example:
-
-| **Test Condition** | **Measured Voltage (V)** | **Expected (V)** | **% Error** |
-|:-------------------:|:------------------------:|:----------------:|:------------:|
-| 5V Input | 4.96 | 5.00 | 0.8% |
-| 3.3V Input | 3.28 | 3.30 | 0.6% |
+During the first run of the experiment there was one error found. The error was an overflow exception found in the server/database computer’s code. This error occurred due to a small oversight in the code and was quickly rectified. On the second and third run of the experiment no errors nor inconsistencies were found.
 
 ### Interpretation and Conclusions
-Interpret your results and discuss what they mean.  
-- Did results meet your expectations?  
-- Were there discrepancies?  
-- How do these findings support (or challenge) your project’s success criteria?  
-Include detailed reasoning supported by your data.
+In conclusion, this experiment validated the designated subsystems. The only error found in this experiment was an overflow exception found in the server/database computer’s code. Once that error was rectified, the subsystems worked consistently and without intervention from a user.
 
 ---
 
