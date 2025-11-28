@@ -137,12 +137,12 @@ The purpose of this experiment was to test different methods of coding to improv
 
 ### Detailed Procedure
 The procedure follows as such: 
-1: Setting up the drone and defining a designated flight path 
-2: Running the original code while the drone flies its’s defined to set a control update time
-3: Update the server code 
-4: Run the new code while the drone is flying the same path and record the new update times
-5: Make code tweaks to improve the update time 
-6: Rerun the code, test again, and record new times
+- Setting up the drone and defining a designated flight path
+- Running the original code while the drone flies its’s defined to set a control update time
+- Update the server code
+- Run the new code while the drone is flying the same path and record the new update times
+- Make code tweaks to improve the update time
+- Rerun the code, test again, and record new times
 
 ### Expected Results
 The hypothesis was that the new methods would decrease the update time for displaying data from the server to the website. The decrease in time would improve the response time to unauthorized drones on campus. 
