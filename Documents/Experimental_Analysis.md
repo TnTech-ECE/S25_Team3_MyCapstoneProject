@@ -216,6 +216,6 @@ Tyler Bare: Initial Inventory, Usage Tracking, Experiment 1
 
 Brett Ballew: Initial Inventory, Usage Tracking, Experiment 1
 
-Gabrielle Renfroe: ...
+Gabrielle Renfroe: Initial Inventory, Usage Tracking
 
 Erich Krepps: ...
