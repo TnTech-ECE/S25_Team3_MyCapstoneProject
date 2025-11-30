@@ -212,9 +212,9 @@ All components ordered, borrowed, or assigned are listed below. Each item includ
 
 Amanda Bacon: Summary of Experimental Outcomes
 
-Tyler Bare: Initial Inventory, Usage Tracking
+Tyler Bare: Initial Inventory, Usage Tracking, Experiment 1
 
-Brett Ballew: ...
+Brett Ballew: Initial Inventory, Usage Tracking, Experiment 1
 
 Gabrielle Renfroe: ...
 
