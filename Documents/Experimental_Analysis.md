@@ -15,19 +15,19 @@ This aligns with the project’s critical success criteria:
 - The system must track a drone on campus using its RID signal.
 - The system must display the drone’s ID and location data on the website.
 - The system must demonstrate sufficient range, signal reliability, and detection latency for real-time campus-scale tracking.
-This experiment validates the RF receiver hardware, RID-processing pipeline, and backend detection logic.
+- This experiment validates the RF receiver hardware, RID-processing pipeline, and backend detection logic.
 
 ### Detailed Procedure
 
 #### System Setup
-- The receiver hardware and software were installed at the Tucker Stadium announcer’s box, approximately 50 ft above ground level.
+- The receiver hardware and software were installed at the Tucker Stadium press box, approximately 50 ft above ground level.
 - The system was configured to continuously scan for:
-  - Bluetooth RID packets from aftermarket transmitters.
-  - Wi-Fi RID beacons on channel 6 (used by the Parrot Anafi AI drone).
+  - Bluetooth RID packets.
+  - Wi-Fi RID beacons on channel 6.
 
 #### Transmitters Used
 - Bluetooth RID: Aftermarket Potensic Bluetooth RID transmitter.
-- Wi-Fi RID: Parrot Anafi AI drone (flight disabled; RID active only).
+- Wi-Fi RID: Parrot ANAFI AI drone (flight disabled; RID active only).
 
 #### Testing Process
 - Two team members walked away from the stadium in a straight line:
@@ -49,9 +49,9 @@ This experiment validates the RF receiver hardware, RID-processing pipeline, and
 ### Expected Results
 Ahead of testing, expectations were:
 
-- Wi-Fi RID (higher power and modulation robustness) should exceed Bluetooth in detection range.
-- Bluetooth RID expected to be reliable at short to moderate distances (up to ~150–200m).
-- Detection times should be fastest at close range (≈2–5 seconds) and increase with distance.
+- Wi-Fi RID should exceed Bluetooth in detection range, due to its higher power and modulation robustness. 
+- Bluetooth RID should be reliable at short to moderate distances (up to ~150–200m).
+- Detection times should be fastest at close range (~2–5 seconds) and increase with distance.
 - The system should be capable of reliably detecting RID-equipped drones on campus and displaying them on the website.
 
 ### Actual Results
@@ -88,7 +88,7 @@ Ahead of testing, expectations were:
 - The system successfully detected both Bluetooth and Wi-Fi RID signals, supporting the core requirement for drone tracking.
 - Bluetooth RID is not suitable for long-range campus coverage, but it works well at short to mid-range.
 - Wi-Fi RID is effective for campus-scale monitoring, validating its use as the system’s primary detection method.
-- Elevating the receiver (50 ft up) clearly improved performance; further elevation or directional antennas could extend coverage even more.
+- This experiment was performed with the receiver elevated at 50 feet; further elevation or directional antennas could extend coverage even more.
   
 ## Experiment 2: Operation and Reliability
 
@@ -97,58 +97,61 @@ The purpose of this experiment is to verify the consistency of the central compu
 
 ### Detailed Procedure
 The procedure follows as such:
--A drone will be deployed and shall fly a predefined flight path 
--The central computer and server/database computer will be started and connected to one another 
--The website will be monitored and recorded 
--Any errors and inconsistencies shall be recorded 
--The computers will be shut down and be updated to address any errors or inconsistencies found
+- A drone will be deployed and will fly a random flight path. 
+- The central computer and server/database computer will be started and connected to one another. 
+- The website will be monitored. 
+- Any errors and inconsistencies will be recorded. 
+- The computers will be shut down and updated to address any errors or inconsistencies found.
 
 ### Expected Results
 The hypothesis of this experiment is that the subsystems will:
--Operate without fail 
--Operate without inconsistencies
--Operate without intervention from an operator
+- Operate without fail.
+- Operate without inconsistencies.
+- Operate without intervention from an operator.
 
 ### Actual Results
-During the first run of the experiment there was one error found. The error was an overflow exception found in the server/database computer’s code. This error occurred due to a small oversight in the code and was quickly rectified. On the second and third run of the experiment no errors nor inconsistencies were found.
+During the first run of the experiment there was one error found. The error was an overflow occurrence found in the server/database computer’s code. This error occurred due to a small oversight in the code and was quickly rectified. On the second and third run of the experiment no errors or inconsistencies were found.
 
 ### Interpretation and Conclusions
-In conclusion, this experiment validated the designated subsystems. The only error found in this experiment was an overflow exception found in the server/database computer’s code. Once that error was rectified, the subsystems worked consistently and without intervention from a user.
+In conclusion, this experiment validated the designated subsystems. The only error found in this experiment was an overflow occurrence found in the server/database computer’s code. Once that error was rectified, the subsystems worked consistently and without intervention from a user.
 
 ---
 
 ## Experiment 3: Update Speed Improvement 
 
 ### Purpose and Justification
-The purpose of this experiment was to test different methods of coding to improve the speed at which the server raspberry pi receives and updates the website with data. This experiment focuses on answering the question of can the update speed be improved upon. This revalidates the website, server, and database subsystems.
+The purpose of this experiment was to test different methods of coding to improve the speed at which the Raspberry Pi server receives and updates the website with data. This experiment focuses on answering the question of can the update speed be improved upon. This revalidates the website, server, and database subsystems.
 
 ### Detailed Procedure
 The procedure follows as such: 
-- Setting up the drone and defining a designated flight path
-- Running the original code while the drone flies its’s defined to set a control update time
-- Update the server code
-- Run the new code while the drone is flying the same path and record the new update times
-- Make code tweaks to improve the update time
-- Rerun the code, test again, and record new times
+- Setting up the drone and defining a random flight path.
+- Running the original code while the drone is flying to find an update time for comparison.
+- Update the server code.
+- Run the new code while the drone is flying the same path and record the new update times.
 
 ### Expected Results
-The hypothesis was that the new methods would decrease the update time for displaying data from the server to the website. The decrease in time would improve the response time to unauthorized drones on campus. 
+The hypothesis was that the new methods would decrease the update time for displaying data from the server to the website. The decrease in time would improve the response time to drones on campus. 
 
 ### Actual Results
 | **Test Condition** | **Time Between Start and First Update (Seconds)** | **Time Between First and Second Update (Seconds)** | **Time Between Second and Third Update (Seconds)** | **Time Between Third and Fourth Update (Seconds)** | **Average Time Between (Seconds)** |
 |:-------------------:|:------------------------:|:------------------------:|:----------------:|:----------------:|:------------:|
 | Control | 35 | 67 | 3 | 26 | 33 |
 | Updated | 10 | 60 | 5 | 5 | 20 |
+
 ### Interpretation and Conclusions
-In conclusion, the update in code did decrease the update time by 10 seconds. This decreased in time supports the goal of this experiment of improving the website, server, and database subsystems.
+In conclusion, the updated code decreased the time it took the system to update by 10 seconds. This decrease in time supports the goal of this experiment of improving the website, server, and database subsystems.
 
 ---
 
 ## Summary of Experimental Outcomes
 
-Overall, the experimental results collectively demonstrate that the system functions as intended: it reliably detects drones operating within range of the Raspberry Pi unit, retrieves their geolocation and identifying RID data, stores this information on a central server, and uploads it to a secure website where Tennessee Tech campus police are alerted when new drones appear and can view their positions on a map. Testing confirmed that the detection and reporting pipeline is consistent and accurate, though a noticeable delay exists between initial detection and server-side display. As anticipated during the design phase, expanding coverage across the entire TTU campus will require a network of multiple Raspberry Pis to ensure continuous detection and minimize blind spots. 
+Overall, the experimental results collectively demonstrate that the system functions as intended: 
+- It reliably detects drones operating within range of the Raspberry Pi unit.
+- It retrieves their geolocation and identifying RID data.
+- It stores this information on a central server.
+- It uploads it to a secure website where Tennessee Tech campus police are alerted when new drones appear and can view their positions on a map.
 
-This section evaluates how effectively the final drone tracking system met the specifications and constraints established at the beginning of the project. The requirements provided by the TTU campus police department formed the foundation for the system’s functional goals, and the legal and ethical constraints guided the design decisions throughout development. As detailed in the following subsections, the completed system meets the intent of the required specifications and operates within the stated constraints. Each specification is addressed individually, with justification and performance evidence provided to demonstrate to what extent the implemented system fulfills the original project objectives.
+Testing confirmed that the detection and reporting pipeline is consistent and accurate, although a noticeable delay exists between initial detection and server-side display. As anticipated during the design phase, expanding coverage across the entire TTU campus will require a network of multiple Raspberry Pis to ensure continuous detection and minimize blind spots. This section evaluates how effectively the final drone tracking system meets the specifications and constraints established at the beginning of the project. The requirements provided by the TTU campus police formed the foundation for the system’s functional goals, and the legal and ethical constraints guided the design decisions throughout development. As shown belown, each specification is addressed individually, with justification and performance evidence provided to demonstrate to what extent the implemented system fulfills the original project objectives.
 
 ### Drone Tracking System Specifications
 #### 1. The system shall detect and track drones emitting RID signals flown over the contiguous TTU campus.
