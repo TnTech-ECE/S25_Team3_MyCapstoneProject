@@ -218,4 +218,4 @@ Brett Ballew: Initial Inventory, Usage Tracking, Experiment 1
 
 Gabrielle Renfroe: Initial Inventory, Usage Tracking
 
-Erich Krepps: ...
+Erich Krepps: Experiment 2, Experiment 3
